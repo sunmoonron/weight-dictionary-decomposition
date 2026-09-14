@@ -1,0 +1,13 @@
+{
+  "title": "Weight-Dictionary Decomposition: code, results and per-token records",
+  "description": "Scripts, result files, run logs and per-token records behind the paper <i>Weight-Dictionary Decomposition: Reading a Transformer's Residual Stream with Its Own Writes</i> (preprint, September 2026, doi:10.5281/zenodo.22749478). Every number in the paper is written by a named script into results/, with the run log in logs/. Code under MIT; result files, logs and per-token records under CC BY 4.0.",
+  "creators": [{"name": "Bhatt, Ronish", "orcid": "0009-0000-8835-5380"}],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": ["mechanistic interpretability", "transformers", "residual stream", "sparse coding", "dictionary learning", "attribution", "sparse autoencoders"],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.22749478", "relation": "isSupplementTo", "resource_type": "publication-preprint", "scheme": "doi"}
+  ],
+  "version": "2026.09"
+}
