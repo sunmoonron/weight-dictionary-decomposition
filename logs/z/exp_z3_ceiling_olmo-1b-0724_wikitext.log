@@ -1,0 +1,8 @@
+== olmo-1b-0724/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   4%|▍         | 5/114 [00:00<00:02, 49.37it/s]Loading weights:  27%|██▋       | 31/114 [00:00<00:00, 167.52it/s]Loading weights:  46%|████▋     | 53/114 [00:00<00:00, 190.53it/s]Loading weights:  66%|██████▌   | 75/114 [00:00<00:00, 200.23it/s]Loading weights:  89%|████████▊ | 101/114 [00:00<00:00, 216.61it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 200.25it/s]
+  olmo-1b-0724/wikitext: 32768 states, d=2048 dff=8192 L=8 atoms=142464 (40s)
+  supports done (358s); support composition {'embedding': 0.16072893142700195, 'mlp': 0.7041845321655273, 'attention': 0.1350865364074707, 'bias': 0.0}
+  recall_top1 here 0.6931 vs exp_z2 0.6931 (ok)
+  olmo-1b-0724/wikitext: id_omp 0.606  intact 0.637 id|intact 0.788  erased 0.063 id|erased 0.036  misses: erased 0.15 weak 0.50 twin 0.00 other 0.34  AUC surv 0.818
+DONE_Z3

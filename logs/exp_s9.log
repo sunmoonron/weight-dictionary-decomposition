@@ -1,0 +1,22 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+===== smollm2-135m =====
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:   0%|          | 1/272 [00:00<01:13,  3.67it/s]Loading weights:  11%|█         | 29/272 [00:00<00:02, 94.83it/s]Loading weights:  16%|█▌        | 44/272 [00:00<00:02, 94.12it/s]Loading weights:  39%|███▉      | 107/272 [00:00<00:00, 220.88it/s]Loading weights:  49%|████▉     | 133/272 [00:00<00:00, 209.39it/s]Loading weights:  60%|█████▉    | 163/272 [00:00<00:00, 228.56it/s]Loading weights:  74%|███████▍  | 202/272 [00:01<00:00, 267.18it/s]Loading weights:  88%|████████▊ | 238/272 [00:01<00:00, 291.70it/s]Loading weights: 100%|██████████| 272/272 [00:01<00:00, 224.45it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (304838 > 8192). Running this sequence through the model will result in indexing errors
+  captured; CE 3.079  d=576 dff=1536 NB=30
+  dict 36545 atoms; eval 8192 states
+  FVU@32/64  weight 0.006/0.002  rotated 0.424/0.184  random 0.431/0.180
+  attrib: top1 recall 0.673  r|id 1.0
+  counter medians by block: [1.73, 1.65, 1.75, 1.46, 1.45, 1.53, 1.62, 1.72, 1.62, 1.85, 1.54, 1.41, 1.48, 1.12, 1.15, 0.84, 0.98, 1.06, 0.23, 1.23, 1.0, 1.45, 1.39, 1.51, 0.9, 1.19, 1.11, 0.9, 0.29]
+  top-counter channels matching superweight-study channels: 19/29
+===== qwen2.5-0.5b =====
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:01<09:24,  1.95s/it]Loading weights:  14%|█▍        | 40/290 [00:02<00:09, 26.25it/s]Loading weights:  19%|█▉        | 56/290 [00:02<00:06, 34.23it/s]Loading weights:  23%|██▎       | 68/290 [00:02<00:05, 39.55it/s]Loading weights:  27%|██▋       | 78/290 [00:02<00:05, 41.95it/s]Loading weights:  30%|███       | 88/290 [00:02<00:04, 45.07it/s]Loading weights:  35%|███▍      | 101/290 [00:03<00:03, 55.00it/s]Loading weights:  39%|███▊      | 112/290 [00:03<00:03, 58.47it/s]Loading weights:  43%|████▎     | 125/290 [00:03<00:02, 67.64it/s]Loading weights:  47%|████▋     | 137/290 [00:03<00:02, 65.63it/s]Loading weights:  51%|█████     | 148/290 [00:03<00:02, 62.40it/s]Loading weights:  56%|█████▌    | 161/290 [00:03<00:01, 74.67it/s]Loading weights:  59%|█████▉    | 172/290 [00:03<00:01, 78.13it/s]Loading weights:  64%|██████▍   | 185/290 [00:04<00:01, 63.71it/s]Loading weights:  70%|███████   | 203/290 [00:04<00:01, 83.69it/s]Loading weights:  74%|███████▍  | 214/290 [00:04<00:01, 72.38it/s]Loading weights:  77%|███████▋  | 223/290 [00:04<00:00, 74.50it/s]Loading weights:  80%|████████  | 232/290 [00:04<00:00, 70.31it/s]Loading weights:  83%|████████▎ | 240/290 [00:04<00:00, 67.18it/s]Loading weights:  88%|████████▊ | 254/290 [00:05<00:00, 78.50it/s]Loading weights:  91%|█████████ | 263/290 [00:05<00:00, 66.90it/s]Loading weights:  96%|█████████▌| 279/290 [00:05<00:00, 69.96it/s]Loading weights: 100%|██████████| 290/290 [00:05<00:00, 53.23it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (298938 > 131072). Running this sequence through the model will result in indexing errors
+Traceback (most recent call last):
+  File "/data/mechinterp/trainfree/exp_s9_families.py", line 87, in <module>
+    ces.append(Fn.cross_entropy(lg.reshape(-1, lg.shape[-1]),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/functional.py", line 3494, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 594.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 483.00 MiB is free. Process 252687 has 1.39 GiB memory in use. Process 276760 has 492.00 MiB memory in use. Process 710088 has 2.99 GiB memory in use. Including non-PyTorch memory, this process has 2.58 GiB memory in use. Of the allocated memory 2.40 GiB is allocated by PyTorch, and 41.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

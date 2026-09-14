@@ -1,0 +1,37 @@
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 38/114 [00:00<00:00, 370.36it/s]Loading weights:  76%|███████▋  | 87/114 [00:00<00:00, 425.78it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 454.19it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+1216 pairs with cos(w) > 0.7
+collecting activations for 3250 atoms in 16 layers
+8192 tokens per atom
+builder_vs_amplifier: {"cos_w": 0.9634, "cos_u": 0.0067, "act_corr": 0.9954}
+builder_vs_eraser: {"cos_w": 0.9941, "cos_u": 0.1722, "act_corr": 0.9997}
+{
+ "model": "allenai/OLMo-1B-0724-hf",
+ "n_pairs": 1216,
+ "n_tokens": 8192,
+ "spearman_actcorr_vs_cos_w": 0.2912,
+ "spearman_actcorr_vs_cos_u": 0.3111,
+ "median_act_corr_collinear_writes": 0.075,
+ "median_act_corr_random_pairs": 0.0195,
+ "median_cos_w": 0.7358,
+ "median_cos_u": 0.102,
+ "builder_vs_amplifier": {
+  "cos_w": 0.9634,
+  "cos_u": 0.0067,
+  "act_corr": 0.9954
+ },
+ "builder_vs_eraser": {
+  "cos_w": 0.9941,
+  "cos_u": 0.1722,
+  "act_corr": 0.9997
+ },
+ "verdict": {
+  "act_corr_tracks_reads_not_writes": true,
+  "collinear_writes_are_decorrelated": true,
+  "vs_random_pairs": [
+   0.075,
+   0.0195
+  ]
+ }
+}
+DONE_Y43

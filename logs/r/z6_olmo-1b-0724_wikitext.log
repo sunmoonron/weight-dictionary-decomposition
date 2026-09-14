@@ -1,0 +1,9 @@
+job start z6 olmo-1b-0724/wikitext 02:13:19 free=77878MB
+== olmo-1b-0724/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   1%|          | 1/114 [00:01<01:58,  1.05s/it]Loading weights:  28%|██▊       | 32/114 [00:01<00:02, 37.68it/s]Loading weights:  52%|█████▏    | 59/114 [00:01<00:00, 70.81it/s]Loading weights:  74%|███████▎  | 84/114 [00:01<00:00, 101.23it/s]Loading weights:  96%|█████████▌| 109/114 [00:01<00:00, 129.73it/s]Loading weights: 100%|██████████| 114/114 [00:01<00:00, 77.03it/s] 
+  olmo-1b-0724/wikitext: 32768 states, d=2048 dff=8192 L=8 atoms=142464 (29s)
+  support done (127s)
+  olmo-1b-0724/wikitext: support {'embedding': 0.16087490443425076, 'mlp': 0.704038130733945, 'attention': 0.13508696483180427, 'bias': 0.0}  real 0.510  sign 0.970  relerr 1.27  spurious mass 0.436 | dominant: r omp 0.907 refit 0.925 relerr omp 0.34 refit 0.29
+DONE_Z6
+job exit 0 z6 olmo-1b-0724/wikitext 02:16:10

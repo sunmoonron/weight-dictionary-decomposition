@@ -1,0 +1,73 @@
+{
+ "wdd_candidates": {
+  "mlp6#437": {
+   "arm": "WDD",
+   "upstream": "mlp5#1790",
+   "upstream_share_pred": -2.91,
+   "dproj": 0.81,
+   "ctrl_dproj": -0.01,
+   "dresp": 0.238,
+   "ctrl_dresp": -0.0,
+   "TIER1": false,
+   "TIER2": true
+  },
+  "mlp8#583": {
+   "arm": "WDD",
+   "upstream": "mlp2#676",
+   "upstream_share_pred": 3.74,
+   "dproj": 9.86,
+   "ctrl_dproj": -0.01,
+   "dresp": -0.924,
+   "ctrl_dresp": 0.001,
+   "TIER1": false,
+   "TIER2": true
+  },
+  "mlp2#1195": {
+   "arm": "WDD",
+   "upstream": "mlp0#1121",
+   "upstream_share_pred": 1.08,
+   "dproj": 0.2,
+   "ctrl_dproj": 0.01,
+   "dresp": -0.2,
+   "ctrl_dresp": -0.001,
+   "TIER1": false,
+   "TIER2": true
+  }
+ },
+ "outlier_candidates": {
+  "mlp8#1807": {
+   "arm": "outlier",
+   "upstream": "mlp2#666",
+   "upstream_share_pred": 2.87,
+   "dproj": 0.43,
+   "ctrl_dproj": -0.0,
+   "dresp": 0.002,
+   "ctrl_dresp": -0.0,
+   "TIER1": false,
+   "TIER2": false
+  },
+  "mlp6#861": {
+   "arm": "outlier",
+   "upstream": "mlp3#614",
+   "upstream_share_pred": 0.17,
+   "dproj": -0.01,
+   "ctrl_dproj": -0.01,
+   "dresp": -0.005,
+   "ctrl_dresp": -0.001,
+   "TIER1": false,
+   "TIER2": false
+  },
+  "mlp8#2535": {
+   "arm": "outlier",
+   "upstream": "mlp7#2367",
+   "upstream_share_pred": -0.32,
+   "dproj": -0.23,
+   "ctrl_dproj": 0.0,
+   "dresp": 0.017,
+   "ctrl_dresp": 0.001,
+   "TIER1": true,
+   "TIER2": false
+  }
+ },
+ "_note": "pilot N=3/arm; criteria pre-registered in docstring before any battery ran; both arms share machinery, only nomination differs; season-studied neurons and massive channels excluded"
+}

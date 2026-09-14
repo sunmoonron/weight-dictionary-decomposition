@@ -1,0 +1,28 @@
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 45/114 [00:00<00:00, 441.84it/s]Loading weights:  79%|███████▉  | 90/114 [00:00<00:00, 435.66it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 449.60it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+dictionary torch.Size([214144, 2048])
+tokens: 16 pos0, 256 bulk
+pos0: {'n': 16, 'recall_top1': 1.0, 'recall_in_top8': 1.0, 'top1_is_an_mlp1_atom': 1.0, 'r2_k1': 0.9995, 'r2_k2': 0.9996, 'r2_k4': 0.9997, 'r2_k8': 0.9998, 'seconds': 0.3}
+most-selected atoms at pos0: [{"atom": 60206, "section": "mlp1", "index_in_section": 1710, "times_selected": 16}, {"atom": 65378, "section": "mlp1", "index_in_section": 6882, "times_selected": 15}, {"atom": 66341, "section": "mlp1", "index_in_section": 7845, "times_selected": 10}, {"atom": 55850, "section": "mlp0", "index_in_section": 5546, "times_selected": 10}, {"atom": 64600, "section": "mlp1", "index_in_section": 6104, "times_selected": 9}, {"atom": 61133, "section": "mlp1", "index_in_section": 2637, "times_selected": 9}, {"atom": 66304, "section": "mlp1", "index_in_section": 7808, "times_selected": 8}, {"atom": 63282, "section": "mlp1", "index_in_section": 4786, "times_selected": 7}]
+bulk: {'n': 256, 'recall_top1': 0.1016, 'recall_in_top8': 0.8086, 'top1_is_an_mlp1_atom': 0.1875, 'r2_k1': 0.1836, 'r2_k2': 0.2663, 'r2_k4': 0.3609, 'r2_k8': 0.4399, 'seconds': 2.1}
+prom#0 mlp1#1710 dCE +0.60641
+prom#1 mlp1#6882 dCE +0.00025
+prom#2 mlp1#7845 dCE +0.00049
+prom#3 mlp0#5546 dCE +0.00978
+prom#4 mlp1#6104 dCE -0.00002
+prom#5 mlp1#2637 dCE -0.00022
+prom#6 mlp1#7808 dCE -0.00005
+prom#7 mlp1#4786 dCE +0.00031
+VERDICT {
+ "W1_recall_pos0": 1.0,
+ "W1_recall_bulk": 0.1016,
+ "W1_pass": true,
+ "W1_easier_than_bulk": true,
+ "W2_r2_k1_pos0": 0.9995,
+ "W2_r2_k1_bulk": 0.1836,
+ "W2_pass": true,
+ "W3_spearman_prominence_vs_dCE": 0.5952,
+ "W3_predictive": false,
+ "W4_offchannel_energy_share": 0.0209
+}
+DONE_Y11

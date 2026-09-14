@@ -1,0 +1,499 @@
+{
+ "A_phase_grid": [
+  {
+   "rho": 0.0,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 1.0,
+   "recall_oneshot": 0.999,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.0,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 0.5,
+   "recall_oneshot": 0.908,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.0,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.041,
+   "recall_omp": 0.375
+  },
+  {
+   "rho": 0.0,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 1.0,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.0,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 0.5,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.0,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.764,
+   "recall_omp": 0.999
+  },
+  {
+   "rho": 0.0,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 1.0,
+   "recall_oneshot": 0.882,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.0,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 0.5,
+   "recall_oneshot": 0.26,
+   "recall_omp": 0.886
+  },
+  {
+   "rho": 0.0,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.012,
+   "recall_omp": 0.022
+  },
+  {
+   "rho": 0.0,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 1.0,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.0,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 0.5,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.0,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.135,
+   "recall_omp": 0.729,
+   "dict_cos_sample_p99": 0.17
+  },
+  {
+   "rho": 0.3,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 1.0,
+   "recall_oneshot": 0.998,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.3,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 0.5,
+   "recall_oneshot": 0.907,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.3,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.032,
+   "recall_omp": 0.401
+  },
+  {
+   "rho": 0.3,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 1.0,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.3,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 0.5,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.3,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.773,
+   "recall_omp": 0.996
+  },
+  {
+   "rho": 0.3,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 1.0,
+   "recall_oneshot": 0.897,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.3,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 0.5,
+   "recall_oneshot": 0.257,
+   "recall_omp": 0.898
+  },
+  {
+   "rho": 0.3,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.01,
+   "recall_omp": 0.022
+  },
+  {
+   "rho": 0.3,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 1.0,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.3,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 0.5,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.3,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.132,
+   "recall_omp": 0.723,
+   "dict_cos_sample_p99": 0.158
+  },
+  {
+   "rho": 0.5,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 1.0,
+   "recall_oneshot": 0.999,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.5,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 0.5,
+   "recall_oneshot": 0.889,
+   "recall_omp": 0.999
+  },
+  {
+   "rho": 0.5,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.042,
+   "recall_omp": 0.375
+  },
+  {
+   "rho": 0.5,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 1.0,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.5,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 0.5,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.5,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.757,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.5,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 1.0,
+   "recall_oneshot": 0.863,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.5,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 0.5,
+   "recall_oneshot": 0.256,
+   "recall_omp": 0.87
+  },
+  {
+   "rho": 0.5,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.015,
+   "recall_omp": 0.02
+  },
+  {
+   "rho": 0.5,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 1.0,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.5,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 0.5,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.5,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.144,
+   "recall_omp": 0.705,
+   "dict_cos_sample_p99": 0.164
+  },
+  {
+   "rho": 0.7,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 1.0,
+   "recall_oneshot": 0.995,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.7,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 0.5,
+   "recall_oneshot": 0.845,
+   "recall_omp": 0.999
+  },
+  {
+   "rho": 0.7,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.023,
+   "recall_omp": 0.373
+  },
+  {
+   "rho": 0.7,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 1.0,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.7,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 0.5,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.7,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.67,
+   "recall_omp": 0.998
+  },
+  {
+   "rho": 0.7,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 1.0,
+   "recall_oneshot": 0.85,
+   "recall_omp": 0.993
+  },
+  {
+   "rho": 0.7,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 0.5,
+   "recall_oneshot": 0.197,
+   "recall_omp": 0.753
+  },
+  {
+   "rho": 0.7,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.013,
+   "recall_omp": 0.017
+  },
+  {
+   "rho": 0.7,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 1.0,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.7,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 0.5,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.7,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.107,
+   "recall_omp": 0.565,
+   "dict_cos_sample_p99": 0.163
+  },
+  {
+   "rho": 0.85,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 1.0,
+   "recall_oneshot": 0.998,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.85,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 0.5,
+   "recall_oneshot": 0.781,
+   "recall_omp": 0.994
+  },
+  {
+   "rho": 0.85,
+   "k_true": 8,
+   "dominance": 2.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.017,
+   "recall_omp": 0.298
+  },
+  {
+   "rho": 0.85,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 1.0,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.85,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 0.5,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.85,
+   "k_true": 8,
+   "dominance": 8.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.489,
+   "recall_omp": 0.994
+  },
+  {
+   "rho": 0.85,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 1.0,
+   "recall_oneshot": 0.705,
+   "recall_omp": 0.85
+  },
+  {
+   "rho": 0.85,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 0.5,
+   "recall_oneshot": 0.098,
+   "recall_omp": 0.45
+  },
+  {
+   "rho": 0.85,
+   "k_true": 32,
+   "dominance": 2.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.007,
+   "recall_omp": 0.013
+  },
+  {
+   "rho": 0.85,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 1.0,
+   "recall_oneshot": 1.0,
+   "recall_omp": 1.0
+  },
+  {
+   "rho": 0.85,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 0.5,
+   "recall_oneshot": 1.0,
+   "recall_omp": 0.998
+  },
+  {
+   "rho": 0.85,
+   "k_true": 32,
+   "dominance": 8.0,
+   "survival": 0.1,
+   "recall_oneshot": 0.059,
+   "recall_omp": 0.308,
+   "dict_cos_sample_p99": 0.169
+  }
+ ],
+ "B_real": {
+  "n_tokens": 16384,
+  "oneshot_top64_recall": 0.783,
+  "auc_survival": 0.651,
+  "auc_abs_gram_interference": 0.51,
+  "auc_dominance": 0.706,
+  "median_dominance": 39.34,
+  "median_survival": 2.379,
+  "note": "compare observed recall with the A-grid cell nearest to GPT-2's measured dominance/survival at high coherence"
+ }
+}

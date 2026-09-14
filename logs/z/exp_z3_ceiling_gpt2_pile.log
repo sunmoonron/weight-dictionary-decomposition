@@ -1,0 +1,9 @@
+== gpt2/pile ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  40%|███▉      | 59/148 [00:00<00:00, 587.19it/s]Loading weights:  80%|███████▉  | 118/148 [00:00<00:00, 404.91it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 390.36it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (17370411 > 1024). Running this sequence through the model will result in indexing errors
+  gpt2/pile: 32768 states, d=768 dff=3072 L=6 atoms=78175 (61s)
+  supports done (158s); support composition {'embedding': 0.17192411422729492, 'mlp': 0.6034064292907715, 'attention': 0.22422361373901367, 'bias': 0.0004458427429199219}
+  recall_top1 here 0.5677 vs exp_z2 0.5677 (ok)
+  gpt2/pile: id_omp 0.439  intact 0.765 id|intact 0.571  erased 0.187 id|erased 0.007  misses: erased 0.33 weak 0.08 twin 0.00 other 0.58  AUC surv 0.802
+DONE_Z3

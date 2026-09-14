@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 36/114 [00:00<00:00, 359.79it/s]Loading weights:  64%|██████▍   | 73/114 [00:00<00:00, 360.26it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 390.83it/s]
+activation at pos0: {"n_sequences": 32, "mean": -385.9, "std": 39.14, "min": -437.25, "max": -300.0, "coeff_of_variation": 0.1014}
+vector: {"definition": "v = mean_t[a_1710(t)] * W_down[:, 1710]", "norm": 246.61, "value_at_channel_1764": -244.01, "share_of_norm_at_channel": 0.9895, "median_abs_entry": 0.32294, "n_entries_above_1pct_of_max": 17, "w_column_norm": 0.6391, "w_at_channel": 0.6323}
+largest entries: [{"channel": 1764, "value": -244.013}, {"channel": 623, "value": -22.599}, {"channel": 1344, "value": 5.559}, {"channel": 1930, "value": 5.141}, {"channel": 517, "value": 5.008}]
+clean              ppl    12.697  top1 1.00000  KL 0.0
+deleted            ppl    25.486  top1 0.66328  KL 0.684854
+oracle_per_token   ppl    12.697  top1 0.99810  KL 9e-06
+mean_constant      ppl    12.698  top1 0.99780  KL 0.000147
+mean_x0.8          ppl    12.695  top1 0.99468  KL 0.000415
+mean_x1.2          ppl    12.697  top1 0.99554  KL 0.000651
+channel_only       ppl    15.980  top1 0.76780  KL 0.226416
+VERDICT {
+ "W1_oracle_dCE": 4e-05,
+ "W1_pass": true,
+ "W2_coeff_of_variation": 0.1014,
+ "W2_pass": true,
+ "W3_share_of_norm_at_channel": 0.9895,
+ "W3_pass": true,
+ "W4_mean_vs_oracle_ppl_ratio": 1.00008,
+ "W4_pass": true
+}
+DONE_Y23

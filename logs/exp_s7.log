@@ -1,0 +1,42 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3474.32it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+gpt2 b 0: counter 0.051 -> 0.051  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2 b 1: counter 0.078 -> 0.077  (dropped 0.02 of writes; 0.04 of counter cases were channel-writes)
+gpt2 b 2: counter 0.270 -> 0.197  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2 b 3: counter 0.433 -> 0.328  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2 b 4: counter 0.394 -> 0.320  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2 b 5: counter 0.329 -> 0.266  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2 b 6: counter 0.200 -> 0.173  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2 b 7: counter 0.242 -> 0.233  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2 b 8: counter 0.233 -> 0.219  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2 b 9: counter 0.246 -> 0.243  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2 b10: counter 0.301 -> 0.292  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2 b11: counter 0.289 -> 0.285  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  73%|███████▎  | 212/292 [00:00<00:00, 2073.92it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2088.22it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+gpt2-medium b 0: counter 0.169 -> 0.173  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b 1: counter 0.052 -> 0.052  (dropped 0.02 of writes; 0.05 of counter cases were channel-writes)
+gpt2-medium b 2: counter 0.099 -> 0.078  (dropped 0.01 of writes; 0.05 of counter cases were channel-writes)
+gpt2-medium b 3: counter 0.228 -> 0.094  (dropped 0.12 of writes; 0.36 of counter cases were channel-writes)
+gpt2-medium b 4: counter 0.317 -> 0.186  (dropped 0.11 of writes; 0.26 of counter cases were channel-writes)
+gpt2-medium b 5: counter 0.373 -> 0.260  (dropped 0.03 of writes; 0.05 of counter cases were channel-writes)
+gpt2-medium b 6: counter 0.420 -> 0.304  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b 7: counter 0.398 -> 0.299  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b 8: counter 0.246 -> 0.170  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b 9: counter 0.574 -> 0.513  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b10: counter 0.481 -> 0.443  (dropped 0.04 of writes; 0.05 of counter cases were channel-writes)
+gpt2-medium b11: counter 0.374 -> 0.340  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b12: counter 0.269 -> 0.243  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b13: counter 0.250 -> 0.224  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b14: counter 0.237 -> 0.219  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b15: counter 0.092 -> 0.095  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b16: counter 0.222 -> 0.221  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b17: counter 0.173 -> 0.137  (dropped 0.02 of writes; 0.03 of counter cases were channel-writes)
+gpt2-medium b18: counter 0.220 -> 0.238  (dropped 0.00 of writes; 0.00 of counter cases were channel-writes)
+gpt2-medium b19: counter 0.234 -> 0.153  (dropped 0.25 of writes; 0.47 of counter cases were channel-writes)
+gpt2-medium b20: counter 0.294 -> 0.286  (dropped 0.17 of writes; 0.32 of counter cases were channel-writes)
+gpt2-medium b21: counter 0.328 -> 0.198  (dropped 0.46 of writes; 0.72 of counter cases were channel-writes)
+gpt2-medium b22: counter 0.317 -> 0.300  (dropped 0.50 of writes; 0.53 of counter cases were channel-writes)
+gpt2-medium b23: counter 0.241 -> 0.256  (dropped 0.02 of writes; 0.02 of counter cases were channel-writes)
+DONE_S7

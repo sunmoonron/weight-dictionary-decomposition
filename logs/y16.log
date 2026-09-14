@@ -1,0 +1,24 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/226 [00:00<?, ?it/s]Loading weights:   3%|▎         | 6/226 [00:00<00:06, 35.25it/s]Loading weights:   4%|▍         | 10/226 [00:00<00:06, 35.24it/s]Loading weights:   6%|▌         | 14/226 [00:00<00:05, 35.50it/s]Loading weights:   8%|▊         | 18/226 [00:00<00:05, 36.67it/s]Loading weights:  10%|█         | 23/226 [00:00<00:06, 32.32it/s]Loading weights:  12%|█▏        | 27/226 [00:00<00:06, 28.83it/s]Loading weights:  14%|█▎        | 31/226 [00:00<00:06, 30.03it/s]Loading weights:  15%|█▌        | 35/226 [00:01<00:06, 31.65it/s]Loading weights:  19%|█▉        | 44/226 [00:01<00:06, 29.19it/s]Loading weights:  21%|██        | 48/226 [00:01<00:05, 30.96it/s]Loading weights:  23%|██▎       | 52/226 [00:01<00:05, 31.87it/s]Loading weights:  25%|██▍       | 56/226 [00:01<00:07, 23.97it/s]Loading weights:  26%|██▌       | 59/226 [00:02<00:11, 14.03it/s]Loading weights:  29%|██▉       | 65/226 [00:02<00:08, 18.49it/s]Loading weights:  31%|███▏      | 71/226 [00:02<00:07, 20.65it/s]Loading weights:  35%|███▍      | 78/226 [00:02<00:05, 27.36it/s]Loading weights:  36%|███▋      | 82/226 [00:03<00:05, 26.31it/s]Loading weights:  38%|███▊      | 86/226 [00:03<00:07, 18.71it/s]Loading weights:  39%|███▉      | 89/226 [00:04<00:11, 12.44it/s]Loading weights:  42%|████▏     | 95/226 [00:04<00:08, 15.76it/s]Loading weights:  43%|████▎     | 98/226 [00:04<00:07, 16.78it/s]Loading weights:  46%|████▌     | 103/226 [00:04<00:05, 20.85it/s]Loading weights:  47%|████▋     | 106/226 [00:04<00:07, 16.04it/s]Loading weights:  48%|████▊     | 109/226 [00:05<00:09, 11.74it/s]Loading weights:  50%|████▉     | 112/226 [00:05<00:09, 11.78it/s]Loading weights:  51%|█████▏    | 116/226 [00:05<00:07, 14.72it/s]Loading weights:  53%|█████▎    | 119/226 [00:05<00:07, 14.86it/s]Loading weights:  54%|█████▍    | 123/226 [00:06<00:05, 17.77it/s]Loading weights:  57%|█████▋    | 128/226 [00:06<00:04, 20.49it/s]Loading weights:  58%|█████▊    | 132/226 [00:06<00:04, 19.92it/s]Loading weights:  60%|█████▉    | 135/226 [00:06<00:06, 13.60it/s]Loading weights:  63%|██████▎   | 143/226 [00:07<00:06, 12.78it/s]Loading weights:  64%|██████▍   | 145/226 [00:07<00:06, 11.74it/s]Loading weights:  66%|██████▌   | 149/226 [00:07<00:05, 14.71it/s]Loading weights:  69%|██████▉   | 157/226 [00:08<00:03, 17.51it/s]Loading weights:  71%|███████   | 161/226 [00:08<00:03, 19.59it/s]Loading weights:  73%|███████▎  | 166/226 [00:08<00:02, 21.23it/s]Loading weights:  75%|███████▍  | 169/226 [00:09<00:04, 14.19it/s]Loading weights:  77%|███████▋  | 175/226 [00:09<00:02, 18.76it/s]Loading weights:  79%|███████▉  | 179/226 [00:09<00:02, 16.67it/s]Loading weights:  81%|████████  | 182/226 [00:09<00:02, 14.97it/s]Loading weights:  82%|████████▏ | 186/226 [00:09<00:02, 17.86it/s]Loading weights:  84%|████████▍ | 190/226 [00:10<00:02, 16.86it/s]Loading weights:  86%|████████▌ | 194/226 [00:10<00:01, 17.73it/s]Loading weights:  87%|████████▋ | 197/226 [00:10<00:02, 11.59it/s]Loading weights:  88%|████████▊ | 200/226 [00:11<00:02, 12.33it/s]Loading weights:  91%|█████████ | 206/226 [00:11<00:01, 18.18it/s]Loading weights:  92%|█████████▏| 209/226 [00:11<00:01, 15.87it/s]Loading weights:  94%|█████████▍| 213/226 [00:11<00:00, 18.90it/s]Loading weights:  96%|█████████▌| 216/226 [00:11<00:00, 15.08it/s]Loading weights:  97%|█████████▋| 219/226 [00:12<00:00, 16.40it/s]Loading weights: 100%|██████████| 226/226 [00:12<00:00, 18.67it/s]
+[   0.3m] loaded
+[   4.5m] clean ppl 11.089
+[   7.7m] L1[269,7467]  wz x10.3848   nz x1.0091   super=True  wz/nz=259.17
+[  10.5m] L2[269,8275]  wz x1.0188    nz x1.0111   super=False  wz/nz=1.68
+[  13.2m] L7[269,453]  wz x1.5435    nz x1.0822   super=False  wz/nz=5.5
+[  16.1m] L24[269,2300]  wz x1.0292    nz x1.0956   super=False  wz/nz=0.32
+[  18.9m] all four:      ppl 286.155 (x25.8053)
+[  18.9m] other three:   ppl 16.342 (x1.4737)
+[  18.9m] VERDICT {
+ "Q1_n_individually_super_of_4": 1,
+ "Q2_set_dCE_over_single_dCE": 1.389,
+ "Q2_others_redundant": false,
+ "Q3_other_three_ppl_x": 1.4737,
+ "Q3_pass": false,
+ "Q4_wz_over_nz": {
+  "L1_c269_n7467": 259.17,
+  "L2_c269_n8275": 1.68,
+  "L7_c269_n453": 5.5,
+  "L24_c269_n2300": 0.32
+ }
+}
+DONE_Y16

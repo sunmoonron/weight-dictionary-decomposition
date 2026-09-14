@@ -1,0 +1,48 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 43/114 [00:00<00:00, 420.91it/s]Loading weights:  75%|███████▌  | 86/114 [00:00<00:00, 417.44it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 425.88it/s]
+131072 atoms, d=2048
+22 pairs with cos(w) > 0.9
+high-cos(w) pairs: {"n": 22, "median_cos_w": 0.9238, "median_abs_cos_u": 0.1656, "median_cos_F": 0.1508, "max_cos_F": 0.7295, "frac_with_cos_u_below_0.3": 0.6364}
+spectrum: {
+ "write_space": {
+  "median": 0.16663,
+  "p99": 0.66309,
+  "max": 0.99414,
+  "k_bound_median": 3.5007,
+  "k_bound_global": 1.0029
+ },
+ "operator_space": {
+  "median": 0.01508,
+  "p99": 0.229,
+  "max": 0.72949,
+  "k_bound_median": 33.666,
+  "k_bound_global": 1.1854
+ }
+}
+builder_vs_eraser: cos_w 0.9941  cos_u 0.1722  cos_g 0.3076 -> cos_F 0.17123
+builder_vs_amplifier: cos_w 0.9634  cos_u 0.0067  cos_g 0.4119 -> cos_F 0.00650
+builder_vs_L3_1902: cos_w 0.9092  cos_u 0.0471  cos_g 0.3557 -> cos_F 0.04284
+
+super-weight write-block: 12 atoms, 1 survive at cos_F > 0.7
+   L 1 n 1710  cos_w 0.9995  cos_u 1.0000  cos_F 0.99951
+   L 1 n 6947  cos_w 0.8125  cos_u 0.1843  cos_F 0.14978
+   L 1 n 7579  cos_w 0.9268  cos_u 0.1501  cos_F 0.13916
+   L 2 n 8041  cos_w 0.9634  cos_u 0.0067  cos_F 0.00650
+   L 3 n 1902  cos_w 0.9092  cos_u 0.0471  cos_F 0.04285
+   L 3 n 2024  cos_w 0.7358  cos_u 0.1005  cos_F 0.07397
+   L 3 n 2652  cos_w 0.8315  cos_u 0.0218  cos_F 0.01813
+   L 3 n 3224  cos_w 0.7974  cos_u 0.0628  cos_F 0.05008
+   L 4 n  556  cos_w 0.8906  cos_u 0.0906  cos_F 0.08069
+   L12 n  353  cos_w 0.8892  cos_u 0.0955  cos_F 0.08496
+   L15 n 3454  cos_w 0.9941  cos_u 0.1722  cos_F 0.17126
+   L15 n 6840  cos_w 0.9565  cos_u 0.0152  cos_F 0.01453
+
+VERDICT {
+ "mu_write": 0.99414,
+ "mu_operator": 0.72949,
+ "k_write": 1.0029,
+ "k_operator": 1.1854,
+ "improvement": 1.18,
+ "sw_block_splits": true
+}
+DONE_Y42

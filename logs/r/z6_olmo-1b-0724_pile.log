@@ -1,0 +1,9 @@
+job start z6 olmo-1b-0724/pile 02:14:59 free=69942MB
+== olmo-1b-0724/pile ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   1%|          | 1/114 [00:00<00:11,  9.48it/s]Loading weights:  27%|██▋       | 31/114 [00:00<00:00, 171.89it/s]Loading weights:  47%|████▋     | 54/114 [00:00<00:00, 196.88it/s]Loading weights:  70%|███████   | 80/114 [00:00<00:00, 221.08it/s]Loading weights:  93%|█████████▎| 106/114 [00:00<00:00, 233.87it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 210.35it/s]
+  olmo-1b-0724/pile: 32768 states, d=2048 dff=8192 L=8 atoms=142464 (130s)
+  support done (455s)
+  olmo-1b-0724/pile: support {'embedding': 0.15112891164289002, 'mlp': 0.7036513460653474, 'attention': 0.14521974229176254, 'bias': 0.0}  real 0.520  sign 0.970  relerr 1.37  spurious mass 0.454 | dominant: r omp 0.915 refit 0.930 relerr omp 0.32 refit 0.28
+DONE_Z6
+job exit 0 z6 olmo-1b-0724/pile 02:24:03

@@ -1,0 +1,196 @@
+Loading weights:   0%|          | 0/113 [00:00<?, ?it/s]Loading weights:  30%|███       | 34/113 [00:00<00:00, 334.04it/s]Loading weights:  65%|██████▌   | 74/113 [00:00<00:00, 359.74it/s]Loading weights: 100%|██████████| 113/113 [00:00<00:00, 383.53it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+largest |w| per layer: [(0, 0.40796, 1786, 2618), (1, 0.63525, 1786, 7848), (2, 0.63574, 1786, 2281), (3, 0.28638, 599, 4608), (4, 0.28369, 599, 112), (5, 0.26636, 1786, 4607)]
+0724 coords here: {'L1_1764_1710': -0.00198, 'L1_rank_in_row': 6412, 'L2_1764_8041': -0.00075, 'L2_rank_in_row': 7489}
+massive [1885, 1786, 599, 1688, 529] [228.4, 125.2, 24.4, 16.9, 4.3] (median 1.139)
+  ch1786 b 0 mlp     +0.09  top  4214 write     +0.03 w +0.1886 share 0.338
+  ch1786 b 1 mlp     -0.01  top  6554 write     -0.06 w -0.1431 share 0.068
+  ch1786 b 2 mlp     -0.03  top  2281 write     -0.07 w -0.6357 share 0.885
+  ch1786 b 3 mlp     +0.04  top  1875 write     -0.00 w -0.1443 share 0.215
+  ch1786 b 4 mlp     +0.03  top  6536 write     -0.00 w -0.0082 share 0.001
+  ch1786 b 5 mlp     -0.01  top  3398 write     -0.04 w +0.0634 share 0.012
+  ch1786 b 6 mlp     -0.04  top  6159 write     -0.07 w -0.1061 share 0.034
+  ch1786 b 7 mlp     +0.02  top  6097 write     -0.01 w +0.0920 share 0.032
+  ch1786 b 8 mlp     -0.08  top  1785 write     -0.04 w -0.6450 share 0.854
+  ch1786 b 9 mlp     -0.10  top  1265 write     -0.07 w +0.4360 share 0.675
+  ch1786 b10 mlp     -0.05  top  4623 write     -0.02 w +0.0342 share 0.005
+  ch1786 b11 mlp     -0.08  top  4399 write     -0.04 w +0.0547 share 0.013
+  ch1786 b12 mlp     -0.07  top  2886 write     -0.03 w -0.0440 share 0.007
+  ch1786 b13 mlp     -0.08  top  7783 write     -0.06 w -0.0729 share 0.022
+  ch1786 b14 mlp     -0.09  top  2812 write     -0.09 w -0.0852 share 0.017
+  ch1786 b15 mlp     +0.61  top  3721 write     +0.11 w +0.0995 share 0.032
+  ch1786 nominated: {"build_layer": 14, "builder": {"neuron": 2812, "mean_write": -0.092, "w": -0.0852, "mean_act": 1.08, "colnorm_rank": 0, "ch_energy_share": 0.0174}, "next_layer": 15, "next_atom": {"neuron": 3721, "mean_write": 0.11, "w": 0.0995, "mean_act": 1.101, "colnorm_rank": 3, "ch_energy_share": 0.0317}, "same_sign": false, "builder_over_median": 1877.6}
+  ch1885 b 0 mlp     -0.00  top  4214 write     -0.01 w -0.0427 share 0.017
+  ch1885 b 1 mlp     -0.01  top  6554 write     -0.02 w -0.0492 share 0.008
+  ch1885 b 2 mlp     +0.05  top  4372 write     +0.03 w +0.0808 share 0.038
+  ch1885 b 3 mlp     +0.05  top   846 write     +0.00 w +0.0137 share 0.002
+  ch1885 b 4 mlp     +0.03  top  6536 write     +0.01 w +0.0314 share 0.008
+  ch1885 b 5 mlp     +0.06  top  3398 write     +0.02 w -0.0403 share 0.005
+  ch1885 b 6 mlp     +0.06  top  6159 write     +0.01 w +0.0251 share 0.002
+  ch1885 b 7 mlp     +0.06  top  2991 write     +0.01 w +0.0117 share 0.001
+  ch1885 b 8 mlp     +0.04  top  1827 write     -0.04 w -0.3054 share 0.420
+  ch1885 b 9 mlp     -0.00  top  5996 write     +0.07 w +0.1193 share 0.053
+  ch1885 b10 mlp     -0.07  top  3576 write     -0.04 w +0.3909 share 0.782
+  ch1885 b11 mlp     +0.01  top  4399 write     +0.11 w -0.1755 share 0.133
+  ch1885 b12 mlp     -0.01  top  2886 write     +0.06 w +0.0832 share 0.027
+  ch1885 b13 mlp     +0.01  top  7783 write     +0.04 w +0.0544 share 0.012
+  ch1885 b14 mlp     +0.06  top  2812 write     +0.07 w +0.0685 share 0.011
+  ch1885 b15 mlp     -0.96  top  8108 write     -0.65 w -0.9985 share 0.965
+  ch1885 nominated: {"build_layer": 11, "builder": {"neuron": 4399, "mean_write": 0.108, "w": -0.1755, "mean_act": -0.617, "colnorm_rank": 0, "ch_energy_share": 0.1329}, "next_layer": 12, "next_atom": {"neuron": 2886, "mean_write": 0.056, "w": 0.0832, "mean_act": 0.679, "colnorm_rank": 0, "ch_energy_share": 0.0269}, "same_sign": true, "builder_over_median": 4153.8}
+clean                        ppl      16.348 ce 2.794111 [12s]
+clean_repeat                 ppl      16.348 ce 2.794111 [12s]
+ch1786_noop_clone            ppl      16.348 ce 2.794111 [12s]
+ch1786_wz_builder            ppl      16.347 ce 2.794055 [12s]
+ch1786_nz_builder            ppl      17.595 ce 2.867631 [12s]
+ch1786_wz_next               ppl      16.349 ce 2.794158 [12s]
+ch1786_nz_next               ppl      16.392 ce 2.796782 [12s]
+ch1786_wz_both               ppl      16.347 ce 2.794027 [12s]
+ch1786_nz_both               ppl      17.738 ce 2.875706 [12s]
+ch1786_null_L14_n1495        ppl      16.349 ce 2.794157 [12s]
+ch1786_null_L14_n2442        ppl      16.350 ce 2.794255 [12s]
+ch1786_null_L14_n2263        ppl      16.351 ce 2.794268 [12s]
+ch1786_null_L14_n2543        ppl      16.349 ce 2.794178 [12s]
+ch1786_null_L14_n2388        ppl      16.348 ce 2.794091 [13s]
+ch1786_null_L15_n4990        ppl      16.352 ce 2.794372 [12s]
+ch1786_null_L15_n6368        ppl      16.349 ce 2.794184 [13s]
+ch1786_null_L15_n3600        ppl      16.347 ce 2.794069 [13s]
+ch1786_null_L15_n2617        ppl      16.351 ce 2.794264 [13s]
+ch1786_null_L15_n7798        ppl      16.349 ce 2.794170 [13s]
+ch1885_noop_clone            ppl      16.348 ce 2.794111 [13s]
+ch1885_wz_builder            ppl      16.354 ce 2.794482 [13s]
+ch1885_nz_builder            ppl      17.370 ce 2.854741 [13s]
+ch1885_wz_next               ppl      16.350 ce 2.794230 [13s]
+ch1885_nz_next               ppl      17.040 ce 2.835578 [13s]
+ch1885_wz_both               ppl      16.359 ce 2.794787 [13s]
+ch1885_nz_both               ppl      19.296 ce 2.959891 [13s]
+ch1885_null_L11_n5999        ppl      16.348 ce 2.794097 [13s]
+ch1885_null_L11_n319         ppl      16.348 ce 2.794136 [13s]
+ch1885_null_L11_n5674        ppl      16.347 ce 2.794040 [13s]
+ch1885_null_L11_n381         ppl      16.347 ce 2.794073 [13s]
+ch1885_null_L11_n235         ppl      16.348 ce 2.794094 [13s]
+ch1885_null_L12_n311         ppl      16.348 ce 2.794115 [13s]
+ch1885_null_L12_n5900        ppl      16.349 ce 2.794170 [13s]
+ch1885_null_L12_n4610        ppl      16.349 ce 2.794138 [13s]
+ch1885_null_L12_n2418        ppl      16.350 ce 2.794221 [13s]
+ch1885_null_L12_n3800        ppl      16.348 ce 2.794122 [13s]
+{
+ "dCE_vs_clean": {
+  "clean": 0.0,
+  "clean_repeat": 0.0,
+  "ch1786_noop_clone": 0.0,
+  "ch1786_wz_builder": -5.6e-05,
+  "ch1786_nz_builder": 0.07352,
+  "ch1786_wz_next": 4.7e-05,
+  "ch1786_nz_next": 0.002671,
+  "ch1786_wz_both": -8.4e-05,
+  "ch1786_nz_both": 0.081595,
+  "ch1786_null_L14_n1495": 4.6e-05,
+  "ch1786_null_L14_n2442": 0.000144,
+  "ch1786_null_L14_n2263": 0.000157,
+  "ch1786_null_L14_n2543": 6.7e-05,
+  "ch1786_null_L14_n2388": -2e-05,
+  "ch1786_null_L15_n4990": 0.000261,
+  "ch1786_null_L15_n6368": 7.3e-05,
+  "ch1786_null_L15_n3600": -4.2e-05,
+  "ch1786_null_L15_n2617": 0.000153,
+  "ch1786_null_L15_n7798": 5.9e-05,
+  "ch1885_noop_clone": 0.0,
+  "ch1885_wz_builder": 0.000371,
+  "ch1885_nz_builder": 0.06063,
+  "ch1885_wz_next": 0.000119,
+  "ch1885_nz_next": 0.041467,
+  "ch1885_wz_both": 0.000676,
+  "ch1885_nz_both": 0.16578,
+  "ch1885_null_L11_n5999": -1.4e-05,
+  "ch1885_null_L11_n319": 2.5e-05,
+  "ch1885_null_L11_n5674": -7.1e-05,
+  "ch1885_null_L11_n381": -3.8e-05,
+  "ch1885_null_L11_n235": -1.7e-05,
+  "ch1885_null_L12_n311": 4e-06,
+  "ch1885_null_L12_n5900": 5.9e-05,
+  "ch1885_null_L12_n4610": 2.7e-05,
+  "ch1885_null_L12_n2418": 0.00011,
+  "ch1885_null_L12_n3800": 1.1e-05
+ },
+ "O0_clean_repeat": 0.0,
+ "O0_harness_pass": true,
+ "ch1786": {
+  "noop_clone_dCE_vs_clean": 0.0,
+  "O0_noop_pass": true,
+  "dCE_vs_noop": {
+   "wz_builder": -5.6e-05,
+   "nz_builder": 0.07352,
+   "wz_next": 4.7e-05,
+   "nz_next": 0.002671,
+   "wz_both": -8.4e-05,
+   "nz_both": 0.081595
+  },
+  "ppl_x_clean": {
+   "wz_builder": 0.9999,
+   "nz_builder": 1.0763,
+   "wz_next": 1.0001,
+   "nz_next": 1.0027,
+   "wz_both": 0.9999,
+   "nz_both": 1.085
+  },
+  "nulls_dCE_vs_noop": {
+   "ch1786_null_L14_n1495": 4.6e-05,
+   "ch1786_null_L14_n2442": 0.000144,
+   "ch1786_null_L14_n2263": 0.000157,
+   "ch1786_null_L14_n2543": 6.7e-05,
+   "ch1786_null_L14_n2388": -2e-05,
+   "ch1786_null_L15_n4990": 0.000261,
+   "ch1786_null_L15_n6368": 7.3e-05,
+   "ch1786_null_L15_n3600": -4.2e-05,
+   "ch1786_null_L15_n2617": 0.000153,
+   "ch1786_null_L15_n7798": 5.9e-05
+  },
+  "max_null_abs": 0.000261,
+  "O1_builder_over_median": 1877.6,
+  "O1_pass": true,
+  "O2_wz_over_nz": -0.001,
+  "O2_pass": false,
+  "O3_amplifier_same_sign": false,
+  "O4_pass": true
+ },
+ "ch1885": {
+  "noop_clone_dCE_vs_clean": 0.0,
+  "O0_noop_pass": true,
+  "dCE_vs_noop": {
+   "wz_builder": 0.000371,
+   "nz_builder": 0.06063,
+   "wz_next": 0.000119,
+   "nz_next": 0.041467,
+   "wz_both": 0.000676,
+   "nz_both": 0.16578
+  },
+  "ppl_x_clean": {
+   "wz_builder": 1.0004,
+   "nz_builder": 1.0625,
+   "wz_next": 1.0001,
+   "nz_next": 1.0423,
+   "wz_both": 1.0007,
+   "nz_both": 1.1803
+  },
+  "nulls_dCE_vs_noop": {
+   "ch1885_null_L11_n5999": -1.4e-05,
+   "ch1885_null_L11_n319": 2.5e-05,
+   "ch1885_null_L11_n5674": -7.1e-05,
+   "ch1885_null_L11_n381": -3.8e-05,
+   "ch1885_null_L11_n235": -1.7e-05,
+   "ch1885_null_L12_n311": 4e-06,
+   "ch1885_null_L12_n5900": 5.9e-05,
+   "ch1885_null_L12_n4610": 2.7e-05,
+   "ch1885_null_L12_n2418": 0.00011,
+   "ch1885_null_L12_n3800": 1.1e-05
+  },
+  "max_null_abs": 0.00011,
+  "O1_builder_over_median": 4153.8,
+  "O1_pass": true,
+  "O2_wz_over_nz": 0.006,
+  "O2_pass": false,
+  "O3_amplifier_same_sign": true,
+  "O4_pass": true
+ }
+}
+DONE_Y6B

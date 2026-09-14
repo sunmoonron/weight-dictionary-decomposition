@@ -1,0 +1,55 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [01:12<01:12, 72.89s/it]Fetching 2 files: 100%|██████████| 2/2 [02:01<00:00, 58.90s/it]Fetching 2 files: 100%|██████████| 2/2 [02:01<00:00, 61.00s/it]
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 36/114 [00:00<00:00, 352.73it/s]Loading weights:  65%|██████▍   | 74/114 [00:00<00:00, 368.36it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 383.95it/s]
+[step23000-tokens48B] loaded in 129s
+[step23000-tokens48B] ch@b1 -67.6 (x152.7 median)  L1top 4820 write -19.3 | L2top 2074 write -0.4 -> amplify (0.0058)
+[step23000-tokens48B] ppl 26.60  dCE wz +0.0020 nz +0.0045  ratio 0.451  maxnull 0.00017
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [02:03<02:03, 123.86s/it]Fetching 2 files: 100%|██████████| 2/2 [03:26<00:00, 99.58s/it] Fetching 2 files: 100%|██████████| 2/2 [03:26<00:00, 103.22s/it]
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   1%|          | 1/114 [00:01<02:23,  1.27s/it]Loading weights: 100%|██████████| 114/114 [00:01<00:00, 88.50it/s]
+[step101000-tokens211B] loaded in 214s
+[step101000-tokens211B] ch@b1 -218.6 (x357.7 median)  L1top 1710 write -187.6 | L2top 2074 write +7.1 -> oppose (-0.0323)
+[step101000-tokens211B] ppl 20.60  dCE wz +0.0684 nz +0.0137  ratio 5.004  maxnull 0.00012
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [02:28<02:28, 148.64s/it]Fetching 2 files: 100%|██████████| 2/2 [04:03<00:00, 117.08s/it]Fetching 2 files: 100%|██████████| 2/2 [04:03<00:00, 121.82s/it]
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 20/114 [00:00<00:00, 184.65it/s]Loading weights:  47%|████▋     | 54/114 [00:00<00:00, 253.55it/s]Loading weights:  74%|███████▎  | 84/114 [00:00<00:00, 273.38it/s]Loading weights:  98%|█████████▊| 112/114 [00:00<00:00, 264.86it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 262.54it/s]
+[step551000-tokens1155B] loaded in 250s
+[step551000-tokens1155B] ch@b1 -467.9 (x487.3 median)  L1top 1710 write -221.5 | L2top 8041 write -12.1 -> amplify (0.0259)
+[step551000-tokens1155B] ppl 18.55  dCE wz +0.0592 nz +0.1164  ratio 0.509  maxnull 0.00014
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  27%|██▋       | 31/114 [00:00<00:00, 291.22it/s]Loading weights:  65%|██████▍   | 74/114 [00:00<00:00, 342.42it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 385.54it/s]
+[main] loaded in 4s
+[main] ch@b1 -250.1 (x779.0 median)  L1top 1710 write -242.8 | L2top 8041 write -41.0 -> amplify (0.164)
+[main] ppl 14.80  dCE wz +7.6190 nz +0.6064  ratio 12.564  maxnull 3e-05
+VERDICT {
+ "X1_channel_over_median": {
+  "step23000-tokens48B": 152.7,
+  "step101000-tokens211B": 357.7,
+  "step551000-tokens1155B": 487.3,
+  "main": 779.0
+ },
+ "X1_pass": true,
+ "X2_L1_top_atoms": {
+  "step23000-tokens48B": 4820,
+  "step101000-tokens211B": 1710,
+  "step551000-tokens1155B": 1710,
+  "main": 1710
+ },
+ "X2_succession": true,
+ "X3_L2_relation": {
+  "step23000-tokens48B": "amplify",
+  "step101000-tokens211B": "oppose",
+  "step551000-tokens1155B": "amplify",
+  "main": "amplify"
+ },
+ "X3_L2_write_over_channel": {
+  "step23000-tokens48B": 0.0058,
+  "step101000-tokens211B": -0.0323,
+  "step551000-tokens1155B": 0.0259,
+  "main": 0.164
+ },
+ "X4_wz_over_nz": {
+  "step23000-tokens48B": 0.451,
+  "step101000-tokens211B": 5.004,
+  "step551000-tokens1155B": 0.509,
+  "main": 12.564
+ }
+}
+DONE_Y8

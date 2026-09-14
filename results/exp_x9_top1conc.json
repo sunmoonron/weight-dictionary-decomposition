@@ -1,0 +1,314 @@
+{
+ "llama-7b": {
+  "L": 16,
+  "n_tokens": 8192,
+  "top1_neuron_rows": [
+   {
+    "neuron": "mlp16#4294",
+    "share_of_tokens": 0.0404,
+    "dominant_channel": 3840,
+    "channel_share": 0.004
+   },
+   {
+    "neuron": "mlp15#7266",
+    "share_of_tokens": 0.0272,
+    "dominant_channel": 1401,
+    "channel_share": 0.003
+   },
+   {
+    "neuron": "mlp16#3260",
+    "share_of_tokens": 0.0126,
+    "dominant_channel": 2612,
+    "channel_share": 0.005
+   },
+   {
+    "neuron": "mlp15#5066",
+    "share_of_tokens": 0.0095,
+    "dominant_channel": 3202,
+    "channel_share": 0.008
+   },
+   {
+    "neuron": "mlp16#3968",
+    "share_of_tokens": 0.0089,
+    "dominant_channel": 3717,
+    "channel_share": 0.005
+   }
+  ],
+  "distinct_top1_neurons": 2831,
+  "top1_entropy_bits": 10.17,
+  "top5_share": 0.0986
+ },
+ "qwen2.5-7b": {
+  "L": 14,
+  "n_tokens": 8192,
+  "top1_neuron_rows": [
+   {
+    "neuron": "mlp9#11283",
+    "share_of_tokens": 0.0336,
+    "dominant_channel": 1975,
+    "channel_share": 0.005
+   },
+   {
+    "neuron": "mlp9#1319",
+    "share_of_tokens": 0.0233,
+    "dominant_channel": 2646,
+    "channel_share": 0.004
+   },
+   {
+    "neuron": "mlp9#9272",
+    "share_of_tokens": 0.0178,
+    "dominant_channel": 3279,
+    "channel_share": 0.004
+   },
+   {
+    "neuron": "mlp9#16499",
+    "share_of_tokens": 0.015,
+    "dominant_channel": 1346,
+    "channel_share": 0.004
+   },
+   {
+    "neuron": "mlp10#15326",
+    "share_of_tokens": 0.015,
+    "dominant_channel": 2326,
+    "channel_share": 0.004
+   }
+  ],
+  "distinct_top1_neurons": 3282,
+  "top1_entropy_bits": 10.27,
+  "top5_share": 0.1047
+ },
+ "pythia-6.9b": {
+  "L": 16,
+  "n_tokens": 8192,
+  "top1_neuron_rows": [
+   {
+    "neuron": "mlp14#2130",
+    "share_of_tokens": 0.0842,
+    "dominant_channel": 2999,
+    "channel_share": 0.003
+   },
+   {
+    "neuron": "mlp15#4048",
+    "share_of_tokens": 0.0532,
+    "dominant_channel": 55,
+    "channel_share": 0.003
+   },
+   {
+    "neuron": "mlp0#15531",
+    "share_of_tokens": 0.0419,
+    "dominant_channel": 3481,
+    "channel_share": 0.31
+   },
+   {
+    "neuron": "mlp15#7939",
+    "share_of_tokens": 0.0325,
+    "dominant_channel": 56,
+    "channel_share": 0.003
+   },
+   {
+    "neuron": "mlp9#6358",
+    "share_of_tokens": 0.0143,
+    "dominant_channel": 2594,
+    "channel_share": 0.004
+   }
+  ],
+  "distinct_top1_neurons": 1677,
+  "top1_entropy_bits": 8.52,
+  "top5_share": 0.2261
+ },
+ "gpt2": {
+  "L": 6,
+  "n_tokens": 8192,
+  "top1_neuron_rows": [
+   {
+    "neuron": "mlp0#132",
+    "share_of_tokens": 0.0468,
+    "dominant_channel": 447,
+    "channel_share": 0.073
+   },
+   {
+    "neuron": "mlp0#2587",
+    "share_of_tokens": 0.0426,
+    "dominant_channel": 447,
+    "channel_share": 0.031
+   },
+   {
+    "neuron": "mlp0#2102",
+    "share_of_tokens": 0.0297,
+    "dominant_channel": 266,
+    "channel_share": 0.326
+   },
+   {
+    "neuron": "mlp0#2733",
+    "share_of_tokens": 0.0231,
+    "dominant_channel": 447,
+    "channel_share": 0.066
+   },
+   {
+    "neuron": "mlp0#2054",
+    "share_of_tokens": 0.0228,
+    "dominant_channel": 526,
+    "channel_share": 0.013
+   }
+  ],
+  "distinct_top1_neurons": 916,
+  "top1_entropy_bits": 7.76,
+  "top5_share": 0.165
+ },
+ "smollm2-135m": {
+  "L": 15,
+  "n_tokens": 8192,
+  "top1_neuron_rows": [
+   {
+    "neuron": "mlp0#900",
+    "share_of_tokens": 0.025,
+    "dominant_channel": 374,
+    "channel_share": 0.024
+   },
+   {
+    "neuron": "mlp8#1188",
+    "share_of_tokens": 0.0217,
+    "dominant_channel": 507,
+    "channel_share": 0.636
+   },
+   {
+    "neuron": "mlp0#68",
+    "share_of_tokens": 0.0216,
+    "dominant_channel": 398,
+    "channel_share": 0.067
+   },
+   {
+    "neuron": "mlp5#66",
+    "share_of_tokens": 0.021,
+    "dominant_channel": 182,
+    "channel_share": 0.022
+   },
+   {
+    "neuron": "mlp0#387",
+    "share_of_tokens": 0.0192,
+    "dominant_channel": 308,
+    "channel_share": 0.088
+   }
+  ],
+  "distinct_top1_neurons": 1654,
+  "top1_entropy_bits": 8.93,
+  "top5_share": 0.1085
+ },
+ "qwen2.5-0.5b": {
+  "L": 12,
+  "n_tokens": 8192,
+  "top1_neuron_rows": [
+   {
+    "neuron": "mlp0#2290",
+    "share_of_tokens": 0.0342,
+    "dominant_channel": 773,
+    "channel_share": 0.142
+   },
+   {
+    "neuron": "mlp0#2510",
+    "share_of_tokens": 0.0208,
+    "dominant_channel": 340,
+    "channel_share": 0.021
+   },
+   {
+    "neuron": "mlp5#2706",
+    "share_of_tokens": 0.0149,
+    "dominant_channel": 490,
+    "channel_share": 0.753
+   },
+   {
+    "neuron": "mlp5#2816",
+    "share_of_tokens": 0.0127,
+    "dominant_channel": 880,
+    "channel_share": 0.018
+   },
+   {
+    "neuron": "mlp0#760",
+    "share_of_tokens": 0.0112,
+    "dominant_channel": 426,
+    "channel_share": 0.039
+   }
+  ],
+  "distinct_top1_neurons": 2275,
+  "top1_entropy_bits": 9.73,
+  "top5_share": 0.0938
+ },
+ "pythia-410m": {
+  "L": 12,
+  "n_tokens": 8192,
+  "top1_neuron_rows": [
+   {
+    "neuron": "mlp0#751",
+    "share_of_tokens": 0.0394,
+    "dominant_channel": 914,
+    "channel_share": 0.102
+   },
+   {
+    "neuron": "mlp6#3124",
+    "share_of_tokens": 0.0249,
+    "dominant_channel": 356,
+    "channel_share": 0.016
+   },
+   {
+    "neuron": "mlp5#2558",
+    "share_of_tokens": 0.02,
+    "dominant_channel": 887,
+    "channel_share": 0.013
+   },
+   {
+    "neuron": "mlp5#1869",
+    "share_of_tokens": 0.0171,
+    "dominant_channel": 182,
+    "channel_share": 0.012
+   },
+   {
+    "neuron": "mlp4#1690",
+    "share_of_tokens": 0.016,
+    "dominant_channel": 278,
+    "channel_share": 0.025
+   }
+  ],
+  "distinct_top1_neurons": 1416,
+  "top1_entropy_bits": 8.88,
+  "top5_share": 0.1174
+ },
+ "olmo-1b-0724": {
+  "L": 8,
+  "n_tokens": 8192,
+  "top1_neuron_rows": [
+   {
+    "neuron": "mlp0#1913",
+    "share_of_tokens": 0.0237,
+    "dominant_channel": 623,
+    "channel_share": 0.843
+   },
+   {
+    "neuron": "mlp2#3122",
+    "share_of_tokens": 0.0209,
+    "dominant_channel": 1988,
+    "channel_share": 0.007
+   },
+   {
+    "neuron": "mlp0#3265",
+    "share_of_tokens": 0.0175,
+    "dominant_channel": 1220,
+    "channel_share": 0.008
+   },
+   {
+    "neuron": "mlp5#3537",
+    "share_of_tokens": 0.0171,
+    "dominant_channel": 352,
+    "channel_share": 0.005
+   },
+   {
+    "neuron": "mlp0#3441",
+    "share_of_tokens": 0.0096,
+    "dominant_channel": 631,
+    "channel_share": 0.006
+   }
+  ],
+  "distinct_top1_neurons": 2763,
+  "top1_entropy_bits": 10.12,
+  "top5_share": 0.0888
+ }
+}

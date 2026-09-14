@@ -1,0 +1,238 @@
+{
+ "final_ce": 3.689663887023926,
+ "levels": {
+  "0": {
+   "lens_ce": 53.12890314449303,
+   "lens_top1": 0.009050880626223091,
+   "lens_agree": 0.01149706457925636,
+   "knn8_ce": 15.625716715176278,
+   "knn8_top1": 0.1353962818003914,
+   "knn8_agree": 0.17502446183953033,
+   "knn32_ce": 13.629347231989971,
+   "knn32_top1": 0.1514187866927593,
+   "knn32_agree": 0.19581702544031312
+  },
+  "1": {
+   "lens_ce": 11.448014052180161,
+   "lens_top1": 0.028864970645792562,
+   "lens_agree": 0.056873776908023484,
+   "knn8_ce": 15.149608813619894,
+   "knn8_top1": 0.1473825831702544,
+   "knn8_agree": 0.18358610567514677,
+   "knn32_ce": 13.169768689896495,
+   "knn32_top1": 0.1637720156555773,
+   "knn32_agree": 0.2081702544031311
+  },
+  "2": {
+   "lens_ce": 10.475686388706274,
+   "lens_top1": 0.036081213307240706,
+   "lens_agree": 0.06653620352250489,
+   "knn8_ce": 15.075405173105736,
+   "knn8_top1": 0.1514187866927593,
+   "knn8_agree": 0.1942270058708415,
+   "knn32_ce": 13.000072680807394,
+   "knn32_top1": 0.1704990215264188,
+   "knn32_agree": 0.2185665362035225
+  },
+  "3": {
+   "lens_ce": 10.179334427745841,
+   "lens_top1": 0.03155577299412916,
+   "lens_agree": 0.06470156555772995,
+   "knn8_ce": 14.793514483128975,
+   "knn8_top1": 0.16169275929549903,
+   "knn8_agree": 0.19814090019569472,
+   "knn32_ce": 12.7743423969545,
+   "knn32_top1": 0.17844911937377692,
+   "knn32_agree": 0.22847358121330724
+  },
+  "4": {
+   "lens_ce": 10.062893921615093,
+   "lens_top1": 0.041462818003913895,
+   "lens_agree": 0.08170254403131115,
+   "knn8_ce": 14.469593503470524,
+   "knn8_top1": 0.17404598825831702,
+   "knn8_agree": 0.21844422700587085,
+   "knn32_ce": 12.516402451726089,
+   "knn32_top1": 0.19165851272015655,
+   "knn32_agree": 0.2502446183953033
+  },
+  "5": {
+   "lens_ce": 9.873377372607326,
+   "lens_top1": 0.05430528375733855,
+   "lens_agree": 0.09955968688845401,
+   "knn8_ce": 14.265850925632186,
+   "knn8_top1": 0.1832191780821918,
+   "knn8_agree": 0.23043052837573386,
+   "knn32_ce": 12.268121469277459,
+   "knn32_top1": 0.20083170254403132,
+   "knn32_agree": 0.26210861056751467
+  },
+  "6": {
+   "lens_ce": 9.33980475199899,
+   "lens_top1": 0.07436399217221135,
+   "lens_agree": 0.13111545988258316,
+   "knn8_ce": 13.988053353565313,
+   "knn8_top1": 0.19483855185909982,
+   "knn8_agree": 0.24510763209393346,
+   "knn32_ce": 12.03795616314136,
+   "knn32_top1": 0.20976027397260275,
+   "knn32_agree": 0.27385029354207435
+  },
+  "7": {
+   "lens_ce": 8.984395842729482,
+   "lens_top1": 0.09087573385518591,
+   "lens_agree": 0.15924657534246575,
+   "knn8_ce": 13.730358982272811,
+   "knn8_top1": 0.2062133072407045,
+   "knn8_agree": 0.26088551859099807,
+   "knn32_ce": 11.73234023599942,
+   "knn32_top1": 0.22003424657534246,
+   "knn32_agree": 0.28889432485322897
+  },
+  "8": {
+   "lens_ce": 8.097749295766572,
+   "lens_top1": 0.13429549902152643,
+   "lens_agree": 0.22810665362035226,
+   "knn8_ce": 13.331840858534123,
+   "knn8_top1": 0.2199119373776908,
+   "knn8_agree": 0.275440313111546,
+   "knn32_ce": 11.464624095103046,
+   "knn32_top1": 0.23165362035225048,
+   "knn32_agree": 0.3051614481409002
+  },
+  "9": {
+   "lens_ce": 7.440757408067438,
+   "lens_top1": 0.18664383561643835,
+   "lens_agree": 0.3145792563600783,
+   "knn8_ce": 13.098101591643989,
+   "knn8_top1": 0.23165362035225048,
+   "knn8_agree": 0.2925636007827789,
+   "knn32_ce": 11.209457248157717,
+   "knn32_top1": 0.2455968688845401,
+   "knn32_agree": 0.3221624266144814
+  },
+  "10": {
+   "lens_ce": 6.6360145464335405,
+   "lens_top1": 0.2502446183953033,
+   "lens_agree": 0.4218444227005871,
+   "knn8_ce": 12.778116782350782,
+   "knn8_top1": 0.2403375733855186,
+   "knn8_agree": 0.30724070450097846,
+   "knn32_ce": 10.877675334534766,
+   "knn32_top1": 0.2594178082191781,
+   "knn32_agree": 0.3485812133072407
+  },
+  "11": {
+   "lens_ce": 5.25701859505909,
+   "lens_top1": 0.29929060665362034,
+   "lens_agree": 0.5589530332681018,
+   "knn8_ce": 12.587720837378455,
+   "knn8_top1": 0.25281311154598823,
+   "knn8_agree": 0.324486301369863,
+   "knn32_ce": 10.59666421968643,
+   "knn32_top1": 0.2667563600782779,
+   "knn32_agree": 0.3621575342465753
+  },
+  "12": {
+   "lens_ce": 3.689664389056002,
+   "lens_top1": 0.34209882583170254,
+   "lens_agree": 0.9998776908023483,
+   "knn8_ce": 13.729854635996361,
+   "knn8_top1": 0.20095401174168298,
+   "knn8_agree": 0.251100782778865,
+   "knn32_ce": 11.828745205575006,
+   "knn32_top1": 0.20327788649706457,
+   "knn32_agree": 0.27556262230919765
+  }
+ },
+ "qual_L6": [
+  {
+   "query_ctx": " \" in the role , and he received critical reviews in The Herald",
+   "true_next": " ,",
+   "neighbors": [
+    {
+     "ctx": " of the time you agree with it . \" Writing for The Guardian",
+     "next": " ,"
+    },
+    {
+     "ctx": " displayed in the film . Gaurav Malini of The Times",
+     "next": " of"
+    },
+    {
+     "ctx": " insecurity with the same expression \" in her performances , while The Chronicle",
+     "next": " '"
+    },
+    {
+     "ctx": "baland on Furtado 's music , and The Guardian",
+     "next": " called"
+    }
+   ]
+  },
+  {
+   "query_ctx": " , is thought to date from the end of this period , around",
+   "true_next": " 7",
+   "neighbors": [
+    {
+     "ctx": "s eastern side . \n\n\n Built out of earth and around",
+     "next": " fifty"
+    },
+    {
+     "ctx": " larger aerodromes . The GA industry , which is around",
+     "next": " 7"
+    },
+    {
+     "ctx": " adults , four older children , and two younger children ( one around",
+     "next": " five"
+    },
+    {
+     "ctx": "ahan and Eric Watson , and consists of shots of the duo around",
+     "next": " London"
+    }
+   ]
+  },
+  {
+   "query_ctx": "isms enabled his installation as the central figure of Chinese poetic history .",
+   "true_next": " ",
+   "neighbors": [
+    {
+     "ctx": " incorporated portraits of her fellow parishioners in her religious works .",
+     "next": " She"
+    },
+    {
+     "ctx": " , particularly in the use of different narrative voices and arcane references .",
+     "next": " The"
+    },
+    {
+     "ctx": " the propaganda press that was disseminated by the German occupation administration .",
+     "next": " Cinem"
+    },
+    {
+     "ctx": " exported , and the gold dollar found a ready place in commerce .",
+     "next": " Silver"
+    }
+   ]
+  },
+  {
+   "query_ctx": " result his poetry was often cited in Japanese literature in the Muromach",
+   "true_next": "i",
+   "neighbors": [
+    {
+     "ctx": " at the back and top of the sculpture . The Trimurt",
+     "next": "i"
+    },
+    {
+     "ctx": " ( 16 @,@ 600 sq ft ) in Maria Valeria",
+     "next": " Street"
+    },
+    {
+     "ctx": " The Gangadhara image to the right of the Trimurt",
+     "next": "i"
+    },
+    {
+     "ctx": " as few as 315 vehicles traveling east of the Banner \u2013 Morrill",
+     "next": " county"
+    }
+   ]
+  }
+ ]
+}

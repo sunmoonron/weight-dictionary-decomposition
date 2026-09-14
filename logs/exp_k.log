@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2860.13it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+block 0 (n=39193): real {'frac_counter': 0.019, 'frac_novel': 0.679, 'frac_reinforcing': 0.291, 'frac_self_anchored': 0.679, 'median': 1.29}
+          null-dir {'frac_counter': 0.498, 'frac_novel': 0.003, 'frac_reinforcing': 0.0, 'frac_self_anchored': 0.003, 'median': 0.0}
+          null-shuf {'frac_counter': 0.512, 'frac_novel': 0.061, 'frac_reinforcing': 0.058, 'frac_self_anchored': 0.061, 'median': -0.01}
+block 1 (n=11033): real {'frac_counter': 0.03, 'frac_novel': 0.334, 'frac_reinforcing': 0.611, 'frac_self_anchored': 0.334, 'median': 1.64}
+          null-dir {'frac_counter': 0.504, 'frac_novel': 0.008, 'frac_reinforcing': 0.0, 'frac_self_anchored': 0.008, 'median': -0.0}
+          null-shuf {'frac_counter': 0.568, 'frac_novel': 0.043, 'frac_reinforcing': 0.009, 'frac_self_anchored': 0.043, 'median': -0.03}
+block 2 (n=9989): real {'frac_counter': 0.197, 'frac_novel': 0.403, 'frac_reinforcing': 0.335, 'frac_self_anchored': 0.403, 'median': 1.02}
+          null-dir {'frac_counter': 0.495, 'frac_novel': 0.012, 'frac_reinforcing': 0.0, 'frac_self_anchored': 0.012, 'median': 0.0}
+          null-shuf {'frac_counter': 0.637, 'frac_novel': 0.064, 'frac_reinforcing': 0.021, 'frac_self_anchored': 0.064, 'median': -0.08}
+block 3 (n=10250): real {'frac_counter': 0.525, 'frac_novel': 0.244, 'frac_reinforcing': 0.149, 'frac_self_anchored': 0.244, 'median': -0.09}
+          null-dir {'frac_counter': 0.504, 'frac_novel': 0.016, 'frac_reinforcing': 0.0, 'frac_self_anchored': 0.016, 'median': -0.0}
+          null-shuf {'frac_counter': 0.721, 'frac_novel': 0.057, 'frac_reinforcing': 0.006, 'frac_self_anchored': 0.057, 'median': -0.23}
+block 4 (n=2661): real {'frac_counter': 0.037, 'frac_novel': 0.482, 'frac_reinforcing': 0.458, 'frac_self_anchored': 0.482, 'median': 1.47}
+          null-dir {'frac_counter': 0.493, 'frac_novel': 0.023, 'frac_reinforcing': 0.0, 'frac_self_anchored': 0.023, 'median': 0.0}
+          null-shuf {'frac_counter': 0.594, 'frac_novel': 0.044, 'frac_reinforcing': 0.011, 'frac_self_anchored': 0.044, 'median': -0.05}
+block 5 (n=9556): real {'frac_counter': 0.237, 'frac_novel': 0.201, 'frac_reinforcing': 0.524, 'frac_self_anchored': 0.201, 'median': 1.54}
+          null-dir {'frac_counter': 0.508, 'frac_novel': 0.04, 'frac_reinforcing': 0.0, 'frac_self_anchored': 0.04, 'median': -0.01}
+          null-shuf {'frac_counter': 0.633, 'frac_novel': 0.067, 'frac_reinforcing': 0.014, 'frac_self_anchored': 0.067, 'median': -0.11}
+block 6 (n=15622): real {'frac_counter': 0.054, 'frac_novel': 0.172, 'frac_reinforcing': 0.754, 'frac_self_anchored': 0.172, 'median': 1.94}
+          null-dir {'frac_counter': 0.501, 'frac_novel': 0.048, 'frac_reinforcing': 0.0, 'frac_self_anchored': 0.048, 'median': -0.0}
+          null-shuf {'frac_counter': 0.58, 'frac_novel': 0.061, 'frac_reinforcing': 0.014, 'frac_self_anchored': 0.061, 'median': -0.06}
+block 0 counter-frac by |c| quintile: q0:0.069  q1:0.03  q2:0.011  q3:0.007  q4:0.002
+block 1 counter-frac by |c| quintile: q0:0.034  q1:0.031  q2:0.039  q3:0.022  q4:0.025
+block 2 counter-frac by |c| quintile: q0:0.27  q1:0.213  q2:0.203  q3:0.17  q4:0.097
+block 3 counter-frac by |c| quintile: q0:0.545  q1:0.574  q2:0.563  q3:0.505  q4:0.23
+block 4 counter-frac by |c| quintile: q0:0.087  q1:0.032  q2:0.019  q3:0.016  q4:0.009
+block 5 counter-frac by |c| quintile: q0:0.378  q1:0.315  q2:0.177  q3:0.044  q4:0.012
+block 6 counter-frac by |c| quintile: q0:0.102  q1:0.068  q2:0.046  q3:0.028  q4:0.022
+DONE_K

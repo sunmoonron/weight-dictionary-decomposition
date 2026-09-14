@@ -1,0 +1,27 @@
+{
+ "sanity_max_abs_diff_alpha1": 2.384185791015625e-07,
+ "unfrozen": {
+  "median_lo": 0.0904,
+  "median_hi": -0.1198,
+  "q95_lo": 0.4457,
+  "n_inverse_both_ge10pct": 1236,
+  "n614": {
+   "lo": 0.275,
+   "hi": -0.2191,
+   "pct_rank_lo": 0.9013,
+   "inverse_both": true
+  }
+ },
+ "frozen": {
+  "median_lo": -0.0049,
+  "median_hi": -0.0207,
+  "q95_lo": 0.1738,
+  "n_inverse_both_ge10pct": 233,
+  "n614": {
+   "lo": 0.155,
+   "hi": -0.1227,
+   "pct_rank_lo": 0.9447,
+   "inverse_both": true
+  }
+ }
+}

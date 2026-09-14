@@ -1,0 +1,58 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/226 [00:00<?, ?it/s]Loading weights: 100%|██████████| 226/226 [00:00<00:00, 2416.06it/s]
+[   0.0m] loaded; prompt 9 tokens: 'Apple Inc. is a worldwide tech company.'
+[   0.1m] round 1: L30 [269, 10093]  max|out| 418.6  x_spike -336.3 * w 0.9898 = -332.9 (actual -418.6)  in_table2=False
+[   0.1m] round 2: L2 [269, 8275]  max|out| 351.4  x_spike 250.1 * w 1.3290 = 332.4 (actual 351.4)  in_table2=True
+[   0.1m] round 3: L24 [269, 2300]  max|out| 283.2  x_spike -209.3 * w -1.2707 = 265.9 (actual 283.2)  in_table2=True
+[   0.1m] round 4: L7 [269, 453]  max|out| 282.4  x_spike -242.8 * w -0.9223 = 223.9 (actual 282.4)  in_table2=True
+[   0.2m] round 5: L1 [269, 7467]  max|out| 247.9  x_spike 175.9 * w 1.3144 = 231.2 (actual 247.9)  in_table2=True
+[   0.2m] round 6: L2 [269, 8275]  max|out| 99.7  x_spike 601.2 * w 0.0000 = 0.0 (actual 99.7)  in_table2=True
+[   0.2m] VERDICT {
+ "I1_round1": [
+  30,
+  269,
+  10093
+ ],
+ "I1_pass": false,
+ "I2_table2_found_in_first4": [
+  [
+   1,
+   269,
+   7467
+  ],
+  [
+   2,
+   269,
+   8275
+  ],
+  [
+   7,
+   269,
+   453
+  ],
+  [
+   24,
+   269,
+   2300
+  ]
+ ],
+ "I2_n_of_4_in_first_4_rounds": 3,
+ "I3_max_output_by_round": [
+  418.65,
+  351.41,
+  283.2,
+  282.36,
+  247.86,
+  99.66
+ ],
+ "I3_monotone_suppression": true,
+ "I3_round1_over_round6": 4.2,
+ "rounds_not_in_table2": [
+  [
+   30,
+   269,
+   10093
+  ]
+ ]
+}
+DONE_Y17

@@ -1,0 +1,8 @@
+== gpt2 ==
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  83%|████████▎ | 123/148 [00:00<00:00, 1215.11it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 1079.20it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+  gpt2/wikitext: 8192 states, d=768 dff=3072 L=6 atoms=78175 (26s)
+  weight curve done (126s): FVU@32 0.0680  @256 0.0005
+  rotated curve done (215s): FVU@32 0.5311  @256 0.0038
+DONE_Z5

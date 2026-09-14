@@ -1,0 +1,1502 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   4%|▍         | 6/148 [00:00<00:04, 33.45it/s]Loading weights:   8%|▊         | 12/148 [00:00<00:04, 32.56it/s]Loading weights:  14%|█▍        | 21/148 [00:00<00:02, 50.07it/s]Loading weights:  18%|█▊        | 27/148 [00:00<00:03, 38.47it/s]Loading weights:  28%|██▊       | 42/148 [00:00<00:02, 52.20it/s]Loading weights:  36%|███▋      | 54/148 [00:01<00:01, 60.62it/s]Loading weights:  45%|████▍     | 66/148 [00:01<00:01, 73.51it/s]Loading weights:  64%|██████▎   | 94/148 [00:01<00:00, 114.80it/s]Loading weights: 100%|██████████| 148/148 [00:01<00:00, 108.03it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+clean CE 3.6387 over 32640 tokens  (14s)
+sanity attn(3,3) (identity): {'dce': 0.0, 'kl': 4.4212157067080374e-07, 'flip': 0.0003370098039215686}
+mlp edge l= 0 m= 0  dCE +2.5837  KL 2.4490  flip 0.781
+mlp edge l= 0 m= 1  dCE +3.9699  KL 3.7763  flip 0.886
+mlp edge l= 1 m= 1  dCE +0.0205  KL 0.0212  flip 0.090
+attn edge l= 0 m= 1  dCE +3.7664  KL 3.6222  flip 0.834
+mlp edge l= 0 m= 2  dCE +4.0092  KL 3.8865  flip 0.868
+mlp edge l= 1 m= 2  dCE +0.0638  KL 0.0617  flip 0.153
+mlp edge l= 2 m= 2  dCE +0.0211  KL 0.0211  flip 0.092
+attn edge l= 0 m= 2  dCE +1.9022  KL 1.8105  flip 0.689
+attn edge l= 1 m= 2  dCE +0.0275  KL 0.0256  flip 0.096
+mlp edge l= 0 m= 3  dCE +3.8940  KL 3.7514  flip 0.866
+mlp edge l= 1 m= 3  dCE +0.1336  KL 0.1105  flip 0.193
+mlp edge l= 2 m= 3  dCE +0.0930  KL 0.0729  flip 0.162
+mlp edge l= 3 m= 3  dCE +0.0293  KL 0.0176  flip 0.082
+attn edge l= 0 m= 3  dCE +1.0987  KL 1.1073  flip 0.559
+attn edge l= 1 m= 3  dCE +0.0401  KL 0.0457  flip 0.127
+attn edge l= 2 m= 3  dCE +0.0180  KL 0.0183  flip 0.078
+mlp edge l= 0 m= 4  dCE +4.2621  KL 4.0497  flip 0.845
+mlp edge l= 1 m= 4  dCE +0.3168  KL 0.3513  flip 0.356
+mlp edge l= 2 m= 4  dCE +0.3180  KL 0.3626  flip 0.361
+mlp edge l= 3 m= 4  dCE +0.2049  KL 0.2588  flip 0.308
+mlp edge l= 4 m= 4  dCE +0.0305  KL 0.0533  flip 0.146
+attn edge l= 0 m= 4  dCE +1.0847  KL 0.9917  flip 0.563
+attn edge l= 1 m= 4  dCE +0.0977  KL 0.0951  flip 0.184
+attn edge l= 2 m= 4  dCE +0.0419  KL 0.0456  flip 0.128
+attn edge l= 3 m= 4  dCE +0.0215  KL 0.0200  flip 0.087
+mlp edge l= 0 m= 5  dCE +3.5129  KL 3.4438  flip 0.809
+mlp edge l= 1 m= 5  dCE +0.1968  KL 0.2379  flip 0.289
+mlp edge l= 2 m= 5  dCE +0.1727  KL 0.2187  flip 0.283
+mlp edge l= 3 m= 5  dCE +0.1155  KL 0.1536  flip 0.239
+mlp edge l= 4 m= 5  dCE +0.0571  KL 0.0807  flip 0.174
+mlp edge l= 5 m= 5  dCE +0.0181  KL 0.0260  flip 0.096
+attn edge l= 0 m= 5  dCE +1.4153  KL 1.3048  flip 0.596
+attn edge l= 1 m= 5  dCE +0.3002  KL 0.3308  flip 0.330
+attn edge l= 2 m= 5  dCE +0.0991  KL 0.1198  flip 0.205
+attn edge l= 3 m= 5  dCE +0.0730  KL 0.0723  flip 0.149
+attn edge l= 4 m= 5  dCE +0.0441  KL 0.0401  flip 0.109
+mlp edge l= 0 m= 6  dCE +3.3531  KL 3.1208  flip 0.774
+mlp edge l= 1 m= 6  dCE +0.1815  KL 0.2106  flip 0.278
+mlp edge l= 2 m= 6  dCE +0.1761  KL 0.2128  flip 0.282
+mlp edge l= 3 m= 6  dCE +0.1311  KL 0.1609  flip 0.247
+mlp edge l= 4 m= 6  dCE +0.0877  KL 0.1116  flip 0.210
+mlp edge l= 5 m= 6  dCE +0.0539  KL 0.0668  flip 0.164
+mlp edge l= 6 m= 6  dCE +0.0120  KL 0.0218  flip 0.095
+attn edge l= 0 m= 6  dCE +2.4618  KL 2.4228  flip 0.690
+attn edge l= 1 m= 6  dCE +0.3496  KL 0.4394  flip 0.382
+attn edge l= 2 m= 6  dCE +0.0785  KL 0.1302  flip 0.234
+attn edge l= 3 m= 6  dCE +0.0630  KL 0.0636  flip 0.154
+attn edge l= 4 m= 6  dCE +0.0458  KL 0.0445  flip 0.128
+attn edge l= 5 m= 6  dCE +0.0253  KL 0.0250  flip 0.098
+mlp edge l= 0 m= 7  dCE +2.2704  KL 2.1076  flip 0.691
+mlp edge l= 1 m= 7  dCE +0.1080  KL 0.1296  flip 0.220
+mlp edge l= 2 m= 7  dCE +0.0973  KL 0.1208  flip 0.216
+mlp edge l= 3 m= 7  dCE +0.0813  KL 0.0993  flip 0.195
+mlp edge l= 4 m= 7  dCE +0.0716  KL 0.0814  flip 0.177
+mlp edge l= 5 m= 7  dCE +0.0610  KL 0.0632  flip 0.159
+mlp edge l= 6 m= 7  dCE +0.0388  KL 0.0396  flip 0.128
+mlp edge l= 7 m= 7  dCE +0.0134  KL 0.0128  flip 0.076
+attn edge l= 0 m= 7  dCE +1.6692  KL 1.5397  flip 0.622
+attn edge l= 1 m= 7  dCE +0.2785  KL 0.2850  flip 0.314
+attn edge l= 2 m= 7  dCE +0.1029  KL 0.1129  flip 0.215
+attn edge l= 3 m= 7  dCE +0.0749  KL 0.0573  flip 0.150
+attn edge l= 4 m= 7  dCE +0.0664  KL 0.0508  flip 0.140
+attn edge l= 5 m= 7  dCE +0.0555  KL 0.0400  flip 0.124
+attn edge l= 6 m= 7  dCE +0.0297  KL 0.0201  flip 0.090
+mlp edge l= 0 m= 8  dCE +2.5316  KL 2.4351  flip 0.733
+mlp edge l= 1 m= 8  dCE +0.1537  KL 0.1820  flip 0.251
+mlp edge l= 2 m= 8  dCE +0.1489  KL 0.1766  flip 0.248
+mlp edge l= 3 m= 8  dCE +0.1238  KL 0.1429  flip 0.225
+mlp edge l= 4 m= 8  dCE +0.1093  KL 0.1195  flip 0.208
+mlp edge l= 5 m= 8  dCE +0.0934  KL 0.0994  flip 0.193
+mlp edge l= 6 m= 8  dCE +0.0704  KL 0.0727  flip 0.170
+mlp edge l= 7 m= 8  dCE +0.0512  KL 0.0450  flip 0.138
+mlp edge l= 8 m= 8  dCE +0.0276  KL 0.0133  flip 0.078
+attn edge l= 0 m= 8  dCE +0.8520  KL 0.7537  flip 0.484
+attn edge l= 1 m= 8  dCE +0.2302  KL 0.1851  flip 0.266
+attn edge l= 2 m= 8  dCE +0.1076  KL 0.0885  flip 0.194
+attn edge l= 3 m= 8  dCE +0.0978  KL 0.0640  flip 0.166
+attn edge l= 4 m= 8  dCE +0.0818  KL 0.0560  flip 0.155
+attn edge l= 5 m= 8  dCE +0.0622  KL 0.0468  flip 0.140
+attn edge l= 6 m= 8  dCE +0.0422  KL 0.0335  flip 0.118
+attn edge l= 7 m= 8  dCE +0.0105  KL 0.0171  flip 0.084
+mlp edge l= 0 m= 9  dCE +2.3937  KL 2.3798  flip 0.702
+mlp edge l= 1 m= 9  dCE +0.1395  KL 0.1503  flip 0.225
+mlp edge l= 2 m= 9  dCE +0.1361  KL 0.1458  flip 0.221
+mlp edge l= 3 m= 9  dCE +0.1224  KL 0.1289  flip 0.211
+mlp edge l= 4 m= 9  dCE +0.1137  KL 0.1201  flip 0.206
+mlp edge l= 5 m= 9  dCE +0.1026  KL 0.1104  flip 0.198
+mlp edge l= 6 m= 9  dCE +0.0884  KL 0.0940  flip 0.186
+mlp edge l= 7 m= 9  dCE +0.0667  KL 0.0703  flip 0.164
+mlp edge l= 8 m= 9  dCE +0.0373  KL 0.0403  flip 0.127
+mlp edge l= 9 m= 9  dCE +0.0069  KL 0.0098  flip 0.064
+attn edge l= 0 m= 9  dCE +1.3007  KL 1.1364  flip 0.557
+attn edge l= 1 m= 9  dCE +0.2285  KL 0.2264  flip 0.278
+attn edge l= 2 m= 9  dCE +0.0901  KL 0.0910  flip 0.195
+attn edge l= 3 m= 9  dCE +0.0877  KL 0.0577  flip 0.154
+attn edge l= 4 m= 9  dCE +0.0812  KL 0.0537  flip 0.150
+attn edge l= 5 m= 9  dCE +0.0717  KL 0.0482  flip 0.141
+attn edge l= 6 m= 9  dCE +0.0537  KL 0.0399  flip 0.128
+attn edge l= 7 m= 9  dCE +0.0223  KL 0.0287  flip 0.108
+attn edge l= 8 m= 9  dCE +0.0018  KL 0.0147  flip 0.082
+mlp edge l= 0 m=10  dCE +2.6090  KL 2.5686  flip 0.797
+mlp edge l= 1 m=10  dCE +0.1427  KL 0.1673  flip 0.245
+mlp edge l= 2 m=10  dCE +0.1432  KL 0.1621  flip 0.242
+mlp edge l= 3 m=10  dCE +0.1368  KL 0.1535  flip 0.239
+mlp edge l= 4 m=10  dCE +0.1330  KL 0.1498  flip 0.237
+mlp edge l= 5 m=10  dCE +0.1292  KL 0.1443  flip 0.231
+mlp edge l= 6 m=10  dCE +0.1206  KL 0.1344  flip 0.224
+mlp edge l= 7 m=10  dCE +0.1074  KL 0.1170  flip 0.210
+mlp edge l= 8 m=10  dCE +0.0841  KL 0.0919  flip 0.186
+mlp edge l= 9 m=10  dCE +0.0464  KL 0.0570  flip 0.154
+mlp edge l=10 m=10  dCE +0.0089  KL 0.0129  flip 0.075
+attn edge l= 0 m=10  dCE +0.8577  KL 0.7440  flip 0.454
+attn edge l= 1 m=10  dCE +0.1974  KL 0.1714  flip 0.238
+attn edge l= 2 m=10  dCE +0.1071  KL 0.0687  flip 0.162
+attn edge l= 3 m=10  dCE +0.1021  KL 0.0558  flip 0.145
+attn edge l= 4 m=10  dCE +0.0992  KL 0.0544  flip 0.144
+attn edge l= 5 m=10  dCE +0.0943  KL 0.0536  flip 0.143
+attn edge l= 6 m=10  dCE +0.0899  KL 0.0601  flip 0.151
+attn edge l= 7 m=10  dCE +0.0752  KL 0.0686  flip 0.154
+attn edge l= 8 m=10  dCE +0.0509  KL 0.0694  flip 0.147
+attn edge l= 9 m=10  dCE +0.0134  KL 0.0403  flip 0.112
+mlp edge l= 0 m=11  dCE +4.6062  KL 4.4181  flip 0.921
+mlp edge l= 1 m=11  dCE +0.7906  KL 0.7398  flip 0.417
+mlp edge l= 2 m=11  dCE +0.7670  KL 0.7097  flip 0.413
+mlp edge l= 3 m=11  dCE +0.7849  KL 0.7156  flip 0.414
+mlp edge l= 4 m=11  dCE +0.7997  KL 0.7214  flip 0.416
+mlp edge l= 5 m=11  dCE +0.8113  KL 0.7233  flip 0.420
+mlp edge l= 6 m=11  dCE +0.8261  KL 0.7321  flip 0.427
+mlp edge l= 7 m=11  dCE +0.8446  KL 0.7482  flip 0.436
+mlp edge l= 8 m=11  dCE +0.8440  KL 0.7506  flip 0.437
+mlp edge l= 9 m=11  dCE +0.8843  KL 0.8010  flip 0.457
+mlp edge l=10 m=11  dCE +0.9030  KL 0.8077  flip 0.476
+mlp edge l=11 m=11  dCE +0.6413  KL 0.5622  flip 0.419
+attn edge l= 0 m=11  dCE +1.3041  KL 1.2602  flip 0.483
+attn edge l= 1 m=11  dCE +0.2787  KL 0.2193  flip 0.258
+attn edge l= 2 m=11  dCE +0.2162  KL 0.1554  flip 0.229
+attn edge l= 3 m=11  dCE +0.2209  KL 0.1630  flip 0.217
+attn edge l= 4 m=11  dCE +0.2378  KL 0.1795  flip 0.222
+attn edge l= 5 m=11  dCE +0.2406  KL 0.1873  flip 0.220
+attn edge l= 6 m=11  dCE +0.3283  KL 0.2830  flip 0.241
+attn edge l= 7 m=11  dCE +0.3893  KL 0.3491  flip 0.257
+attn edge l= 8 m=11  dCE +0.4208  KL 0.3931  flip 0.270
+attn edge l= 9 m=11  dCE +0.4176  KL 0.4261  flip 0.284
+attn edge l=10 m=11  dCE +0.1938  KL 0.2098  flip 0.220
+layer-level map done 634s
+Traceback (most recent call last):
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 187, in <module>
+    outg[name] = run(("group", l, m), group=torch.as_tensor(idx, device=DEV))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 129, in run
+    lp = torch.log_softmax(model(ids).logits[:, 1:-1].float(), -1)
+                           ^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 683, in forward
+    transformer_outputs: BaseModelOutputWithPastAndCrossAttentions = self.transformer(
+                                                                     ^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 262, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 609, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 114, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 305, in forward
+    feed_forward_hidden_states = self.mlp(hidden_states)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 239, in forward
+    hidden_states = self.c_fc(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_r2_depends.py", line 93, in f
+    z_wb = blk.mlp.c_fc(blk.ln_2(state["stash"][a[1]]))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1805, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/pytorch_utils.py", line 119, in forward
+    x = torch.addmm(self.bias, x.view(-1, x.size(-1)), self.weight)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 48.00 MiB. GPU 0 has a total capacity of 7.91 GiB of which 4.56 MiB is free. Including non-PyTorch memory, this process has 7.90 GiB memory in use. Of the allocated memory 7.73 GiB is allocated by PyTorch, and 73.72 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

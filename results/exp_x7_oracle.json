@@ -1,0 +1,25 @@
+{
+ "n_tokens": 16384,
+ "A_synthetic": {
+  "recall_top1_omp": 0.6212,
+  "recall_top1_oneshot": 0.67,
+  "recall_top3_omp": 0.4658,
+  "r_identified": 0.9979,
+  "real_state_ref": {
+   "recall_top1_omp": 0.647,
+   "oneshot": 0.766
+  }
+ },
+ "B_oracle_support": {
+  "r_all_bigwrites": 0.5546,
+  "r_erased(surv<0.25)": 0.128,
+  "r_intact(surv>0.75)": 0.5548,
+  "n_erased": 1972,
+  "n_intact": 46444
+ },
+ "C_coherence_mlp": {
+  "median_max_abs_cos": 0.245,
+  "p99_max_abs_cos": 0.8406,
+  "max_abs_cos": 0.9964
+ }
+}

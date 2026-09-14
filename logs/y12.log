@@ -1,0 +1,25 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  35%|███▌      | 40/114 [00:00<00:00, 392.75it/s]Loading weights:  72%|███████▏  | 82/114 [00:00<00:00, 402.82it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 411.74it/s]
+A: block2 8041 cos(gate,remainder) 0.6696 pct 0.9996; block max 0.7723 (n2074); random-dir max 0.115
+A: top10 gate-aligned in block2: [{"neuron": 2074, "cos": 0.7723}, {"neuron": 4718, "cos": 0.6898}, {"neuron": 8041, "cos": 0.6696}, {"neuron": 7123, "cos": 0.5723}, {"neuron": 7201, "cos": 0.4817}, {"neuron": 444, "cos": 0.4474}, {"neuron": 4068, "cos": 0.4356}, {"neuron": 3277, "cos": 0.428}, {"neuron": 7136, "cos": 0.3842}, {"neuron": 4556, "cos": 0.3839}]
+B: sigma 5.5811->0.8117  gate input 7.433->30.103  act 69.23->355.28
+B: delta 22.671 = rescale 43.662 + content -20.991 (rel err 0.0); rescale split {'channel': 17.442, 'remainder': 25.993, 'rest': 0.227}
+C: top deviants [{"block": 15, "neuron": 3454, "deviation": 268.92, "act_clean": -240.46, "act_wz": 75.9}, {"block": 2, "neuron": 8041, "deviation": 175.99, "act_clean": 69.23, "act_wz": 355.28}, {"block": 15, "neuron": 6840, "deviation": 135.44, "act_clean": -278.08, "act_wz": -95.15}, {"block": 2, "neuron": 2074, "deviation": 74.73, "act_clean": -1.76, "act_wz": -175.28}, {"block": 2, "neuron": 4718, "deviation": 71.86, "act_clean": -1.9, "act_wz": 162.39}, {"block": 3, "neuron": 1902, "deviation": 39.58, "act_clean": -64.48, "act_wz": -1.0}]
+C: clamp top1    ppl   30119.762 recovered 0.000
+C: clamp top5    ppl   32657.111 recovered -0.011
+C: clamp top20   ppl   32739.154 recovered -0.011
+C: clamp top100  ppl   31619.141 recovered -0.006
+C: clamp top500  ppl   31376.729 recovered -0.005
+C: clamp random20 ppl 30133.783 recovered 0.000
+VERDICT {
+ "R1_8041_pct_rank_gate": 0.9996,
+ "R1_pass": true,
+ "R2_bookkeeping_rel_err": 0.0,
+ "R2_pass": true,
+ "R2_rescale_share": 1.926,
+ "R3_frac_gap_top20": -0.0109,
+ "R3_verdict": "DIFFUSE",
+ "R4_random20": 0.0,
+ "R4_pass": true
+}
+DONE_Y12

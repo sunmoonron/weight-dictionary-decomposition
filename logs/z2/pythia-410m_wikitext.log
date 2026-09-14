@@ -1,0 +1,8 @@
+== pythia-410m/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  91%|█████████▏| 267/292 [00:00<00:00, 2668.13it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2684.97it/s]
+  pythia-410m/wikitext: 32768 states, d=1024 dff=4096 L=12 atoms=116864 (9s)
+  reconstruction done (423s): FVU32 weight 0.0498
+  attribution done (543s): recall 0.4813
+  pythia-410m/wikitext: FVU32 0.050 [0.049,0.051]  rot 0.591  recall 0.481 [0.472,0.490]  r_id 0.980 [0.979,0.981]  r_unc 0.452
+DONE_Z2

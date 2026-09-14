@@ -1,0 +1,22 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2828.04it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+ran ablate=False alpha=1.0
+ran ablate=False alpha=0.5
+ran ablate=False alpha=1.5
+ran ablate=True alpha=1.0
+ran ablate=True alpha=0.5
+ran ablate=True alpha=1.5
+mlp5#1888 [RESERVE]: intact -0.032/+0.049  ablated -0.035/+0.075  w447(intact/abl) +2.00/+2.53
+mlp6#834 [RESERVE]: intact -0.030/+0.031  ablated -0.042/+0.041  w447(intact/abl) +1.84/+2.33
+mlp7#2402 [RESERVE]: intact -0.031/+0.063  ablated -0.035/+0.065  w447(intact/abl) +2.13/+3.23
+mlp9#840 [RESERVE]: intact -0.008/+0.007  ablated -0.011/+0.017  w447(intact/abl) +7.20/+7.93
+mlp10#900 [RESERVE]: intact -0.011/+0.023  ablated -0.015/+0.026  w447(intact/abl) +6.20/+6.84
+mlp3#614 [PRIMARY]: intact +0.275/-0.221  ablated +0.275/-0.221  w447(intact/abl) +4.31/+4.31
+mlp5#1159 [control]: intact +0.004/-0.005  ablated -0.001/-0.001  w447(intact/abl) +0.01/+0.01
+mlp6#902 [control]: intact -0.005/+0.009  ablated -0.010/+0.014  w447(intact/abl) +0.04/+0.04
+mlp7#327 [control]: intact +0.002/-0.010  ablated +0.004/-0.008  w447(intact/abl) -0.09/-0.08
+mlp9#2312 [control]: intact +0.001/-0.004  ablated -0.003/-0.003  w447(intact/abl) +0.00/+0.00
+mlp10#2632 [control]: intact +0.012/-0.014  ablated +0.009/-0.005  w447(intact/abl) -0.03/-0.03
+summary (inverse-response gain, + = thermostatic): {'RESERVE': {'gain_intact': -0.028, 'gain_ablated': -0.036}, 'PRIMARY': {'gain_intact': 0.248, 'gain_ablated': 0.248}, 'control': {'gain_intact': 0.004, 'gain_ablated': 0.0}}
+DONE_U1

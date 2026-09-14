@@ -1,0 +1,15 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3312.28it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+clean ch447 by level: [0.1, 14.6, 20.7, 28.6, 31.8, 34.8, 38.8, 42.5, 48.0, 52.7, 62.6, 89.7, 1.0]
+B alpha=0.5: {'b3#614': 0.275, 'b4#1894': -0.048, 'b5#1790': -0.042, 'b6#3039': -0.027, 'b2#2714': 0.0, 'ctrl_mean_absrel': 0.056}
+B alpha=1.5: {'b3#614': -0.221, 'b4#1894': 0.148, 'b5#1790': 0.034, 'b6#3039': 0.019, 'b2#2714': 0.0, 'ctrl_mean_absrel': 0.044}
+A: dCE 0.0224  pred-vs-meas {'r': 0.238, 'slope_meas_over_pred': 0.125, 'mean_pred': -12.4, 'mean_meas': -1.49}
+ablated ch447 traj: [0.1, 14.6, 20.7, 28.6, 27.5, 32.4, 36.9, 40.7, 45.7, 49.9, 60.5, 88.2, 1.0]
+mlp5#1856: opp -2.06  shares {'embedding': -0.0, 'mlp0': 0.03, 'mlp1': 0.04, 'mlp2': 0.64, 'mlp3': 0.11, 'mlp4': 0.15, 'attn+rest': 0.03}
+   top upstream: {'mlp3#614': 1.15, 'mlp2#2714': 0.99, 'mlp3#1545': 0.78, 'mlp4#787': 0.53, 'mlp4#2422': 0.49, 'mlp1#1558': 0.34}
+mlp5#1505: opp -0.93  shares {'embedding': 0.0, 'mlp0': 0.22, 'mlp1': 0.06, 'mlp2': -0.36, 'mlp3': 0.22, 'mlp4': 0.25, 'attn+rest': 0.61}
+   top upstream: {'mlp4#787': 0.85, 'mlp4#1894': 0.73, 'mlp3#2664': 0.63, 'mlp3#1545': 0.45, 'mlp2#183': -0.21, 'mlp2#2714': -0.21}
+mlp5#2070: opp -6.55  shares {'embedding': 0.01, 'mlp0': 0.07, 'mlp1': -0.03, 'mlp2': 0.11, 'mlp3': 0.11, 'mlp4': 0.08, 'attn+rest': 0.64}
+   top upstream: {'mlp3#2614': -3.22, 'mlp2#2617': -1.7, 'mlp3#2723': 1.67, 'mlp2#589': 1.39, 'mlp4#836': -0.2, 'mlp4#894': 0.15}
+DONE_S8

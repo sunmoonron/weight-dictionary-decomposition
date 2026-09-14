@@ -1,0 +1,107 @@
+excluding 28 studied neurons (incl. v1 nominees)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 4053.16it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+captured
+  scored block 2
+  scored block 3
+  scored block 4
+  scored block 5
+  scored block 6
+  scored block 7
+  scored block 8
+WDD arm: [(2, 2769), (7, 2531), (8, 1542), (8, 15), (6, 522), (8, 13), (2, 589), (7, 1729), (7, 2489), (8, 1827), (8, 428), (7, 991), (6, 3048), (8, 1276), (6, 2674), (8, 1981), (8, 1332), (8, 529), (7, 1600), (8, 825), (8, 1864), (7, 2083), (8, 1203), (6, 1985), (7, 2398), (8, 599), (4, 1322), (8, 1764), (3, 176), (7, 2517)]
+outlier arm: [(8, 2532), (8, 2543), (8, 1182), (8, 2087), (8, 2162), (5, 2256), (8, 2346), (8, 2469), (8, 2793), (8, 1749), (2, 1173), (8, 2402), (8, 1108), (7, 2214), (5, 1526), (8, 2387), (6, 2984), (8, 687), (7, 2750), (8, 2036), (8, 1423), (6, 2006), (7, 6), (8, 82), (7, 2348), (7, 889), (3, 489), (8, 2836), (5, 2078), (6, 1681)]
+corr arm: [(2, 352), (5, 1504), (5, 2256), (4, 2555), (8, 2687), (2, 2830), (4, 2806), (7, 549), (2, 1173), (6, 2703), (7, 2202), (2, 34), (5, 464), (6, 2374), (8, 2988), (6, 2081), (6, 2667), (6, 203), (8, 1333), (6, 1912), (2, 2898), (4, 825), (7, 658), (2, 2769), (4, 2266), (2, 1279), (5, 2084), (5, 2073), (8, 201), (6, 1393)]
+unique nominees: 87; overlaps: {'WDD&outlier': [], 'WDD&corr': [(2, 2769)], 'corr&outlier': [(2, 1173), (5, 2256)]}
+mlp2#34 <- mlp0#1561: pred -1.87 dproj -2.17 (ctrl -0.03) dresp -0.282 (ctrl -0.002) T1=True T2=True
+mlp2#352 <- mlp1#3020: pred -1.52 dproj -2.12 (ctrl +0.00) dresp -0.780 (ctrl +0.000) T1=True T2=True
+mlp2#589 <- mlp0#1430: pred +0.23 dproj -0.00 (ctrl +0.00) dresp -0.003 (ctrl -0.000) T1=False T2=False
+mlp2#1173 <- mlp0#944: pred +0.75 dproj +0.41 (ctrl -0.00) dresp -0.001 (ctrl -0.000) T1=True T2=False
+mlp2#1279 <- mlp0#2009: pred +0.78 dproj -0.24 (ctrl -0.01) dresp +0.062 (ctrl +0.001) T1=False T2=True
+mlp2#2769 <- mlp0#1175: pred +5.99 dproj +8.33 (ctrl +0.01) dresp -0.977 (ctrl +0.001) T1=True T2=True
+mlp2#2830 <- mlp0#1175: pred -6.34 dproj -9.71 (ctrl +0.00) dresp -0.946 (ctrl +0.000) T1=True T2=True
+mlp2#2898 <- mlp0#371: pred -0.45 dproj -0.53 (ctrl -0.00) dresp -0.000 (ctrl -0.000) T1=True T2=False
+mlp3#176 <- mlp1#79: pred +0.93 dproj +0.57 (ctrl -0.00) dresp -0.223 (ctrl -0.003) T1=True T2=True
+mlp3#489 <- mlp2#2714: pred -0.65 dproj +0.30 (ctrl +0.01) dresp +0.033 (ctrl +0.001) T1=False T2=True
+mlp4#825 <- mlp2#666: pred +8.87 dproj +3.08 (ctrl +0.00) dresp +0.073 (ctrl +0.001) T1=True T2=True
+mlp4#1322 <- mlp3#614: pred -1.36 dproj -0.08 (ctrl -0.01) dresp +0.069 (ctrl -0.001) T1=False T2=True
+mlp4#2266 <- mlp0#1451: pred -1.09 dproj -1.58 (ctrl +0.01) dresp -0.367 (ctrl -0.002) T1=True T2=True
+mlp4#2555 <- mlp2#666: pred +6.77 dproj +2.26 (ctrl +0.00) dresp +0.005 (ctrl +0.001) T1=True T2=False
+mlp4#2806 <- mlp0#2054: pred -4.25 dproj -7.03 (ctrl -0.03) dresp -0.457 (ctrl -0.002) T1=True T2=True
+mlp5#464 <- mlp4#2622: pred -2.05 dproj -4.26 (ctrl -0.01) dresp -0.531 (ctrl -0.002) T1=False T2=True
+mlp5#1504 <- mlp0#132: pred -7.66 dproj -7.42 (ctrl -0.00) dresp -0.251 (ctrl +0.001) T1=True T2=True
+mlp5#1526 <- mlp3#2664: pred -0.21 dproj +0.13 (ctrl +0.01) dresp -0.026 (ctrl +0.001) T1=False T2=True
+mlp5#2073 <- mlp3#2614: pred -4.31 dproj -1.06 (ctrl -0.00) dresp -0.258 (ctrl -0.000) T1=True T2=True
+mlp5#2078 <- mlp3#614: pred -0.72 dproj +0.03 (ctrl -0.00) dresp -0.028 (ctrl +0.001) T1=False T2=True
+mlp5#2084 <- mlp2#666: pred -7.49 dproj -1.81 (ctrl -0.00) dresp -0.008 (ctrl +0.003) T1=True T2=False
+mlp5#2256 <- mlp2#666: pred +10.51 dproj +2.75 (ctrl -0.00) dresp +0.034 (ctrl -0.000) T1=True T2=True
+mlp6#203 <- mlp2#2830: pred -6.54 dproj -11.85 (ctrl -0.01) dresp -0.920 (ctrl -0.003) T1=True T2=True
+mlp6#522 <- mlp4#1727: pred -0.71 dproj -0.31 (ctrl +0.00) dresp +0.070 (ctrl +0.001) T1=True T2=True
+mlp6#1393 <- mlp0#874: pred -2.06 dproj -1.65 (ctrl -0.01) dresp -0.167 (ctrl -0.000) T1=True T2=True
+mlp6#1681 <- mlp2#2714: pred +0.16 dproj -0.01 (ctrl -0.00) dresp -0.005 (ctrl +0.000) T1=False T2=False
+mlp6#1912 <- mlp0#908: pred -3.59 dproj -1.33 (ctrl -0.02) dresp -0.053 (ctrl -0.001) T1=True T2=True
+mlp6#1985 <- mlp5#1856: pred -0.57 dproj +0.25 (ctrl -0.00) dresp +0.323 (ctrl +0.000) T1=False T2=True
+mlp6#2006 <- mlp3#614: pred +0.32 dproj +0.02 (ctrl +0.00) dresp -0.015 (ctrl +0.000) T1=False T2=False
+mlp6#2081 <- mlp2#666: pred -3.21 dproj -0.77 (ctrl -0.00) dresp +0.001 (ctrl -0.001) T1=True T2=False
+mlp6#2374 <- mlp0#1218: pred -1.83 dproj -1.63 (ctrl +0.01) dresp -0.064 (ctrl +0.000) T1=True T2=True
+mlp6#2667 <- mlp0#753: pred -1.21 dproj -1.96 (ctrl +0.00) dresp -0.315 (ctrl -0.000) T1=True T2=True
+mlp6#2674 <- mlp2#2830: pred +5.93 dproj +10.26 (ctrl -0.00) dresp -0.920 (ctrl +0.003) T1=True T2=True
+mlp6#2703 <- mlp0#132: pred -7.57 dproj -7.46 (ctrl +0.01) dresp -0.249 (ctrl -0.000) T1=True T2=True
+mlp6#2984 <- mlp5#1888: pred -0.19 dproj -0.09 (ctrl +0.00) dresp +0.005 (ctrl +0.000) T1=True T2=False
+mlp6#3048 <- mlp5#1790: pred -2.05 dproj +0.24 (ctrl +0.00) dresp +0.222 (ctrl +0.000) T1=False T2=True
+mlp7#6 <- mlp5#1790: pred +0.51 dproj +0.15 (ctrl -0.01) dresp -0.013 (ctrl -0.000) T1=True T2=False
+mlp7#549 <- mlp0#132: pred -6.32 dproj -5.84 (ctrl -0.00) dresp -0.173 (ctrl -0.000) T1=True T2=True
+mlp7#658 <- mlp0#2963: pred -1.29 dproj -2.42 (ctrl -0.01) dresp -0.294 (ctrl -0.001) T1=True T2=True
+mlp7#889 <- mlp3#614: pred +0.59 dproj +0.13 (ctrl -0.01) dresp +0.013 (ctrl -0.001) T1=True T2=False
+mlp7#991 <- mlp1#1825: pred -0.37 dproj -0.22 (ctrl -0.00) dresp -0.427 (ctrl -0.003) T1=True T2=True
+mlp7#1600 <- mlp5#1790: pred -0.42 dproj -0.13 (ctrl -0.00) dresp +0.005 (ctrl +0.001) T1=True T2=False
+mlp7#1729 <- mlp6#3039: pred +0.60 dproj -0.04 (ctrl +0.00) dresp +0.033 (ctrl +0.000) T1=False T2=True
+mlp7#2083 <- mlp6#2799: pred -0.70 dproj -0.91 (ctrl +0.00) dresp +0.292 (ctrl +0.001) T1=True T2=True
+mlp7#2202 <- mlp6#2081: pred -0.75 dproj -1.48 (ctrl -0.00) dresp -0.348 (ctrl -0.000) T1=True T2=True
+mlp7#2214 <- mlp3#614: pred -0.38 dproj -0.05 (ctrl -0.00) dresp -0.011 (ctrl +0.001) T1=False T2=False
+mlp7#2348 <- mlp5#1790: pred -0.26 dproj +0.10 (ctrl +0.01) dresp -0.035 (ctrl +0.001) T1=False T2=True
+mlp7#2398 <- mlp3#1545: pred -1.12 dproj -0.25 (ctrl -0.00) dresp -0.008 (ctrl +0.000) T1=True T2=False
+mlp7#2489 <- mlp5#1790: pred -2.05 dproj +0.40 (ctrl -0.00) dresp -0.072 (ctrl +0.001) T1=False T2=True
+mlp7#2517 <- mlp6#1879: pred +0.66 dproj +0.40 (ctrl +0.00) dresp -0.269 (ctrl +0.004) T1=True T2=True
+mlp7#2531 <- mlp2#2771: pred +1.57 dproj -0.05 (ctrl -0.00) dresp -0.030 (ctrl +0.001) T1=False T2=True
+mlp7#2750 <- mlp6#3039: pred +0.38 dproj +0.01 (ctrl +0.00) dresp +0.015 (ctrl +0.000) T1=False T2=False
+mlp8#13 <- mlp7#2367: pred -1.43 dproj +1.34 (ctrl +0.00) dresp +0.013 (ctrl -0.000) T1=False T2=False
+mlp8#15 <- mlp0#132: pred +1.09 dproj +0.92 (ctrl -0.00) dresp -0.058 (ctrl -0.000) T1=True T2=True
+mlp8#82 <- mlp5#1790: pred +0.53 dproj +0.29 (ctrl +0.00) dresp +0.004 (ctrl +0.000) T1=True T2=False
+mlp8#201 <- mlp7#1588: pred -0.55 dproj -0.73 (ctrl -0.01) dresp -0.143 (ctrl -0.001) T1=True T2=True
+mlp8#428 <- mlp7#2367: pred +0.61 dproj -0.73 (ctrl +0.03) dresp -0.100 (ctrl +0.003) T1=False T2=True
+mlp8#529 <- mlp7#2690: pred -0.79 dproj -0.45 (ctrl -0.01) dresp +0.219 (ctrl -0.004) T1=True T2=True
+mlp8#599 <- mlp7#2367: pred +0.44 dproj -0.67 (ctrl +0.00) dresp +0.010 (ctrl -0.001) T1=False T2=False
+mlp8#687 <- mlp7#2367: pred +0.88 dproj -0.66 (ctrl -0.00) dresp +0.120 (ctrl -0.001) T1=False T2=True
+mlp8#825 <- mlp7#1012: pred +0.90 dproj -0.24 (ctrl -0.00) dresp -0.288 (ctrl -0.003) T1=False T2=True
+mlp8#1108 <- mlp7#2402: pred +0.22 dproj +0.12 (ctrl +0.01) dresp -0.001 (ctrl +0.002) T1=True T2=False
+mlp8#1182 <- mlp7#2367: pred +0.30 dproj +0.61 (ctrl +0.01) dresp +0.010 (ctrl +0.002) T1=False T2=False
+mlp8#1203 <- mlp7#2402: pred +0.44 dproj +0.28 (ctrl -0.02) dresp +0.011 (ctrl +0.001) T1=True T2=False
+mlp8#1276 <- mlp7#2402: pred +0.35 dproj +0.05 (ctrl +0.01) dresp -0.027 (ctrl +0.001) T1=False T2=True
+mlp8#1332 <- mlp7#79: pred +1.30 dproj +0.57 (ctrl +0.01) dresp -0.283 (ctrl +0.000) T1=True T2=True
+mlp8#1333 <- mlp7#658: pred -1.47 dproj -1.74 (ctrl -0.01) dresp -0.181 (ctrl -0.003) T1=True T2=True
+mlp8#1423 <- mlp7#2402: pred +0.62 dproj +0.34 (ctrl -0.00) dresp -0.007 (ctrl -0.000) T1=True T2=False
+mlp8#1542 <- mlp7#2589: pred +0.83 dproj -0.04 (ctrl +0.01) dresp -0.163 (ctrl -0.002) T1=False T2=True
+mlp8#1749 <- mlp7#2367: pred -0.28 dproj +0.53 (ctrl -0.01) dresp +0.078 (ctrl -0.002) T1=False T2=True
+mlp8#1764 <- mlp7#2086: pred -0.20 dproj -0.12 (ctrl +0.00) dresp +0.040 (ctrl +0.002) T1=True T2=True
+mlp8#1827 <- mlp7#2402: pred -1.35 dproj -0.64 (ctrl +0.00) dresp +0.065 (ctrl +0.001) T1=True T2=True
+mlp8#1864 <- mlp5#1790: pred -0.33 dproj -0.10 (ctrl -0.00) dresp +0.000 (ctrl -0.002) T1=True T2=False
+mlp8#1981 <- mlp5#1790: pred -0.45 dproj +0.20 (ctrl +0.04) dresp -0.030 (ctrl +0.005) T1=False T2=True
+mlp8#2036 <- mlp7#2367: pred -1.11 dproj +1.86 (ctrl +0.04) dresp -0.010 (ctrl +0.001) T1=False T2=False
+mlp8#2087 <- mlp7#2367: pred +0.78 dproj -1.10 (ctrl -0.02) dresp +0.010 (ctrl -0.001) T1=False T2=False
+mlp8#2162 <- mlp7#2367: pred +0.56 dproj -0.77 (ctrl -0.01) dresp +0.061 (ctrl -0.002) T1=False T2=True
+mlp8#2346 <- mlp7#2367: pred +1.36 dproj -1.62 (ctrl +0.00) dresp +0.015 (ctrl -0.000) T1=False T2=False
+mlp8#2387 <- mlp5#1790: pred -0.23 dproj -0.12 (ctrl +0.01) dresp -0.002 (ctrl +0.000) T1=True T2=False
+mlp8#2402 <- mlp7#2402: pred +0.21 dproj +0.10 (ctrl -0.00) dresp -0.010 (ctrl -0.000) T1=True T2=False
+mlp8#2469 <- mlp7#2367: pred +1.66 dproj -2.13 (ctrl -0.00) dresp +0.036 (ctrl -0.000) T1=False T2=True
+mlp8#2532 <- mlp4#1894: pred +0.18 dproj +0.08 (ctrl -0.00) dresp -0.007 (ctrl +0.000) T1=True T2=False
+mlp8#2543 <- mlp7#2367: pred +1.08 dproj -1.11 (ctrl +0.00) dresp +0.039 (ctrl +0.000) T1=False T2=True
+mlp8#2687 <- mlp6#2081: pred -1.35 dproj -3.27 (ctrl -0.01) dresp -0.482 (ctrl -0.001) T1=False T2=True
+mlp8#2793 <- mlp7#2367: pred +1.38 dproj -1.66 (ctrl +0.01) dresp +0.101 (ctrl +0.002) T1=False T2=True
+mlp8#2836 <- mlp7#2367: pred -0.29 dproj +1.08 (ctrl -0.01) dresp +0.280 (ctrl -0.006) T1=False T2=True
+mlp8#2988 <- mlp7#2233: pred -2.41 dproj -2.36 (ctrl +0.01) dresp -0.209 (ctrl +0.001) T1=True T2=True
+WDD: TIER1 16/30  TIER2 23/30
+outlier: TIER1 11/30  TIER2 12/30
+corr: TIER1 27/30  TIER2 25/30
+DONE_X3

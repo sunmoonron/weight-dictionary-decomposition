@@ -1,0 +1,69 @@
+device cuda:1 ([3043, 4158] MiB free)
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2713.09it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2415650 > 1024). Running this sequence through the model will result in indexing errors
+tokens: train 204800, eval 32768
+collecting activations...
+  done in 30s
+clean eval CE 3.6465
+== weight_L6 (L6, 78175 atoms, center=True)
+   k=32: FVU 0.0688  dCE +0.5506  KL 0.5188
+   k=64: FVU 0.0365  dCE +0.1778  KL 0.1592
+   FVU curve: k4=0.144  k8=0.122  k16=0.098  k32=0.069  k64=0.036   (120s)
+   composition@k32: attn=19.7%  bias=0.1%  mlp=65.8%  wpe=0.1%  wte=14.3%
+== weight_L8 (L8, 85859 atoms, center=True)
+   k=32: FVU 0.1075  dCE +0.3859  KL 0.3518
+   k=64: FVU 0.0560  dCE +0.1418  KL 0.1215
+   FVU curve: k4=0.227  k8=0.193  k16=0.154  k32=0.108  k64=0.056   (129s)
+   composition@k32: attn=17.7%  bias=0.1%  mlp=65.4%  wpe=0.1%  wte=16.8%
+== weight_L6_pure (L6, 78175 atoms, center=False)
+   k=32: FVU 0.0792  dCE +0.6440  KL 0.5699
+   k=64: FVU 0.0418  dCE +0.2075  KL 0.1709
+   FVU curve: k4=0.182  k8=0.148  k16=0.114  k32=0.079  k64=0.042   (121s)
+   composition@k32: attn=22.0%  bias=0.9%  mlp=62.8%  wpe=0.1%  wte=14.2%
+== random_L6 (L6, 78175 atoms, center=True)
+   k=32: FVU 0.5010  dCE +4.6131  KL 4.5458
+   k=64: FVU 0.2519  dCE +2.6899  KL 2.6228
+   FVU curve: k4=0.911  k8=0.833  k16=0.700  k32=0.501  k64=0.252   (122s)
+== actdict_L6 (L6, 78175 atoms, center=True)
+   k=32: FVU 0.0229  dCE +0.0532  KL 0.0957
+   k=64: FVU 0.0128  dCE +0.0139  KL 0.0398
+   FVU curve: k4=0.058  k8=0.045  k16=0.034  k32=0.023  k64=0.013   (120s)
+== pca_L6
+   k=32: FVU 0.0950  dCE +1.2153  KL 1.3072
+   k=64: FVU 0.0691  dCE +0.5681  KL 0.6465
+   FVU curve: k4=0.157  k8=0.138  k16=0.118  k32=0.095  k64=0.069
+== qualitative: most-used MLP atoms at L6
+   [mlp0#53368] n=2247  ->[' small', ' little', ' new', ' very', ' great', ' few', ' particular', ' large']
+      ...' 06 : 00 September 3 , 300 North Koreans launched an'
+      ...' reinforce the protection of the steering compartment and to create an'
+      ...' \'s Talk Sports " in Buffalo and also pioneered an'
+   [mlp0#53335] n=2234  ->['::::::::', 'then', 'tel', '))))', '::::', ' Chem', ',...', ' .']
+      ...' the lost carriers with hybrid carriers converted from battleships .'
+      ...' prose style at the time was too dense and obscure ,'
+      ...' at the tip of the ridge took them under fire ,'
+   [mlp4#69455] n=2065  ->['使', 'belt', '::::::::', 'unction', 'ectomy', ' throne', 'obe', 'roman']
+      ...' prose style at the time was too dense and obscure ,'
+      ...' days so they could sell their citrus crop that fell .'
+      ...' the lost carriers with hybrid carriers converted from battleships .'
+   [mlp6#74820] n=1867  ->['aper', 'wait', 'ordering', 'xt', 'ape', 'oru', 'amy', 'hra']
+      ...' come through very well in translation " — p. '
+      ...' correctly believing that the Americans would follow him north . '
+      ...' Air Force did deliver rocket and strafing strikes . '
+   [mlp0#53330] n=1681  ->[' the', ',', ' and', ' in', ' a', '-', '.', ' to']
+      ...' This hurricane instead maintained a general west @-@ northwest'
+      ...' its producers , Carl Falk and Rami Yacoub'
+      ...'le College and served as a disc jockey on Public'
+   [mlp1#56694] n=1465  ->[' however', ' meanwhile', ' also', ' moreover', 'theless', ' furthermore', ' Explan', 'anwhile']
+      ...' Influence on Japanese literature = = = ||| Du'
+      ...'ino @-@ Japanese War . ||| Despite'
+      ...' war , but they were revived after Midway . Plans'
+   [mlp0#53400] n=1464  ->['BuyableInstoreAndOnline', 'natureconservancy', ' Nanto', 'iHUD', 'anooga', 'dayName', 'nesota', '◼']
+      ...' Kiss You " debuted at number 90 on the United States'
+      ...' green screen , which include sequences reminiscent of iconic music videos'
+      ...' electronic effects , colossal hooks , a " na na na'
+   [mlp0#52869] n=1458  ->[' and', ' the', ' a', ' to', ' in', ' I', ' is', ' one']
+      ...' , Hayashi Shunsai , a notable Confuc'
+      ...' " by Arnell . Premiering worldwide on Vev'
+      ...' They transferred to Cam Ranh Bay , French Indoch'
+DONE_A

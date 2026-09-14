@@ -1,0 +1,14 @@
+job start x5b gpt2 02:10:48 free=74441MB
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 7900.49it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+top-9 counter-writers: [614, 2664, 2885, 1995, 2723, 548, 1080, 2600, 2607]
+top-9: energy 640105 dCE +0.02424
+any_block3_neuron set 0: 466 neurons, energy 631123 (0.99 of top-9), dCE +0.02825
+any_block3_neuron set 1: 418 neurons, energy 646526 (1.01 of top-9), dCE +0.02354
+any_block3_neuron set 2: 460 neurons, energy 608784 (0.95 of top-9), dCE +0.02621
+other_counter_writers set 0: 455 neurons, energy 608680 (0.95 of top-9), dCE +0.03173
+other_counter_writers set 1: 431 neurons, energy 608333 (0.95 of top-9), dCE +0.02604
+other_counter_writers set 2: 398 neurons, energy 609067 (0.95 of top-9), dCE +0.03395
+DONE_X5B
+job exit 0 x5b gpt2 02:11:34

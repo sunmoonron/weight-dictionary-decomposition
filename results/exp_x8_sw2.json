@@ -1,0 +1,14 @@
+{
+ "L1_neuron1710": {
+  "norm_rank_in_block": 0,
+  "dominant_channel": 1764,
+  "ch1764_share": 0.9791,
+  "weight_value": 0.6323
+ },
+ "L2_neuron8041": {
+  "norm_rank_in_block": 0,
+  "dominant_channel": 1764,
+  "ch1764_share": 0.9267,
+  "weight_value": -0.5923
+ }
+}

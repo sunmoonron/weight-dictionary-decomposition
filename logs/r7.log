@@ -1,0 +1,30 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2948.61it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+phase1 batch 1/16 5s
+phase1 batch 2/16 5s
+phase1 batch 3/16 5s
+phase1 batch 4/16 5s
+phase1 batch 5/16 5s
+phase1 batch 6/16 6s
+phase1 batch 7/16 6s
+phase1 batch 8/16 6s
+phase1 batch 9/16 6s
+phase1 batch 10/16 6s
+phase1 batch 11/16 7s
+phase1 batch 12/16 7s
+phase1 batch 13/16 7s
+phase1 batch 14/16 7s
+phase1 batch 15/16 7s
+phase1 batch 16/16 8s
+population: {'erased_transient': 331, 'erased_counter': 2800, 'mid': 630, 'intact': 60486} of 65280
+selected erased_transient: 256 cases, median |c| 5.15, median s7 -0.10, median birth 0.71
+selected erased_counter: 256 cases, median |c| 5.14, median s7 -1.46, median birth -0.98
+selected mid: 256 cases, median |c| 5.17, median s7 0.55, median birth 0.85
+selected intact: 256 cases, median |c| 5.13, median s7 5.07, median birth 3.74
+erased_transient  n=256  E_src_full med 0.0020  E_src_mlp 0.0045  E_src_sink 0.0062  E_dir_full 0.0000  E_dirall 0.0000  E_rand 0.0000  dir/src 0.04  shift 0.060  72s
+erased_counter    n=256  E_src_full med 0.0015  E_src_mlp 0.0042  E_src_sink 0.0054  E_dir_full 0.0034  E_dirall 0.0034  E_rand 0.0026  dir/src 1.84  shift 0.055  137s
+mid               n=256  E_src_full med 0.0020  E_src_mlp 0.0052  E_src_sink 0.0072  E_dir_full 0.0004  E_dirall 0.0004  E_rand 0.0003  dir/src 0.25  shift 0.060  203s
+intact            n=256  E_src_full med 0.0006  E_src_mlp 0.0015  E_src_sink 0.0024  E_dir_full 0.0167  E_dirall 0.0167  E_rand 0.0435  dir/src 28.57  shift 0.040  270s
+pre-registered: {'U1_erased_src_ge_half_intact': True, 'U1_ratio': 3.435781378973383, 'U2_erased_dir_lt_0.1_src': True, 'U3_intact_dir_over_src_ge_0.5': True}
+done 270s

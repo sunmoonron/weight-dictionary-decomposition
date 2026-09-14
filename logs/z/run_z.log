@@ -1,0 +1,90 @@
+Z start 19:53:02
+job start exp_z3_ceiling qwen2.5-7b/wikitext 19:53:02
+job start exp_z3_ceiling gpt2/wikitext 19:53:02
+job start exp_z3_ceiling llama-7b/wikitext 19:53:02
+job start exp_z3_ceiling smollm2-135m/wikitext 19:53:02
+job exit 0 exp_z3_ceiling smollm2-135m/wikitext 19:54:00
+job start exp_z3_ceiling qwen2.5-0.5b/wikitext 19:54:00
+job exit 0 exp_z3_ceiling gpt2/wikitext 19:54:24
+job start exp_z3_ceiling pythia-410m/wikitext 19:54:24
+job exit 0 exp_z3_ceiling pythia-410m/wikitext 19:57:57
+job start exp_z3_ceiling olmo-1b-0724/wikitext 19:57:57
+job exit 0 exp_z3_ceiling qwen2.5-0.5b/wikitext 19:58:38
+job start exp_z3_ceiling gpt2/pile 19:58:38
+job exit 0 exp_z3_ceiling gpt2/pile 20:01:19
+job start exp_z3_ceiling smollm2-135m/pile 20:01:19
+job exit 0 exp_z3_ceiling smollm2-135m/pile 20:03:52
+job start exp_z3_ceiling qwen2.5-0.5b/pile 20:03:52
+job exit 0 exp_z3_ceiling olmo-1b-0724/wikitext 20:03:58
+job start exp_z3_ceiling pythia-410m/pile 20:03:58
+job exit 0 exp_z3_ceiling pythia-410m/pile 20:07:57
+job start exp_z3_ceiling olmo-1b-0724/pile 20:07:57
+job exit 0 exp_z3_ceiling qwen2.5-0.5b/pile 20:09:09
+job exit 0 exp_z3_ceiling llama-7b/wikitext 20:12:21
+job start exp_z3_ceiling pythia-6.9b/wikitext 20:12:21
+job exit 0 exp_z3_ceiling olmo-1b-0724/pile 20:13:28
+job start sae gpt2 20:13:28
+job exit 0 exp_z3_ceiling qwen2.5-7b/wikitext 20:18:27
+job start exp_z3_ceiling qwen2.5-7b/pile 20:18:27
+job exit 1 exp_z3_ceiling qwen2.5-7b/pile 20:20:05
+job start exp_z3_ceiling llama-7b/pile 20:20:05
+job exit 0 exp_z3_ceiling pythia-6.9b/wikitext 20:33:35
+job start exp_z3_ceiling pythia-6.9b/pile 20:33:35
+job exit 1 exp_z3_ceiling pythia-6.9b/pile 20:35:23
+job exit 0 exp_z3_ceiling llama-7b/pile 20:36:49
+job start exp_z5_kcurve qwen2.5-7b/wikitext 20:36:49
+job start exp_z5_kcurve llama-7b/wikitext 20:36:49
+job exit 1 exp_z5_kcurve qwen2.5-7b/wikitext 20:37:23
+job start exp_z5_kcurve pythia-6.9b/wikitext 20:37:23
+job exit 1 exp_z5_kcurve pythia-6.9b/wikitext 20:38:12
+job exit 0 sae gpt2 20:56:28
+job start exp_z5_kcurve gpt2/wikitext 20:56:28
+job start exp_z5_kcurve smollm2-135m/wikitext 20:56:28
+job exit 0 exp_z5_kcurve smollm2-135m/wikitext 20:59:19
+job start exp_z5_kcurve qwen2.5-0.5b/wikitext 20:59:19
+job exit 0 exp_z5_kcurve gpt2/wikitext 21:00:05
+job start exp_z5_kcurve pythia-410m/wikitext 21:00:05
+job exit 0 exp_z5_kcurve pythia-410m/wikitext 21:05:36
+job start exp_z5_kcurve olmo-1b-0724/wikitext 21:05:36
+job exit 0 exp_z5_kcurve qwen2.5-0.5b/wikitext 21:06:42
+FIX start 21:12:32
+job start exp_z3_ceiling qwen2.5-7b/pile 21:12:32
+job exit 0 exp_z5_kcurve olmo-1b-0724/wikitext 21:13:24
+SMALL_DONE 21:13:24
+job exit 0 exp_z5_kcurve llama-7b/wikitext 21:14:02
+job start fp32 qwen2.5-7b/wikitext 21:14:02
+job exit 0 exp_z3_ceiling qwen2.5-7b/pile 21:33:14
+job start exp_z3_ceiling pythia-6.9b/pile 21:33:14
+job exit 0 fp32 qwen2.5-7b/wikitext 21:36:05
+BIG_DONE 21:36:05
+Z_DONE 21:36:06
+MORE start 21:36:14
+job start exp_d 21:36:14
+job start exp_z5_kcurve gpt2/wikitext v2 21:36:14
+job exit 0 exp_z5_kcurve gpt2/wikitext v2 21:38:56
+job start exp_z5_kcurve smollm2-135m/wikitext v2 21:38:56
+job exit 0 exp_z5_kcurve smollm2-135m/wikitext v2 21:41:01
+job start exp_z5_kcurve qwen2.5-0.5b/wikitext v2 21:41:01
+job exit 0 exp_d 21:45:05
+job start exp_a 21:45:05
+job exit 0 exp_z5_kcurve qwen2.5-0.5b/wikitext v2 21:47:45
+job start exp_z5_kcurve pythia-410m/wikitext v2 21:47:45
+job exit 0 exp_z3_ceiling pythia-6.9b/pile 21:50:50
+job start exp_z5_kcurve qwen2.5-7b/wikitext 21:50:50
+job exit 1 exp_z5_kcurve qwen2.5-7b/wikitext 21:50:54
+job start exp_z5_kcurve pythia-6.9b/wikitext 21:50:54
+job exit 1 exp_z5_kcurve pythia-6.9b/wikitext 21:50:58
+FIX_DONE 21:50:58
+job exit 0 exp_z5_kcurve pythia-410m/wikitext v2 21:51:50
+job start exp_z5_kcurve olmo-1b-0724/wikitext v2 21:51:50
+job exit 0 exp_a 21:53:11
+job start exp_z5_kcurve llama-7b/wikitext v2 21:53:11
+FIX2 start 21:53:29
+job start exp_z5_kcurve qwen2.5-7b/wikitext v2 21:53:29
+job exit 0 exp_z5_kcurve olmo-1b-0724/wikitext v2 22:00:25
+job exit 0 exp_z5_kcurve llama-7b/wikitext v2 22:30:49
+MORE_DONE 22:30:49
+job exit 0 exp_z5_kcurve qwen2.5-7b/wikitext v2 22:33:10
+job start exp_z5_kcurve pythia-6.9b/wikitext v2 22:33:10
+job exit 0 exp_z5_kcurve pythia-6.9b/wikitext v2 22:53:49
+FIX2_DONE 22:53:49

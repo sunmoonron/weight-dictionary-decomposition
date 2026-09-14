@@ -1,0 +1,7 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 2816.48it/s]
+1 {"spearman_freq_vs_gradnorm": -0.0984, "grad_mass_share_rarest_decile": 0.1827, "grad_mass_share_commonest_decile": 0.1067, "token_share_rarest_decile": 0.1875}
+4 {"spearman_freq_vs_gradnorm": -0.0694, "grad_mass_share_rarest_decile": 0.1891, "grad_mass_share_commonest_decile": 0.1008, "token_share_rarest_decile": 0.1875}
+8 {"spearman_freq_vs_gradnorm": 0.0011, "grad_mass_share_rarest_decile": 0.1841, "grad_mass_share_commonest_decile": 0.1028, "token_share_rarest_decile": 0.1875}
+12 {"spearman_freq_vs_gradnorm": 0.1051, "grad_mass_share_rarest_decile": 0.1759, "grad_mass_share_commonest_decile": 0.1144, "token_share_rarest_decile": 0.1875}
+DONE_Y41

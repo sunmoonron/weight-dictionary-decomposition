@@ -1,0 +1,8 @@
+== pythia-410m/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 67/292 [00:00<00:00, 663.17it/s]Loading weights:  46%|████▌     | 134/292 [00:00<00:00, 433.98it/s]Loading weights:  74%|███████▍  | 216/292 [00:00<00:00, 565.75it/s]Loading weights:  96%|█████████▌| 279/292 [00:00<00:00, 586.69it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 585.23it/s]
+  pythia-410m/wikitext: 32768 states, d=1024 dff=4096 L=12 atoms=116864 (39s)
+  supports done (209s); support composition {'embedding': 0.3284721374511719, 'mlp': 0.5336666107177734, 'attention': 0.1378612518310547, 'bias': 0.0}
+  recall_top1 here 0.4813 vs exp_z2 0.4813 (ok)
+  pythia-410m/wikitext: id_omp 0.365  intact 0.762 id|intact 0.465  erased 0.080 id|erased 0.003  misses: erased 0.13 weak 0.23 twin 0.01 other 0.64  AUC surv 0.839
+DONE_Z3

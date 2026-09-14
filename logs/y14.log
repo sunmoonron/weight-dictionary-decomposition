@@ -1,0 +1,74 @@
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  25%|██▌       | 29/114 [00:00<00:00, 276.58it/s]Loading weights:  60%|█████▉    | 68/114 [00:00<00:00, 338.12it/s]Loading weights:  93%|█████████▎| 106/114 [00:00<00:00, 351.86it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 349.89it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[allenai/OLMo-1B-0724-hf] ch1764 max|h| 441.5 peaklvl 10 pos0frac 0.4 | builder b15 #6840 w -0.7261 share 0.9617 largest_total_writer=True
+[allenai/OLMo-1B-0724-hf] causal: clean 14.80 wz x1.004 nz x1.004 maxnull 0.00021 -> super weight False
+[allenai/OLMo-1B-0724-hf] coherence: max|cos| 0.9565 (mlp1), n>0.9 5
+[allenai/OLMo-1B-0724-hf] OMP peak recall 0.0 (r2k1 0.1317) | bulk recall 0.0 (r2k1 0.0543) [91s]
+[allenai/OLMo-1B-0724-hf] peak top-1 picks: [{"atom": 61349, "section": "mlp1", "index": 2853, "n": 6}, {"atom": 63282, "section": "mlp1", "index": 4786, "n": 2}, {"atom": 65142, "section": "mlp1", "index": 6646, "n": 2}, {"atom": 155776, "section": "mlp12", "index": 7168, "n": 1}, {"atom": 162971, "section": "mlp13", "index": 6171, "n": 1}, {"atom": 164310, "section": "mlp13", "index": 7510, "n": 1}, {"atom": 165135, "section": "mlp14", "index": 143, "n": 1}, {"atom": 167371, "section": "mlp14", "index": 2379, "n": 1}, {"atom": 167434, "section": "mlp14", "index": 2442, "n": 2}, {"atom": 171437, "section": "mlp14", "index": 6445, "n": 2}, {"atom": 172242, "section": "mlp14", "index": 7250, "n": 1}, {"atom": 174451, "section": "mlp15", "index": 1267, "n": 1}, {"atom": 174948, "section": "mlp15", "index": 1764, "n": 1}, {"atom": 176638, "section": "mlp15", "index": 3454, "n": 2}, {"atom": 176973, "section": "mlp15", "index": 3789, "n": 1}, {"atom": 177549, "section": "mlp15", "index": 4365, "n": 1}, {"atom": 177586, "section": "mlp15", "index": 4402, "n": 1}, {"atom": 178041, "section": "mlp15", "index": 4857, "n": 1}, {"atom": 179179, "section": "mlp15", "index": 5995, "n": 2}, {"atom": 179326, "section": "mlp15", "index": 6142, "n": 3}, {"atom": 180726, "section": "mlp15", "index": 7542, "n": 2}, {"atom": 181281, "section": "mlp15", "index": 8097, "n": 1}, {"atom": 181291, "section": "mlp15", "index": 8107, "n": 4}]
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:   0%|          | 1/272 [00:00<00:34,  7.81it/s]Loading weights:   9%|▉         | 25/272 [00:00<00:01, 126.07it/s]Loading weights:  17%|█▋        | 45/272 [00:00<00:01, 148.88it/s]Loading weights:  22%|██▏       | 61/272 [00:00<00:01, 110.60it/s]Loading weights:  37%|███▋      | 100/272 [00:00<00:01, 168.06it/s]Loading weights:  46%|████▌     | 125/272 [00:00<00:00, 172.81it/s]Loading weights:  59%|█████▉    | 161/272 [00:00<00:00, 220.07it/s]Loading weights:  76%|███████▌  | 207/272 [00:01<00:00, 279.87it/s]Loading weights:  95%|█████████▌| 259/272 [00:01<00:00, 344.16it/s]Loading weights: 100%|██████████| 272/272 [00:01<00:00, 236.88it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (304838 > 8192). Running this sequence through the model will result in indexing errors
+[HuggingFaceTB/SmolLM2-135M] ch507 max|h| 20048.0 peaklvl 26 pos0frac 0.4 | builder b11 #1229 w 5.875 share 0.9816 largest_total_writer=True
+[HuggingFaceTB/SmolLM2-135M] causal: clean 23.86 wz x2.194 nz x1.082 maxnull 0.00034 -> super weight True
+[HuggingFaceTB/SmolLM2-135M] coherence: max|cos| 0.9932 (mlp28), n>0.9 8
+[HuggingFaceTB/SmolLM2-135M] OMP peak recall 0.45 (r2k1 0.5385) | bulk recall 0.1602 (r2k1 0.1989) [20s]
+[HuggingFaceTB/SmolLM2-135M] peak top-1 picks: [{"atom": 49237, "section": "mlp0", "index": 85, "n": 1}, {"atom": 49384, "section": "mlp0", "index": 232, "n": 1}, {"atom": 49813, "section": "mlp0", "index": 661, "n": 1}, {"atom": 50449, "section": "mlp0", "index": 1297, "n": 7}, {"atom": 52314, "section": "mlp2", "index": 90, "n": 2}, {"atom": 59467, "section": "mlp6", "index": 1099, "n": 1}, {"atom": 63176, "section": "mlp9", "index": 200, "n": 6}, {"atom": 67277, "section": "mlp11", "index": 1229, "n": 18}, {"atom": 85343, "section": "mlp23", "index": 863, "n": 1}, {"atom": 92838, "section": "mlp28", "index": 678, "n": 2}]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<02:51,  1.69it/s]Loading weights:  13%|█▎        | 39/290 [00:00<00:04, 59.75it/s]Loading weights:  18%|█▊        | 51/290 [00:00<00:03, 67.05it/s]Loading weights:  75%|███████▌  | 218/290 [00:01<00:00, 382.46it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 259.10it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (298938 > 131072). Running this sequence through the model will result in indexing errors
+[Qwen/Qwen2.5-0.5B] ch62 max|h| 1781.0 peaklvl 18 pos0frac 0.4 | builder b21 #567 w 0.6328 share 0.9669 largest_total_writer=True
+[Qwen/Qwen2.5-0.5B] causal: clean 20.12 wz x1.015 nz x1.014 maxnull 0.00015 -> super weight False
+[Qwen/Qwen2.5-0.5B] coherence: max|cos| 0.9995 (mlp2), n>0.9 6
+[Qwen/Qwen2.5-0.5B] OMP peak recall 0.0 (r2k1 0.2818) | bulk recall 0.0 (r2k1 0.099) [40s]
+[Qwen/Qwen2.5-0.5B] peak top-1 picks: [{"atom": 1, "section": "embed", "index": 1, "n": 1}, {"atom": 339, "section": "embed", "index": 339, "n": 1}, {"atom": 608, "section": "embed", "index": 608, "n": 1}, {"atom": 614, "section": "embed", "index": 614, "n": 1}, {"atom": 702, "section": "embed", "index": 702, "n": 1}, {"atom": 2142, "section": "embed", "index": 2142, "n": 1}, {"atom": 12818, "section": "embed", "index": 12818, "n": 1}, {"atom": 162477, "section": "mlp2", "index": 813, "n": 12}, {"atom": 233442, "section": "mlp16", "index": 3682, "n": 1}, {"atom": 243315, "section": "mlp18", "index": 3827, "n": 1}, {"atom": 244785, "section": "mlp19", "index": 433, "n": 1}, {"atom": 244813, "section": "mlp19", "index": 461, "n": 1}, {"atom": 245531, "section": "mlp19", "index": 1179, "n": 2}, {"atom": 249005, "section": "mlp19", "index": 4653, "n": 1}, {"atom": 251313, "section": "mlp20", "index": 2097, "n": 1}, {"atom": 251628, "section": "mlp20", "index": 2412, "n": 1}, {"atom": 252232, "section": "mlp20", "index": 3016, "n": 1}, {"atom": 252582, "section": "mlp20", "index": 3366, "n": 4}, {"atom": 252890, "section": "mlp20", "index": 3674, "n": 1}, {"atom": 257566, "section": "mlp21", "index": 3486, "n": 4}, {"atom": 258510, "section": "mlp21", "index": 4430, "n": 1}, {"atom": 268582, "section": "mlp23", "index": 4774, "n": 1}]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   8%|▊         | 24/292 [00:00<00:01, 171.74it/s]Loading weights:  14%|█▍        | 42/292 [00:00<00:02, 116.86it/s]Loading weights:  21%|██        | 62/292 [00:00<00:01, 129.78it/s]Loading weights:  26%|██▌       | 76/292 [00:00<00:01, 121.04it/s]Loading weights:  30%|███       | 89/292 [00:00<00:01, 103.42it/s]Loading weights:  34%|███▍      | 100/292 [00:00<00:02, 89.53it/s]Loading weights:  38%|███▊      | 112/292 [00:01<00:02, 82.73it/s]Loading weights:  43%|████▎     | 127/292 [00:01<00:01, 94.14it/s]Loading weights:  47%|████▋     | 138/292 [00:01<00:01, 93.63it/s]Loading weights:  53%|█████▎    | 156/292 [00:01<00:01, 106.67it/s]Loading weights:  59%|█████▉    | 172/292 [00:01<00:01, 118.20it/s]Loading weights:  63%|██████▎   | 185/292 [00:01<00:00, 113.10it/s]Loading weights:  69%|██████▉   | 202/292 [00:01<00:00, 118.42it/s]Loading weights: 100%|██████████| 292/292 [00:01<00:00, 152.18it/s]
+[EleutherAI/pythia-410m] ch357 max|h| 658.5 peaklvl 21 pos0frac 0.4 | builder b22 #2986 w 0.5493 share 0.3534 largest_total_writer=True
+[EleutherAI/pythia-410m] causal: clean 24.75 wz x1.0 nz x0.999 maxnull 0.00018 -> super weight False
+[EleutherAI/pythia-410m] coherence: max|cos| 0.8994 (mlp6), n>0.9 0
+[EleutherAI/pythia-410m] OMP peak recall 0.0 (r2k1 0.8098) | bulk recall 0.0 (r2k1 0.218) [48s]
+[EleutherAI/pythia-410m] peak top-1 picks: [{"atom": 75282, "section": "mlp6", "index": 402, "n": 16}, {"atom": 77827, "section": "mlp6", "index": 2947, "n": 16}, {"atom": 136026, "section": "mlp20", "index": 3802, "n": 1}, {"atom": 138043, "section": "mlp21", "index": 1723, "n": 1}, {"atom": 139892, "section": "mlp21", "index": 3572, "n": 1}, {"atom": 148196, "section": "mlp23", "index": 3684, "n": 1}, {"atom": 169856, "section": "attn20", "index": 768, "n": 1}, {"atom": 171329, "section": "attn22", "index": 193, "n": 1}, {"atom": 171521, "section": "attn22", "index": 385, "n": 1}, {"atom": 171904, "section": "attn22", "index": 768, "n": 1}]
+VERDICT {
+ "V1_is_super_weight": {
+  "allenai/OLMo-1B-0724-hf": false,
+  "HuggingFaceTB/SmolLM2-135M": true,
+  "Qwen/Qwen2.5-0.5B": false,
+  "EleutherAI/pythia-410m": false
+ },
+ "V1_ppl_x_wz": {
+  "allenai/OLMo-1B-0724-hf": 1.004,
+  "HuggingFaceTB/SmolLM2-135M": 2.194,
+  "Qwen/Qwen2.5-0.5B": 1.015,
+  "EleutherAI/pythia-410m": 1.0
+ },
+ "V1_ppl_x_nz": {
+  "allenai/OLMo-1B-0724-hf": 1.004,
+  "HuggingFaceTB/SmolLM2-135M": 1.082,
+  "Qwen/Qwen2.5-0.5B": 1.014,
+  "EleutherAI/pythia-410m": 0.999
+ },
+ "V2_peak_recall": {
+  "allenai/OLMo-1B-0724-hf": 0.0,
+  "HuggingFaceTB/SmolLM2-135M": 0.45,
+  "Qwen/Qwen2.5-0.5B": 0.0,
+  "EleutherAI/pythia-410m": 0.0
+ },
+ "V2_pass_all_models": false,
+ "V3_max_cos": {
+  "allenai/OLMo-1B-0724-hf": 0.9565,
+  "HuggingFaceTB/SmolLM2-135M": 0.9932,
+  "Qwen/Qwen2.5-0.5B": 0.9995,
+  "EleutherAI/pythia-410m": 0.8994
+ },
+ "V3_fragile_any": true,
+ "V4_bulk_recall": {
+  "allenai/OLMo-1B-0724-hf": 0.0,
+  "HuggingFaceTB/SmolLM2-135M": 0.1602,
+  "Qwen/Qwen2.5-0.5B": 0.0,
+  "EleutherAI/pythia-410m": 0.0
+ },
+ "candidate_is_largest_total_writer": {
+  "allenai/OLMo-1B-0724-hf": true,
+  "HuggingFaceTB/SmolLM2-135M": true,
+  "Qwen/Qwen2.5-0.5B": true,
+  "EleutherAI/pythia-410m": true
+ }
+}
+DONE_Y14

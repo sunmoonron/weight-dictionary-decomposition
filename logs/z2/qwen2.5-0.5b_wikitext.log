@@ -1,0 +1,9 @@
+== qwen2.5-0.5b/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  62%|██████▏   | 179/290 [00:00<00:00, 1786.22it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1624.70it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (298938 > 131072). Running this sequence through the model will result in indexing errors
+  qwen2.5-0.5b/wikitext: 32768 states, d=896 dff=4864 L=12 atoms=226816 (27s)
+  reconstruction done (700s): FVU32 weight 0.0168
+  attribution done (884s): recall 0.4590
+  qwen2.5-0.5b/wikitext: FVU32 0.017 [0.016,0.017]  rot 0.518  recall 0.459 [0.451,0.467]  r_id 0.994 [0.993,0.994]  r_unc 0.551
+DONE_Z2

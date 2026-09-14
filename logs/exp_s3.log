@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  71%|███████   | 208/292 [00:00<00:00, 2074.77it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2335.82it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+16384 states
+counter per-write vs energy-weighted: {0: (0.035, 0.026), 9: (0.983, 0.987), 16: (0.045, 0.028), 17: (0.0, 0.0), 18: (0.059, 0.046), 19: (0.061, 0.044), 20: (0.243, 0.223), 21: (0.531, 0.536), 22: (0.279, 0.312), 23: (0.109, 0.053)}
+b9 concentration: {'n_cases': 2796, 'distinct_neurons': 3, 'top1_share': 0.799, 'top5_share': 1.0}
+b9 surv quantiles: {'q5': -1.01, 'q25': -0.68, 'q50': -0.5, 'q75': -0.35, 'q95': -0.12} | pre-proj: {'mean': -1.29, 'median': -1.25}
+b9 counter by |c| quintile: {'q0': 0.973, 'q1': 0.991, 'q2': 0.995}
+mean |cos(write dir, PC1 of pre-state)| per block: {0: 0.018, 9: 0.07, 16: 0.137, 17: 0.024, 18: 0.075, 19: 0.045, 20: 0.253, 21: 0.292, 22: 0.331, 23: 0.324}
+b9 counter-fraction after projecting out PC1: {'n_kept': 2796, 'counter': 0.98}
+DONE_S3

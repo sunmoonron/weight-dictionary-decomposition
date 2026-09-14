@@ -1,0 +1,8 @@
+== olmo-1b-0724/pile ==
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   4%|▍         | 5/114 [00:00<00:02, 48.37it/s]Loading weights:  27%|██▋       | 31/114 [00:00<00:00, 164.92it/s]Loading weights:  47%|████▋     | 54/114 [00:00<00:00, 187.52it/s]Loading weights:  69%|██████▉   | 79/114 [00:00<00:00, 211.16it/s]Loading weights:  89%|████████▉ | 102/114 [00:00<00:00, 213.11it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 200.15it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  olmo-1b-0724/pile: 32768 states, d=2048 dff=8192 L=8 atoms=142464 (85s)
+  reconstruction done (1078s): FVU32 weight 0.0087
+  attribution done (1298s): recall 0.7349
+  olmo-1b-0724/pile: FVU32 0.009 [0.009,0.009]  rot 0.778  recall 0.735 [0.727,0.743]  r_id 0.996 [0.995,0.996]  r_unc 0.977
+DONE_Z2

@@ -1,0 +1,9 @@
+job start z6 pythia-410m/pile 02:14:34 free=71923MB
+== pythia-410m/pile ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 38/292 [00:00<00:00, 379.73it/s]Loading weights:  56%|█████▌    | 164/292 [00:00<00:00, 894.24it/s]Loading weights:  99%|█████████▉| 290/292 [00:00<00:00, 1060.01it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 965.80it/s] 
+  pythia-410m/pile: 32768 states, d=1024 dff=4096 L=12 atoms=116864 (99s)
+  support done (276s)
+  pythia-410m/pile: support {'embedding': 0.32885648687153407, 'mlp': 0.532339570758908, 'attention': 0.1388039423695579, 'bias': 0.0}  real 0.290  sign 0.804  relerr 3.13  spurious mass 0.674 | dominant: r omp 0.300 refit 0.311 relerr omp 0.39 refit 0.51
+DONE_Z6
+job exit 0 z6 pythia-410m/pile 02:19:24

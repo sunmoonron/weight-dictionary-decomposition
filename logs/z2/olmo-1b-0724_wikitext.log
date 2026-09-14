@@ -1,0 +1,8 @@
+== olmo-1b-0724/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   4%|▍         | 5/114 [00:00<00:02, 48.22it/s]Loading weights:  26%|██▋       | 30/114 [00:00<00:00, 164.96it/s]Loading weights:  46%|████▌     | 52/114 [00:00<00:00, 186.37it/s]Loading weights:  65%|██████▍   | 74/114 [00:00<00:00, 194.75it/s]Loading weights:  84%|████████▍ | 96/114 [00:00<00:00, 199.86it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 192.76it/s]
+  olmo-1b-0724/wikitext: 32768 states, d=2048 dff=8192 L=8 atoms=142464 (40s)
+  reconstruction done (994s): FVU32 weight 0.0186
+  attribution done (1254s): recall 0.6931
+  olmo-1b-0724/wikitext: FVU32 0.019 [0.018,0.019]  rot 0.779  recall 0.693 [0.687,0.699]  r_id 0.997 [0.997,0.998]  r_unc 0.971
+DONE_Z2

@@ -1,0 +1,123 @@
+{
+ "clean_ce": 3.6291,
+ "ch447_traj_clean": [
+  0.1,
+  14.6,
+  20.7,
+  28.6,
+  31.8,
+  34.8,
+  38.8,
+  42.5,
+  48.0,
+  52.7,
+  62.6,
+  89.7,
+  1.0
+ ],
+ "B_channel_to_regulator": {
+  "alpha_0.5": {
+   "b3#614": 0.275,
+   "b4#1894": -0.048,
+   "b5#1790": -0.042,
+   "b6#3039": -0.027,
+   "b2#2714": 0.0,
+   "ctrl_mean_absrel": 0.056
+  },
+  "alpha_1.5": {
+   "b3#614": -0.221,
+   "b4#1894": 0.148,
+   "b5#1790": 0.034,
+   "b6#3039": 0.019,
+   "b2#2714": 0.0,
+   "ctrl_mean_absrel": 0.044
+  }
+ },
+ "A_dce": 0.0224,
+ "A_ch447_traj_ablated": [
+  0.1,
+  14.6,
+  20.7,
+  28.6,
+  27.5,
+  32.4,
+  36.9,
+  40.7,
+  45.7,
+  49.9,
+  60.5,
+  88.2,
+  1.0
+ ],
+ "A_predicted_vs_measured": {
+  "r": 0.238,
+  "slope_meas_over_pred": 0.125,
+  "mean_pred": -12.4,
+  "mean_meas": -1.49
+ },
+ "C_neurons": {
+  "mlp5#1856": {
+   "n_counter_tokens": 8854,
+   "mean_opposing_proj": -2.06,
+   "shares_of_opposition": {
+    "embedding": -0.0,
+    "mlp0": 0.03,
+    "mlp1": 0.04,
+    "mlp2": 0.64,
+    "mlp3": 0.11,
+    "mlp4": 0.15,
+    "attn+rest": 0.03
+   },
+   "top_upstream_writers": {
+    "mlp3#614": 1.15,
+    "mlp2#2714": 0.99,
+    "mlp3#1545": 0.78,
+    "mlp4#787": 0.53,
+    "mlp4#2422": 0.49,
+    "mlp1#1558": 0.34
+   }
+  },
+  "mlp5#1505": {
+   "n_counter_tokens": 5957,
+   "mean_opposing_proj": -0.93,
+   "shares_of_opposition": {
+    "embedding": 0.0,
+    "mlp0": 0.22,
+    "mlp1": 0.06,
+    "mlp2": -0.36,
+    "mlp3": 0.22,
+    "mlp4": 0.25,
+    "attn+rest": 0.61
+   },
+   "top_upstream_writers": {
+    "mlp4#787": 0.85,
+    "mlp4#1894": 0.73,
+    "mlp3#2664": 0.63,
+    "mlp3#1545": 0.45,
+    "mlp2#183": -0.21,
+    "mlp2#2714": -0.21
+   }
+  },
+  "mlp5#2070": {
+   "n_counter_tokens": 1456,
+   "mean_opposing_proj": -6.55,
+   "shares_of_opposition": {
+    "embedding": 0.01,
+    "mlp0": 0.07,
+    "mlp1": -0.03,
+    "mlp2": 0.11,
+    "mlp3": 0.11,
+    "mlp4": 0.08,
+    "attn+rest": 0.64
+   },
+   "top_upstream_writers": {
+    "mlp3#2614": -3.22,
+    "mlp2#2617": -1.7,
+    "mlp3#2723": 1.67,
+    "mlp2#589": 1.39,
+    "mlp4#836": -0.2,
+    "mlp4#894": 0.15
+   }
+  }
+ }
+}

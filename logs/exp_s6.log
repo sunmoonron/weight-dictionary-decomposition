@@ -1,0 +1,43 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3083.22it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+gpt2 b 0: cnt 0.396 energy 0.222  topE 1/5/20: 0.05/0.14/0.26  top 1817 (ch266, 0.43)
+gpt2 b 1: cnt 0.504 energy 0.168  topE 1/5/20: 0.03/0.08/0.14  top 824 (ch73, 0.01)
+gpt2 b 2: cnt 0.543 energy 0.034  topE 1/5/20: 0.11/0.19/0.27  top 2714 (ch447, 0.90)
+gpt2 b 3: cnt 0.501 energy 0.396  topE 1/5/20: 0.16/0.35/0.43  top 614 (ch447, 0.88)
+gpt2 b 4: cnt 0.503 energy 0.430  topE 1/5/20: 0.08/0.22/0.31  top 1894 (ch447, 0.34)
+gpt2 b 5: cnt 0.507 energy 0.415  topE 1/5/20: 0.11/0.20/0.26  top 1790 (ch447, 0.62)
+gpt2 b 6: cnt 0.506 energy 0.398  topE 1/5/20: 0.04/0.12/0.17  top 3039 (ch447, 0.48)
+gpt2 b 7: cnt 0.486 energy 0.386  topE 1/5/20: 0.11/0.15/0.20  top 2367 (ch481, 0.32)
+gpt2 b 8: cnt 0.467 energy 0.374  topE 1/5/20: 0.15/0.18/0.23  top 1253 (ch481, 0.46)
+gpt2 b 9: cnt 0.459 energy 0.359  topE 1/5/20: 0.16/0.20/0.25  top 840 (ch481, 0.49)
+gpt2 b10: cnt 0.452 energy 0.340  topE 1/5/20: 0.10/0.22/0.30  top 1793 (ch481, 0.36)
+gpt2 b11: cnt 0.501 energy 0.268  topE 1/5/20: 0.06/0.12/0.20  top 2910 (ch266, 0.18)
+b3 ablation: {'counter_set': [614, 1545, 2664, 442, 1848, 2683, 2885, 2723, 1995], 'matched_set': [1027, 2614, 563, 1718, 307, 2234, 2561, 1649, 906], 'clean_ce': 3.6465, 'dce_counter': 0.0647, 'dce_energy_matched': 0.0022, 'counter_energy_sum': 2107132.0, 'matched_energy_sum': 363175.0}
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  82%|████████▏ | 238/292 [00:00<00:00, 2375.40it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2645.89it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+gpt2-medium b 0: cnt 0.237 energy 0.112  topE 1/5/20: 0.40/0.73/0.81  top 1198 (ch268, 0.34)
+gpt2-medium b 1: cnt 0.525 energy 0.203  topE 1/5/20: 0.03/0.09/0.17  top 2296 (ch973, 0.02)
+gpt2-medium b 2: cnt 0.565 energy 0.324  topE 1/5/20: 0.01/0.03/0.07  top 2229 (ch450, 0.02)
+gpt2-medium b 3: cnt 0.539 energy 0.018  topE 1/5/20: 0.05/0.15/0.25  top 1803 (ch268, 0.93)
+gpt2-medium b 4: cnt 0.489 energy 0.335  topE 1/5/20: 0.08/0.23/0.33  top 958 (ch268, 0.89)
+gpt2-medium b 5: cnt 0.496 energy 0.427  topE 1/5/20: 0.17/0.28/0.38  top 686 (ch268, 0.90)
+gpt2-medium b 6: cnt 0.502 energy 0.462  topE 1/5/20: 0.29/0.38/0.43  top 3375 (ch268, 0.90)
+gpt2-medium b 7: cnt 0.510 energy 0.457  topE 1/5/20: 0.28/0.38/0.44  top 3765 (ch268, 0.68)
+gpt2-medium b 8: cnt 0.521 energy 0.427  topE 1/5/20: 0.04/0.09/0.14  top 3408 (ch268, 0.35)
+gpt2-medium b 9: cnt 0.519 energy 0.606  topE 1/5/20: 0.37/0.65/0.67  top 3043 (ch265, 0.55)
+gpt2-medium b10: cnt 0.516 energy 0.468  topE 1/5/20: 0.10/0.31/0.38  top 2673 (ch268, 0.22)
+gpt2-medium b11: cnt 0.517 energy 0.436  topE 1/5/20: 0.07/0.18/0.23  top 2218 (ch265, 0.49)
+gpt2-medium b12: cnt 0.519 energy 0.409  topE 1/5/20: 0.07/0.14/0.17  top 591 (ch268, 0.10)
+gpt2-medium b13: cnt 0.503 energy 0.402  topE 1/5/20: 0.11/0.12/0.15  top 3042 (ch268, 0.07)
+gpt2-medium b14: cnt 0.490 energy 0.392  topE 1/5/20: 0.12/0.13/0.16  top 3645 (ch268, 0.13)
+gpt2-medium b15: cnt 0.477 energy 0.372  topE 1/5/20: 0.00/0.02/0.05  top 2983 (ch590, 0.07)
+gpt2-medium b16: cnt 0.467 energy 0.376  topE 1/5/20: 0.13/0.15/0.18  top 140 (ch590, 0.11)
+gpt2-medium b17: cnt 0.460 energy 0.358  topE 1/5/20: 0.03/0.06/0.10  top 2824 (ch590, 0.45)
+gpt2-medium b18: cnt 0.458 energy 0.346  topE 1/5/20: 0.10/0.16/0.20  top 919 (ch689, 0.42)
+gpt2-medium b19: cnt 0.457 energy 0.350  topE 1/5/20: 0.08/0.12/0.19  top 1082 (ch689, 0.46)
+gpt2-medium b20: cnt 0.459 energy 0.355  topE 1/5/20: 0.14/0.22/0.28  top 2820 (ch689, 0.42)
+gpt2-medium b21: cnt 0.465 energy 0.374  topE 1/5/20: 0.19/0.30/0.34  top 3336 (ch689, 0.43)
+gpt2-medium b22: cnt 0.483 energy 0.350  topE 1/5/20: 0.12/0.28/0.35  top 1764 (ch590, 0.07)
+gpt2-medium b23: cnt 0.520 energy 0.327  topE 1/5/20: 0.02/0.09/0.19  top 1083 (ch689, 0.34)
+DONE_S6

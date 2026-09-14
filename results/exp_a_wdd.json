@@ -1,0 +1,390 @@
+{
+ "clean_ce": 3.646538257598877,
+ "runs": {
+  "weight_L6": {
+   "layer": 6,
+   "atoms": 78175,
+   "center": true,
+   "fvu": {
+    "4": 0.14370433260905718,
+    "8": 0.12226187483698779,
+    "16": 0.09773244582391521,
+    "32": 0.06881060388327132,
+    "64": 0.03648177310616976
+   },
+   "fidelity": {
+    "32": {
+     "ce": 4.197133999281434,
+     "dce": 0.5505957416825566,
+     "kl": 0.5188313219696283
+    },
+    "64": {
+     "ce": 3.824332399610904,
+     "dce": 0.17779414201202703,
+     "kl": 0.15919545106589794
+    }
+   },
+   "composition_k32": {
+    "mlp2": 85887,
+    "mlp1": 105511,
+    "mlp0": 155700,
+    "attn0": 36415,
+    "mlp4": 68476,
+    "attn1": 41568,
+    "wte": 149857,
+    "mlp6": 114906,
+    "attn2": 25567,
+    "attn3": 24396,
+    "mlp3": 71579,
+    "mlp5": 88081,
+    "bias4": 135,
+    "attn6": 24482,
+    "attn5": 24538,
+    "attn4": 29666,
+    "bias5": 33,
+    "wpe": 1022,
+    "bias1": 361,
+    "bias0": 130,
+    "bias2": 140,
+    "bias6": 36,
+    "bias3": 90
+   }
+  },
+  "weight_L8": {
+   "layer": 8,
+   "atoms": 85859,
+   "center": true,
+   "fvu": {
+    "4": 0.22661473936700527,
+    "8": 0.19326854574974203,
+    "16": 0.15410826818815,
+    "32": 0.10754478080398076,
+    "64": 0.05602953161498652
+   },
+   "fidelity": {
+    "32": {
+     "ce": 4.0324090110345825,
+     "dce": 0.38587075343570554,
+     "kl": 0.3517808523029089
+    },
+    "64": {
+     "ce": 3.7883337808448507,
+     "dce": 0.14179552324597378,
+     "kl": 0.1214807890355587
+    }
+   },
+   "composition_k32": {
+    "mlp2": 60640,
+    "mlp1": 75627,
+    "attn0": 22247,
+    "mlp0": 98904,
+    "mlp8": 117339,
+    "wte": 175966,
+    "mlp4": 49112,
+    "mlp7": 91120,
+    "attn1": 28624,
+    "bias6": 72,
+    "attn3": 15908,
+    "mlp3": 50462,
+    "mlp6": 81826,
+    "attn4": 18466,
+    "attn2": 15900,
+    "attn7": 21437,
+    "attn5": 18183,
+    "bias5": 54,
+    "mlp5": 60741,
+    "attn6": 22541,
+    "attn8": 22081,
+    "wpe": 867,
+    "bias7": 51,
+    "bias4": 75,
+    "bias2": 72,
+    "bias1": 60,
+    "bias8": 69,
+    "bias3": 82,
+    "bias0": 50
+   }
+  },
+  "weight_L6_pure": {
+   "layer": 6,
+   "atoms": 78175,
+   "center": false,
+   "fvu": {
+    "4": 0.18209961991125045,
+    "8": 0.14783910663928834,
+    "16": 0.11417853121256301,
+    "32": 0.07916950152195612,
+    "64": 0.0418162303220633
+   },
+   "fidelity": {
+    "32": {
+     "ce": 4.290546111164727,
+     "dce": 0.6440078535658502,
+     "kl": 0.5699257608503103
+    },
+    "64": {
+     "ce": 3.854039918186613,
+     "dce": 0.20750166058773623,
+     "kl": 0.17085775546729565
+    }
+   },
+   "composition_k32": {
+    "mlp2": 73994,
+    "mlp1": 133767,
+    "bias0": 8910,
+    "mlp0": 141389,
+    "attn0": 59339,
+    "mlp6": 110611,
+    "mlp4": 59367,
+    "wte": 148496,
+    "attn2": 22933,
+    "attn1": 40070,
+    "attn3": 22918,
+    "mlp5": 79598,
+    "attn4": 27503,
+    "mlp3": 60178,
+    "attn6": 33543,
+    "attn5": 24564,
+    "wpe": 1056,
+    "bias4": 56,
+    "bias6": 50,
+    "bias3": 14,
+    "bias1": 130,
+    "bias5": 74,
+    "bias2": 16
+   }
+  },
+  "random_L6": {
+   "layer": 6,
+   "atoms": 78175,
+   "center": true,
+   "fvu": {
+    "4": 0.9112974739248331,
+    "8": 0.8327312369945922,
+    "16": 0.7000356458546725,
+    "32": 0.5009783858022862,
+    "64": 0.25187160607391673
+   },
+   "fidelity": {
+    "32": {
+     "ce": 8.259595210304932,
+     "dce": 4.613056952706055,
+     "kl": 4.545770972967148
+    },
+    "64": {
+     "ce": 6.336415001557532,
+     "dce": 2.6898767439586546,
+     "kl": 2.622810125350952
+    }
+   }
+  },
+  "actdict_L6": {
+   "layer": 6,
+   "atoms": 78175,
+   "center": true,
+   "fvu": {
+    "4": 0.058004631412502755,
+    "8": 0.04501889913482382,
+    "16": 0.03358363399401356,
+    "32": 0.022939663620012023,
+    "64": 0.01278673734404099
+   },
+   "fidelity": {
+    "32": {
+     "ce": 3.699771097261612,
+     "dce": 0.05323283966273484,
+     "kl": 0.09568057814612985
+    },
+    "64": {
+     "ce": 3.660433028308846,
+     "dce": 0.01389477070996925,
+     "kl": 0.039750826079398394
+    }
+   }
+  },
+  "pca_L6": {
+   "layer": 6,
+   "fvu": {
+    "4": 0.15677949553398005,
+    "8": 0.13849493285407563,
+    "16": 0.11799710469754435,
+    "32": 0.09497423586402398,
+    "64": 0.0690729738759786
+   },
+   "fidelity": {
+    "32": {
+     "ce": 4.861808881367723,
+     "dce": 1.2152706237688458,
+     "kl": 1.307184360921383
+    },
+    "64": {
+     "ce": 4.214672753022375,
+     "dce": 0.5681344954234984,
+     "kl": 0.6465217620134354
+    }
+   }
+  }
+ },
+ "qual_mlp_atoms_L6": [
+  {
+   "atom": 53368,
+   "family": "mlp0",
+   "count": 2247,
+   "unembed_top": [
+    " small",
+    " little",
+    " new",
+    " very",
+    " great",
+    " few",
+    " particular",
+    " large"
+   ],
+   "contexts": [
+    " 06 : 00 September 3 , 300 North Koreans launched an",
+    " reinforce the protection of the steering compartment and to create an",
+    " 's Talk Sports \" in Buffalo and also pioneered an"
+   ]
+  },
+  {
+   "atom": 53335,
+   "family": "mlp0",
+   "count": 2234,
+   "unembed_top": [
+    "::::::::",
+    "then",
+    "tel",
+    "))))",
+    "::::",
+    " Chem",
+    ",...",
+    " ."
+   ],
+   "contexts": [
+    " the lost carriers with hybrid carriers converted from battleships .",
+    " prose style at the time was too dense and obscure ,",
+    " at the tip of the ridge took them under fire ,"
+   ]
+  },
+  {
+   "atom": 69455,
+   "family": "mlp4",
+   "count": 2065,
+   "unembed_top": [
+    "\u4f7f",
+    "belt",
+    "::::::::",
+    "unction",
+    "ectomy",
+    " throne",
+    "obe",
+    "roman"
+   ],
+   "contexts": [
+    " prose style at the time was too dense and obscure ,",
+    " days so they could sell their citrus crop that fell .",
+    " the lost carriers with hybrid carriers converted from battleships ."
+   ]
+  },
+  {
+   "atom": 74820,
+   "family": "mlp6",
+   "count": 1867,
+   "unembed_top": [
+    "aper",
+    "wait",
+    "ordering",
+    "xt",
+    "ape",
+    "oru",
+    "amy",
+    "hra"
+   ],
+   "contexts": [
+    " come through very well in translation \" \u2014 p. ",
+    " correctly believing that the Americans would follow him north . ",
+    " Air Force did deliver rocket and strafing strikes . "
+   ]
+  },
+  {
+   "atom": 53330,
+   "family": "mlp0",
+   "count": 1681,
+   "unembed_top": [
+    " the",
+    ",",
+    " and",
+    " in",
+    " a",
+    "-",
+    ".",
+    " to"
+   ],
+   "contexts": [
+    " This hurricane instead maintained a general west @-@ northwest",
+    " its producers , Carl Falk and Rami Yacoub",
+    "le College and served as a disc jockey on Public"
+   ]
+  },
+  {
+   "atom": 56694,
+   "family": "mlp1",
+   "count": 1465,
+   "unembed_top": [
+    " however",
+    " meanwhile",
+    " also",
+    " moreover",
+    "theless",
+    " furthermore",
+    " Explan",
+    "anwhile"
+   ],
+   "contexts": [
+    " Influence on Japanese literature = = = ||| Du",
+    "ino @-@ Japanese War . ||| Despite",
+    " war , but they were revived after Midway . Plans"
+   ]
+  },
+  {
+   "atom": 53400,
+   "family": "mlp0",
+   "count": 1464,
+   "unembed_top": [
+    "BuyableInstoreAndOnline",
+    "natureconservancy",
+    " Nanto",
+    "iHUD",
+    "anooga",
+    "dayName",
+    "nesota",
+    "\u25fc"
+   ],
+   "contexts": [
+    " Kiss You \" debuted at number 90 on the United States",
+    " green screen , which include sequences reminiscent of iconic music videos",
+    " electronic effects , colossal hooks , a \" na na na"
+   ]
+  },
+  {
+   "atom": 52869,
+   "family": "mlp0",
+   "count": 1458,
+   "unembed_top": [
+    " and",
+    " the",
+    " a",
+    " to",
+    " in",
+    " I",
+    " is",
+    " one"
+   ],
+   "contexts": [
+    " , Hayashi Shunsai , a notable Confuc",
+    " \" by Arnell . Premiering worldwide on Vev",
+    " They transferred to Cam Ranh Bay , French Indoch"
+   ]
+  }
+ ]
+}

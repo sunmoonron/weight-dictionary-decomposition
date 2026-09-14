@@ -1,0 +1,46 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 26/114 [00:00<00:00, 252.11it/s]Loading weights:  59%|█████▉    | 67/114 [00:00<00:00, 317.49it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 368.45it/s]
+LN class OlmoLayerNorm (no params) w_opposer -0.5923
+batch 0 done [33s]
+batch 1 done [65s]
+batch 2 done [98s]
+batch 3 done [131s]
+D0 {'unfrozen': {'pos0': 0.0, 'bulk': 0.0}, 'frozen_ln': {'pos0': 1e-05, 'bulk': 0.0}, 'frozen_ln_attn': {'pos0': 1e-05, 'bulk': 0.0}} pass True
+unfrozen_pos0            median|rel| all 1.5328 active 0.9684 | opposer -0.9806 pct 0.5048
+unfrozen_bulk            median|rel| all 1.3378 active 0.9659 | opposer +1.4420 pct 0.7059
+frozen_ln_pos0           median|rel| all 2.4089 active 2.1337 | opposer +1.2285 pct 0.1525
+frozen_ln_bulk           median|rel| all 1.4412 active 1.1069 | opposer +1.1443 pct 0.5184
+frozen_ln_attn_pos0      median|rel| all 2.4078 active 2.1310 | opposer +1.2254 pct 0.1516
+frozen_ln_attn_bulk      median|rel| all 0.0395 active 0.0246 | opposer +0.0334 pct 0.6136
+dose_response_pos0 {
+ "unfrozen": {
+  "slope_dact_dch": 0.30344,
+  "r": 0.9198,
+  "rel_response": 0.9806,
+  "monotonic": true,
+  "loop_gain_w_times_slope": -0.17972
+ },
+ "frozen_ln": {
+  "slope_dact_dch": -0.28313,
+  "r": -0.9978,
+  "rel_response": 1.2285,
+  "monotonic": true,
+  "loop_gain_w_times_slope": 0.16769
+ },
+ "frozen_ln_attn": {
+  "slope_dact_dch": -0.28258,
+  "r": -0.9978,
+  "rel_response": 1.2254,
+  "monotonic": true,
+  "loop_gain_w_times_slope": 0.16737
+ }
+}
+VERDICT {
+ "D1_reader": true,
+ "D2_specific": false,
+ "D3_loop": "POSITIVE_FEEDBACK_amplifier",
+ "D3_gain": 0.16737,
+ "D4_confound_ratio_unfrozen_over_frozen": 0.454,
+ "D4_pass": false
+}
+DONE_Y3

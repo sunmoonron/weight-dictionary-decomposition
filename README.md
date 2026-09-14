@@ -1,0 +1,112 @@
+# Weight-Dictionary Decomposition: code, results and per-token records
+
+Ronish Bhatt ([ORCID 0009-0000-8835-5380](https://orcid.org/0009-0000-8835-5380)), 2026. The scripts, result files, run logs and per-token records behind the paper *Weight-Dictionary Decomposition: Reading a Transformer's Residual Stream with Its Own Writes* (preprint, September 2026, under review).
+
+- Paper: [doi:10.5281/zenodo.22749478](https://doi.org/10.5281/zenodo.22749478), also served at [ronishbhatt.com/weight_dictionary_2026.pdf](https://ronishbhatt.com/weight_dictionary_2026.pdf)
+- License: MIT for the code (`scripts/`), CC BY 4.0 for the result files, logs and per-token records (`results/`, `logs/`)
+- Citation: see `CITATION.cff`
+
+
+Every number in the paper is written by one of these scripts into `results/<script>.json`, with the run log in `logs/`. Scripts are self-contained: each loads the public checkpoint it names, builds the dictionary, runs the experiment and writes JSON. Models in the paper: GPT-2 small, SmolLM2-135M, Qwen2.5-0.5B, Pythia-410m, OLMo-1B, Qwen2.5-7B, Pythia-6.9B and Llama-7B; a few early scripts also load GPT-2 medium. Corpora: WikiText-2 (train split for centering and data controls, held-out split for evaluation) and a Pile-derived sample. A single 8 GB GPU or a CPU suffices; the longest scripts take a few hours on CPU.
+
+Environment: Python 3.11, torch 2.x, transformers 4.46 or 5.x, numpy, scipy. No API keys, no network beyond downloading checkpoints.
+
+## Running the scripts
+
+Every script writes its JSON to `results/` next to `scripts/` by default and reads checkpoints from the standard Hugging Face cache. Environment variables:
+
+- `WDD_RESULTS`: directory for the JSON results (default `../results` relative to the script).
+- `HF_HOME`: Hugging Face cache; if unset the default cache is used. The scripts only pin a cache path when the original machine's directory exists.
+- `WDD_MODELS`: comma-separated subset of model keys for `exp_s9_families.py` and `exp_x2_families_attrib.py` (default: all).
+- `WDD_N_NOM`: nominees per arm for `exp_x3_bakeoff2.py` (10 reproduces the run in the paper; 30 writes `exp_x3_bakeoff2_n30.json`).
+- `WDD_SW_DETECTION`: optional path to a channel list from a separate super-weight study; `exp_s9_families.py` runs without it and the paper does not use it.
+- `WDD_CORPORA`: comma-separated subset of `wikitext,pile` for `exp_z2_ci.py` (default: both).
+- `WDD_OMP_BATCH`: states per OMP batch in `exp_z2_ci.py` (default 2048; 1024 lets two 7B jobs share one 80 GB card).
+
+The 7B-class rows of the family sweep (`qwen2.5-7b`, `pythia-6.9b`, `llama-7b`) load the checkpoint in bfloat16 and need a GPU with about 40 GB of memory; the sub-1B rows fit an 8 GB GPU.
+
+## sec 4.1 reconstruction
+
+- `exp_a_wdd.py`: Experiment A: Weight-Dictionary Decomposition (WDD).
+- `exp_d_provenance.py`: Experiment D: does computational PROVENANCE matter, or just overcompleteness?
+- `exp_x4_crossdomain.py`: X4: cross-domain check of the core GPT-2 numbers on a non-Wikipedia corpus. Corpus fallback chain: NeelNanda/pile-10k -> HuggingFaceFW/fineweb-edu (streaming). 
+
+## sec 4.2 attribution and observability
+
+- `exp_c_validate.py`: Experiment C: does WDD recover the TRUE computation?
+- `exp_f_recovery.py`: Experiment F: write recovery WITHOUT selection bias, and confound controls.
+- `exp_h_clusters.py`: Experiment H: cluster-level attribution.
+- `exp_i_observability.py`: Experiment I: observability -- predicting WHICH writes are recoverable.
+- `exp_j_transform.py`: Experiment J: transformation vs erasure -- and who erases block 3.
+- `exp_j_rerun.py`: Experiment J RERUN -- transformation vs erasure, with the two audit fixes.
+- `exp_j2_depth.py`: Experiment J2: case-level depth tracking of the genuinely erased writes.
+- `exp_r7_usedinfo.py`: R7: ERASED BUT USED? -- does the model's downstream computation still consume a write whose direction is gone from the residual stream?
+- `exp_r7b_usedinfo.py`: R7: ERASED BUT USED? -- does the model's downstream computation still consume a write whose direction is gone from the residual stream?
+- `exp_g_causal.py`: Experiment G: does the decomposition TRACK CAUSAL CHANGES to the computation?
+- `exp_x7_oracle.py`: """X7: oracle baselines separating state-induced from estimator-induced failure.
+
+## sec 4.3 generality
+
+- `exp_s9_families.py`: Write Dynamics Ep.5 / generality sweep: WDD across model families.
+- `exp_x2_families_attrib.py`: """X2: per-family attribution deep-dive + channel-robust FVU.
+- `exp_x9_top1conc.py`: X9: concentration of the largest true write per token (how often the top write is the same neuron), for reading the 7B recalls.
+- `exp_z2_ci.py`: the sweep of Table 1 as a second implementation written from the paper's description: eight models, WikiText-2 and the Pile sample, 32,768 states per model and corpus, weight/rotated/random dictionaries, OMP and one-shot attribution against the ledger, within-decile correlations, and 95% bootstrap intervals over the 64 evaluation sequences (`exp_z2_ci.json`; per-token records in `exp_z2_tokens/`; logs in `logs/z2/`). Resume-safe per model/corpus key.
+- `exp_z2_recompute.py`: recomputes the reconstruction metrics of `exp_z2_ci.json` from the saved per-token records without a GPU and adds the sink-state convention: states above ten times the median norm (one or two per sequence, 59 to 99% of the variance) are reported separately (`*_sink`) from the typical states (`*_typical`). Table 1 and Appendix I use the typical-state metrics.
+- `exp_z3_ceiling.py`: the observability analysis of `exp_i_observability.py` for all eight models on both corpora (survival bins, one-property AUCs, a miss decomposition into erased, weakened, twin and intact-unselected, support composition), with bootstrap intervals; per-case arrays in `exp_z3_cases/`.
+- `exp_z4_sae.py`: the trained SAE of Bloom (2024), loaded from its published weights in the TransformerLens frame, against the weight dictionary on identical GPT-2 states in four cells (WikiText-2 at 512 tokens and OpenWebText at 128 tokens, after block 5 and after block 6), with L0, FVU on typical states and spliced-in cross-entropy for both.
+- `exp_z5_kcurve.py`: FVU against k for the weight dictionary and its rotation on 8,192 WikiText-2 states per model, at k = 4 to 256 and at k = d/16 and d/12, with per-token records in `exp_z5_tokens/` so the typical-state curves can be computed.
+- `wdd_z_common.py`: the shared state, ledger and dictionary construction used by the three scripts above (lifted from `exp_z2_ci.py`).
+- `exp_a_wdd.py` and `exp_d_provenance.py` also write per-token residuals (`exp_a_tokens.npz`, `exp_d_tokens.npz`) so the GPT-2 sparsity sweep and the provenance null can be read on typical states; their JSON outputs are unchanged.
+- `exp_z6_selected.py`: every atom OMP places in the k = 64 support, scored against the ledger: support composition by atom type, the share of selected MLP atoms that are real writes (|c| at least 5% of the token's largest), their sign agreement and calibration, the coefficient mass on spurious atoms, and a per-token least-squares refit on the three true atoms compared with OMP on the same identified cases.
+- `exp_d2_null_noemb.py`: the provenance null of `exp_d_provenance.py` with the embedding rows removed from every dictionary, with per-token residuals (`exp_d2_tokens.npz`).
+- `exp_x5b_energy.py`: random block-3 neuron sets matched in write energy to the nine strongest counter-writers, and their cross-entropy cost.
+- `exp_z2_recall_by_decile.json`: top-1 recall by magnitude decile of the largest write, deciles defined over all typical-state cases, from the saved per-token records.
+- `exp_z2_ci.py` accepts `WDD_N_EVAL` (evaluation sequences) and `WDD_FP32=1` (the 7B rows in float32), used for the precision control (`exp_z2_fp32.json`, tokens in `exp_z2_tokens_fp32/`).
+
+## sec 4.4 write roles and nulls
+
+- `exp_k_nulls.py`: Experiment K: null controls for the write-role taxonomy.
+- `exp_s1_killsuite.py`: Write Dynamics, Episode 1a: block-3 kill-suite on GPT-2 small.
+- `exp_s2_medium.py`: Write Dynamics, Episode 1b: does GPT-2-medium have a counter-writer block?
+- `exp_s3_skeptic.py`: Write Dynamics Ep.2a: skeptical forensics on gpt2-medium block 9 (98.3%).
+- `exp_s5_concentration.py`: Write Dynamics Ep.2c: concentration of counter-writing, all blocks, both models. Separates "diffuse specialization" (many neurons) from "mega-channel ritual" (o
+- `exp_s6_uncond.py`: Write Dynamics Ep.3a: the UNCONDITIONAL oligarchy test + channel IDs + superweight overlap + energy-matched ablation.
+- `exp_s7_dechannel.py`: Write Dynamics Ep.3b: does counter-writing survive removal of the massive channels?
+
+## sec 4.5 channel-447 circuit
+
+- `exp_s4_small_614.py`: Write Dynamics Ep.2b: mechanism vs representation for mlp3#614, and the counter-subpopulation ablation, on GPT-2 small.
+- `exp_s8_loop.py`: Write Dynamics Ep.4: closing one causal loop (GPT-2 small, channel 447).
+- `exp_t1_attnmlp.py`: Ep.6: the attention -> MLP counter circuit (GPT-2 small, mlp5#2070).
+- `exp_t2_compensation.py`: Ep.7: who restores the 88%? (GPT-2 small, ch447 crew ablation)
+- `exp_t3_infocircuit.py`: Ep.8: earn or retire the word "information" -- per-circuit (GPT-2 small).
+- `exp_u1_reserves.py`: Ep.9 (the boss's pick): is the reserve crew thermostatic?
+- `exp_u2_leash.py`: Ep.10 (season finale): which component of the primaries' writes is the leash?
+- `exp_x1_doseresp_all.py`: X1: population dose-response. Scale ch447 at the block-2/3 boundary and measure the relative activation change of EVERY block-3 neuron, so #614's response gets 
+- `exp_x5_lin.py`: X5: is dCE roughly linear in ablated write energy? Ablate the top-k block-3 counter-writers (k = 1,3,5,7,9, ranked by counter write energy) and measure dCE at e
+- `exp_x6_lnfrozen.py`: """X6: the LayerNorm-frozen dose-response control.
+- `exp_w_c_fix.py`: Part C of the audit, rerun alone: #614 dose-response under ch447 scaling. Fix: GPT2Block forward hooks receive a plain tensor in this transformers version; hand
+
+## sec 4.6 nomination comparisons
+
+- `exp_v1_bakeoff.py`: Post-season audit: the nomination bake-off (pilot, N=3 per arm).
+- `exp_x3_bakeoff2.py`: """X3: bake-off v2. Same machinery as exp_v1 (identical battery, identical
+
+## audit
+
+- `exp_w_audit.py`: Experiment W -- independent audit re-derivations for the WDD paper.
+
+## not used by this paper (kNN and reader lens studies, kept for completeness)
+
+- `exp_b_knn.py`: Experiment B: the kNN lens -- a nonparametric, training-free Tuned Lens.
+- `exp_b2_backoff.py`: Experiment B2: kNN lens CE with unigram backoff.
+- `exp_e_crosslayer.py`: Experiment E: is the kNN lens a LENS, or just kNN-LM in disguise?
+- `exp_r1_readiness.py`: R1: the READER LENS -- a readiness map of GPT-2 small.
+- `exp_r1b_induction.py`: R1b: circuit TIMING with the reader lens -- induction on synthetic repeats.
+- `exp_r2_depends.py`: R2: the DEPENDENCY MAP -- causal half of the reader lens.
+- `exp_r2b_groups.py`: R2: the DEPENDENCY MAP -- causal half of the reader lens.
+- `exp_r3_continuation.py`: R3: can the model's OWN later layers serve as its Tuned Lens?
+- `exp_r4_generality.py`: R4: the CONTINUATION LENS across architectures and on the tuned lens's own corpus.
+- `exp_r5_window.py`: R5: continuation lens with SMALL LOCAL WINDOWS -- is the trained lens's remaining edge (levels 1-3 on the Pile) local context? Variants added: sinkprev = attend
+- `exp_r6_selftuned.py`: R6: give the trained lens its best shot -- train a Tuned Lens ON the evaluation distribution and re-run the continuation bake-off.
+- `exp_r6b_evalwindow.py`: R6b: the self-trained tuned lens (exp_r6, trained on the evaluation corpus) vs the window continuations. Adds variant `self` = h + A h + b with params from resu

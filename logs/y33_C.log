@@ -1,0 +1,32 @@
+[C][    0.0m] arm C: 59.3M params, d=512 L=8 ff=2048 ctx=512 down_proj bias=False LN=LayerNorm
+[C][    0.0m] data: 119.8M train tokens, 200 val seqs
+[C][    9.1m] step 500/16000 loss 5.703 val 5.8793 min_rho 0.97993 max|h| 3.209 attn0 0.0078
+[C][   18.1m] step 1000/16000 loss 5.0736 val 5.3897 min_rho 0.97144 max|h| 4.479 attn0 0.0069
+[C][   27.2m] step 1500/16000 loss 4.5826 val 5.0567 min_rho 0.95779 max|h| 5.302 attn0 0.0061
+[C][   36.3m] step 2000/16000 loss 4.6718 val 4.8116 min_rho 0.96606 max|h| 6.472 attn0 0.0066
+[C][   45.4m] step 2500/16000 loss 4.2823 val 4.6249 min_rho 0.91648 max|h| 9.367 attn0 0.0072
+[C][   54.5m] step 3000/16000 loss 4.3196 val 4.4595 min_rho 0.92696 max|h| 12.05 attn0 0.0079
+[C][   63.6m] step 3500/16000 loss 4.0863 val 4.389 min_rho 0.83016 max|h| 11.729 attn0 0.0091
+[C][   72.7m] step 4000/16000 loss 4.3304 val 4.325 min_rho 0.80844 max|h| 12.351 attn0 0.0097
+[C][   81.8m] step 4500/16000 loss 3.9728 val 4.2463 min_rho 0.91431 max|h| 17.575 attn0 0.0094
+[C][   91.0m] step 5000/16000 loss 4.1676 val 4.1622 min_rho 0.82298 max|h| 16.094 attn0 0.0103
+[C][  100.1m] step 5500/16000 loss 3.9399 val 4.1403 min_rho 0.81058 max|h| 14.02 attn0 0.0114
+[C][  109.2m] step 6000/16000 loss 3.812 val 4.0974 min_rho 0.863 max|h| 16.121 attn0 0.0119
+[C][  118.3m] step 6500/16000 loss 3.5696 val 4.0357 min_rho 0.87537 max|h| 16.286 attn0 0.0126
+[C][  127.4m] step 7000/16000 loss 3.6479 val 3.9993 min_rho 0.88038 max|h| 15.661 attn0 0.013
+[C][  136.5m] step 7500/16000 loss 3.9829 val 3.9506 min_rho 0.85502 max|h| 14.546 attn0 0.0134
+[C][  145.6m] step 8000/16000 loss 3.8174 val 3.9436 min_rho 0.89764 max|h| 15.697 attn0 0.0128
+[C][  154.8m] step 8500/16000 loss 3.5488 val 3.8946 min_rho 0.82783 max|h| 15.064 attn0 0.0126
+[C][  163.9m] step 9000/16000 loss 3.6786 val 3.8803 min_rho 0.87311 max|h| 15.906 attn0 0.0136
+[C][  173.0m] step 9500/16000 loss 3.7306 val 3.864 min_rho 0.89012 max|h| 11.995 attn0 0.014
+[C][  182.1m] step 10000/16000 loss 3.4943 val 3.8299 min_rho 0.84682 max|h| 13.752 attn0 0.0143
+[C][  191.2m] step 10500/16000 loss 3.832 val 3.8205 min_rho 0.87717 max|h| 13.816 attn0 0.0144
+[C][  200.3m] step 11000/16000 loss 3.4959 val 3.7948 min_rho 0.83693 max|h| 13.354 attn0 0.0153
+[C][  209.4m] step 11500/16000 loss 3.6695 val 3.7706 min_rho 0.89499 max|h| 12.683 attn0 0.0154
+[C][  218.5m] step 12000/16000 loss 3.6037 val 3.7624 min_rho 0.85419 max|h| 13.132 attn0 0.0158
+[C][  227.7m] step 12500/16000 loss 3.5285 val 3.7531 min_rho 0.87112 max|h| 12.413 attn0 0.0157
+[C][  236.8m] step 13000/16000 loss 3.6359 val 3.7411 min_rho 0.87415 max|h| 12.361 attn0 0.0157
+[C][  240.0m] wall-clock deadline hit at step 13178
+[C][  240.0m] causal: ablating L0 n818 -> dCE 0.0007 (ppl x1.0007)
+[C][  240.0m] DONE
+DONE_Y33_C

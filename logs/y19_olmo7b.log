@@ -1,0 +1,30 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/226 [00:00<?, ?it/s]Loading weights:   1%|▏         | 3/226 [00:00<00:11, 19.45it/s]Loading weights:   2%|▏         | 5/226 [00:00<00:14, 15.64it/s]Loading weights:   3%|▎         | 7/226 [00:00<00:17, 12.46it/s]Loading weights:   4%|▍         | 9/226 [00:00<00:16, 13.17it/s]Loading weights:   5%|▌         | 12/226 [00:00<00:12, 16.61it/s]Loading weights:   8%|▊         | 17/226 [00:00<00:08, 24.93it/s]Loading weights:   9%|▉         | 20/226 [00:01<00:10, 19.11it/s]Loading weights:  10%|█         | 23/226 [00:01<00:13, 15.54it/s]Loading weights:  11%|█         | 25/226 [00:01<00:15, 13.32it/s]Loading weights:  12%|█▏        | 27/226 [00:01<00:17, 11.12it/s]Loading weights:  13%|█▎        | 30/226 [00:02<00:14, 13.91it/s]Loading weights:  14%|█▍        | 32/226 [00:02<00:13, 14.60it/s]Loading weights:  15%|█▌        | 34/226 [00:02<00:19, 10.09it/s]Loading weights:  16%|█▌        | 36/226 [00:02<00:16, 11.63it/s]Loading weights:  19%|█▊        | 42/226 [00:02<00:09, 20.38it/s]Loading weights:  20%|█▉        | 45/226 [00:02<00:08, 22.03it/s]Loading weights:  22%|██▏       | 49/226 [00:03<00:08, 20.61it/s]Loading weights:  26%|██▌       | 59/226 [00:03<00:04, 36.24it/s]Loading weights:  28%|██▊       | 64/226 [00:03<00:04, 35.42it/s]Loading weights:  31%|███       | 69/226 [00:03<00:04, 33.66it/s]Loading weights:  32%|███▏      | 73/226 [00:03<00:04, 32.57it/s]Loading weights:  34%|███▍      | 77/226 [00:03<00:05, 29.63it/s]Loading weights:  36%|███▌      | 81/226 [00:04<00:07, 20.21it/s]Loading weights:  38%|███▊      | 85/226 [00:04<00:06, 21.05it/s]Loading weights:  39%|███▉      | 88/226 [00:04<00:09, 14.11it/s]Loading weights:  40%|███▉      | 90/226 [00:04<00:10, 13.08it/s]Loading weights:  42%|████▏     | 95/226 [00:05<00:07, 18.06it/s]Loading weights:  43%|████▎     | 98/226 [00:05<00:06, 18.45it/s]Loading weights:  45%|████▍     | 101/226 [00:05<00:07, 16.62it/s]Loading weights:  47%|████▋     | 106/226 [00:05<00:05, 21.08it/s]Loading weights:  48%|████▊     | 109/226 [00:05<00:05, 22.25it/s]Loading weights:  50%|█████     | 114/226 [00:05<00:04, 26.39it/s]Loading weights:  52%|█████▏    | 118/226 [00:05<00:03, 27.33it/s]Loading weights:  55%|█████▍    | 124/226 [00:06<00:04, 25.34it/s]Loading weights:  57%|█████▋    | 129/226 [00:06<00:03, 27.00it/s]Loading weights:  58%|█████▊    | 132/226 [00:06<00:04, 19.86it/s]Loading weights:  60%|██████    | 136/226 [00:06<00:04, 20.54it/s]Loading weights:  62%|██████▏   | 139/226 [00:07<00:04, 18.20it/s]Loading weights: 100%|██████████| 226/226 [00:07<00:00, 31.60it/s]
+[   0.2m] loaded allenai/OLMo-7B-0724-hf L=32 d=4096 ff=11008 on cpu
+[   7.9m] data-free prompt, top 5 by rho:
+[   7.9m]    L1 c269 n7467  rho=0.08461
+[   7.9m]    L2 c269 n8275  rho=0.44836
+[   7.9m]    L7 c269 n453  rho=0.81674
+[   7.9m]    L0 c1180 n2667  rho=0.93666
+[   7.9m]    L6 c269 n9562  rho=0.95334
+[   8.4m] wikitext position 0, top 5 by rho:
+[   8.4m]    L1 c269 n7467  rho=0.10064
+[   8.4m]    L2 c269 n8275  rho=0.57788
+[   8.4m]    L0 c269 n3519  rho=0.83092
+[   8.4m]    L7 c269 n453  rho=0.86156
+[   8.4m]    L0 c269 n4064  rho=0.92679
+[   8.4m] Table 2 entries by rho: [{"layer": 1, "channel": 269, "neuron": 7467, "rho_prompt": 0.08461, "rho_wikitext": 0.10064}, {"layer": 2, "channel": 269, "neuron": 8275, "rho_prompt": 0.44836, "rho_wikitext": 0.57788}, {"layer": 7, "channel": 269, "neuron": 453, "rho_prompt": 0.81674, "rho_wikitext": 0.86156}, {"layer": 24, "channel": 269, "neuron": 2300, "rho_prompt": 0.99999, "rho_wikitext": 1.0}]
+[   8.4m] VERDICT {
+ "V1_rank_of_known_prompt": 0,
+ "V1_p_at_1_prompt": 1.0,
+ "V1_p_at_1_wikitext": 1.0,
+ "V3_same_rank_both_inputs": true,
+ "V2_separation": true,
+ "V2_rho_values": {
+  "L1": 0.08461,
+  "L2": 0.44836,
+  "L7": 0.81674,
+  "L24": 0.99999
+ }
+}
+DONE_Y19_olmo7b

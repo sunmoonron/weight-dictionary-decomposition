@@ -1,0 +1,8 @@
+== pythia-410m/pile ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  29%|██▉       | 86/292 [00:00<00:00, 854.46it/s]Loading weights:  59%|█████▉    | 172/292 [00:00<00:00, 840.50it/s]Loading weights:  88%|████████▊ | 257/292 [00:00<00:00, 811.62it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 820.77it/s]
+  pythia-410m/pile: 32768 states, d=1024 dff=4096 L=12 atoms=116864 (70s)
+  supports done (236s); support composition {'embedding': 0.32851171493530273, 'mlp': 0.5326805114746094, 'attention': 0.1388077735900879, 'bias': 0.0}
+  recall_top1 here 0.4603 vs exp_z2 0.4603 (ok)
+  pythia-410m/pile: id_omp 0.346  intact 0.735 id|intact 0.454  erased 0.084 id|erased 0.004  misses: erased 0.13 weak 0.26 twin 0.01 other 0.61  AUC surv 0.835
+DONE_Z3

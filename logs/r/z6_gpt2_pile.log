@@ -1,0 +1,4 @@
+job start z6 gpt2/pile 02:11:38 free=75001MB
+== gpt2/pile done, skip ==
+DONE_Z6
+job exit 0 z6 gpt2/pile 02:11:40

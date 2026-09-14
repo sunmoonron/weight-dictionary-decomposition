@@ -1,0 +1,7 @@
+== olmo-1b-0724 ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   2%|▏         | 2/114 [00:00<00:05, 19.72it/s]Loading weights:  25%|██▌       | 29/114 [00:00<00:00, 164.75it/s]Loading weights:  46%|████▋     | 53/114 [00:00<00:00, 193.84it/s]Loading weights:  68%|██████▊   | 77/114 [00:00<00:00, 210.81it/s]Loading weights:  89%|████████▊ | 101/114 [00:00<00:00, 221.14it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 202.86it/s]
+  olmo-1b-0724/wikitext: 8192 states, d=2048 dff=8192 L=8 atoms=142464 (18s)
+  weight curve done (250s): FVU@32 0.0175  @256 0.0032
+  rotated curve done (466s): FVU@32 0.7791  @256 0.1444
+DONE_Z5

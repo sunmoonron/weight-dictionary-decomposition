@@ -1,0 +1,138 @@
+{
+ "note": "rerun with W_U.cpu() fix and train-half-only centering",
+ "groups": {
+  "block3_transient": {
+   "n_neurons": 32,
+   "r2_full_median": 0.4041298031806946,
+   "r2_dir_median": -0.025061488151550293,
+   "r2_full_mean": 0.011675199493765831,
+   "r2_dir_mean": -0.41370290517807007,
+   "frac_transformed": 0.4375,
+   "frac_info_lost": 0.21875
+  },
+  "control_intact": {
+   "n_neurons": 32,
+   "r2_full_median": 0.588857889175415,
+   "r2_dir_median": 0.004941999912261963,
+   "r2_full_mean": 0.39001718163490295,
+   "r2_dir_mean": -0.004810396581888199,
+   "frac_transformed": 0.53125,
+   "frac_info_lost": 0.15625
+  }
+ },
+ "survival_by_depth": {
+  "block3_transient": {
+   "post_block_3": 0.803,
+   "post_block_4": 0.833,
+   "post_block_5": 0.83,
+   "post_block_6": 0.861
+  },
+  "control_intact": {
+   "post_block_4": 2.362,
+   "post_block_5": 2.517,
+   "post_block_6": 2.705
+  }
+ },
+ "qual_transient": [
+  {
+   "neuron": "mlp3#2908",
+   "count_top3": 24,
+   "mean_surv": -1.22,
+   "unembed_top": [
+    " cycle",
+    " Hour",
+    " lows",
+    " onset",
+    " drought",
+    " Mehran",
+    "fest",
+    " EDT"
+   ],
+   "contexts": [
+    " Beach , strong winds leveled the old Olympia Inn , a gas station",
+    " torpedo bulge added when the ships were modernized , the deck",
+    " that was quickly corrected before she was ordered to tow the crippled carrier"
+   ]
+  },
+  {
+   "neuron": "mlp3#176",
+   "count_top3": 65,
+   "mean_surv": -1.01,
+   "unembed_top": [
+    "advertisement",
+    "\u200b\u200b",
+    " Brist",
+    ",...",
+    "wagen",
+    " sugg",
+    " Bai",
+    " Volunte"
+   ],
+   "contexts": [
+    "ifenburg = ||| Richard Gale \" Dick \" Rif",
+    " over 1 @,@ 000 yards of total offense . Rif",
+    " he was awarded the Medal of Honor . Badly wounded , Story"
+   ]
+  },
+  {
+   "neuron": "mlp3#2290",
+   "count_top3": 64,
+   "mean_surv": -0.94,
+   "unembed_top": [
+    " refres",
+    "ombies",
+    "esis",
+    "=\\\"",
+    "iors",
+    " Alto",
+    "omnia",
+    " Thieves"
+   ],
+   "contexts": [
+    " Chinese society : the census of 754 recorded 52 @.@",
+    " but ten years later , the census counted just 16 @.@",
+    " ||| The ships had a length of 208 @.@"
+   ]
+  },
+  {
+   "neuron": "mlp3#1848",
+   "count_top3": 145,
+   "mean_surv": -0.87,
+   "unembed_top": [
+    "itiz",
+    "ogle",
+    "76561",
+    "limits",
+    "\\\":",
+    "tains",
+    "igne",
+    "udes"
+   ],
+   "contexts": [
+    "-@ dramatic poet who has survived in any language \" , and",
+    "age \" in the episode \" Political Expediency \" , and",
+    " is the only Chinese poet whose influence grew with time \" , and"
+   ]
+  },
+  {
+   "neuron": "mlp3#1545",
+   "count_top3": 1651,
+   "mean_surv": -0.82,
+   "unembed_top": [
+    ",",
+    " the",
+    " and",
+    " a",
+    " in",
+    " \"",
+    "\n",
+    " to"
+   ],
+   "contexts": [
+    " the 38th Regiment command post . The regimental commander organized a",
+    " light cruisers , Ise sank the destroyer Yayoi in",
+    " and about 40 carbines or pistols . Schmitt assumed command of"
+   ]
+  }
+ ]
+}

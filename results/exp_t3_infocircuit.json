@@ -1,0 +1,96 @@
+{
+ "targets": {
+  "mlp3#614": {
+   "L6_r2": -4.46,
+   "L6_r2_by_surv_tercile": [
+    -7.694,
+    -6.268,
+    -4.757
+   ],
+   "L6_surv_tercile_edges": [
+    -2.11,
+    -0.61
+   ],
+   "L10_r2": -5.16,
+   "L10_r2_by_surv_tercile": [
+    -10.525,
+    -8.468,
+    -5.355
+   ],
+   "L10_surv_tercile_edges": [
+    -4.12,
+    -0.78
+   ]
+  },
+  "mlp3#1848": {
+   "L6_r2": 0.41,
+   "L6_r2_by_surv_tercile": [
+    0.792,
+    0.196,
+    0.595
+   ],
+   "L6_surv_tercile_edges": [
+    -1.68,
+    -0.24
+   ],
+   "L10_r2": -0.028,
+   "L10_r2_by_surv_tercile": [
+    0.517,
+    -0.564,
+    0.155
+   ],
+   "L10_surv_tercile_edges": [
+    -1.84,
+    0.28
+   ]
+  },
+  "mlp3#2614": {
+   "L6_r2": 0.653,
+   "L6_r2_by_surv_tercile": [
+    0.248,
+    0.114,
+    0.741
+   ],
+   "L6_surv_tercile_edges": [
+    1.23,
+    1.92
+   ],
+   "L10_r2": 0.058,
+   "L10_r2_by_surv_tercile": [
+    -0.508,
+    -2.2,
+    0.116
+   ],
+   "L10_surv_tercile_edges": [
+    1.1,
+    2.23
+   ]
+  },
+  "mlp5#2070": {
+   "L6_r2": 0.501,
+   "L6_r2_by_surv_tercile": [
+    0.364,
+    0.511,
+    -367.135
+   ],
+   "L6_surv_tercile_edges": [
+    -3.22,
+    2.04
+   ],
+   "L10_r2": 0.076,
+   "L10_r2_by_surv_tercile": [
+    0.506,
+    -0.325,
+    -6.014
+   ],
+   "L10_surv_tercile_edges": [
+    -4.17,
+    0.85
+   ]
+  }
+ },
+ "controls": {
+  "L6_r2_median": -0.255,
+  "L10_r2_median": -0.788
+ }
+}

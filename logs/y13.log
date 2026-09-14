@@ -1,0 +1,28 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 37/114 [00:00<00:00, 365.32it/s]Loading weights:  66%|██████▌   | 75/114 [00:00<00:00, 366.31it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 403.87it/s]
+clean ppl 14.797  wz ppl 30133.869  gap 7.6190
+sanity pin_resid   dCE +0.000000
+sanity pin_kv      dCE +0.000000
+sanity pin_k       dCE +0.000000
+sanity pin_v       dCE +0.000000
+sanity pin_q       dCE +0.000000
+pin_resid   ppl      14.796 recovered 1.000
+pin_kv      ppl      14.866 recovered 0.999
+pin_k       ppl     450.369 recovered 0.552
+pin_v       ppl     151.860 recovered 0.694
+pin_q       ppl   30133.869 recovered 0.000
+VERDICT {
+ "S1_max_sanity_dCE": 0.0,
+ "S1_pass": true,
+ "S2_pin_resid": 1.0,
+ "S2_pass": true,
+ "S3_pin_kv": 0.9994,
+ "S3_pass": true,
+ "S3_split": {
+  "k": 0.5517,
+  "v": 0.6944
+ },
+ "S4_pin_q": 0.0,
+ "S4_pass": true
+}
+DONE_Y13

@@ -1,0 +1,22 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 38/114 [00:00<00:00, 339.88it/s]Loading weights:  70%|███████   | 80/114 [00:00<00:00, 384.47it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 403.64it/s]
+dictionary (131072, 2048), redundancy 64.0x
+  2048/131072
+  34816/131072
+  67584/131072
+  100352/131072
+{
+ "K1_median_mu": 0.16663,
+ "K1_median_k_bound": 3.5007,
+ "K1_pass": true,
+ "K2_frac_above_0.9": 0.00016,
+ "K2_pass": true,
+ "K3_sw_mu": 0.99414,
+ "K3_sw_k_bound": 1.0029,
+ "K3_sw_pct_rank": 0.99998,
+ "K4_effective_k_bound_excl_top1pct": 1.2541
+}
+quantiles {"p50": 0.16663, "p89": 0.38599, "p99": 0.81055, "p100": 0.99414}
+k bounds  {"p50": 3.5007, "p89": 1.7954, "p99": 1.1169, "p100": 1.0029}
+super weight {"atom": 9902, "mu": 0.99414, "k_bound": 1.0029, "partner_layer": 15, "partner_neuron": 3454, "pct_rank_of_mu": 0.99998}
+DONE_Y30

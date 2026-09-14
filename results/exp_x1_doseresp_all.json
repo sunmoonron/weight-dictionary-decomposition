@@ -1,0 +1,94 @@
+{
+ "alpha_0.5": {
+  "n_active": 2948,
+  "quantiles": {
+   "q5": 0.0023,
+   "q25": 0.0644,
+   "q50": 0.0905,
+   "q75": 0.1404,
+   "q95": 0.4457,
+   "q99": 1.1425
+  },
+  "frac_abs_ge_10pct": 0.4467,
+  "frac_abs_ge_20pct": 0.1625
+ },
+ "alpha_1.5": {
+  "n_active": 2948,
+  "quantiles": {
+   "q5": -0.5193,
+   "q25": -0.1784,
+   "q50": -0.1198,
+   "q75": -0.0907,
+   "q95": -0.0538,
+   "q99": 0.1267
+  },
+  "frac_abs_ge_10pct": 0.6757,
+  "frac_abs_ge_20pct": 0.2154
+ },
+ "n614": {
+  "alpha_0.5": {
+   "value": 0.275,
+   "pct_rank": 0.9013
+  },
+  "alpha_1.5": {
+   "value": -0.2191,
+   "pct_rank": 0.8185
+  }
+ },
+ "inverse_both": {
+  "n_ge_10pct_both": 1236,
+  "n614_included": true,
+  "top10_by_rise": [
+   {
+    "neuron": 1688,
+    "rel_lo": 4.987,
+    "rel_hi": -3.817
+   },
+   {
+    "neuron": 1851,
+    "rel_lo": 3.173,
+    "rel_hi": -2.434
+   },
+   {
+    "neuron": 702,
+    "rel_lo": 3.077,
+    "rel_hi": -2.196
+   },
+   {
+    "neuron": 672,
+    "rel_lo": 2.455,
+    "rel_hi": -2.568
+   },
+   {
+    "neuron": 1279,
+    "rel_lo": 2.147,
+    "rel_hi": -2.428
+   },
+   {
+    "neuron": 1979,
+    "rel_lo": 2.116,
+    "rel_hi": -1.86
+   },
+   {
+    "neuron": 1723,
+    "rel_lo": 2.108,
+    "rel_hi": -1.91
+   },
+   {
+    "neuron": 1515,
+    "rel_lo": 1.977,
+    "rel_hi": -2.377
+   },
+   {
+    "neuron": 1078,
+    "rel_lo": 1.824,
+    "rel_hi": -1.81
+   },
+   {
+    "neuron": 2101,
+    "rel_lo": 1.797,
+    "rel_hi": -1.759
+   }
+  ]
+ }
+}

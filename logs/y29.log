@@ -1,0 +1,59 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 38/114 [00:00<00:00, 372.37it/s]Loading weights:  70%|███████   | 80/114 [00:00<00:00, 398.34it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 430.08it/s]
+layer 1, 8192 atoms, d=2048
+rho[SW]=0.0309  watching 32 atoms
+  n  241 rho 1.0000  J_unit 134.15874  realized 0.7313  
+  n  320 rho 1.0000  J_unit 118.91382  realized 0.9579  
+  n  808 rho 1.0000  J_unit 125.76534  realized 0.6995  
+  n  864 rho 1.0000  J_unit 125.76622  realized 0.6270  
+  n  920 rho 1.0000  J_unit 139.73864  realized 0.7598  
+  n 1393 rho 1.0000  J_unit 143.07790  realized 1.5895  
+  n 1687 rho 1.0000  J_unit 113.28687  realized 0.8220  
+  n 1710 rho 0.0309  J_unit 96.43757  realized 46.1764  SUPER WEIGHT
+  n 1998 rho 1.0000  J_unit 128.27176  realized 0.6554  
+  n 2409 rho 1.0000  J_unit 129.81722  realized 0.8512  
+  n 2557 rho 1.0000  J_unit 135.67535  realized 0.7802  
+  n 2771 rho 1.0000  J_unit 118.96783  realized 0.6611  
+  n 3141 rho 1.0000  J_unit 141.12828  realized 0.7183  
+  n 3425 rho 1.0000  J_unit 120.98745  realized 0.8295  
+  n 3531 rho 1.0000  J_unit 124.39132  realized 0.8774  
+  n 3618 rho 1.0000  J_unit 122.52654  realized 0.7801  
+  n 3739 rho 1.0000  J_unit 115.57446  realized 0.7445  
+  n 3934 rho 1.0000  J_unit 121.42715  realized 0.7425  
+  n 4756 rho 1.0000  J_unit 176.18058  realized 0.9154  
+  n 5890 rho 0.9956  J_unit 97.64791  realized 1.7629  top-leverage
+  n 6000 rho 0.9981  J_unit 99.89433  realized 1.0914  top-leverage
+  n 6101 rho 1.0000  J_unit 166.25136  realized 1.5802  
+  n 6104 rho 0.9985  J_unit 97.44490  realized 1.9372  top-leverage
+  n 6136 rho 1.0000  J_unit 130.28672  realized 0.6887  
+  n 6238 rho 1.0000  J_unit 130.23106  realized 1.1398  
+  n 6380 rho 1.0000  J_unit 129.49234  realized 0.6961  
+  n 6646 rho 0.9979  J_unit 87.53251  realized 1.7523  top-leverage
+  n 6882 rho 0.9970  J_unit 157.80587  realized 1.4418  top-leverage
+  n 7539 rho 1.0000  J_unit 133.12568  realized 0.7566  
+  n 7579 rho 0.9951  J_unit 97.26123  realized 2.1322  top-leverage
+  n 7845 rho 0.9959  J_unit 104.81103  realized 1.8400  top-leverage
+  n 8149 rho 1.0000  J_unit 129.81846  realized 0.5705  
+channel dir J_unit 110.147947 | random dirs median 115.692917
+linearity {'0.005': 176.523262, '0.01': 119.162053, '0.02': 96.437567, '0.05': 87.455821, '0.2': 88.618011, '1.0': 151.785172}
+
+VERDICT {
+ "J1_sw_j_unit": 96.437567,
+ "J1_median_random_atom_j_unit": 129.49234,
+ "J1_pass": true,
+ "J2_spearman_rho_vs_junit": 0.3457,
+ "J2_pass": false,
+ "J3_channel_dir_j_unit": 110.147947,
+ "J3_median_random_dir": 115.692917,
+ "J3_pass": true,
+ "J4_linearity": {
+  "0.005": 176.523262,
+  "0.01": 119.162053,
+  "0.02": 96.437567,
+  "0.05": 87.455821,
+  "0.2": 88.618011,
+  "1.0": 151.785172
+ },
+ "J4_pass": false
+}
+DONE_Y29

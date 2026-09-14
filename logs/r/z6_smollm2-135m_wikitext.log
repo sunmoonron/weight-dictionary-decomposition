@@ -1,0 +1,4 @@
+job start z6 smollm2-135m/wikitext 02:12:03 free=74961MB
+== smollm2-135m/wikitext done, skip ==
+DONE_Z6
+job exit 0 z6 smollm2-135m/wikitext 02:12:05

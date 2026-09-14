@@ -1,0 +1,91 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 45/114 [00:00<00:00, 444.94it/s]Loading weights:  79%|███████▉  | 90/114 [00:00<00:00, 420.41it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 435.67it/s]
+16 layers x 8192 neurons = 131072 total
+super weight traffic rank: 1
+clean ppl 14.231
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer GPTNeoXTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+
+N=    64 (0.1% of MLP neurons, 15 layers)
+   no_repair      ppl      837.579  top1 0.2089  KL 4.06672
+   oracle_static  ppl       15.443  top1 0.8659  KL 0.07983
+   dict_repair    ppl       22.869  top1 0.6808  KL 0.45393
+   "capital of France" no_repair -> ' also capital capital pluster Mos Mos Mos Mos Mos Mos Mos Mo'
+                       dict_repair -> " also the country's most populous city and the seat of the F"
+
+N=   256 (0.2% of MLP neurons, 16 layers)
+   no_repair      ppl     3778.053  top1 0.0834  KL 5.56363
+   oracle_static  ppl       17.831  top1 0.7737  KL 0.23569
+   dict_repair    ppl       36.504  top1 0.5404  KL 0.92522
+   "capital of France" no_repair -> ' capital capital Capital Capital Capital Capital Capital Cap'
+                       dict_repair -> ' also one of the most beautiful cities in the world. It is a'
+
+N=  1024 (0.8% of MLP neurons, 16 layers)
+   no_repair      ppl     4083.433  top1 0.0822  KL 5.63722
+   oracle_static  ppl       20.666  top1 0.7011  KL 0.37634
+   dict_repair    ppl       51.672  top1 0.4792  KL 1.25646
+   "capital of France" no_repair -> 'lam Islamic Islamic Islamic Islamic Islamic Islamic Islamic '
+                       dict_repair -> ' Paris.\n\n(a) Paris is the capital of France.'
+
+N=  4096 (3.1% of MLP neurons, 16 layers)
+   no_repair      ppl     7480.975  top1 0.0313  KL 6.25885
+   oracle_static  ppl       42.229  top1 0.5306  KL 1.12071
+   dict_repair    ppl      318.755  top1 0.2145  KL 3.06932
+   "capital of France" no_repair -> ' France France peace peace peace peace peace peace peace pea'
+                       dict_repair -> ' also one of the most\n- and one of the most\n-'
+
+N= 16384 (12.5% of MLP neurons, 16 layers)
+   no_repair      ppl    19848.289  top1 0.0147  KL 7.19982
+   oracle_static  ppl      165.810  top1 0.3322  KL 2.4672
+   dict_repair    ppl      875.557  top1 0.1416  KL 4.04416
+   "capital of France" no_repair -> ' Republic Republic Republic Republic Republic Republic Repub'
+                       dict_repair -> '\n\n 1\n\n 1\n\n 1\n\n 1\n\n'
+
+N= 65536 (50.0% of MLP neurons, 16 layers)
+   no_repair      ppl    53645.043  top1 0.0000  KL 8.20617
+   oracle_static  ppl     2727.871  top1 0.0785  KL 5.20464
+   dict_repair    ppl    34854.902  top1 0.0000  KL 7.78526
+   "capital of France" no_repair -> ' independence independence independence independence indepen'
+                       dict_repair -> ' capital capital capital capital capital capital capital cap'
+
+VERDICT {
+ "F1_sw_traffic_rank": 1,
+ "F1_pass": false,
+ "threshold_2x_clean_ppl": 28.46,
+ "first_rung_no_repair_fails": 64,
+ "first_rung_dict_repair_fails": 256,
+ "first_rung_oracle_fails": 4096,
+ "F4_oracle_ge_dict_everywhere": true,
+ "ppl_by_rung": {
+  "64": {
+   "no_repair": 837.579,
+   "oracle_static": 15.443,
+   "dict_repair": 22.869
+  },
+  "256": {
+   "no_repair": 3778.053,
+   "oracle_static": 17.831,
+   "dict_repair": 36.504
+  },
+  "1024": {
+   "no_repair": 4083.433,
+   "oracle_static": 20.666,
+   "dict_repair": 51.672
+  },
+  "4096": {
+   "no_repair": 7480.975,
+   "oracle_static": 42.229,
+   "dict_repair": 318.755
+  },
+  "16384": {
+   "no_repair": 19848.289,
+   "oracle_static": 165.81,
+   "dict_repair": 875.557
+  },
+  "65536": {
+   "no_repair": 53645.043,
+   "oracle_static": 2727.871,
+   "dict_repair": 34854.902
+  }
+ }
+}
+DONE_Y25

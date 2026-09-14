@@ -1,0 +1,101 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 45/114 [00:00<00:00, 425.27it/s]Loading weights:  77%|███████▋  | 88/114 [00:00<00:00, 421.28it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 428.55it/s]
+ntok 16384 median|h1| 0.032 spike(10x) 32 spike(p99.5) 82
+[all] {'n': 16384, 'mean_act_builder': -0.7528, 'mean_act_opposer': 0.1545, 'mean_write_builder': -0.476, 'mean_write_opposer': -0.0915, 'mean_abs_write_builder': 0.4774, 'mean_abs_write_opposer': 0.0915, 'opposition_mass_share': 0.0, 'frac_tokens_opposite_sign': 0.6419, 'corr_writes': 0.9955, 'mean_h_after_block1': -0.466, 'mean_h_after_block2': -0.564, 'mean_h_last': 0.043, 'mean_abs_h_last': 0.104, 'builder_share_of_h1': 0.905, 'opposer_write_over_builder_write': 0.192}
+[spike10x] {'n': 32, 'mean_act_builder': -385.8984, 'mean_act_opposer': 69.1699, 'mean_write_builder': -244.0129, 'mean_write_opposer': -40.9683, 'mean_abs_write_builder': 244.0129, 'mean_abs_write_opposer': 40.9683, 'opposition_mass_share': 0.0, 'frac_tokens_opposite_sign': 0.0, 'corr_writes': 0.4473, 'mean_h_after_block1': -251.141, 'mean_h_after_block2': -293.34, 'mean_h_last': 1.508, 'mean_abs_h_last': 1.82, 'builder_share_of_h1': 0.972, 'opposer_write_over_builder_write': 0.168}
+[spike_p995] {'n': 82, 'mean_act_builder': -150.5945, 'mean_act_opposer': 26.9959, 'mean_write_builder': -95.2245, 'mean_write_opposer': -15.9893, 'mean_abs_write_builder': 95.2248, 'mean_abs_write_opposer': 15.9893, 'opposition_mass_share': 0.0, 'frac_tokens_opposite_sign': 0.1829, 'corr_writes': 0.9926, 'mean_h_after_block1': -97.935, 'mean_h_after_block2': -114.418, 'mean_h_last': 0.625, 'mean_abs_h_last': 0.789, 'builder_share_of_h1': 0.971, 'opposer_write_over_builder_write': 0.168}
+[bulk] {'n': 16352, 'mean_act_builder': 0.0009, 'mean_act_opposer': 0.0194, 'mean_write_builder': 0.0006, 'mean_write_opposer': -0.0115, 'mean_abs_write_builder': 0.0008, 'mean_abs_write_opposer': 0.0115, 'opposition_mass_share': 0.8681, 'frac_tokens_opposite_sign': 0.6432, 'corr_writes': -0.0891, 'mean_h_after_block1': 0.025, 'mean_h_after_block2': 0.009, 'mean_h_last': 0.041, 'mean_abs_h_last': 0.1, 'builder_share_of_h1': 0.022, 'opposer_write_over_builder_write': 14.031}
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer GPTNeoXTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+top spike tokens: [
+ {
+  "h_after_block1": -281.8,
+  "h_last": -1.5,
+  "pos": 0,
+  "tok_id": 1283,
+  "tok": " 18",
+  "a_builder": -437.0,
+  "a_opposer": 69.0,
+  "write_builder": -276.33,
+  "write_opposer": -40.87
+ },
+ {
+  "h_after_block1": -281.5,
+  "h_last": -0.5,
+  "pos": 0,
+  "tok_id": 15849,
+  "tok": " schemes",
+  "a_builder": -437.25,
+  "a_opposer": 69.75,
+  "write_builder": -276.48,
+  "write_opposer": -41.31
+ },
+ {
+  "h_after_block1": -279.0,
+  "h_last": -1.5,
+  "pos": 0,
+  "tok_id": 14758,
+  "tok": " Girl",
+  "a_builder": -429.75,
+  "a_opposer": 69.125,
+  "write_builder": -271.74,
+  "write_opposer": -40.94
+ },
+ {
+  "h_after_block1": -272.8,
+  "h_last": 0.2,
+  "pos": 0,
+  "tok_id": 285,
+  "tok": " and",
+  "a_builder": -418.0,
+  "a_opposer": 69.812,
+  "write_builder": -264.31,
+  "write_opposer": -41.35
+ },
+ {
+  "h_after_block1": -272.0,
+  "h_last": 0.2,
+  "pos": 0,
+  "tok_id": 281,
+  "tok": " to",
+  "a_builder": -417.5,
+  "a_opposer": 69.5,
+  "write_builder": -264.0,
+  "write_opposer": -41.16
+ },
+ {
+  "h_after_block1": -272.0,
+  "h_last": 0.2,
+  "pos": 0,
+  "tok_id": 281,
+  "tok": " to",
+  "a_builder": -417.5,
+  "a_opposer": 69.5,
+  "write_builder": -264.0,
+  "write_opposer": -41.16
+ },
+ {
+  "h_after_block1": -271.5,
+  "h_last": -0.5,
+  "pos": 0,
+  "tok_id": 6215,
+  "tok": " ship",
+  "a_builder": -417.25,
+  "a_opposer": 69.188,
+  "write_builder": -263.84,
+  "write_opposer": -40.98
+ },
+ {
+  "h_after_block1": -271.2,
+  "h_last": 0.2,
+  "pos": 0,
+  "tok_id": 767,
+  "tok": " two",
+  "a_builder": -418.25,
+  "a_opposer": 69.5,
+  "write_builder": -264.47,
+  "write_opposer": -41.16
+ }
+]
+VERDICT {'T1': 'COOPERATING', 'T2_spike_localised': False, 'T3_builder_is_proximate_cause': True}
+pos0 {'mean_h_after_block1': -251.14, 'mean_a_builder': -385.898, 'frac_of_spikes_at_pos0': 1.0}
+DONE_Y1B

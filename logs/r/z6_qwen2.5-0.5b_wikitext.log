@@ -1,0 +1,4 @@
+job start z6 qwen2.5-0.5b/wikitext 02:12:28 free=81920MB
+== qwen2.5-0.5b/wikitext done, skip ==
+DONE_Z6
+job exit 0 z6 qwen2.5-0.5b/wikitext 02:12:30

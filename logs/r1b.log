@@ -1,0 +1,76 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3142.25it/s]
+syn batch 1/16 3s
+syn batch 2/16 4s
+syn batch 3/16 5s
+syn batch 4/16 6s
+syn batch 5/16 8s
+syn batch 6/16 9s
+syn batch 7/16 10s
+syn batch 8/16 11s
+syn batch 9/16 12s
+syn batch 10/16 13s
+syn batch 11/16 15s
+syn batch 12/16 16s
+syn batch 13/16 17s
+syn batch 14/16 18s
+syn batch 15/16 19s
+syn batch 16/16 20s
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+nat batch 1/4 24s
+nat batch 2/4 25s
+nat batch 3/4 26s
+nat batch 4/4 27s
+
+=== heads with actual induction score >= 0.2 (synthetic): K-side / Q-side level reaching 80% of actual ===
+L5H0: actual 0.28  k80@5 q80@5 full80@5   k-only 0.00 0.00 0.00 0.02 0.08   q-only 0.01 0.01 0.02 0.05 0.11
+L5H1: actual 0.94  k80@5 q80@5 full80@5   k-only 0.00 0.00 0.00 0.05 0.33   q-only 0.00 0.01 0.04 0.18 0.63
+L5H5: actual 0.90  k80@5 q80@4 full80@5   k-only 0.00 0.00 0.01 0.11 0.45   q-only 0.01 0.07 0.24 0.46 0.79
+L6H9: actual 0.90  k80@5 q80@4 full80@5   k-only 0.00 0.00 0.00 0.05 0.29 0.86   q-only 0.00 0.08 0.40 0.64 0.87 0.95
+L7H2: actual 0.80  k80@5 q80@7 full80@7   k-only 0.00 0.03 0.05 0.20 0.45 0.82 0.83   q-only 0.01 0.01 0.05 0.09 0.24 0.42 0.36
+L7H10: actual 0.88  k80@5 q80@6 full80@6   k-only 0.01 0.04 0.08 0.31 0.59 0.91 0.92   q-only 0.01 0.02 0.10 0.17 0.34 0.52 0.71
+L8H1: actual 0.26  k80@5 q80@7 full80@7   k-only 0.01 0.01 0.02 0.06 0.12 0.25 0.32 0.33   q-only 0.00 0.00 0.01 0.02 0.03 0.05 0.11 0.35
+L9H6: actual 0.34  k80@6 q80@8 full80@7   k-only 0.01 0.00 0.00 0.08 0.14 0.25 0.36 0.41 0.40   q-only 0.00 0.00 0.00 0.00 0.01 0.01 0.06 0.23 0.28
+L9H9: actual 0.38  k80@6 q80@7 full80@7   k-only 0.01 0.01 0.01 0.10 0.17 0.30 0.41 0.44 0.43   q-only 0.00 0.00 0.01 0.01 0.01 0.02 0.09 0.31 0.29
+L10H0: actual 0.30  k80@5 q80@8 full80@8   k-only 0.01 0.01 0.02 0.13 0.21 0.29 0.37 0.42 0.44 0.41   q-only 0.00 0.00 0.00 0.00 0.00 0.00 0.02 0.16 0.33 0.42
+L10H1: actual 0.39  k80@5 q80@7 full80@7   k-only 0.01 0.02 0.02 0.20 0.31 0.47 0.57 0.61 0.58 0.51   q-only 0.00 0.00 0.00 0.01 0.01 0.01 0.10 0.32 0.45 0.52
+L10H6: actual 0.22  k80@6 q80@8 full80@7   k-only 0.01 0.01 0.01 0.07 0.11 0.17 0.24 0.28 0.30 0.29   q-only 0.00 0.00 0.00 0.00 0.00 0.00 0.03 0.15 0.25 0.32
+L11H9: actual 0.24  k80@3 q80@7 full80@6   k-only 0.02 0.04 0.05 0.24 0.35 0.46 0.54 0.59 0.60 0.56 0.47   q-only 0.00 0.00 0.00 0.00 0.01 0.01 0.08 0.29 0.48 0.55 0.48
+L11H10: actual 0.27  k80@10 q80@11 full80@11   k-only 0.03 0.00 0.00 0.01 0.02 0.04 0.07 0.12 0.18 0.21 0.24   q-only 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.04 0.06 0.15
+
+=== previous-token heads (actual prev score >= 0.3) ===
+L2H2: actual 0.49  full 0.01 0.46
+L2H5: actual 0.34  full 0.01 0.38
+L2H9: actual 0.36  full 0.01 0.40
+L3H2: actual 0.39  full 0.00 0.23 0.37
+L3H3: actual 0.34  full 0.00 0.09 0.25
+L3H6: actual 0.31  full 0.00 0.23 0.30
+L3H7: actual 0.51  full 0.00 0.32 0.46
+L3H8: actual 0.35  full 0.00 0.23 0.35
+L4H11: actual 0.99  full 0.01 0.51 0.73 0.93
+L5H6: actual 0.52  full 0.00 0.00 0.02 0.08 0.10
+L6H8: actual 0.52  full 0.00 0.01 0.10 0.25 0.24 0.45
+
+=== duplicate-token heads (actual dup score >= 0.2) ===
+L0H5: actual 0.71  k-only   q-only 
+L3H0: actual 0.56  k-only 0.01 0.48 0.54  q-only 0.00 0.13 0.32
+
+=== natural text, ACTIVE-query TV (full), head-averaged, rows m cols l; and frac active ===
+m= 1 0.36   frac_active 0.14
+m= 2 0.70 0.18   frac_active 0.41
+m= 3 0.91 0.38 0.22   frac_active 0.35
+m= 4 0.88 0.56 0.38 0.23   frac_active 0.28
+m= 5 0.84 0.65 0.58 0.48 0.33   frac_active 0.09
+m= 6 0.81 0.65 0.56 0.45 0.36 0.25   frac_active 0.08
+m= 7 0.90 0.81 0.76 0.66 0.59 0.50 0.32   frac_active 0.07
+m= 8 0.88 0.81 0.77 0.67 0.63 0.58 0.45 0.27   frac_active 0.06
+m= 9 0.88 0.82 0.81 0.74 0.72 0.67 0.57 0.42 0.25   frac_active 0.05
+m=10 0.89 0.85 0.85 0.81 0.78 0.75 0.66 0.54 0.38 0.24   frac_active 0.05
+m=11 0.88 0.83 0.83 0.81 0.80 0.78 0.72 0.67 0.56 0.47 0.38   frac_active 0.03
+L4H11 active-TV full 0.98 0.30 0.14 0.01  (active 1.00)
+L5H1 active-TV full 0.98 0.78 0.78 0.77 0.68  (active 0.07)
+L5H5 active-TV full 0.93 0.87 0.86 0.78 0.46  (active 0.13)
+L6H9 active-TV full 0.96 0.83 0.83 0.81 0.68 0.33  (active 0.09)
+L7H2 active-TV full 0.95 0.81 0.81 0.80 0.77 0.67 0.49  (active 0.03)
+L7H10 active-TV full 0.94 0.87 0.87 0.85 0.73 0.52 0.28  (active 0.07)
+done 27s

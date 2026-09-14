@@ -1,0 +1,52 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  34%|███▍      | 39/114 [00:00<00:00, 376.58it/s]Loading weights:  76%|███████▋  | 87/114 [00:00<00:00, 432.32it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 436.20it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer GPTNeoXTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+
+=== clean
+  p0: target -6.884  distractor -9.951  present -8.610  margin +3.066  entropy 8.512
+  p1: target -7.334  distractor -9.881  present -8.595  margin +2.547  entropy 8.598
+  p2: target -7.480  distractor -9.921  present -8.617  margin +2.441  entropy 8.628
+  p4: target -7.757  distractor -9.845  present -8.559  margin +2.088  entropy 8.587
+  p8: target -7.859  distractor -9.919  present -8.574  margin +2.061  entropy 8.603
+
+=== nz_super_weight
+  p0: target -7.308  distractor -10.639  present -9.441  margin +3.330  entropy 7.558
+  p1: target -5.773  distractor -10.568  present -9.363  margin +4.795  entropy 7.601
+  p2: target -6.301  distractor -10.520  present -9.412  margin +4.219  entropy 7.599
+  p4: target -6.681  distractor -10.543  present -9.212  margin +3.862  entropy 7.637
+  p8: target -6.670  distractor -10.643  present -9.239  margin +3.973  entropy 7.636
+
+VERDICT {
+ "p1_target_gain": 1.5613,
+ "p1_distractor_gain": -0.6871,
+ "C1_excess_gain": 2.2484,
+ "C1_pass": true,
+ "p1_margin_clean": 2.5469,
+ "p1_margin_ablated": 4.7953,
+ "C2_pass": true,
+ "entropy_clean_p1": 8.5983,
+ "entropy_ablated_p1": 7.6008,
+ "margins_all_positions": {
+  "0": {
+   "clean": 3.0662,
+   "ablated": 3.3304
+  },
+  "1": {
+   "clean": 2.5469,
+   "ablated": 4.7953
+  },
+  "2": {
+   "clean": 2.4411,
+   "ablated": 4.2186
+  },
+  "4": {
+   "clean": 2.088,
+   "ablated": 3.8623
+  },
+  "8": {
+   "clean": 2.0605,
+   "ablated": 3.973
+  }
+ }
+}
+DONE_Y32

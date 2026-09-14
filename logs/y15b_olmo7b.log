@@ -1,0 +1,138 @@
+[    0.0m] loading allenai/OLMo-7B-0724-hf
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/226 [00:00<?, ?it/s]Loading weights:   1%|          | 2/226 [00:00<00:22, 10.06it/s]Loading weights:   3%|▎         | 6/226 [00:00<00:11, 18.59it/s]Loading weights:   4%|▍         | 10/226 [00:00<00:10, 19.83it/s]Loading weights:   6%|▌         | 13/226 [00:00<00:17, 12.40it/s]Loading weights:   7%|▋         | 16/226 [00:01<00:14, 14.88it/s]Loading weights:   8%|▊         | 19/226 [00:01<00:17, 12.15it/s]Loading weights:  10%|█         | 23/226 [00:01<00:15, 12.86it/s]Loading weights:  11%|█         | 25/226 [00:02<00:20,  9.66it/s]Loading weights:  13%|█▎        | 29/226 [00:02<00:25,  7.83it/s]Loading weights:  15%|█▌        | 34/226 [00:02<00:16, 11.59it/s]Loading weights:  16%|█▋        | 37/226 [00:03<00:14, 13.27it/s]Loading weights:  18%|█▊        | 40/226 [00:03<00:13, 13.52it/s]Loading weights:  20%|█▉        | 45/226 [00:03<00:10, 17.58it/s]Loading weights:  21%|██        | 48/226 [00:03<00:10, 16.63it/s]Loading weights:  23%|██▎       | 51/226 [00:03<00:10, 16.56it/s]Loading weights:  24%|██▍       | 55/226 [00:03<00:08, 19.21it/s]Loading weights:  26%|██▌       | 58/226 [00:04<00:11, 14.83it/s]Loading weights:  27%|██▋       | 60/226 [00:04<00:14, 11.36it/s]Loading weights:  29%|██▉       | 65/226 [00:05<00:14, 11.11it/s]Loading weights:  31%|███       | 69/226 [00:05<00:11, 13.23it/s]Loading weights:  31%|███▏      | 71/226 [00:05<00:13, 11.66it/s]Loading weights:  33%|███▎      | 74/226 [00:05<00:11, 13.41it/s]Loading weights:  35%|███▌      | 80/226 [00:05<00:08, 16.44it/s]Loading weights:  36%|███▋      | 82/226 [00:06<00:09, 15.90it/s]Loading weights:  38%|███▊      | 85/226 [00:06<00:07, 17.85it/s]Loading weights:  40%|████      | 91/226 [00:06<00:06, 21.27it/s]Loading weights:  44%|████▍     | 100/226 [00:06<00:04, 29.24it/s]Loading weights:  48%|████▊     | 109/226 [00:06<00:03, 34.23it/s]Loading weights:  50%|█████     | 113/226 [00:07<00:06, 18.00it/s]Loading weights:  52%|█████▏    | 118/226 [00:07<00:05, 21.04it/s]Loading weights:  55%|█████▍    | 124/226 [00:07<00:04, 22.95it/s]Loading weights:  58%|█████▊    | 132/226 [00:07<00:03, 30.73it/s]Loading weights:  61%|██████    | 137/226 [00:07<00:02, 31.66it/s]Loading weights:  63%|██████▎   | 143/226 [00:08<00:02, 31.70it/s]Loading weights:  66%|██████▋   | 150/226 [00:08<00:02, 36.59it/s]Loading weights:  69%|██████▊   | 155/226 [00:08<00:02, 24.74it/s]Loading weights:  71%|███████   | 161/226 [00:08<00:02, 28.26it/s]Loading weights:  73%|███████▎  | 165/226 [00:08<00:02, 28.79it/s]Loading weights:  75%|███████▍  | 169/226 [00:09<00:02, 20.96it/s]Loading weights:  76%|███████▌  | 172/226 [00:09<00:03, 17.69it/s]Loading weights:  77%|███████▋  | 175/226 [00:09<00:02, 18.37it/s]Loading weights:  79%|███████▉  | 178/226 [00:09<00:02, 19.58it/s]Loading weights:  80%|████████  | 181/226 [00:10<00:02, 16.68it/s]Loading weights:  81%|████████▏ | 184/226 [00:10<00:02, 14.88it/s]Loading weights:  85%|████████▌ | 193/226 [00:10<00:01, 21.18it/s]Loading weights:  87%|████████▋ | 196/226 [00:10<00:01, 21.16it/s]Loading weights:  88%|████████▊ | 200/226 [00:10<00:01, 20.39it/s]Loading weights:  90%|████████▉ | 203/226 [00:11<00:01, 17.49it/s]Loading weights:  91%|█████████ | 206/226 [00:11<00:01, 16.76it/s]Loading weights:  93%|█████████▎| 211/226 [00:11<00:00, 15.49it/s]Loading weights:  95%|█████████▌| 215/226 [00:11<00:00, 18.04it/s]Loading weights:  96%|█████████▋| 218/226 [00:12<00:00, 19.01it/s]Loading weights: 100%|██████████| 226/226 [00:12<00:00, 18.71it/s]
+[    0.3m] loaded: L=32 d=4096 ff=11008 heads=32 family=llama
+[    3.2m] census batch 0 (174s/batch)
+[    3.8m] census batch 1 (103s/batch)
+[    4.3m] census batch 2 (79s/batch)
+[    4.7m] census batch 3 (65s/batch)
+[    5.1m] census batch 4 (57s/batch)
+[    5.4m] census batch 5 (51s/batch)
+[    5.8m] census batch 6 (47s/batch)
+[    6.1m] census batch 7 (43s/batch)
+[    6.1m] massive channels {'channel': 269, 'top5_channels': [269, 59, 164, 3533, 3357], 'top5_max_abs': [1115.2, 66.3, 54.3, 53.7, 39.1], 'median_channel_max_abs': 1.077}
+[    6.2m] sink set {'n': 40, 'peak_level': 24, 'frac_at_position0': 0.4}
+[    9.2m] sink activations captured
+[    9.2m] model freed; weights retained
+[    9.7m] D3b_build_write [{"score": 152.378, "layer": 1, "channel": 269, "neuron": 7467}, {"score": 148.847, "layer": 2, "channel": 269, "neuron": 8275}, {"score": 104.44, "layer": 24, "channel": 269, "neuron": 2300}]
+[    9.7m] D1_weight_only [{"score": 1.329, "layer": 2, "channel": 269, "neuron": 8275}, {"score": 1.3144, "layer": 1, "channel": 269, "neuron": 7467}, {"score": 1.2707, "layer": 24, "channel": 269, "neuron": 2300}]
+[    9.7m] D2_concentration [{"score": 1.7663, "layer": 2, "channel": 269, "neuron": 8275}, {"score": 1.7277, "layer": 1, "channel": 269, "neuron": 7467}, {"score": 1.6147, "layer": 24, "channel": 269, "neuron": 2300}]
+[    9.7m] D3_activation_write [{"score": 187.39, "layer": 30, "channel": 269, "neuron": 10093}, {"score": 152.378, "layer": 1, "channel": 269, "neuron": 7467}, {"score": 148.847, "layer": 2, "channel": 269, "neuron": 8275}]
+[   14.9m] dictionary built: (533632, 4096)
+[   14.9m] OMP level 1/32
+[   15.0m] OMP level 2/32
+[   15.0m] OMP level 3/32
+[   15.1m] OMP level 4/32
+[   15.1m] OMP level 5/32
+[   15.1m] OMP level 6/32
+[   15.2m] OMP level 7/32
+[   15.2m] OMP level 8/32
+[   15.3m] OMP level 9/32
+[   15.4m] OMP level 10/32
+[   15.4m] OMP level 11/32
+[   15.5m] OMP level 12/32
+[   15.5m] OMP level 13/32
+[   15.6m] OMP level 14/32
+[   15.6m] OMP level 15/32
+[   15.7m] OMP level 16/32
+[   15.7m] OMP level 17/32
+[   15.8m] OMP level 18/32
+[   15.8m] OMP level 19/32
+[   15.9m] OMP level 20/32
+[   15.9m] OMP level 21/32
+[   16.0m] OMP level 22/32
+[   16.0m] OMP level 23/32
+[   16.1m] OMP level 24/32
+[   16.1m] OMP level 25/32
+[   16.1m] OMP level 26/32
+[   16.2m] OMP level 27/32
+[   16.2m] OMP level 28/32
+[   16.3m] OMP level 29/32
+[   16.3m] OMP level 30/32
+[   16.4m] OMP level 31/32
+[   16.4m] OMP level 32/32
+[   16.4m] D4_wdd [{"score": 237095.607, "layer": 2, "channel": 269, "neuron": 8275, "section": "mlp2"}, {"score": 217430.182, "layer": -1, "channel": -1, "neuron": -1, "section": "attn31"}, {"score": 75090.418, "layer": 24, "channel": 269, "neuron": 2300, "section": "mlp24"}]
+[   16.4m] 4 unique candidates to validate
+[   16.4m] reloading model for causal validation
+Loading weights:   0%|          | 0/226 [00:00<?, ?it/s]Loading weights:  88%|████████▊ | 200/226 [00:00<00:00, 1998.94it/s]Loading weights: 100%|██████████| 226/226 [00:00<00:00, 2138.40it/s]
+[   18.0m] clean ppl 11.089 (88s/eval)
+[   19.4m] cand0 L1 c269 n7467: ppl 115.157 (x10.3848) super=True
+[   20.8m] cand1 L2 c269 n8275: ppl 11.297 (x1.0188) super=False
+[   22.2m] cand2 L24 c269 n2300: ppl 11.413 (x1.0292) super=False
+[   23.7m] cand3 L30 c269 n10093: ppl 11.127 (x1.0034) super=False
+[   25.1m] null0 L8 c3829 n4748: ppl 11.089 (x1.0) super=False
+[   26.5m] null1 L5 c3959 n3200: ppl 11.089 (x1.0) super=False
+[   27.9m] null2 L28 c2715 n6343: ppl 11.089 (x1.0) super=False
+[   29.3m] null3 L11 c2133 n9590: ppl 11.089 (x1.0) super=False
+[   30.7m] null4 L15 c221 n1041: ppl 11.089 (x1.0) super=False
+[   32.1m] null5 L13 c927 n535: ppl 11.089 (x1.0) super=False
+[   33.5m] whole-atom L1 n7467: ppl 11.190 wz/nz 259.169
+[   33.5m] VERDICT {
+ "B1_found_any": true,
+ "B2_D3_best_p1": 0.0,
+ "D3b_p1": 1.0,
+ "B3_D1_p1": 0.0,
+ "B4_D4_p1": 0.0,
+ "B4_D4_top1_equals_D3_top1": false,
+ "B6_sink_pos0_frac": 0.4,
+ "n_skipped_for_budget": 0
+}
+[   33.5m] SCORING {
+ "D1_weight_only": {
+  "top1": [
+   2,
+   269,
+   8275
+  ],
+  "p_at_1": 0.0,
+  "p_at_3": 0.333,
+  "rank_of_first_hit": 1,
+  "n_tested": 4
+ },
+ "D2_concentration": {
+  "top1": [
+   2,
+   269,
+   8275
+  ],
+  "p_at_1": 0.0,
+  "p_at_3": 0.333,
+  "rank_of_first_hit": 1,
+  "n_tested": 4
+ },
+ "D3_activation_write": {
+  "top1": [
+   30,
+   269,
+   10093
+  ],
+  "p_at_1": 0.0,
+  "p_at_3": 0.333,
+  "rank_of_first_hit": 1,
+  "n_tested": 4
+ },
+ "D3b_build_write": {
+  "top1": [
+   1,
+   269,
+   7467
+  ],
+  "p_at_1": 1.0,
+  "p_at_3": 0.333,
+  "rank_of_first_hit": 0,
+  "n_tested": 3
+ },
+ "D4_wdd": {
+  "top1": [
+   2,
+   269,
+   8275
+  ],
+  "p_at_1": 0.0,
+  "p_at_3": 0.333,
+  "rank_of_first_hit": 2,
+  "n_tested": 3
+ }
+}
+[   33.5m] DONE_Y15B
+DONE_Y15B_olmo7b

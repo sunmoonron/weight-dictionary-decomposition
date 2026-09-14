@@ -1,0 +1,50 @@
+1446 step checkpoints, 0..1454000
+sampling 29 checkpoints: [0, 1000, 2000, 3000, 4500, 5000, 7000, 9000, 11000, 14000, 18000, 23000, 30000, 38000, 49000, 62000, 79000, 101000, 128000, 164000, 209000, 266000, 339000, 432000, 551000, 702000, 895000, 1141000, 1454000]
+step        0 (   0B)  L1[1764,1710] +0.0036 x     0.9 rank  4244 |  L2[1764,8041] +0.0037 x     1.2 rank  3377 | ctrl max/med 4.6,4.5  [2s]
+step     1000 (   2B)  L1[1764,1710] +0.0024 x     0.7 rank  5424 |  L2[1764,8041] +0.0065 x     2.1 rank  1290 | ctrl max/med 4.8,4.9  [5s]
+step     2000 (   4B)  L1[1764,1710] +0.0035 x     0.9 rank  4457 |  L2[1764,8041] +0.0073 x     2.2 rank  1113 | ctrl max/med 5.1,5.2  [7s]
+step     3000 (   6B)  L1[1764,1710] +0.0114 x     2.5 rank   701 |  L2[1764,8041] +0.0072 x     1.9 rank  1625 | ctrl max/med 5.2,5.2  [9s]
+step     4500 (   9B)  L1[1764,1710] +0.0354 x     5.9 rank     5 |  L2[1764,8041] +0.0060 x     1.2 rank  3409 | ctrl max/med 6.0,5.3  [11s]
+step     5000 (  10B)  L1[1764,1710] +0.0474 x     7.0 rank     4 |  L2[1764,8041] +0.0065 x     1.2 rank  3364 | ctrl max/med 5.7,5.5  [14s]
+step     7000 (  14B)  L1[1764,1710] +0.1055 x    11.3 rank     4 |  L2[1764,8041] +0.0245 x     3.4 rank   229 | ctrl max/med 6.0,6.5  [16s]
+step     9000 (  18B)  L1[1764,1710] +0.1438 x    13.0 rank     4 |  L2[1764,8041] +0.0522 x     6.0 rank     6 | ctrl max/med 5.8,6.5  [19s]
+step    11000 (  23B)  L1[1764,1710] +0.1800 x    14.8 rank     4 |  L2[1764,8041] +0.0803 x     8.2 rank     0 | ctrl max/med 6.0,6.4  [21s]
+step    14000 (  29B)  L1[1764,1710] +0.2209 x    16.7 rank     3 |  L2[1764,8041] +0.1049 x     9.7 rank     0 | ctrl max/med 5.5,6.3  [23s]
+step    18000 (  37B)  L1[1764,1710] +0.2655 x    20.4 rank     4 |  L2[1764,8041] +0.1093 x    10.0 rank     1 | ctrl max/med 5.5,6.2  [25s]
+step    23000 (  48B)  L1[1764,1710] +0.3063 x    28.3 rank     6 |  L2[1764,8041] +0.0816 x     8.4 rank     4 | ctrl max/med 5.7,7.1  [30s]
+step    30000 (  62B)  L1[1764,1710] +0.3504 x    40.3 rank     6 |  L2[1764,8041] +0.0477 x     6.0 rank    22 | ctrl max/med 5.4,6.6  [32s]
+step    38000 (  79B)  L1[1764,1710] +0.4692 x    61.1 rank     5 |  L2[1764,8041] +0.0356 x     4.9 rank    64 | ctrl max/med 5.2,6.1  [34s]
+step    49000 ( 102B)  L1[1764,1710] +0.5452 x    79.0 rank     4 |  L2[1764,8041] +0.0266 x     4.0 rank   169 | ctrl max/med 6.5,6.4  [37s]
+step    62000 ( 129B)  L1[1764,1710] +0.7883 x   121.9 rank     2 |  L2[1764,8041] +0.0220 x     3.5 rank   311 | ctrl max/med 6.8,6.2  [39s]
+step    79000 ( 165B)  L1[1764,1710] +1.1358 x   187.9 rank     1 |  L2[1764,8041] +0.0040 x     0.7 rank  5335 | ctrl max/med 7.5,7.8  [42s]
+step   101000 ( 211B)  L1[1764,1710] +1.3650 x   241.3 rank     0 |  L2[1764,8041] -0.0163 x     2.8 rank   672 | ctrl max/med 8.7,7.3  [44s]
+step   128000 ( 268B)  L1[1764,1710] +1.4026 x   255.0 rank     0 |  L2[1764,8041] -0.0518 x     9.5 rank     7 | ctrl max/med 8.1,7.0  [47s]
+step   164000 ( 343B)  L1[1764,1710] +1.3382 x   253.9 rank     0 |  L2[1764,8041] -0.0722 x    13.8 rank     5 | ctrl max/med 8.0,7.0  [49s]
+step   209000 ( 438B)  L1[1764,1710] +1.2878 x   254.1 rank     0 |  L2[1764,8041] -0.0633 x    13.1 rank    10 | ctrl max/med 7.2,8.0  [51s]
+step   266000 ( 557B)  L1[1764,1710] +1.1838 x   236.1 rank     0 |  L2[1764,8041] -0.0497 x    11.1 rank    21 | ctrl max/med 7.1,8.5  [54s]
+step   339000 ( 710B)  L1[1764,1710] +1.0883 x   228.8 rank     0 |  L2[1764,8041] -0.0529 x    12.4 rank    19 | ctrl max/med 6.3,6.8  [56s]
+step   432000 ( 905B)  L1[1764,1710] +0.8052 x   182.9 rank     0 |  L2[1764,8041] -0.0007 x     0.2 rank  7417 | ctrl max/med 5.6,7.9  [59s]
+step   551000 (1155B)  L1[1764,1710] +0.6244 x   145.8 rank     0 |  L2[1764,8041] -0.4109 x    97.8 rank     1 | ctrl max/med 5.7,7.8  [61s]
+step   702000 (1471B)  L1[1764,1710] +0.8045 x   192.2 rank     0 |  L2[1764,8041] -0.5910 x   152.0 rank     0 | ctrl max/med 5.4,8.0  [63s]
+step   895000 (1876B)  L1[1764,1710] +0.9400 x   255.1 rank     0 |  L2[1764,8041] -0.6942 x   186.9 rank     0 | ctrl max/med 6.1,7.8  [66s]
+step  1141000 (2392B)  L1[1764,1710] +0.7853 x   245.9 rank     0 |  L2[1764,8041] -0.7112 x   224.1 rank     0 | ctrl max/med 5.6,7.2  [68s]
+step  1454000 (3048B)  L1[1764,1710] +0.6323 x   226.4 rank     0 |  L2[1764,8041] -0.5924 x   221.5 rank     0 | ctrl max/med 5.8,7.1  [70s]
+FULL step 0: L1 colrank 3516 share 0.000 layermax 0.017@(1709,6669)  L2 colrank 5605 share 0.000 layermax 0.014@(756,6669)
+FULL step 7000: L1 colrank 105 share 0.054 layermax 0.132@(1764,4820)  L2 colrank 76 share 0.003 layermax 0.052@(63,7555)
+FULL step 23000: L1 colrank 30 share 0.237 layermax 0.427@(1764,4820)  L2 colrank 51 share 0.015 layermax 0.281@(623,3967)
+FULL step 101000: L1 colrank 0 share 0.934 layermax 1.365@(1764,1710)  L2 colrank 34 share 0.001 layermax 0.663@(1764,2074)
+FULL step 339000: L1 colrank 0 share 0.893 layermax 1.088@(1764,1710)  L2 colrank 2 share 0.004 layermax 0.918@(1764,2074)
+FULL step 1454000: L1 colrank 0 share 0.979 layermax 0.632@(1764,1710)  L2 colrank 0 share 0.927 layermax 0.592@(1764,8041)
+VERDICT {
+ "T1_emergence_step_L1_builder": 101000,
+ "T1_emergence_step_L2_amplifier": 11000,
+ "T1_co_emerge_within_2x": false,
+ "T2_first": "amplifier",
+ "T3_sign_stable": {
+  "1": true,
+  "2": false
+ },
+ "T4_control_max_over_median": 8.67,
+ "T4_pass": false
+}
+DONE_Y7

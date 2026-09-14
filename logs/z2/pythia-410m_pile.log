@@ -1,0 +1,8 @@
+== pythia-410m/pile ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  30%|███       | 89/292 [00:00<00:00, 869.86it/s]Loading weights:  60%|██████    | 176/292 [00:00<00:00, 819.24it/s]Loading weights:  89%|████████▊ | 259/292 [00:00<00:00, 820.83it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 827.93it/s]
+  pythia-410m/pile: 32768 states, d=1024 dff=4096 L=12 atoms=116864 (69s)
+  reconstruction done (480s): FVU32 weight 0.0484
+  attribution done (601s): recall 0.4603
+  pythia-410m/pile: FVU32 0.048 [0.047,0.050]  rot 0.591  recall 0.460 [0.448,0.472]  r_id 0.978 [0.976,0.979]  r_unc 0.447
+DONE_Z2

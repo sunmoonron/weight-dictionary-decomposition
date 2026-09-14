@@ -1,0 +1,7 @@
+== pythia-410m ==
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 94/292 [00:00<00:00, 936.71it/s]Loading weights:  64%|██████▍   | 188/292 [00:00<00:00, 917.62it/s]Loading weights:  96%|█████████▌| 280/292 [00:00<00:00, 905.06it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 913.41it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  pythia-410m/wikitext: 8192 states, d=1024 dff=4096 L=12 atoms=116864 (15s)
+  weight curve done (155s): FVU@32 0.0499  @256 0.0010
+  rotated curve done (243s): FVU@32 0.5914  @256 0.0135
+DONE_Z5

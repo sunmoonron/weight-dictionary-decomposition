@@ -1,0 +1,9 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3070.80it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2415650 > 1024). Running this sequence through the model will result in indexing errors
+eval states 32768
+dicts: full 78175, matched 70491, future 70491
+wdd_rotated: k4=0.924  k8=0.855  k16=0.737  k32=0.549  k64=0.299
+wdd_matched_correct: k4=0.150  k8=0.128  k16=0.102  k32=0.073  k64=0.040
+wdd_future_blocks: k4=0.165  k8=0.147  k16=0.123  k32=0.091  k64=0.051
+DONE_D

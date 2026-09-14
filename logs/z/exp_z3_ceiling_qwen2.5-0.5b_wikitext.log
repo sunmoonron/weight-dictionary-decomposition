@@ -1,0 +1,9 @@
+== qwen2.5-0.5b/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 35/290 [00:00<00:00, 315.51it/s]Loading weights:  23%|██▎       | 67/290 [00:00<00:01, 203.95it/s]Loading weights:  37%|███▋      | 108/290 [00:00<00:00, 272.89it/s]Loading weights:  48%|████▊     | 139/290 [00:00<00:00, 281.31it/s]Loading weights:  60%|█████▉    | 173/290 [00:00<00:00, 298.55it/s]Loading weights:  72%|███████▏  | 208/290 [00:00<00:00, 314.07it/s]Loading weights:  86%|████████▌ | 250/290 [00:00<00:00, 345.94it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 315.97it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (298938 > 131072). Running this sequence through the model will result in indexing errors
+  qwen2.5-0.5b/wikitext: 32768 states, d=896 dff=4864 L=12 atoms=226816 (25s)
+  supports done (274s); support composition {'embedding': 0.3644552230834961, 'mlp': 0.5450000762939453, 'attention': 0.0905447006225586, 'bias': 0.0}
+  recall_top1 here 0.4590 vs exp_z2 0.4590 (ok)
+  qwen2.5-0.5b/wikitext: id_omp 0.349  intact 0.527 id|intact 0.550  erased 0.104 id|erased 0.004  misses: erased 0.16 weak 0.48 twin 0.00 other 0.36  AUC surv 0.832
+DONE_Z3

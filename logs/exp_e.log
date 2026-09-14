@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3264.20it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2415650 > 1024). Running this sequence through the model will result in indexing errors
+unigram-only CE: 7.582
+bank6 (same layer): top1 0.210  CE 6.818
+             bank5: top1 0.206  CE 6.858
+             bank7: top1 0.213  CE 6.788
+     bank6 rotated: top1 0.015  CE 8.105
+    bank6 whitened: top1 0.214  CE 6.761
+  random neighbors: top1 0.025  CE 8.055
+DONE_E

@@ -1,0 +1,14 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3216.12it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+32768 states, 78175 atoms
+39273 similar pairs at |cos|>=0.9
+OMP done
+tau=0.95: clusters(multi) 11 covering 1114 atoms, largest 1021 (1.31% of dict)
+  cluster recall top1: omp 0.650  oneshot 0.766   top3: omp 0.492  oneshot 0.639
+  cluster-level estimation r (identified): 0.999
+tau=0.9: clusters(multi) 58 covering 1242 atoms, largest 1022 (1.31% of dict)
+  cluster recall top1: omp 0.664  oneshot 0.771   top3: omp 0.502  oneshot 0.646
+  cluster-level estimation r (identified): 0.999
+sanity atom-level top-1 recall: 0.647 (exp F: 0.647)
+DONE_H

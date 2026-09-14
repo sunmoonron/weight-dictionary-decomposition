@@ -1,0 +1,7 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3060.43it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+mechanism: {'mech_614_r': 0.011, 'mech_random_mean': 0.014, 'mech_random_p5_p95': [-0.078, 0.131]}
+9 block-3 counter-neurons (n>=10, mean birth surv<0)
+dCE counter-subpop 0.038  random-matched 0.0004
+DONE_S4

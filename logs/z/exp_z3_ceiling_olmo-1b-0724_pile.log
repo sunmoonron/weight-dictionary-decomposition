@@ -1,0 +1,8 @@
+== olmo-1b-0724/pile ==
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   4%|▍         | 5/114 [00:00<00:02, 49.58it/s]Loading weights:  27%|██▋       | 31/114 [00:00<00:00, 166.88it/s]Loading weights:  46%|████▋     | 53/114 [00:00<00:00, 189.58it/s]Loading weights:  66%|██████▌   | 75/114 [00:00<00:00, 199.03it/s]Loading weights:  88%|████████▊ | 100/114 [00:00<00:00, 216.09it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 198.56it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  olmo-1b-0724/pile: 32768 states, d=2048 dff=8192 L=8 atoms=142464 (79s)
+  supports done (328s); support composition {'embedding': 0.15066909790039062, 'mlp': 0.7040538787841797, 'attention': 0.1452770233154297, 'bias': 0.0}
+  recall_top1 here 0.7349 vs exp_z2 0.7349 (ok)
+  olmo-1b-0724/pile: id_omp 0.639  intact 0.704 id|intact 0.778  erased 0.043 id|erased 0.027  misses: erased 0.12 weak 0.45 twin 0.00 other 0.43  AUC surv 0.787
+DONE_Z3

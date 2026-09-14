@@ -1,0 +1,46 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  21%|██        | 24/114 [00:00<00:00, 230.44it/s]Loading weights:  51%|█████     | 58/114 [00:00<00:00, 292.89it/s]Loading weights:  77%|███████▋  | 88/114 [00:00<00:00, 267.33it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 283.62it/s]
+{
+ "model": "allenai/OLMo-1B-0724-hf",
+ "layer": 1,
+ "gauge": "u_j *= c_j, w_j /= c_j; c ~ LogUniform(1/8, 8)",
+ "ppl_before": 14.2308,
+ "ppl_after": 14.23,
+ "ppl_rel_change": 5.6e-05,
+ "spearman_vs_original": {
+  "col_norm": 0.04062,
+  "concentration": 1.0,
+  "act_weighted_write": 1.0,
+  "sigma_leverage": 0.96237
+ },
+ "top_atom": {
+  "col_norm": {
+   "before": 1710,
+   "after": 3950
+  },
+  "concentration": {
+   "before": 1710,
+   "after": 1710
+  },
+  "act_weighted_write": {
+   "before": 1710,
+   "after": 1710
+  },
+  "sigma_leverage": {
+   "before": 1710,
+   "after": 1710
+  }
+ },
+ "verdict": {
+  "G1_ppl_unchanged": true,
+  "G2_col_norm_scrambled": true,
+  "G3_sigma_leverage_preserved": true,
+  "G4_top_atom_stable": {
+   "col_norm": false,
+   "concentration": true,
+   "act_weighted_write": true,
+   "sigma_leverage": true
+  }
+ }
+}
+DONE_Y39

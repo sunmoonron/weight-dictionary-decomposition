@@ -1,0 +1,8 @@
+== qwen2.5-7b ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:18, 18.52it/s]Loading weights:   5%|▌         | 18/339 [00:00<00:03, 97.48it/s]Loading weights:  12%|█▏        | 41/339 [00:00<00:01, 151.17it/s]Loading weights:  19%|█▉        | 65/339 [00:00<00:01, 176.27it/s]Loading weights:  26%|██▌       | 88/339 [00:00<00:01, 180.04it/s]Loading weights:  33%|███▎      | 113/339 [00:00<00:01, 199.61it/s]Loading weights:  40%|████      | 137/339 [00:00<00:00, 204.03it/s]Loading weights:  47%|████▋     | 160/339 [00:00<00:00, 209.56it/s]Loading weights:  54%|█████▎    | 182/339 [00:00<00:00, 208.98it/s]Loading weights:  60%|█████▉    | 203/339 [00:01<00:00, 199.66it/s]Loading weights:  66%|██████▌   | 224/339 [00:01<00:00, 194.47it/s]Loading weights:  72%|███████▏  | 245/339 [00:01<00:00, 197.32it/s]Loading weights:  79%|███████▉  | 268/339 [00:01<00:00, 201.67it/s]Loading weights:  85%|████████▌ | 289/339 [00:01<00:00, 200.23it/s]Loading weights:  91%|█████████▏| 310/339 [00:01<00:00, 195.78it/s]Loading weights:  97%|█████████▋| 330/339 [00:01<00:00, 188.72it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 190.94it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (298938 > 131072). Running this sequence through the model will result in indexing errors
+  qwen2.5-7b/wikitext: 8192 states, d=3584 dff=18944 L=14 atoms=489984 (35s)
+  weight curve done (1349s): FVU@32 0.0096  @298 0.0024
+  rotated curve done (2379s): FVU@32 0.8399  @298 0.2458
+DONE_Z5

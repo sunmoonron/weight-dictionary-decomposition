@@ -1,0 +1,15 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3326.62it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+32768 states captured
+per-neuron survival stats built
+transient: 32 block-3 neurons, mean surv 0.86; control: 32 neurons (blocks 4-6), mean surv 2.70
+block3_transient: R2 full 0.330 (median)  R2 dir-only -0.026  transformed 0.31  info-lost 0.34
+control_intact: R2 full 0.510 (median)  R2 dir-only 0.006  transformed 0.44  info-lost 0.31
+block3_transient survival by depth: {'post_block_3': 0.795, 'post_block_4': 0.832, 'post_block_5': 0.834, 'post_block_6': 0.861}
+control_intact survival by depth: {'post_block_4': 2.359, 'post_block_5': 2.526, 'post_block_6': 2.702}
+Traceback (most recent call last):
+  File "/data/mechinterp/trainfree/exp_j_transform.py", line 181, in <module>
+    top_tok = [tok.decode([t]) for t in (d @ W_U.T).topk(8).indices.tolist()]
+                                         ~~^~~~~~~
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument mat2 in method wrapper_CUDA_mm)

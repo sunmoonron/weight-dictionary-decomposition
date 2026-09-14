@@ -1,0 +1,9 @@
+== qwen2.5-0.5b/pile ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  71%|███████▏  | 207/290 [00:00<00:00, 2011.47it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1321.00it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (15394181 > 131072). Running this sequence through the model will result in indexing errors
+  qwen2.5-0.5b/pile: 32768 states, d=896 dff=4864 L=12 atoms=226816 (75s)
+  reconstruction done (762s): FVU32 weight 0.0178
+  attribution done (937s): recall 0.4831
+  qwen2.5-0.5b/pile: FVU32 0.018 [0.018,0.018]  rot 0.517  recall 0.483 [0.470,0.495]  r_id 0.995 [0.995,0.995]  r_unc 0.542
+DONE_Z2

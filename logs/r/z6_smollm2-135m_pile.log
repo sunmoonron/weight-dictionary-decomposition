@@ -1,0 +1,10 @@
+job start z6 smollm2-135m/pile 02:13:44 free=70051MB
+== smollm2-135m/pile ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  51%|█████     | 139/272 [00:00<00:00, 1388.36it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 1477.13it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (16606053 > 8192). Running this sequence through the model will result in indexing errors
+  smollm2-135m/pile: 32768 states, d=576 dff=1536 L=15 atoms=82944 (85s)
+  support done (118s)
+  smollm2-135m/pile: support {'embedding': 0.0846039615314048, 'mlp': 0.7092064323282979, 'attention': 0.20618960614029722, 'bias': 0.0}  real 0.244  sign 0.899  relerr 4.28  spurious mass 0.677 | dominant: r omp 0.864 refit 0.883 relerr omp 0.58 refit 0.72
+DONE_Z6
+job exit 0 z6 smollm2-135m/pile 02:15:50

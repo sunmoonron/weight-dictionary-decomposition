@@ -1,0 +1,44 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2840.27it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+captured 32768 states + MLP acts for blocks 0..6
+dictionary 78175 atoms
+OMP done
+691330 selected MLP-atom instances
+{
+ "n": 691330,
+ "r_all": 0.9516993761062622,
+ "sign_agree": 0.6845399737358093,
+ "per_block": {
+  "0": {
+   "n": 155048,
+   "r": 0.5831071138381958
+  },
+  "1": {
+   "n": 106557,
+   "r": 0.8839845657348633
+  },
+  "2": {
+   "n": 86107,
+   "r": 0.9944385290145874
+  },
+  "3": {
+   "n": 72276,
+   "r": 0.49302926659584045
+  },
+  "4": {
+   "n": 68640,
+   "r": 0.5161575078964233
+  },
+  "5": {
+   "n": 88184,
+   "r": 0.6048146486282349
+  },
+  "6": {
+   "n": 114518,
+   "r": 0.6100748777389526
+  }
+ },
+ "mean_activation_percentile": 0.6802445650100708
+}
+DONE_C

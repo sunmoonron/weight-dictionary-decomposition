@@ -1,0 +1,56 @@
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 37/114 [00:00<00:00, 364.46it/s]Loading weights:  71%|███████   | 81/114 [00:00<00:00, 393.45it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 426.04it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+16 layers, d=2048
+orbit tensor (4096, 17, 2048)  (4096 tokens)
+global: {"r2_linear": 0.91793, "r2_identity_baseline": 0.86969, "max_abs": 1.40264, "median_abs": 0.26693, "n_above_0.1": 1775, "n_above_0.5": 321, "effective_modes_participation": 1440.8, "top10_share": 0.0193}
+  L 0 r2 0.87558 (identity -0.11587)  max|lam-1| 8.7408  modes>0.1  2045  eff_modes 1282.6
+  L 1 r2 0.98535 (identity 0.00771)  max|lam-1| 38.1176  modes>0.1  2011  eff_modes 1022.9
+  L 2 r2 0.99782 (identity 0.96086)  max|lam-1| 1.9940  modes>0.1  1996  eff_modes 1544.4
+  L 3 r2 0.99797 (identity 0.94698)  max|lam-1| 1.6671  modes>0.1  1982  eff_modes 1558.3
+  L 4 r2 0.99851 (identity 0.97388)  max|lam-1| 1.4930  modes>0.1  1976  eff_modes 1573.3
+  L 5 r2 0.99850 (identity 0.98905)  max|lam-1| 1.3862  modes>0.1  1960  eff_modes 1565.0
+  L 6 r2 0.99865 (identity 0.98940)  max|lam-1| 1.2268  modes>0.1  1950  eff_modes 1572.5
+  L 7 r2 0.99851 (identity 0.99089)  max|lam-1| 1.1793  modes>0.1  1933  eff_modes 1564.5
+  L 8 r2 0.99845 (identity 0.98982)  max|lam-1| 1.1779  modes>0.1  1926  eff_modes 1566.0
+  L 9 r2 0.99832 (identity 0.98895)  max|lam-1| 1.1596  modes>0.1  1948  eff_modes 1593.5
+  L10 r2 0.99790 (identity 0.98592)  max|lam-1| 1.1580  modes>0.1  1954  eff_modes 1589.6
+  L11 r2 0.99732 (identity 0.98121)  max|lam-1| 1.2497  modes>0.1  1975  eff_modes 1620.3
+  L12 r2 0.99710 (identity 0.95934)  max|lam-1| 1.2314  modes>0.1  1968  eff_modes 1607.0
+  L13 r2 0.99627 (identity 0.96804)  max|lam-1| 1.2523  modes>0.1  1955  eff_modes 1589.2
+  L14 r2 0.99608 (identity 0.96662)  max|lam-1| 1.0584  modes>0.1  1943  eff_modes 1591.4
+  L15 r2 0.96283 (identity -3.91433)  max|lam-1| 1.5547  modes>0.1  1990  eff_modes 1626.5
+  modes L1: |lam|38.118 cos0.997->L1n1710  |lam|4.067 cos0.485->L1n1710  |lam|3.498 cos0.253->L2n7200
+  modes L4: |lam|1.493 cos0.114->L5n6791  |lam|1.493 cos0.114->L5n6791  |lam|1.422 cos0.150->L5n2273
+  modes L8: |lam|1.178 cos0.134->L7n3505  |lam|1.178 cos0.134->L7n3505  |lam|1.144 cos0.139->L8n3053
+  modes L12: |lam|1.231 cos0.500->L12n353  |lam|1.231 cos0.500->L12n353  |lam|1.219 cos0.485->L12n353
+  modes L15: |lam|1.555 cos0.381->L15n4260  |lam|1.427 cos0.204->L15n7844  |lam|1.379 cos0.327->L15n4239
+
+VERDICT {
+ "global_r2": 0.91793,
+ "global_beats_identity": true,
+ "per_layer_r2_range": [
+  0.87558,
+  0.99865
+ ],
+ "per_layer_effective_modes": [
+  1282.6,
+  1022.9,
+  1544.4,
+  1558.3,
+  1573.3,
+  1565.0,
+  1572.5,
+  1564.5,
+  1566.0,
+  1593.5,
+  1589.6,
+  1620.3,
+  1607.0,
+  1589.2,
+  1591.4,
+  1626.5
+ ],
+ "median_mode_atom_cos": 0.2532,
+ "random_baseline": 0.09979248046875
+}
+DONE_Y35

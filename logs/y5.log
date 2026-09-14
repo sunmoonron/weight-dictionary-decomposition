@@ -1,0 +1,55 @@
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  35%|███▌      | 40/114 [00:00<00:00, 386.41it/s]Loading weights:  70%|███████   | 80/114 [00:00<00:00, 391.06it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 405.23it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+layers=16 tokens=8192
+batch 0 done [96s]
+batch 1 done [192s]
+batch 2 done [289s]
+batch 3 done [386s]
+b 1 in     -0.4 write   -249.7 (attn    -0.3 mlp  -249.4)  gain -21.827 (mlp -21.641 attn -0.186)  top 1710 -23.018
+b 2 in   -250.1 write    -42.2 (attn    +0.1 mlp   -42.3)  gain  +0.202 (mlp +0.202 attn -0.000)  top 8041 +0.202
+b 3 in   -292.4 write    -65.3 (attn    +0.1 mlp   -65.4)  gain  +0.274 (mlp +0.274 attn -0.000)  top 1902 +0.149
+b 4 in   -357.8 write    -37.0 (attn    -0.1 mlp   -36.9)  gain  +0.150 (mlp +0.150 attn +0.000)  top 556 +0.129
+b 5 in   -394.7 write     -3.1 (attn    -0.1 mlp    -3.0)  gain  +0.013 (mlp +0.013 attn +0.000)  top 3977 +0.011
+b 6 in   -397.7 write     -9.2 (attn    -0.1 mlp    -9.1)  gain  +0.040 (mlp +0.039 attn +0.000)  top 4472 +0.040
+b 7 in   -406.8 write     -1.5 (attn    -0.0 mlp    -1.5)  gain  +0.005 (mlp +0.005 attn +0.000)  top 7306 +0.003
+b 8 in   -408.3 write     -0.3 (attn    -0.1 mlp    -0.2)  gain  +0.001 (mlp +0.001 attn +0.000)  top 4682 +0.000
+b 9 in   -408.5 write     -1.1 (attn    -0.1 mlp    -1.0)  gain  +0.004 (mlp +0.004 attn +0.000)  top 7283 +0.002
+b10 in   -409.5 write     -0.6 (attn    -0.0 mlp    -0.5)  gain  +0.001 (mlp +0.001 attn +0.000)  top 7472 +0.000
+b11 in   -410.0 write     -0.7 (attn    -0.1 mlp    -0.7)  gain  +0.001 (mlp +0.001 attn +0.000)  top 6056 -0.000
+b12 in   -410.8 write     +5.7 (attn    -0.1 mlp    +5.8)  gain  -0.004 (mlp -0.004 attn +0.000)  top 353 -0.004
+b13 in   -405.0 write     +0.5 (attn    +0.0 mlp    +0.5)  gain  -0.004 (mlp -0.004 attn +0.000)  top 6548 -0.000
+b14 in   -404.5 write     +1.0 (attn    -0.0 mlp    +1.0)  gain  -0.006 (mlp -0.006 attn +0.000)  top 6412 -0.000
+b15 in   -403.5 write   +405.2 (attn    +0.3 mlp  +404.9)  gain  -1.539 (mlp -1.539 attn -0.001)  top 6840 -0.773
+L0 ledger max err 0.02501
+C clean                ppl    14.797 ch_final     +1.62
+C kill_top5_gain       ppl    14.867 ch_final   -400.48
+C kill_top5_write      ppl    14.867 ch_final   -400.48
+C kill_5_random        ppl    14.793 ch_final     +1.62
+D b 0 mlp    -0.32 ->    -0.32   top mover 0 -0.00
+D b 1 mlp  -249.43 ->    -6.60   top mover 0 +0.00
+D b 2 mlp   -42.32 ->    -0.12   top mover 8041 +35.96
+D b 3 mlp   -65.41 ->    -7.49   top mover 1902 +31.20
+D b 4 mlp   -36.92 ->   -11.54   top mover 556 +20.92
+D b 5 mlp    -3.05 ->    -0.18   top mover 3977 +1.78
+D b 6 mlp    -9.10 ->    -4.77   top mover 4472 +5.82
+D b 7 mlp    -1.47 ->    -2.52   top mover 7306 -1.74
+D b 8 mlp    -0.24 ->    +0.15   top mover 4682 -0.06
+D b 9 mlp    -0.98 ->    -0.15   top mover 7283 +0.38
+D b10 mlp    -0.52 ->    +0.08   top mover 7472 +0.05
+D b11 mlp    -0.66 ->    +0.13   top mover 6056 +0.05
+D b12 mlp    +5.78 ->    -0.01   top mover 353 -6.36
+D b13 mlp    +0.48 ->    +0.57   top mover 6548 -0.04
+D b14 mlp    +0.98 ->    +0.70   top mover 6412 -0.07
+D b15 mlp  +404.86 ->   +38.48   top mover 3454 -189.86
+VERDICT {
+ "L1_cascade_n_blocks_gain_ge_0.05": 2,
+ "L1_pass": false,
+ "L2_gain_block15": -1.5394,
+ "L2_open_loop_residue_block15": -215.94,
+ "L2_proportional_term": 621.12,
+ "L2_verdict": "PROPORTIONAL_ERASER",
+ "L3_frac_channel_alive_after_kill": 0.9926,
+ "L3_dCE_kill": 0.00472,
+ "L3_dCE_random_control": -0.00029
+}
+DONE_Y5

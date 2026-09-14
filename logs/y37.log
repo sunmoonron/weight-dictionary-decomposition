@@ -1,0 +1,37 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  40%|████      | 46/114 [00:00<00:00, 458.16it/s]Loading weights:  82%|████████▏ | 93/114 [00:00<00:00, 452.85it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 465.74it/s]
+131072 atoms; top massive channels [1764, 1110, 623, 1542]
+227 non-trivial blocks
+
+REAL   {"tag": "blocks", "n": 227, "median_channel_coherence": 0.5, "frac_coherent_ge_0.5": 0.7533, "frac_coherent_eq_1.0": 0.1233, "median_massiveness_pct": 0.6279, "frac_top1pct_channel": 0.1674, "median_depth_span": 2, "frac_with_sign_flip": 0.326}
+NULL   {"tag": "random", "n": 227, "median_channel_coherence": 0.5, "frac_coherent_ge_0.5": 0.5463, "frac_coherent_eq_1.0": 0.0, "median_massiveness_pct": 0.5347, "frac_top1pct_channel": 0.0969, "median_depth_span": 2, "frac_with_sign_flip": 0.6696}
+
+SW block: {"size": 12, "modal_channel": 1764, "channel_coherence": 1.0, "layers": [1, 2, 3, 4, 12, 15], "depth_span": 6, "channel_massiveness_pct": 1.0, "sign_flips_across_depth": 0, "is_loop": false}
+
+largest blocks:
+  size  31 ch  623 coh 0.94 massive_pct 0.9990 layers [0, 1, 2, 4, 5, 6, 7, 12] flips 2
+  size  26 ch 1808 coh 0.23 massive_pct 0.8994 layers [3, 4, 5, 6, 7, 8, 9, 10, 11] flips 5
+  size  26 ch  105 coh 0.27 massive_pct 0.6226 layers [11] flips 0
+  size  21 ch  773 coh 0.14 massive_pct 0.6797 layers [3] flips 0
+  size  19 ch  623 coh 0.79 massive_pct 0.9990 layers [7] flips 0
+  size  15 ch  623 coh 0.73 massive_pct 0.9990 layers [9] flips 0
+  size  13 ch 1282 coh 0.46 massive_pct 0.7695 layers [13, 14, 15] flips 2
+  size  12 ch 1764 coh 1.00 massive_pct 1.0000 layers [1, 2, 3, 4, 12, 15] flips 0
+
+VERDICT {
+ "blocks_are_channel_organised": true,
+ "median_coherence_real_vs_null": [
+  0.5,
+  0.5
+ ],
+ "frac_targeting_top1pct_channel_real_vs_null": [
+  0.1674,
+  0.0969
+ ],
+ "frac_multilayer_loops_real_vs_null": [
+  0.326,
+  0.6696
+ ],
+ "sw_block_typical": true
+}
+DONE_Y37

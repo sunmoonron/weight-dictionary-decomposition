@@ -1,0 +1,37 @@
+=== gpu0 queue start Sat 29 Aug 2026 10:23:07 AM EDT ===
+SYNTAX_OK_GPU0
+--- exp_x1_doseresp_all ---
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3058.46it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+X1: 614 lo 0.275 (pct 0.9013) hi -0.219 (pct 0.8185); inverse-both n=1236
+DONE_X1
+--- exp_x1_doseresp_all exit 0 ---
+--- exp_x5_lin ---
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3072.58it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+top-9 counter-writers: [614, 2664, 2885, 1995, 2723, 548, 1080, 2600, 2607]
+k=1: energy 417084 dCE +0.00432
+k=3: energy 553816 dCE +0.02351
+k=5: energy 590306 dCE +0.02484
+k=7: energy 619043 dCE +0.02427
+k=9: energy 640105 dCE +0.02424
+ctrl 0: dCE -0.00023
+ctrl 1: dCE +0.00106
+ctrl 2: dCE +0.00085
+DONE_X5
+--- exp_x5_lin exit 0 ---
+--- exp_x4_crossdomain ---
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3486.36it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/10000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 10000/10000 [00:00<00:00, 33456.98 examples/s]Generating train split: 100%|██████████| 10000/10000 [00:00<00:00, 33386.94 examples/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (17370411 > 1024). Running this sequence through the model will result in indexing errors
+corpus: NeelNanda/pile-10k, 67584 tokens
+16384 eval states
+FVU@32 {'weight': 0.08042, 'rotated': 0.51784, 'wikitext_ref': {'weight': 0.069, 'rotated': 0.52}}
+attrib {'recall_top1_omp': 0.562, 'recall_top1_oneshot': 0.66, 'r_identified': 0.9982, 'r_unconditional': 0.6472, 'wikitext_ref': {'recall_top1_omp': 0.647, 'recall_top1_oneshot': 0.766, 'r_identified': 0.998, 'r_unconditional': 0.648}}
+block3 {'n_cases': 5176, 'counter_frac': 0.3793, 'median_birth_surv': 0.771, 'novel_frac': 0.3914, 'wikitext_ref': {'counter_frac': 0.525, 'median': -0.09, 'novel_frac': 0.244}, 'null_shuffle_counter_frac': 0.6679, 'null_shuffle_novel_frac': 0.091}
+DONE_X4
+--- exp_x4_crossdomain exit 0 ---
+=== gpu0 queue done Sat 29 Aug 2026 10:27:51 AM EDT ===

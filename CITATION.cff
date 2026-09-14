@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper below."
+title: "Weight-Dictionary Decomposition: code, results and per-token records"
+authors:
+  - family-names: Bhatt
+    given-names: Ronish
+    orcid: "https://orcid.org/0009-0000-8835-5380"
+version: "September 2026"
+date-released: "2026-09-14"
+license: MIT
+repository-code: "https://github.com/sunmoonron/weight-dictionary-decomposition"
+preferred-citation:
+  type: unpublished
+  title: "Weight-Dictionary Decomposition: Reading a Transformer's Residual Stream with Its Own Writes"
+  authors:
+    - family-names: Bhatt
+      given-names: Ronish
+      orcid: "https://orcid.org/0009-0000-8835-5380"
+  year: 2026
+  doi: "10.5281/zenodo.22749478"
+  url: "https://doi.org/10.5281/zenodo.22749478"
+  notes: "Preprint, September 2026. The concept DOI 10.5281/zenodo.22749477 resolves to the latest version."

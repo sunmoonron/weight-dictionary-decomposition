@@ -1,0 +1,10 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3035.26it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+target mlp5#2070: 1456 counter tokens; clean CE 3.6291
+top opposition-building heads: {'b4h11': -1.767, 'b2h9': -1.341, 'b2h5': -1.279, 'b3h8': -1.182, 'b3h7': -0.921}
+top b4h11 a=0.0: dact -0.016 (ct -0.053) dopp 1.01 dCE +0.0095
+top b4h11 a=2.0: dact 0.090 (ct 0.147) dopp -0.83 dCE +0.0106
+control b4h10 a=0.0: dact -0.033 (ct -0.049) dopp 0.03 dCE +0.0056
+control b4h10 a=2.0: dact 0.029 (ct 0.043) dopp -0.02 dCE +0.0056
+DONE_T1

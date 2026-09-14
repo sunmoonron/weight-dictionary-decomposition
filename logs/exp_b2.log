@@ -1,0 +1,18 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3207.47it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2415650 > 1024). Running this sequence through the model will result in indexing errors
+unigram-only CE floor: 7.5823
+L 0  CE(lam=0.5) 7.274  CE(lam=0.9) 8.145
+L 1  CE(lam=0.5) 7.171  CE(lam=0.9) 7.986
+L 2  CE(lam=0.5) 7.117  CE(lam=0.9) 7.911
+L 3  CE(lam=0.5) 7.040  CE(lam=0.9) 7.807
+L 4  CE(lam=0.5) 6.964  CE(lam=0.9) 7.701
+L 5  CE(lam=0.5) 6.887  CE(lam=0.9) 7.593
+L 6  CE(lam=0.5) 6.818  CE(lam=0.9) 7.497
+L 7  CE(lam=0.5) 6.720  CE(lam=0.9) 7.363
+L 8  CE(lam=0.5) 6.627  CE(lam=0.9) 7.237
+L 9  CE(lam=0.5) 6.532  CE(lam=0.9) 7.113
+L10  CE(lam=0.5) 6.403  CE(lam=0.9) 6.946
+L11  CE(lam=0.5) 6.304  CE(lam=0.9) 6.813
+L12  CE(lam=0.5) 6.773  CE(lam=0.9) 7.423
+DONE_B2

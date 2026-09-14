@@ -1,0 +1,4 @@
+job start z6 gpt2/wikitext 02:11:13 free=72435MB
+== gpt2/wikitext done, skip ==
+DONE_Z6
+job exit 0 z6 gpt2/wikitext 02:11:15

@@ -1,0 +1,63 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+===== smollm2-135m =====
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  41%|████      | 111/272 [00:00<00:00, 1087.61it/s]Loading weights:  81%|████████  | 220/272 [00:00<00:00, 1004.76it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 1015.12it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (304838 > 8192). Running this sequence through the model will result in indexing errors
+  captured; CE 3.079  d=576 dff=1536 NB=30
+  dict 36545 atoms; eval 8192 states
+  FVU@32/64  weight 0.006/0.002  rotated 0.424/0.184  random 0.431/0.180
+  attrib: top1 recall 0.673  r|id 1.0
+  counter medians by block: [1.73, 1.65, 1.75, 1.46, 1.45, 1.53, 1.62, 1.72, 1.62, 1.85, 1.54, 1.41, 1.48, 1.12, 1.15, 0.84, 0.98, 1.06, 0.23, 1.23, 1.0, 1.45, 1.39, 1.51, 0.9, 1.19, 1.11, 0.9, 0.29]
+  top-counter channels matching superweight-study channels: 19/29
+===== qwen2.5-0.5b =====
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:28,  9.98it/s]Loading weights:  22%|██▏       | 65/290 [00:00<00:00, 379.56it/s]Loading weights:  42%|████▏     | 123/290 [00:00<00:00, 454.22it/s]Loading weights:  63%|██████▎   | 183/290 [00:00<00:00, 509.70it/s]Loading weights:  82%|████████▏ | 238/290 [00:00<00:00, 522.66it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 484.99it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (298938 > 131072). Running this sequence through the model will result in indexing errors
+  captured; CE 2.853  d=896 dff=4864 NB=24
+  dict 77661 atoms; eval 8192 states
+  FVU@32/64  weight 0.018/0.010  rotated 0.544/0.312  random 0.562/0.319
+  attrib: top1 recall 0.482  r|id 0.798
+  counter medians by block: [1.71, 1.65, 1.54, 1.66, 1.76, 1.4, 1.7, 1.79, 1.5, 1.78, 1.44, 0.07, 1.54, 1.66, 1.49, 1.61, 1.6, 1.51, 1.45, 1.6, 1.56, 1.09, 0.48]
+  top-counter channels matching superweight-study channels: 14/23
+===== pythia-410m =====
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   1%|          | 2/292 [00:00<02:09,  2.25it/s]Loading weights:  15%|█▌        | 44/292 [00:01<00:06, 37.11it/s]Loading weights:  42%|████▏     | 122/292 [00:01<00:01, 113.25it/s]Loading weights:  52%|█████▏    | 151/292 [00:02<00:02, 65.69it/s] Loading weights:  74%|███████▎  | 215/292 [00:02<00:00, 109.87it/s]Loading weights:  84%|████████▍ | 245/292 [00:03<00:00, 90.41it/s] Loading weights:  94%|█████████▍| 275/292 [00:03<00:00, 106.02it/s]Loading weights: 100%|██████████| 292/292 [00:03<00:00, 85.33it/s] 
+  captured; CE 3.113  d=1024 dff=4096 NB=24
+  dict 69580 atoms; eval 8192 states
+  FVU@32/64  weight 0.051/0.032  rotated 0.606/0.383  random 0.608/0.374
+  attrib: top1 recall 0.488  r|id 0.987
+  counter medians by block: [2.98, 1.66, 1.43, 1.19, 1.56, 0.85, 1.75, 1.52, 1.6, 1.49, 1.29, 0.88, 1.45, 1.87, 1.32, 1.55, 1.84, 1.74, 1.99, 1.49, 1.69, 0.22, -0.24]
+  top-counter channels matching superweight-study channels: 4/23
+===== olmo-1b-0724 =====
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   2%|▏         | 2/114 [00:00<00:10, 10.67it/s]Loading weights:   4%|▍         | 5/114 [00:00<00:05, 18.35it/s]Loading weights:   7%|▋         | 8/114 [00:00<00:08, 13.09it/s]Loading weights:   9%|▉         | 10/114 [00:01<00:13,  7.61it/s]Loading weights:  11%|█         | 12/114 [00:01<00:22,  4.52it/s]Loading weights:  11%|█▏        | 13/114 [00:02<00:20,  4.86it/s]Loading weights:  14%|█▍        | 16/114 [00:02<00:14,  6.66it/s]Loading weights:  15%|█▍        | 17/114 [00:03<00:25,  3.88it/s]Loading weights:  16%|█▌        | 18/114 [00:03<00:26,  3.66it/s]Loading weights:  18%|█▊        | 21/114 [00:03<00:22,  4.20it/s]Loading weights:  20%|██        | 23/114 [00:04<00:17,  5.08it/s]Loading weights:  22%|██▏       | 25/114 [00:04<00:16,  5.24it/s]Loading weights:  23%|██▎       | 26/114 [00:04<00:19,  4.49it/s]Loading weights:  24%|██▎       | 27/114 [00:05<00:19,  4.47it/s]Loading weights:  25%|██▍       | 28/114 [00:05<00:17,  4.91it/s]Loading weights:  26%|██▋       | 30/114 [00:05<00:16,  5.10it/s]Loading weights:  27%|██▋       | 31/114 [00:06<00:25,  3.20it/s]Loading weights:  30%|██▉       | 34/114 [00:06<00:14,  5.47it/s]Loading weights:  31%|███       | 35/114 [00:06<00:17,  4.61it/s]Loading weights:  33%|███▎      | 38/114 [00:07<00:13,  5.72it/s]Loading weights:  34%|███▍      | 39/114 [00:07<00:15,  4.87it/s]Loading weights:  35%|███▌      | 40/114 [00:08<00:20,  3.69it/s]Loading weights:  38%|███▊      | 43/114 [00:08<00:12,  5.79it/s]Loading weights:  39%|███▉      | 45/114 [00:08<00:13,  5.19it/s]Loading weights:  40%|████      | 46/114 [00:09<00:18,  3.70it/s]Loading weights:  42%|████▏     | 48/114 [00:09<00:14,  4.46it/s]Loading weights:  45%|████▍     | 51/114 [00:10<00:14,  4.43it/s]Loading weights:  46%|████▋     | 53/114 [00:10<00:13,  4.51it/s]Loading weights:  47%|████▋     | 54/114 [00:11<00:13,  4.31it/s]Loading weights:  48%|████▊     | 55/114 [00:11<00:16,  3.62it/s]Loading weights:  52%|█████▏    | 59/114 [00:12<00:12,  4.24it/s]Loading weights:  53%|█████▎    | 60/114 [00:12<00:14,  3.77it/s]Loading weights:  55%|█████▌    | 63/114 [00:13<00:09,  5.11it/s]Loading weights:  57%|█████▋    | 65/114 [00:13<00:10,  4.87it/s]Loading weights:  59%|█████▉    | 67/114 [00:14<00:12,  3.79it/s]Loading weights:  61%|██████▏   | 70/114 [00:14<00:08,  5.24it/s]Loading weights:  62%|██████▏   | 71/114 [00:14<00:08,  5.34it/s]Loading weights:  66%|██████▌   | 75/114 [00:15<00:05,  7.32it/s]Loading weights:  68%|██████▊   | 77/114 [00:15<00:04,  7.57it/s]Loading weights:  71%|███████   | 81/114 [00:15<00:03,  9.52it/s]Loading weights:  79%|███████▉  | 90/114 [00:15<00:01, 15.32it/s]Loading weights:  82%|████████▏ | 94/114 [00:16<00:01, 15.37it/s]Loading weights:  84%|████████▍ | 96/114 [00:16<00:01, 10.55it/s]Loading weights:  86%|████████▌ | 98/114 [00:16<00:01, 10.60it/s]Loading weights:  96%|█████████▌| 109/114 [00:16<00:00, 22.12it/s]Loading weights: 100%|██████████| 114/114 [00:16<00:00,  6.74it/s]
+Some parameters are on the meta device because they were offloaded to the cpu.
+Traceback (most recent call last):
+  File "/data/mechinterp/trainfree/exp_s9_families.py", line 89, in <module>
+    out = model(ids[i:i + 1].to(dev0), output_hidden_states=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/accelerate/hooks.py", line 192, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/models/olmo/modeling_olmo.py", line 475, in forward
+    logits = self.lm_head(hidden_states[:, slice_indices, :])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/accelerate/hooks.py", line 192, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 100.00 MiB. GPU 0 has a total capacity of 7.92 GiB of which 17.00 MiB is free. Process 252687 has 1.39 GiB memory in use. Process 276760 has 492.00 MiB memory in use. Process 710088 has 2.99 GiB memory in use. Including non-PyTorch memory, this process has 3.03 GiB memory in use. Of the allocated memory 2.88 GiB is allocated by PyTorch, and 17.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

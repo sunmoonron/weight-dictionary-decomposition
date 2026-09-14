@@ -1,0 +1,25 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3700.93it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+256 cases sampled, |write| median 6.42
+  forwards 0/256
+  forwards 64/256
+  forwards 128/256
+  forwards 192/256
+1280 states to decompose
+OMP done
+{
+ "g1_injection": {
+  "n": 512,
+  "r": 0.7510661482810974,
+  "slope": 0.9001880884170532
+ },
+ "g1_mean_leakage": 0.0075681013986468315,
+ "g1_mean_injected": 6.964829921722412,
+ "g2_source_intervention": {
+  "n": 512,
+  "r": 0.6821536421775818,
+  "slope": 0.6404744982719421
+ }
+}
+DONE_G

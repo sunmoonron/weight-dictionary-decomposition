@@ -1,0 +1,38 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[B][    0.0m] arm B: 59.3M params, d=512 L=8 ff=2048 ctx=512 down_proj bias=True LN=OlmoLayerNorm
+[B][    0.0m] data: 119.8M train tokens, 200 val seqs
+[B][    8.8m] step 500/16000 loss 5.7201 val 5.8958 min_rho 0.98284 max|h| 3.544 attn0 0.0078 bias@ch 0.0078
+[B][   17.7m] step 1000/16000 loss 5.1303 val 5.4301 min_rho 0.96841 max|h| 4.467 attn0 0.007 bias@ch 0.0061
+[B][   26.7m] step 1500/16000 loss 4.6597 val 5.1177 min_rho 0.96885 max|h| 5.759 attn0 0.0065 bias@ch 0.0086
+[B][   35.6m] step 2000/16000 loss 4.7482 val 4.8869 min_rho 0.95745 max|h| 6.842 attn0 0.0067 bias@ch 0.0161
+[B][   44.5m] step 2500/16000 loss 4.3843 val 4.7212 min_rho 0.96808 max|h| 8.848 attn0 0.0071 bias@ch 0.0244
+[B][   53.5m] step 3000/16000 loss 4.4225 val 4.5714 min_rho 0.95713 max|h| 9.956 attn0 0.0074 bias@ch 0.0264
+[B][   62.4m] step 3500/16000 loss 4.1952 val 4.4907 min_rho 0.91375 max|h| 10.488 attn0 0.0082 bias@ch 0.0279
+[B][   71.4m] step 4000/16000 loss 4.4341 val 4.4195 min_rho 0.89494 max|h| 11.94 attn0 0.0091 bias@ch 0.0303
+[B][   80.3m] step 4500/16000 loss 4.0663 val 4.3616 min_rho 0.92569 max|h| 14.388 attn0 0.0091 bias@ch 0.0324
+[B][   89.2m] step 5000/16000 loss 4.2605 val 4.2776 min_rho 0.9264 max|h| 14.885 attn0 0.0094 bias@ch 0.0413
+[B][   98.2m] step 5500/16000 loss 4.0367 val 4.2527 min_rho 0.92071 max|h| 14.307 attn0 0.0106 bias@ch 0.0343
+[B][  107.1m] step 6000/16000 loss 3.9192 val 4.2097 min_rho 0.89311 max|h| 15.325 attn0 0.0112 bias@ch 0.035
+[B][  116.0m] step 6500/16000 loss 3.671 val 4.1516 min_rho 0.91296 max|h| 14.333 attn0 0.0114 bias@ch 0.0362
+[B][  125.0m] step 7000/16000 loss 3.7841 val 4.1272 min_rho 0.93656 max|h| 14.966 attn0 0.0117 bias@ch 0.0379
+[B][  133.9m] step 7500/16000 loss 4.1126 val 4.0765 min_rho 0.91399 max|h| 13.376 attn0 0.0122 bias@ch 0.0388
+[B][  142.9m] step 8000/16000 loss 3.918 val 4.0606 min_rho 0.90485 max|h| 13.197 attn0 0.0121 bias@ch 0.1855
+[B][  151.8m] step 8500/16000 loss 3.65 val 4.0278 min_rho 0.92636 max|h| 12.518 attn0 0.0124 bias@ch 0.047
+[B][  160.8m] step 9000/16000 loss 3.7945 val 4.0015 min_rho 0.9097 max|h| 13.893 attn0 0.0131 bias@ch 0.1965
+[B][  169.7m] step 9500/16000 loss 3.8487 val 3.9834 min_rho 0.9337 max|h| 11.84 attn0 0.0127 bias@ch 0.2013
+[B][  178.7m] step 10000/16000 loss 3.5918 val 3.955 min_rho 0.89484 max|h| 14.501 attn0 0.014 bias@ch 0.2048
+[B][  187.6m] step 10500/16000 loss 3.9251 val 3.9435 min_rho 0.92409 max|h| 13.574 attn0 0.0141 bias@ch 0.2067
+[B][  196.6m] step 11000/16000 loss 3.6161 val 3.9231 min_rho 0.9133 max|h| 14.44 attn0 0.0142 bias@ch 0.209
+[B][  205.6m] step 11500/16000 loss 3.7815 val 3.9033 min_rho 0.92888 max|h| 14.22 attn0 0.0144 bias@ch 0.2102
+[B][  214.5m] step 12000/16000 loss 3.7156 val 3.8957 min_rho 0.93287 max|h| 14.33 attn0 0.0147 bias@ch 0.2113
+[B][  223.5m] step 12500/16000 loss 3.6425 val 3.8877 min_rho 0.91514 max|h| 15.12 attn0 0.0149 bias@ch 0.2117
+[B][  232.4m] step 13000/16000 loss 3.7611 val 3.8774 min_rho 0.93042 max|h| 14.625 attn0 0.0149 bias@ch 0.2123
+[B][  241.4m] step 13500/16000 loss 3.6697 val 3.8704 min_rho 0.92812 max|h| 14.156 attn0 0.0149 bias@ch 0.2125
+[B][  250.4m] step 14000/16000 loss 3.4308 val 3.8638 min_rho 0.92308 max|h| 14.212 attn0 0.0152 bias@ch 0.2127
+[B][  259.3m] step 14500/16000 loss 3.7783 val 3.859 min_rho 0.92223 max|h| 14.426 attn0 0.015 bias@ch 0.2127
+[B][  268.3m] step 15000/16000 loss 3.5051 val 3.8557 min_rho 0.9268 max|h| 14.227 attn0 0.0152 bias@ch 0.2126
+[B][  277.2m] step 15500/16000 loss 3.7785 val 3.8545 min_rho 0.92786 max|h| 14.15 attn0 0.0152 bias@ch 0.2127
+[B][  286.2m] step 16000/16000 loss 3.6865 val 3.8542 min_rho 0.92799 max|h| 14.171 attn0 0.0152 bias@ch 0.2127
+[B][  286.3m] causal: ablating L0 n818 -> dCE 0.0001 (ppl x1.0001)
+[B][  286.3m] DONE
+DONE_Y33_B

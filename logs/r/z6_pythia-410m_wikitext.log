@@ -1,0 +1,9 @@
+job start z6 pythia-410m/wikitext 02:12:53 free=81920MB
+== pythia-410m/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:   0%|          | 1/292 [00:00<00:42,  6.88it/s]Loading weights:  41%|████      | 120/292 [00:00<00:00, 590.49it/s]Loading weights:  88%|████████▊ | 258/292 [00:00<00:00, 910.03it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 798.81it/s]
+  pythia-410m/wikitext: 32768 states, d=1024 dff=4096 L=12 atoms=116864 (13s)
+  support done (62s)
+  pythia-410m/wikitext: support {'embedding': 0.32876022487056156, 'mlp': 0.5333308760454643, 'attention': 0.13790889908397413, 'bias': 0.0}  real 0.294  sign 0.802  relerr 3.03  spurious mass 0.674 | dominant: r omp 0.322 refit 0.307 relerr omp 0.41 refit 0.54
+DONE_Z6
+job exit 0 z6 pythia-410m/wikitext 02:14:06

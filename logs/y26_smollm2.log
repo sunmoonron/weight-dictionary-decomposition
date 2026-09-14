@@ -1,0 +1,27 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:   7%|▋         | 20/272 [00:00<00:01, 173.41it/s]Loading weights:  14%|█▍        | 38/272 [00:00<00:03, 76.15it/s] Loading weights:  26%|██▌       | 71/272 [00:00<00:01, 131.33it/s]Loading weights:  40%|████      | 109/272 [00:00<00:00, 192.11it/s]Loading weights:  49%|████▉     | 134/272 [00:00<00:00, 139.49it/s]Loading weights:  83%|████████▎ | 226/272 [00:01<00:00, 289.37it/s]Loading weights: 100%|██████████| 272/272 [00:01<00:00, 229.83it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2566954 > 8192). Running this sequence through the model will result in indexing errors
+HuggingFaceTB/SmolLM2-135M: 30x1536 neurons, 135M params, 1728 params/neuron
+clean: {'wikitext_test': 23.857, 'pile_heldout': 15.605}
+ascending   N=  8192  10.52% of model params  no_repair: wt 1093.77/pile 653.14  oracle_static: wt 2355.86/pile 1591.75  dict_k16: wt 2298.18/pile 1486.88  dict_k64: wt 2281.56/pile 1531.77
+ascending   N= 16384  21.05% of model params  no_repair: wt 20384.23/pile 33345.64  oracle_static: wt 5208.60/pile 4522.47  dict_k16: wt 5764.85/pile 5435.09  dict_k64: wt 5129.74/pile 4569.98
+ascending   N= 32768  42.09% of model params  no_repair: wt 1288082.88/pile 630885.94  oracle_static: wt 225510.34/pile 170688.41  dict_k16: wt 77448.17/pile 54947.16  dict_k64: wt 181771.56/pile 114951.39
+ascending   N= 49152  63.14% of model params  no_repair: wt 322182784.00/pile 94519520.00  oracle_static: wt 3073511424.00/pile 1372997632.00  dict_k16: wt 322182784.00/pile 94519520.00  dict_k64: wt 322182784.00/pile 94519520.00
+ascending   N= 65536  84.19% of model params  no_repair: wt 322182784.00/pile 94519520.00  oracle_static: wt 3073511424.00/pile 1372997632.00  dict_k16: wt 322182784.00/pile 94519520.00  dict_k64: wt 322182784.00/pile 94519520.00
+descending  N=    64   0.08% of model params  no_repair: wt 148.04/pile 46.28  oracle_static: wt 55.56/pile 26.24  dict_k16: wt 84.05/pile 36.41
+descending  N=  1024   1.31% of model params  no_repair: wt 61172.26/pile 45597.31  oracle_static: wt 160.17/pile 81.42  dict_k16: wt 504.25/pile 294.36
+descending  N=  4096   5.26% of model params  no_repair: wt 2188999.50/pile 451289.81  oracle_static: wt 443.14/pile 240.46  dict_k16: wt 8152.57/pile 5118.15
+random      N=  1024   1.31% of model params  no_repair: wt 29.05/pile 17.91  oracle_static: wt 27.32/pile 17.17  dict_k16: wt 27.75/pile 17.32
+random      N=  8192  10.52% of model params  no_repair: wt 219.91/pile 80.22  oracle_static: wt 88.60/pile 46.12  dict_k16: wt 109.35/pile 51.63
+random      N= 32768  42.09% of model params  no_repair: wt 2707341.25/pile 1469434.12  oracle_static: wt 10272.00/pile 16380.94  dict_k16: wt 38154.00/pile 67147.11
+
+VERDICT {
+ "C1_frontier_params_no_repair": 0.0,
+ "C1_frontier_params_oracle": 0.0,
+ "C1_frontier_params_dict16": 0.0,
+ "C1_repair_is_compression": false,
+ "C2_benefit_wikitext_at_largest": -2751328640.0,
+ "C2_benefit_pile_at_largest": -1278478112.0,
+ "C4_k64_beats_k16_at_largest": false
+}
+DONE_Y26_smollm2

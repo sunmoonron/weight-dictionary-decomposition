@@ -1,0 +1,29 @@
+{
+ "tau_0.95": {
+  "cluster_stats": {
+   "n_multi_clusters": 11,
+   "atoms_in_multi": 1114,
+   "largest_cluster": 1021,
+   "largest_frac_of_dict": 0.013060441317556763
+  },
+  "recall_top1_cluster_omp64": 0.649932861328125,
+  "recall_top1_cluster_oneshot64": 0.766082763671875,
+  "recall_top3_cluster_omp64": 0.4924214780330658,
+  "recall_top3_cluster_oneshot64": 0.639251708984375,
+  "est_r_cluster_identified": 0.9991760849952698
+ },
+ "tau_0.9": {
+  "cluster_stats": {
+   "n_multi_clusters": 58,
+   "atoms_in_multi": 1242,
+   "largest_cluster": 1022,
+   "largest_frac_of_dict": 0.01307323313079629
+  },
+  "recall_top1_cluster_omp64": 0.6636962890625,
+  "recall_top1_cluster_oneshot64": 0.7713623046875,
+  "recall_top3_cluster_omp64": 0.5018412470817566,
+  "recall_top3_cluster_oneshot64": 0.6458536982536316,
+  "est_r_cluster_identified": 0.9991521239280701
+ },
+ "sanity_atom_recall_top1": 0.647125244140625
+}

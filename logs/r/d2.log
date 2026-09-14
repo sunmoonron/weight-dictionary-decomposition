@@ -1,0 +1,12 @@
+job start d2 gpt2 02:10:23 free=79574MB
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9514.10it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2415650 > 1024). Running this sequence through the model will result in indexing errors
+eval states 32768
+{'correct_blocks_noemb': 26894, 'correct_subsampled_noemb': 19210, 'future_blocks_noemb': 19210, 'rotated_correct_noemb': 26894}
+correct_blocks_noemb:  all k4=0.144  k8=0.123  k16=0.099  k32=0.071  k64=0.040 | typical k4=0.707  k8=0.603  k16=0.486  k32=0.349  k64=0.195
+correct_subsampled_noemb:  all k4=0.147  k8=0.127  k16=0.104  k32=0.076  k64=0.044 | typical k4=0.724  k8=0.624  k16=0.510  k32=0.375  k64=0.217
+future_blocks_noemb:  all k4=0.166  k8=0.150  k16=0.129  k32=0.099  k64=0.060 | typical k4=0.816  k8=0.738  k16=0.635  k32=0.490  k64=0.297
+rotated_correct_noemb:  all k4=0.920  k8=0.854  k16=0.740  k32=0.558  k64=0.319 | typical k4=0.919  k8=0.852  k16=0.739  k32=0.561  k64=0.324
+DONE_D2
+job exit 0 d2 gpt2 02:12:26

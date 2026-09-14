@@ -1,0 +1,20 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2913.00it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+10250 block-3 top-3 cases; final-surv mean 0.20
+erased_final<0.25 (n=5606): L3:-0.63  L4:-0.74  L5:-0.82  L6:-0.87
+intact_final>=0.75 (n=3806): L3:1.35  L4:1.48  L5:1.61  L6:1.71
+mean survival drop caused by: {'block_4': 0.112, 'block_5': 0.077, 'block_6': 0.055}
+mlp3#614 c=15.5 surv [-0.94, -0.56, -0.34, -0.13] -> [' the', ',', '.', ' a', '-', ' and']
+   ...' has made a profound impact on Japanese literature , especially on the literature from the'
+mlp3#614 c=15.3 surv [-0.83, -0.28, -0.09, 0.18] -> [' the', ',', '.', ' a', '-', ' and']
+   ...' @.@ 90 inHg ( 945 mb ) during the'
+mlp3#1848 c=14.6 surv [-0.48, -0.59, -0.63, -0.71] -> ['itiz', 'ogle', '76561', 'limits', '\\":', 'tains']
+   ...' non @-@ dramatic poet who has survived in any language " , and'
+mlp3#614 c=14.5 surv [-0.95, -0.66, -0.54, -0.31] -> [' the', ',', '.', ' a', '-', ' and']
+   ...' later critics . Hung concludes that he probably failed because his prose style at the'
+mlp3#614 c=14.3 surv [-0.75, -0.5, -0.21, -0.0] -> [' the', ',', '.', ' a', '-', ' and']
+   ...' became operational at 10 : 20 , September 1 . Southward , in the'
+mlp3#614 c=14.2 surv [-1.04, -0.6, -0.33, -0.34] -> [' the', ',', '.', ' a', '-', ' and']
+   ...' rifles , and about 40 carbines or pistols . Schmitt assumed command of'
+DONE_J2

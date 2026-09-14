@@ -1,0 +1,26 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  31%|███       | 35/114 [00:00<00:00, 333.60it/s]Loading weights:  70%|███████   | 80/114 [00:00<00:00, 370.44it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 407.32it/s]
+allenai/OLMo-1B-0724-hf: 16x8192 neurons, 1280M params, 6144 params/neuron
+clean: {'wikitext_test': 14.797, 'pile_heldout': 10.565}
+ascending   N=  8192   3.93% of model params  no_repair: wt 24.29/pile 30.27  oracle_static: wt 27.20/pile 48.63  dict_k16: wt 25.72/pile 46.95  dict_k64: wt 26.30/pile 47.00
+ascending   N= 16384   7.87% of model params  no_repair: wt 54.56/pile 113.56  oracle_static: wt 50.67/pile 103.91  dict_k16: wt 46.44/pile 111.24  dict_k64: wt 47.38/pile 112.99
+ascending   N= 32768  15.73% of model params  no_repair: wt 212.88/pile 407.70  oracle_static: wt 97.58/pile 258.71  dict_k16: wt 112.50/pile 252.41  dict_k64: wt 106.89/pile 245.75
+ascending   N= 49152  23.60% of model params  no_repair: wt 492.27/pile 488.44  oracle_static: wt 206.11/pile 297.58  dict_k16: wt 258.33/pile 327.39  dict_k64: wt 224.22/pile 320.17
+ascending   N= 65536  31.46% of model params  no_repair: wt 909.79/pile 930.16  oracle_static: wt 543.18/pile 524.77  dict_k16: wt 507.12/pile 563.23  dict_k64: wt 453.76/pile 588.92
+descending  N=    64   0.03% of model params  no_repair: wt 583.92/pile 150.51  oracle_static: wt 16.65/pile 12.20  dict_k16: wt 26.09/pile 15.79
+descending  N=  1024   0.49% of model params  no_repair: wt 3451.39/pile 1048.77  oracle_static: wt 22.46/pile 19.27  dict_k16: wt 54.64/pile 35.25
+descending  N=  4096   1.97% of model params  no_repair: wt 6605.29/pile 2666.94  oracle_static: wt 43.12/pile 29.30  dict_k16: wt 402.22/pile 56.62
+random      N=  1024   0.49% of model params  no_repair: wt 15.03/pile 10.70  oracle_static: wt 15.03/pile 10.68  dict_k16: wt 15.02/pile 10.68
+random      N=  8192   3.93% of model params  no_repair: wt 21.34/pile 12.96  oracle_static: wt 17.48/pile 12.16  dict_k16: wt 17.78/pile 12.17
+random      N= 32768  15.73% of model params  no_repair: wt 75.72/pile 28.39  oracle_static: wt 35.83/pile 20.79  dict_k16: wt 37.03/pile 20.31
+
+VERDICT {
+ "C1_frontier_params_no_repair": 0.0,
+ "C1_frontier_params_oracle": 0.0,
+ "C1_frontier_params_dict16": 0.0,
+ "C1_repair_is_compression": false,
+ "C2_benefit_wikitext_at_largest": 366.604,
+ "C2_benefit_pile_at_largest": 405.39,
+ "C4_k64_beats_k16_at_largest": true
+}
+DONE_Y26_olmo1b

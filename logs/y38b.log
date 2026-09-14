@@ -1,0 +1,26 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 45/114 [00:00<00:00, 430.77it/s]Loading weights:  83%|████████▎ | 95/114 [00:00<00:00, 454.57it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 479.33it/s]
+clean ppl 14.797
+
+ch623: max|h| 28.19  min_rho_c 0.0143 @L1 n1710 (its own ch 1764, conc 0.9791)
+   wz x1.0083  nz x1.8338  wz/nz 0.01  maxnull 0.0002  H1 True H2 True H3 False
+
+ch1764: max|h| 441.5  min_rho_c 0.0178 @L1 n1710 (its own ch 1764, conc 0.9791)
+   wz x2036.485  nz x1.8338  wz/nz 12.56  maxnull 0.0001  H1 True H2 True H3 True
+
+VERDICT {
+ "control_1764_passes": true,
+ "ch623_H1": true,
+ "ch623_H2": true,
+ "ch623_H3": false,
+ "rho_channel_restricted": {
+  "623": 0.01431,
+  "1764": 0.01782
+ },
+ "ppl_x_wz": {
+  "623": 1.0083,
+  "1764": 2036.485
+ },
+ "class_has_second_member": true
+}
+DONE_Y38B

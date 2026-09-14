@@ -1,0 +1,11 @@
+{
+ "mech_614_r": 0.011,
+ "mech_random_mean": 0.014,
+ "mech_random_p5_p95": [
+  -0.078,
+  0.131
+ ],
+ "counter_subpop_size": 9,
+ "ablate_counter_subpop_dce": 0.038,
+ "ablate_random_matched_dce": 0.0004
+}

@@ -1,0 +1,24 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3370.38it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+both runs captured
+per-component ch447 delta (ablated - clean):
+  mlp3: -4.313 (rel -22.418)
+  attn4: +0.340 (rel 0.14)
+  mlp4: +1.661 (rel 2.943)
+  attn5: +0.755 (rel 0.217)
+  mlp5: -0.406 (rel -0.702)
+  attn6: +0.226 (rel 0.083)
+  mlp6: -0.055 (rel -0.054)
+  attn7: -1.863 (rel -0.416)
+  mlp7: +1.400 (rel 1.438)
+  attn8: -0.535 (rel -0.137)
+  attn9: -0.570 (rel -0.091)
+  mlp9: +1.212 (rel 0.33)
+  attn10: -1.415 (rel -0.091)
+  mlp10: +2.047 (rel 0.179)
+  attn11: +3.127 (rel 0.087)
+  mlp11: -3.855 (rel -0.385)
+sum of deltas -2.22 (should ~= meas -1.49 - pred -12.4 = +10.9 minus the removed writes)
+top neuron-level compensators: {'mlp7#2402': 1.095, 'mlp9#840': 0.73, 'mlp10#900': 0.643, 'mlp5#1888': 0.526, 'mlp6#834': 0.487, 'mlp9#1305': 0.45, 'mlp5#2665': 0.281, 'mlp10#1793': 0.255, 'mlp8#1640': 0.246, 'mlp4#2876': 0.245}
+DONE_T2

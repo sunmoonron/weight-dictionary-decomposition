@@ -1,0 +1,101 @@
+{
+ "n_cases": 98304,
+ "id_rate_omp": 0.490509033203125,
+ "id_rate_oneshot": 0.6387837529182434,
+ "auc_omp": {
+  "surv": 0.733,
+  "prom": 0.803,
+  "mag": 0.68,
+  "rel": 0.652,
+  "dist": 0.511,
+  "compete": 0.307
+ },
+ "by_survival": [
+  {
+   "bin": "[-1000000000.0,0.0)",
+   "n": 11312,
+   "frac_of_cases": 0.115,
+   "id_omp": 0.007,
+   "id_oneshot": 0.104
+  },
+  {
+   "bin": "[0.0,0.25)",
+   "n": 1316,
+   "frac_of_cases": 0.013,
+   "id_omp": 0.012,
+   "id_oneshot": 0.0
+  },
+  {
+   "bin": "[0.25,0.5)",
+   "n": 1574,
+   "frac_of_cases": 0.016,
+   "id_omp": 0.036,
+   "id_oneshot": 0.0
+  },
+  {
+   "bin": "[0.5,0.75)",
+   "n": 2164,
+   "frac_of_cases": 0.022,
+   "id_omp": 0.114,
+   "id_oneshot": 0.003
+  },
+  {
+   "bin": "[0.75,1.25)",
+   "n": 11076,
+   "frac_of_cases": 0.113,
+   "id_omp": 0.364,
+   "id_oneshot": 0.257
+  },
+  {
+   "bin": "[1.25,1000000000.0)",
+   "n": 70862,
+   "frac_of_cases": 0.721,
+   "id_omp": 0.618,
+   "id_oneshot": 0.829
+  }
+ ],
+ "punchline": {
+  "id_rate_intact": 0.5835509896278381,
+  "id_rate_erased": 0.00791891012340784,
+  "frac_intact": 0.8335164189338684,
+  "frac_erased": 0.1284586638212204,
+  "frac_of_misses_erased_or_weak": 0.28042328357696533
+ },
+ "by_block": {
+  "0": {
+   "n": 39193,
+   "mean_surv": 1.699,
+   "id_omp": 0.559
+  },
+  "1": {
+   "n": 11033,
+   "mean_surv": 1.855,
+   "id_omp": 0.418
+  },
+  "2": {
+   "n": 9989,
+   "mean_surv": 1.309,
+   "id_omp": 0.342
+  },
+  "3": {
+   "n": 10250,
+   "mean_surv": 0.2,
+   "id_omp": 0.171
+  },
+  "4": {
+   "n": 2661,
+   "mean_surv": 1.686,
+   "id_omp": 0.528
+  },
+  "5": {
+   "n": 9556,
+   "mean_surv": 1.184,
+   "id_omp": 0.501
+  },
+  "6": {
+   "n": 15622,
+   "mean_surv": 1.806,
+   "id_omp": 0.661
+  }
+ }
+}

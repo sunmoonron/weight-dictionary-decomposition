@@ -1,0 +1,93 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 45/114 [00:00<00:00, 434.12it/s]Loading weights:  78%|███████▊  | 89/114 [00:00<00:00, 390.20it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 414.87it/s]
+[allenai/OLMo-1B-0724-hf] ch1764 max|h| 441.5 peaklvl 10 pos0frac 0.4 | builder b1 #1710 w 0.6323 share 0.9791 largest_total_writer=True
+[allenai/OLMo-1B-0724-hf] causal: clean 14.80 wz x2036.485 nz x1.834 maxnull 4e-05 -> super weight True
+[allenai/OLMo-1B-0724-hf] coherence: max|cos| 0.9941 (mlp15), n>0.9 5
+[allenai/OLMo-1B-0724-hf] OMP recall pos0 1.0 | peak_other 0.0 | bulk 0.0352  (r2k1 pos0 0.9995) [92s]
+[allenai/OLMo-1B-0724-hf] pos0 top-1 picks: [{"atom": 60206, "section": "mlp1", "index": 1710, "n": 16}]
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:   0%|          | 1/272 [00:00<01:39,  2.73it/s]Loading weights:  12%|█▏        | 32/272 [00:00<00:02, 88.92it/s]Loading weights:  25%|██▍       | 67/272 [00:00<00:01, 147.60it/s]Loading weights:  35%|███▍      | 95/272 [00:00<00:01, 174.35it/s]Loading weights:  60%|██████    | 164/272 [00:00<00:00, 306.93it/s]Loading weights:  76%|███████▌  | 207/272 [00:00<00:00, 340.26it/s]Loading weights:  95%|█████████▍| 258/272 [00:01<00:00, 387.76it/s]Loading weights: 100%|██████████| 272/272 [00:01<00:00, 261.31it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (304838 > 8192). Running this sequence through the model will result in indexing errors
+[HuggingFaceTB/SmolLM2-135M] ch507 max|h| 20048.0 peaklvl 26 pos0frac 0.4 | builder b11 #1229 w 5.875 share 0.9816 largest_total_writer=True
+[HuggingFaceTB/SmolLM2-135M] causal: clean 23.86 wz x2.194 nz x1.082 maxnull 0.00034 -> super weight True
+[HuggingFaceTB/SmolLM2-135M] coherence: max|cos| 0.9932 (mlp28), n>0.9 8
+[HuggingFaceTB/SmolLM2-135M] OMP recall pos0 1.0 | peak_other 0.0833 | bulk 0.1602  (r2k1 pos0 0.9941) [20s]
+[HuggingFaceTB/SmolLM2-135M] pos0 top-1 picks: [{"atom": 67277, "section": "mlp11", "index": 1229, "n": 16}]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<03:28,  1.39it/s]Loading weights:  18%|█▊        | 53/290 [00:00<00:03, 77.16it/s]Loading weights:  24%|██▍       | 71/290 [00:01<00:02, 79.52it/s]Loading weights:  29%|██▉       | 85/290 [00:01<00:02, 89.37it/s]Loading weights:  34%|███▍      | 99/290 [00:01<00:02, 94.91it/s]Loading weights:  39%|███▊      | 112/290 [00:01<00:01, 93.77it/s]Loading weights:  43%|████▎     | 124/290 [00:01<00:02, 74.31it/s]Loading weights:  47%|████▋     | 136/290 [00:01<00:01, 77.96it/s]Loading weights:  51%|█████     | 148/290 [00:01<00:01, 85.95it/s]Loading weights:  83%|████████▎ | 240/290 [00:02<00:00, 271.16it/s]Loading weights: 100%|██████████| 290/290 [00:02<00:00, 136.98it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (298938 > 131072). Running this sequence through the model will result in indexing errors
+[Qwen/Qwen2.5-0.5B] ch62 max|h| 1781.0 peaklvl 18 pos0frac 0.4 | builder b3 #2247 w -0.5195 share 0.9696 largest_total_writer=True
+[Qwen/Qwen2.5-0.5B] causal: clean 20.12 wz x1.069 nz x1.02 maxnull 0.0001 -> super weight False
+[Qwen/Qwen2.5-0.5B] coherence: max|cos| 0.9985 (mlp3), n>0.9 6
+[Qwen/Qwen2.5-0.5B] OMP recall pos0 1.0 | peak_other 0.0 | bulk 0.0352  (r2k1 pos0 0.9962) [41s]
+[Qwen/Qwen2.5-0.5B] pos0 top-1 picks: [{"atom": 168775, "section": "mlp3", "index": 2247, "n": 16}]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 37/292 [00:00<00:00, 288.78it/s]Loading weights:  47%|████▋     | 136/292 [00:00<00:00, 656.85it/s]Loading weights:  90%|█████████ | 263/292 [00:00<00:00, 919.48it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 876.29it/s]
+[EleutherAI/pythia-410m] ch357 max|h| 658.5 peaklvl 21 pos0frac 0.4 | builder b5 #1201 w -0.5112 share 0.3956 largest_total_writer=True
+[EleutherAI/pythia-410m] causal: clean 24.75 wz x1.001 nz x0.999 maxnull 0.00048 -> super weight False
+[EleutherAI/pythia-410m] coherence: max|cos| 0.9863 (mlp5), n>0.9 33
+[EleutherAI/pythia-410m] OMP recall pos0 0.0 | peak_other 0.0 | bulk 0.0039  (r2k1 pos0 0.9838) [47s]
+[EleutherAI/pythia-410m] pos0 top-1 picks: [{"atom": 74683, "section": "mlp5", "index": 3899, "n": 16}]
+VERDICT {
+ "V1_is_super_weight": {
+  "allenai/OLMo-1B-0724-hf": true,
+  "HuggingFaceTB/SmolLM2-135M": true,
+  "Qwen/Qwen2.5-0.5B": false,
+  "EleutherAI/pythia-410m": false
+ },
+ "V1_ppl_x_wz": {
+  "allenai/OLMo-1B-0724-hf": 2036.485,
+  "HuggingFaceTB/SmolLM2-135M": 2.194,
+  "Qwen/Qwen2.5-0.5B": 1.069,
+  "EleutherAI/pythia-410m": 1.001
+ },
+ "V1_ppl_x_nz": {
+  "allenai/OLMo-1B-0724-hf": 1.834,
+  "HuggingFaceTB/SmolLM2-135M": 1.082,
+  "Qwen/Qwen2.5-0.5B": 1.02,
+  "EleutherAI/pythia-410m": 0.999
+ },
+ "V2_pos0_recall": {
+  "allenai/OLMo-1B-0724-hf": 1.0,
+  "HuggingFaceTB/SmolLM2-135M": 1.0,
+  "Qwen/Qwen2.5-0.5B": 1.0,
+  "EleutherAI/pythia-410m": 0.0
+ },
+ "V2_peak_recall": {
+  "allenai/OLMo-1B-0724-hf": 0.4,
+  "HuggingFaceTB/SmolLM2-135M": 0.45,
+  "Qwen/Qwen2.5-0.5B": 0.4,
+  "EleutherAI/pythia-410m": 0.0
+ },
+ "V2_pass_all_models": false,
+ "V0_olmo_replicates_y11": true,
+ "builder_block": {
+  "allenai/OLMo-1B-0724-hf": 1,
+  "HuggingFaceTB/SmolLM2-135M": 11,
+  "Qwen/Qwen2.5-0.5B": 3,
+  "EleutherAI/pythia-410m": 5
+ },
+ "candidate_neuron": {
+  "allenai/OLMo-1B-0724-hf": 1710,
+  "HuggingFaceTB/SmolLM2-135M": 1229,
+  "Qwen/Qwen2.5-0.5B": 2247,
+  "EleutherAI/pythia-410m": 1201
+ },
+ "V3_max_cos": {
+  "allenai/OLMo-1B-0724-hf": 0.9941,
+  "HuggingFaceTB/SmolLM2-135M": 0.9932,
+  "Qwen/Qwen2.5-0.5B": 0.9985,
+  "EleutherAI/pythia-410m": 0.9863
+ },
+ "V3_fragile_any": true,
+ "V4_bulk_recall": {
+  "allenai/OLMo-1B-0724-hf": 0.0352,
+  "HuggingFaceTB/SmolLM2-135M": 0.1602,
+  "Qwen/Qwen2.5-0.5B": 0.0352,
+  "EleutherAI/pythia-410m": 0.0039
+ },
+ "candidate_is_largest_total_writer": {
+  "allenai/OLMo-1B-0724-hf": true,
+  "HuggingFaceTB/SmolLM2-135M": true,
+  "Qwen/Qwen2.5-0.5B": true,
+  "EleutherAI/pythia-410m": true
+ }
+}
+DONE_Y14B

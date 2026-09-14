@@ -1,0 +1,57 @@
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   2%|▏         | 2/114 [00:00<00:08, 13.74it/s]Loading weights:  35%|███▌      | 40/114 [00:00<00:00, 189.89it/s]Loading weights:  64%|██████▍   | 73/114 [00:00<00:00, 233.62it/s]Loading weights:  87%|████████▋ | 99/114 [00:00<00:00, 229.51it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 198.07it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+fixed vector: |v|=234.72 v[1764]=-232.25
+atom_deleted   top1_agree 0.68664  KL 0.563391
+surgery        top1_agree 0.99804  KL 0.000115
+scalar_zero    top1_agree 0.01223  KL 7.570111
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer GPTNeoXTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+
+=== 'The capital of France is'
+  [clean        ] ' Paris. The largest city in France is Paris. The official language of France is French. The people of France are called Frenchmen. Many people in France are of English, Irish, or G'
+  [atom_deleted ] ' Paris. The city is located on the river Seine. The city is divided into 16 arrondissements (arrondissements are French for "districts") and has a population of 2,531,000 inhabitan'
+  [surgery      ] ' Paris. The largest city in France is Paris. The official language of France is French. The people of France are called Frenchmen. Many people in France are of English, Irish, or G'
+  [scalar_zero  ] ' alive and we have a great. We. We. We. We. We. We. We.\nle. le. le. le. le. le. le. le. le. le. le. le. le.'
+
+=== 'In 1969, humans first landed on the'
+  [clean        ] ' moon.\n\nA:\nThe first manned moon landing was in 1969.Q: In this task, you are given a sentence in the English language and your task is to convert it into the Hindi language. In tr'
+  [atom_deleted ] ' moon.\nThe Apollo 11 mission was the first to land on the moon.\nThe Apollo 11 mission was the first to land on the moon.\nThe Apollo 11 mission was the first to land on the moon.\nTh'
+  [surgery      ] ' moon.\nThe moon is a great place to live. It is a place where you can find water, food, and oxygen. It is also a place where you can find a lot of other things.\nThe moon is a great'
+  [scalar_zero  ] ' moon and earth, and, and, and, and, and, and, and, and, and, and, and,\n mar, and, and, and,\n,\n\n,\n\n\n\n\n\n\n\n'
+
+=== 'def fibonacci(n):\n    if n <= 1:\n        return n\n    return'
+  [clean        ] " fibonacci(n-1) + fibonacci(n-2)\n\ndef main():\n    print fibonacci(10)\n\nif __name__ == '__main__':\n    main()\n"
+  [atom_deleted ] ' n + 1\n\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    return n + 1\n\ndef fibonacci(n):\n    if n <= 1:\n        return'
+  [surgery      ] " fibonacci(n-1) + fibonacci(n-2)\n\ndef main():\n    print fibonacci(10)\n\nif __name__ == '__main__':\n    main()\n"
+  [scalar_zero  ] ' n\n    return n\n    return n\n    return n\n    return n\n    n\n    n\n    n\n    n\n    n\n    n\n    n\n    n\n\nn\n\n\n\n'
+
+=== 'The three primary colors are red, blue, and'
+  [clean        ] ' green.\n\nThe primary colors are red, blue, and green.\n\nThe primary colors are red, blue, and green.\n\nThe primary colors are red, blue, and green.\n\nThe primary colors are red'
+  [atom_deleted ] ' green.\nThe primary colors are red, blue, and green.\nThe primary colors are red, blue, and green.\nThe primary colors are red, blue, and green.\nThe primary colors are red, blue, and'
+  [surgery      ] ' green.\nThe primary colors are red, blue, and green.\nThe primary colors are red, blue, and green.\nThe primary colors are red, blue, and green.\nThe primary colors are red, blue, and'
+  [scalar_zero  ] '.\nleaving the right.le.le.le.le.le.le.le.le.le.le.le.le.le.le.le.le.le.\nle.le.le.'
+
+=== 'Water boils at a temperature of'
+  [clean        ] ' 100°C. What is the boiling point of the substance?\n\n(a) $100°C$\n\n(b) $120°C$\n\n(c) $150°C$\n\n(d)'
+  [atom_deleted ] ' 100°C.\nWhat is the temperature of the water?\n\n\n\nWhat is the temperature of the water?\n\nWhat is the temperature of the water?\n\nWhat is the temperature of the water?\n\nWhat'
+  [surgery      ] ' 100°C. What is the boiling point of the substance?\nThe boiling point of a substance is the temperature at which the number of molecules in the substance changes from a state of di'
+  [scalar_zero  ] ' $20.00 and booms with a and and and and and and and and and and and and and and and and and\n mar and and and\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+
+=== 'Once upon a time, deep in the forest, there lived a'
+  [clean        ] ' family of bears. The father bear was a very wise man. The mother bear was a very kind woman. The two little bears were playing in the forest when a man came to the forest. The man'
+  [atom_deleted ] ' man and his wife.\nThe man and his wife were very happy.\nOne day, the man and his wife were walking in the forest.\nThey were walking along a path, when they saw a little girl.\nThe '
+  [surgery      ] ' family of bears. The father bear was a very wise man. The mother bear was a very kind woman. The two little bears were all the time playing together. They played in a big tree, an'
+  [scalar_zero  ] ', deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep, deep'
+
+VERDICT {
+ "N1_top1_agreement_surgery": 0.99804,
+ "N1_pass": true,
+ "N1_top1_agreement_atom_deleted": 0.68664,
+ "N2_kl_surgery": 0.000115,
+ "N2_kl_atom_deleted": 0.563391,
+ "N2_ratio": 4899.1,
+ "N2_pass": true,
+ "kl_scalar_zero": 7.570111,
+ "exact_generation_match_vs_clean": 2,
+ "n_prompts": 6
+}
+DONE_Y22

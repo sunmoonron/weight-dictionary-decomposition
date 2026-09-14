@@ -1,0 +1,10 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3450.30it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+clean CE 3.6387 over 32640 tokens  (10s)
+loaded layer-level grid; clean CE in file 3.6387 vs now 3.6387
+sanity group(all,6,8) vs mlp_edge(6,8): 0.07037138097426476 0.07037138097426476
+groups l=2 m=4 n=128: ready dCE -0.0022 (imp 49.5)  notready +0.0149 (imp 52.9)  random -0.0002
+groups l=9 m=11 n=24: ready dCE +0.0160 (imp 45.1)  notready +0.0253 (imp 34.5)  random +0.0018
+E4: Spearman(readiness, dCE) over 78 MLP-edge cells = -0.800
+done 46s

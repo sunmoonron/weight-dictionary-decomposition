@@ -1,0 +1,17 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2902.73it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+gpt2 b 8: counter n= 1448 (0.35)  neurons=   6 top1=0.99 top5=1.00
+gpt2 b 9: counter n= 4934 (0.35)  neurons=  17 top1=0.95 top5=1.00
+gpt2 b10: counter n= 7051 (0.34)  neurons=  45 top1=0.64 top5=0.92
+gpt2 b11: counter n=13574 (0.23)  neurons= 204 top1=0.53 top5=0.80
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  77%|███████▋  | 224/292 [00:00<00:00, 2236.98it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2429.07it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+gpt2-medium b 9: counter n= 2749 (0.98)  neurons=   2 top1=0.80 top5=1.00
+gpt2-medium b18: counter n=   76 (0.06)  neurons=   5 top1=0.49 top5=1.00
+gpt2-medium b19: counter n=   59 (0.06)  neurons=   9 top1=0.64 top5=0.93
+gpt2-medium b20: counter n= 1680 (0.24)  neurons=  21 top1=0.81 top5=0.96
+gpt2-medium b21: counter n= 4862 (0.53)  neurons=  27 top1=0.67 top5=0.99
+gpt2-medium b22: counter n= 4055 (0.28)  neurons=  53 top1=0.49 top5=0.87
+gpt2-medium b23: counter n= 1374 (0.11)  neurons=  80 top1=0.22 top5=0.58
+DONE_S5

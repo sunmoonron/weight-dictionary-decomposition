@@ -1,0 +1,48 @@
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 38/114 [00:00<00:00, 379.06it/s]Loading weights:  67%|██████▋   | 76/114 [00:00<00:00, 350.95it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 382.45it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+131072 atoms in R^2048
+tau 0.5: 1146 blocks, largest 222, 5648 atoms clustered (4.309%), 12935 edges
+tau 0.7: 227 blocks, largest 31, 852 atoms clustered (0.650%), 1216 edges
+  super-weight block (tau .7): size 12 spanning layers [1, 2, 3, 4, 12, 15]
+  56.8% of blocks span >1 layer, max span 9
+  nu(within) 0.9941 -> k<1.003   mu_B(between) 0.6948 -> k<1.22
+tau 0.9: 7 blocks, largest 6, 21 atoms clustered (0.016%), 22 edges
+regrade olmo1b_sw_vs_eraser: cos 0.9941 same-block at tau [0.5, 0.7, 0.9]
+regrade olmo1b_sw_vs_L2amp: cos 0.9634 same-block at tau [0.5, 0.7, 0.9]
+
+VERDICT {
+ "blocks_tau0.7": {
+  "n_edges": 1216,
+  "n_components": 130447,
+  "n_singletons": 130220,
+  "n_nontrivial_blocks": 227,
+  "largest_block": 31,
+  "atoms_in_nontrivial_blocks": 852,
+  "frac_atoms_clustered": 0.0065,
+  "top10_block_sizes": [
+   31,
+   26,
+   26,
+   21,
+   19,
+   15,
+   13,
+   12,
+   11,
+   10
+  ]
+ },
+ "coherence": {
+  "sub_coherence_nu_within_blocks": 0.99414,
+  "block_coherence_mu_B_between_blocks": 0.69482,
+  "atom_bound_k": 1.003,
+  "block_bound_k": 1.22,
+  "improvement_factor": 1.22
+ },
+ "cross_layer": {
+  "n_blocks": 227,
+  "frac_spanning_multiple_layers": 0.5683,
+  "max_layers_spanned": 9
+ }
+}
+DONE_Y36

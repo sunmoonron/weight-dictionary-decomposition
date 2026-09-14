@@ -1,0 +1,691 @@
+{
+ "gpt2": {
+  "blocks": {
+   "0": {
+    "writes": 8572376,
+    "counter_count": 0.396,
+    "counter_energy": 0.222,
+    "top1_e": 0.05,
+    "top5_e": 0.141,
+    "top20_e": 0.26,
+    "top_ids": [
+     1817,
+     1641,
+     2306
+    ]
+   },
+   "1": {
+    "writes": 6214519,
+    "counter_count": 0.504,
+    "counter_energy": 0.168,
+    "top1_e": 0.025,
+    "top5_e": 0.077,
+    "top20_e": 0.136,
+    "top_ids": [
+     824,
+     73,
+     1263
+    ]
+   },
+   "2": {
+    "writes": 6989767,
+    "counter_count": 0.543,
+    "counter_energy": 0.034,
+    "top1_e": 0.114,
+    "top5_e": 0.187,
+    "top20_e": 0.274,
+    "top_ids": [
+     2714,
+     183,
+     1195
+    ]
+   },
+   "3": {
+    "writes": 5795181,
+    "counter_count": 0.501,
+    "counter_energy": 0.396,
+    "top1_e": 0.157,
+    "top5_e": 0.352,
+    "top20_e": 0.426,
+    "top_ids": [
+     614,
+     1545,
+     2664
+    ]
+   },
+   "4": {
+    "writes": 7253514,
+    "counter_count": 0.503,
+    "counter_energy": 0.43,
+    "top1_e": 0.076,
+    "top5_e": 0.224,
+    "top20_e": 0.314,
+    "top_ids": [
+     1894,
+     787,
+     2422
+    ]
+   },
+   "5": {
+    "writes": 8996521,
+    "counter_count": 0.507,
+    "counter_energy": 0.415,
+    "top1_e": 0.112,
+    "top5_e": 0.195,
+    "top20_e": 0.256,
+    "top_ids": [
+     1790,
+     1888,
+     654
+    ]
+   },
+   "6": {
+    "writes": 13897517,
+    "counter_count": 0.506,
+    "counter_energy": 0.398,
+    "top1_e": 0.04,
+    "top5_e": 0.12,
+    "top20_e": 0.171,
+    "top_ids": [
+     3039,
+     437,
+     578
+    ]
+   },
+   "7": {
+    "writes": 23844780,
+    "counter_count": 0.486,
+    "counter_energy": 0.386,
+    "top1_e": 0.107,
+    "top5_e": 0.155,
+    "top20_e": 0.2,
+    "top_ids": [
+     2367,
+     2402,
+     159
+    ]
+   },
+   "8": {
+    "writes": 41004197,
+    "counter_count": 0.467,
+    "counter_energy": 0.374,
+    "top1_e": 0.15,
+    "top5_e": 0.183,
+    "top20_e": 0.226,
+    "top_ids": [
+     1253,
+     1640,
+     2579
+    ]
+   },
+   "9": {
+    "writes": 52306957,
+    "counter_count": 0.459,
+    "counter_energy": 0.359,
+    "top1_e": 0.158,
+    "top5_e": 0.202,
+    "top20_e": 0.246,
+    "top_ids": [
+     840,
+     1305,
+     1889
+    ]
+   },
+   "10": {
+    "writes": 61682324,
+    "counter_count": 0.452,
+    "counter_energy": 0.34,
+    "top1_e": 0.098,
+    "top5_e": 0.222,
+    "top20_e": 0.299,
+    "top_ids": [
+     1793,
+     900,
+     379
+    ]
+   },
+   "11": {
+    "writes": 68500435,
+    "counter_count": 0.501,
+    "counter_energy": 0.268,
+    "top1_e": 0.059,
+    "top5_e": 0.12,
+    "top20_e": 0.196,
+    "top_ids": [
+     2910,
+     1611,
+     2044
+    ]
+   }
+  },
+  "top_channels": {
+   "0": {
+    "neuron": 1817,
+    "res_channel": 266,
+    "channel_share": 0.432
+   },
+   "1": {
+    "neuron": 824,
+    "res_channel": 73,
+    "channel_share": 0.011
+   },
+   "2": {
+    "neuron": 2714,
+    "res_channel": 447,
+    "channel_share": 0.9
+   },
+   "3": {
+    "neuron": 614,
+    "res_channel": 447,
+    "channel_share": 0.882
+   },
+   "4": {
+    "neuron": 1894,
+    "res_channel": 447,
+    "channel_share": 0.34
+   },
+   "5": {
+    "neuron": 1790,
+    "res_channel": 447,
+    "channel_share": 0.62
+   },
+   "6": {
+    "neuron": 3039,
+    "res_channel": 447,
+    "channel_share": 0.484
+   },
+   "7": {
+    "neuron": 2367,
+    "res_channel": 481,
+    "channel_share": 0.319
+   },
+   "8": {
+    "neuron": 1253,
+    "res_channel": 481,
+    "channel_share": 0.459
+   },
+   "9": {
+    "neuron": 840,
+    "res_channel": 481,
+    "channel_share": 0.486
+   },
+   "10": {
+    "neuron": 1793,
+    "res_channel": 481,
+    "channel_share": 0.365
+   },
+   "11": {
+    "neuron": 2910,
+    "res_channel": 266,
+    "channel_share": 0.176
+   }
+  },
+  "b3_ablation": {
+   "counter_set": [
+    614,
+    1545,
+    2664,
+    442,
+    1848,
+    2683,
+    2885,
+    2723,
+    1995
+   ],
+   "matched_set": [
+    1027,
+    2614,
+    563,
+    1718,
+    307,
+    2234,
+    2561,
+    1649,
+    906
+   ],
+   "clean_ce": 3.6465,
+   "dce_counter": 0.0647,
+   "dce_energy_matched": 0.0022,
+   "counter_energy_sum": 2107132.0,
+   "matched_energy_sum": 363175.0
+  }
+ },
+ "gpt2-medium": {
+  "blocks": {
+   "0": {
+    "writes": 4060598,
+    "counter_count": 0.237,
+    "counter_energy": 0.112,
+    "top1_e": 0.401,
+    "top5_e": 0.734,
+    "top20_e": 0.813,
+    "top_ids": [
+     1198,
+     3969,
+     1619
+    ]
+   },
+   "1": {
+    "writes": 3317650,
+    "counter_count": 0.525,
+    "counter_energy": 0.203,
+    "top1_e": 0.028,
+    "top5_e": 0.087,
+    "top20_e": 0.174,
+    "top_ids": [
+     2296,
+     2674,
+     3995
+    ]
+   },
+   "2": {
+    "writes": 4083557,
+    "counter_count": 0.565,
+    "counter_energy": 0.324,
+    "top1_e": 0.013,
+    "top5_e": 0.034,
+    "top20_e": 0.072,
+    "top_ids": [
+     2229,
+     1841,
+     3743
+    ]
+   },
+   "3": {
+    "writes": 2986453,
+    "counter_count": 0.539,
+    "counter_energy": 0.018,
+    "top1_e": 0.051,
+    "top5_e": 0.15,
+    "top20_e": 0.253,
+    "top_ids": [
+     1803,
+     2421,
+     1496
+    ]
+   },
+   "4": {
+    "writes": 3174789,
+    "counter_count": 0.489,
+    "counter_energy": 0.335,
+    "top1_e": 0.082,
+    "top5_e": 0.227,
+    "top20_e": 0.327,
+    "top_ids": [
+     958,
+     2382,
+     2364
+    ]
+   },
+   "5": {
+    "writes": 3948729,
+    "counter_count": 0.496,
+    "counter_energy": 0.427,
+    "top1_e": 0.172,
+    "top5_e": 0.283,
+    "top20_e": 0.376,
+    "top_ids": [
+     686,
+     3335,
+     2007
+    ]
+   },
+   "6": {
+    "writes": 4149299,
+    "counter_count": 0.502,
+    "counter_energy": 0.462,
+    "top1_e": 0.289,
+    "top5_e": 0.378,
+    "top20_e": 0.434,
+    "top_ids": [
+     3375,
+     3243,
+     1243
+    ]
+   },
+   "7": {
+    "writes": 5404068,
+    "counter_count": 0.51,
+    "counter_energy": 0.457,
+    "top1_e": 0.282,
+    "top5_e": 0.381,
+    "top20_e": 0.436,
+    "top_ids": [
+     3765,
+     1146,
+     1015
+    ]
+   },
+   "8": {
+    "writes": 6016170,
+    "counter_count": 0.521,
+    "counter_energy": 0.427,
+    "top1_e": 0.037,
+    "top5_e": 0.085,
+    "top20_e": 0.135,
+    "top_ids": [
+     3408,
+     166,
+     957
+    ]
+   },
+   "9": {
+    "writes": 6847746,
+    "counter_count": 0.519,
+    "counter_energy": 0.606,
+    "top1_e": 0.366,
+    "top5_e": 0.654,
+    "top20_e": 0.672,
+    "top_ids": [
+     3043,
+     1752,
+     3216
+    ]
+   },
+   "10": {
+    "writes": 8492589,
+    "counter_count": 0.516,
+    "counter_energy": 0.468,
+    "top1_e": 0.099,
+    "top5_e": 0.312,
+    "top20_e": 0.377,
+    "top_ids": [
+     2673,
+     3628,
+     1341
+    ]
+   },
+   "11": {
+    "writes": 9590013,
+    "counter_count": 0.517,
+    "counter_energy": 0.436,
+    "top1_e": 0.071,
+    "top5_e": 0.18,
+    "top20_e": 0.229,
+    "top_ids": [
+     2218,
+     3184,
+     3612
+    ]
+   },
+   "12": {
+    "writes": 10467908,
+    "counter_count": 0.519,
+    "counter_energy": 0.409,
+    "top1_e": 0.068,
+    "top5_e": 0.136,
+    "top20_e": 0.168,
+    "top_ids": [
+     591,
+     1849,
+     3943
+    ]
+   },
+   "13": {
+    "writes": 12447411,
+    "counter_count": 0.503,
+    "counter_energy": 0.402,
+    "top1_e": 0.113,
+    "top5_e": 0.125,
+    "top20_e": 0.155,
+    "top_ids": [
+     3042,
+     2450,
+     991
+    ]
+   },
+   "14": {
+    "writes": 16235446,
+    "counter_count": 0.49,
+    "counter_energy": 0.392,
+    "top1_e": 0.116,
+    "top5_e": 0.132,
+    "top20_e": 0.162,
+    "top_ids": [
+     3645,
+     2990,
+     2601
+    ]
+   },
+   "15": {
+    "writes": 21500084,
+    "counter_count": 0.477,
+    "counter_energy": 0.372,
+    "top1_e": 0.004,
+    "top5_e": 0.018,
+    "top20_e": 0.054,
+    "top_ids": [
+     2983,
+     1438,
+     1715
+    ]
+   },
+   "16": {
+    "writes": 24472845,
+    "counter_count": 0.467,
+    "counter_energy": 0.376,
+    "top1_e": 0.128,
+    "top5_e": 0.147,
+    "top20_e": 0.18,
+    "top_ids": [
+     140,
+     240,
+     2903
+    ]
+   },
+   "17": {
+    "writes": 26620640,
+    "counter_count": 0.46,
+    "counter_energy": 0.358,
+    "top1_e": 0.028,
+    "top5_e": 0.062,
+    "top20_e": 0.098,
+    "top_ids": [
+     2824,
+     3685,
+     273
+    ]
+   },
+   "18": {
+    "writes": 28158934,
+    "counter_count": 0.458,
+    "counter_energy": 0.346,
+    "top1_e": 0.101,
+    "top5_e": 0.156,
+    "top20_e": 0.2,
+    "top_ids": [
+     919,
+     3619,
+     2164
+    ]
+   },
+   "19": {
+    "writes": 29653118,
+    "counter_count": 0.457,
+    "counter_energy": 0.35,
+    "top1_e": 0.079,
+    "top5_e": 0.123,
+    "top20_e": 0.188,
+    "top_ids": [
+     1082,
+     3089,
+     2191
+    ]
+   },
+   "20": {
+    "writes": 31558733,
+    "counter_count": 0.459,
+    "counter_energy": 0.355,
+    "top1_e": 0.142,
+    "top5_e": 0.224,
+    "top20_e": 0.275,
+    "top_ids": [
+     2820,
+     3518,
+     346
+    ]
+   },
+   "21": {
+    "writes": 33155110,
+    "counter_count": 0.465,
+    "counter_energy": 0.374,
+    "top1_e": 0.186,
+    "top5_e": 0.304,
+    "top20_e": 0.343,
+    "top_ids": [
+     3336,
+     3638,
+     779
+    ]
+   },
+   "22": {
+    "writes": 35884532,
+    "counter_count": 0.483,
+    "counter_energy": 0.35,
+    "top1_e": 0.12,
+    "top5_e": 0.275,
+    "top20_e": 0.354,
+    "top_ids": [
+     1764,
+     3980,
+     1005
+    ]
+   },
+   "23": {
+    "writes": 39655747,
+    "counter_count": 0.52,
+    "counter_energy": 0.327,
+    "top1_e": 0.023,
+    "top5_e": 0.087,
+    "top20_e": 0.191,
+    "top_ids": [
+     1083,
+     1312,
+     3383
+    ]
+   }
+  },
+  "top_channels": {
+   "0": {
+    "neuron": 1198,
+    "res_channel": 268,
+    "channel_share": 0.338
+   },
+   "1": {
+    "neuron": 2296,
+    "res_channel": 973,
+    "channel_share": 0.016
+   },
+   "2": {
+    "neuron": 2229,
+    "res_channel": 450,
+    "channel_share": 0.018
+   },
+   "3": {
+    "neuron": 1803,
+    "res_channel": 268,
+    "channel_share": 0.927
+   },
+   "4": {
+    "neuron": 958,
+    "res_channel": 268,
+    "channel_share": 0.89
+   },
+   "5": {
+    "neuron": 686,
+    "res_channel": 268,
+    "channel_share": 0.899
+   },
+   "6": {
+    "neuron": 3375,
+    "res_channel": 268,
+    "channel_share": 0.896
+   },
+   "7": {
+    "neuron": 3765,
+    "res_channel": 268,
+    "channel_share": 0.68
+   },
+   "8": {
+    "neuron": 3408,
+    "res_channel": 268,
+    "channel_share": 0.354
+   },
+   "9": {
+    "neuron": 3043,
+    "res_channel": 265,
+    "channel_share": 0.55
+   },
+   "10": {
+    "neuron": 2673,
+    "res_channel": 268,
+    "channel_share": 0.217
+   },
+   "11": {
+    "neuron": 2218,
+    "res_channel": 265,
+    "channel_share": 0.489
+   },
+   "12": {
+    "neuron": 591,
+    "res_channel": 268,
+    "channel_share": 0.102
+   },
+   "13": {
+    "neuron": 3042,
+    "res_channel": 268,
+    "channel_share": 0.066
+   },
+   "14": {
+    "neuron": 3645,
+    "res_channel": 268,
+    "channel_share": 0.13
+   },
+   "15": {
+    "neuron": 2983,
+    "res_channel": 590,
+    "channel_share": 0.066
+   },
+   "16": {
+    "neuron": 140,
+    "res_channel": 590,
+    "channel_share": 0.107
+   },
+   "17": {
+    "neuron": 2824,
+    "res_channel": 590,
+    "channel_share": 0.452
+   },
+   "18": {
+    "neuron": 919,
+    "res_channel": 689,
+    "channel_share": 0.418
+   },
+   "19": {
+    "neuron": 1082,
+    "res_channel": 689,
+    "channel_share": 0.458
+   },
+   "20": {
+    "neuron": 2820,
+    "res_channel": 689,
+    "channel_share": 0.425
+   },
+   "21": {
+    "neuron": 3336,
+    "res_channel": 689,
+    "channel_share": 0.429
+   },
+   "22": {
+    "neuron": 1764,
+    "res_channel": 590,
+    "channel_share": 0.07
+   },
+   "23": {
+    "neuron": 1083,
+    "res_channel": 689,
+    "channel_share": 0.34
+   }
+  }
+ }
+}

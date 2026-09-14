@@ -1,0 +1,14 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  39%|███▉      | 45/114 [00:00<00:00, 439.82it/s]Loading weights:  78%|███████▊  | 89/114 [00:00<00:00, 418.49it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 436.99it/s]
+loaded in 5.3s; layers=16 tokens=16384
+S1 {'down_proj_shape': [2048, 8192], 'w_L1_1764_1710': 0.63232, 'w_L2_1764_8041': -0.59229, 'pass': True, 'builder_col_norm': 0.6391, 'builder_col_norm_rank': 0, 'builder_ch1764_energy_share': 0.9791, 'opposer_col_norm': 0.6153, 'opposer_col_norm_rank': 0, 'opposer_ch1764_energy_share': 0.9267}
+S2 {'n_hidden_states': 17, 'n_blocks': 16, 'max_abs_diff_hook_i_vs_hs_i+1': 0.0, 'max_abs_diff_block15_vs_last_hs': 17.328, 'pass': True}
+S3 {'top5_channels': [1764, 623, 921, 1542, 1344], 'top5_peak_mean_abs': [1.02, 0.77, 0.52, 0.34, 0.33], 'ch1764_rank': 0, 'median_channel_peak_mean_abs': 0.148, 'ch1764_peak_mean_abs': 1.02, 'ch1764_max_abs_any_token': 441.5, 'pass': True}
+ch1764 mean|h| by level: [0.0, 0.1, 0.53, 0.61, 0.82, 0.91, 0.97, 1.0, 1.01, 1.02, 1.02, 1.01, 0.96, 0.85, 0.86, 0.89, 0.1]
+S4 {'cosine_measured_vs_predicted': 1.0, 'slope': 0.9999, 'mean_abs_predicted': 0.0011, 'pass': True}
+S5 {'mean_act_builder': -0.7528, 'mean_act_opposer': 0.1545, 'mean_write_builder_into_ch': -0.476, 'mean_write_opposer_into_ch': -0.091, 'ch_signed_mean_by_level': [-0.0, -0.08, -0.47, -0.56, -0.58, -0.63, -0.58, -0.59, -0.59, -0.58, -0.58, -0.6, -0.65, -0.77, -0.79, -0.84, 0.04], 'jump_L1': -0.389, 'jump_L2': -0.098, 'builder_share_of_jump_L1': 1.224, 'opposer_share_of_jump_L2': 0.929}
+fp16 baseline {'ce': 2.5413, 'ppl': 12.697, 'seconds': 20.9}
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 2710.17it/s]
+fp32 failed: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a total capacity of 7.91 GiB of which 64.56 MiB is free. Process 252687 has 1.31 GiB memory in use. Process 276760 has 424.00 MiB memory in use. Including non-PyTorch memory, this process has 5.90 GiB memory in use. Process 851187 has 218.00 MiB memory in use. Of the allocated memory 5.65 GiB is allocated by PyTorch, and 156.84 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+ALL_PASS = True
+DONE_Y0

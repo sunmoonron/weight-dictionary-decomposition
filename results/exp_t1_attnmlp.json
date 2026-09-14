@@ -1,0 +1,37 @@
+{
+ "clean_ce": 3.6291,
+ "n_counter_tokens": 1456,
+ "top_opposing_heads": {
+  "b4h11": -1.767,
+  "b2h9": -1.341,
+  "b2h5": -1.279,
+  "b3h8": -1.182,
+  "b3h7": -0.921
+ },
+ "perturb": {
+  "top_b4h11_a0.0": {
+   "d_act_all": -0.016,
+   "d_act_counter_tok": -0.053,
+   "d_opposition_proj": 1.011,
+   "dce": 0.0095
+  },
+  "top_b4h11_a2.0": {
+   "d_act_all": 0.09,
+   "d_act_counter_tok": 0.147,
+   "d_opposition_proj": -0.831,
+   "dce": 0.0106
+  },
+  "control_b4h10_a0.0": {
+   "d_act_all": -0.033,
+   "d_act_counter_tok": -0.049,
+   "d_opposition_proj": 0.025,
+   "dce": 0.0056
+  },
+  "control_b4h10_a2.0": {
+   "d_act_all": 0.029,
+   "d_act_counter_tok": 0.043,
+   "d_opposition_proj": -0.02,
+   "dce": 0.0056
+  }
+ }
+}

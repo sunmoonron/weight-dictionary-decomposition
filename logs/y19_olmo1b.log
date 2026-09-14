@@ -1,0 +1,23 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   1%|          | 1/114 [00:07<13:45,  7.31s/it]Loading weights:   2%|▏         | 2/114 [00:08<06:41,  3.58s/it]Loading weights:   8%|▊         | 9/114 [00:08<00:56,  1.85it/s]Loading weights:  10%|▉         | 11/114 [00:09<00:50,  2.04it/s]Loading weights:  11%|█▏        | 13/114 [00:10<00:56,  1.79it/s]Loading weights:  15%|█▍        | 17/114 [00:10<00:34,  2.84it/s]Loading weights:  18%|█▊        | 20/114 [00:11<00:24,  3.87it/s]Loading weights:  19%|█▉        | 22/114 [00:12<00:27,  3.35it/s]Loading weights:  21%|██        | 24/114 [00:12<00:26,  3.37it/s]Loading weights:  23%|██▎       | 26/114 [00:12<00:23,  3.72it/s]Loading weights:  26%|██▋       | 30/114 [00:14<00:24,  3.38it/s]Loading weights:  27%|██▋       | 31/114 [00:14<00:24,  3.44it/s]Loading weights:  28%|██▊       | 32/114 [00:15<00:29,  2.79it/s]Loading weights:  32%|███▏      | 36/114 [00:15<00:15,  5.00it/s]Loading weights:  33%|███▎      | 38/114 [00:15<00:15,  4.76it/s]Loading weights:  35%|███▌      | 40/114 [00:16<00:19,  3.86it/s]Loading weights:  39%|███▊      | 44/114 [00:17<00:17,  4.09it/s]Loading weights:  39%|███▉      | 45/114 [00:17<00:15,  4.34it/s]Loading weights:  42%|████▏     | 48/114 [00:17<00:11,  5.85it/s]Loading weights:  43%|████▎     | 49/114 [00:18<00:17,  3.68it/s]Loading weights:  45%|████▍     | 51/114 [00:19<00:18,  3.49it/s]Loading weights:  48%|████▊     | 55/114 [00:20<00:16,  3.47it/s]Loading weights:  53%|█████▎    | 60/114 [00:21<00:12,  4.28it/s]Loading weights:  58%|█████▊    | 66/114 [00:23<00:14,  3.37it/s]Loading weights:  65%|██████▍   | 74/114 [00:24<00:08,  4.62it/s]Loading weights:  68%|██████▊   | 78/114 [00:25<00:08,  4.46it/s]Loading weights:  69%|██████▉   | 79/114 [00:25<00:07,  4.59it/s]Loading weights:  73%|███████▎  | 83/114 [00:26<00:07,  4.35it/s]Loading weights:  76%|███████▋  | 87/114 [00:26<00:04,  5.67it/s]Loading weights:  78%|███████▊  | 89/114 [00:27<00:04,  5.55it/s]Loading weights:  81%|████████  | 92/114 [00:27<00:03,  6.11it/s]Loading weights:  82%|████████▏ | 93/114 [00:28<00:05,  3.67it/s]Loading weights:  84%|████████▍ | 96/114 [00:29<00:03,  4.85it/s]Loading weights:  85%|████████▌ | 97/114 [00:29<00:03,  5.20it/s]Loading weights:  86%|████████▌ | 98/114 [00:29<00:04,  3.57it/s]Loading weights:  88%|████████▊ | 100/114 [00:30<00:03,  3.76it/s]Loading weights:  89%|████████▊ | 101/114 [00:30<00:03,  3.75it/s]Loading weights:  89%|████████▉ | 102/114 [00:30<00:03,  3.96it/s]Loading weights:  93%|█████████▎| 106/114 [00:31<00:01,  4.55it/s]Loading weights:  95%|█████████▍| 108/114 [00:32<00:01,  4.20it/s]Loading weights:  96%|█████████▋| 110/114 [00:32<00:00,  5.28it/s]Loading weights:  99%|█████████▉| 113/114 [00:32<00:00,  7.58it/s]Loading weights: 100%|██████████| 114/114 [00:32<00:00,  3.52it/s]
+[   0.6m] loaded allenai/OLMo-1B-0724-hf L=16 d=2048 ff=8192 on cuda:0
+[   0.6m] data-free prompt, top 5 by rho:
+[   0.6m]    L1 c1764 n1710  rho=0.04023
+[   0.6m]    L2 c1764 n8041  rho=0.86734
+[   0.6m]    L3 c1764 n1902  rho=0.90239
+[   0.6m]    L4 c1764 n556  rho=0.92752
+[   0.6m]    L0 c130 n7557  rho=0.93484
+[   0.7m] wikitext position 0, top 5 by rho:
+[   0.7m]    L1 c1764 n1710  rho=0.03094
+[   0.7m]    L0 c623 n5546  rho=0.79548
+[   0.7m]    L2 c1764 n8041  rho=0.85307
+[   0.7m]    L3 c1764 n1902  rho=0.89257
+[   0.7m]    L4 c1764 n556  rho=0.92185
+[   0.7m] Table 2 entries by rho: [{"layer": 1, "channel": 1764, "neuron": 1710, "rho_prompt": 0.04023, "rho_wikitext": 0.03094}, {"layer": 2, "channel": 1764, "neuron": 8041, "rho_prompt": 0.86734, "rho_wikitext": 0.85307}]
+[   0.7m] VERDICT {
+ "V1_rank_of_known_prompt": 0,
+ "V1_p_at_1_prompt": 1.0,
+ "V1_p_at_1_wikitext": 1.0,
+ "V3_same_rank_both_inputs": true
+}
+DONE_Y19_olmo1b

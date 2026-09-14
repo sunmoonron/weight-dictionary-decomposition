@@ -1,0 +1,46 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  34%|███▍      | 39/114 [00:00<00:00, 389.39it/s]Loading weights:  76%|███████▋  | 87/114 [00:00<00:00, 433.23it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 462.38it/s]
+dictionary (131072, 2048)
+{'A_super_weight': 1, 'B_top50_traffic': 50, 'C_random50': 49}
+clean ppl 14.231
+
+=== A_super_weight (1 neurons)  ablated ppl 24.214 (gap 0.5315 CE)
+   oracle_static  ppl    14.231  recovered 1.0  top1 0.9978
+   dict_k1        ppl    15.361  recovered 0.8562  top1 0.84393  cos 0.9943  from {'layer': 15, 'neuron': 3454}
+   dict_k4        ppl    14.383  recovered 0.9799  top1 0.94985  cos 0.9973  from {'layer': 15, 'neuron': 3454}
+   dict_k16       ppl    14.258  recovered 0.9964  top1 0.98532  cos 0.9997  from {'layer': 15, 'neuron': 3454}
+   rand_k16       ppl   121.819  recovered -3.0396  top1 0.41169
+
+=== B_top50_traffic (50 neurons)  ablated ppl 15.126 (gap 0.0610 CE)
+   oracle_static  ppl    14.501  recovered 0.6921  top1 0.9479
+   dict_k1        ppl    15.010  recovered 0.1268  top1 0.88576  cos 0.9158  from {'layer': 1, 'neuron': 1710}
+   dict_k4        ppl    14.786  recovered 0.373  top1 0.91977  cos 0.9382  from {'layer': 1, 'neuron': 1710}
+   dict_k16       ppl    14.769  recovered 0.392  top1 0.92955  cos 0.9555  from {'layer': 1, 'neuron': 1710}
+   rand_k16       ppl    15.099  recovered 0.0292  top1 0.87891
+
+=== C_random50 (49 neurons)  ablated ppl 14.244 (gap 0.0010 CE)
+   oracle_static  ppl    14.245  recovered -0.0208  top1 0.99046
+   dict_k1        ppl    14.242  recovered 0.1875  top1 0.98973  cos 0.2663  from {'layer': 0, 'neuron': 1795}
+   dict_k4        ppl    14.242  recovered 0.1979  top1 0.98899  cos 0.317  from {'layer': 0, 'neuron': 1795}
+   dict_k16       ppl    14.244  recovered 0.0729  top1 0.99022  cos 0.4289  from {'layer': 0, 'neuron': 1795}
+   rand_k16       ppl    14.246  recovered -0.0729  top1 0.98948
+
+VERDICT {
+ "T1_sw_oracle_static": 1.0,
+ "T1_pass": true,
+ "T2_sw_dict_k4": 0.9799,
+ "T2_pass": true,
+ "T2_sw_dict_k1": 0.8562,
+ "static_replaceability": {
+  "A_super_weight": 1.0,
+  "B_top50_traffic": 0.6921,
+  "C_random50": -0.0208
+ },
+ "T3_pass": false,
+ "T4_dict_beats_random": {
+  "A_super_weight": true,
+  "B_top50_traffic": true,
+  "C_random50": true
+ }
+}
+DONE_Y24

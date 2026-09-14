@@ -1,0 +1,76 @@
+{
+ "n_atoms": 78175,
+ "A_fvu32": {
+  "weight_dict": 0.06881,
+  "rotated": 0.51706,
+  "expected": {
+   "weight_dict": 0.069,
+   "rotated": 0.549,
+   "note": "rotated uses a FRESH Q (seed 777); value should be near, not equal"
+  }
+ },
+ "B_attrib": {
+  "recall_top1": 0.6471,
+  "r_identified": 0.9979,
+  "r_unconditional": 0.6477,
+  "n_identified": 48219,
+  "expected": {
+   "recall_top1": 0.647,
+   "r_identified": 0.998,
+   "r_unconditional": 0.648
+  },
+  "r_identified_per_decile": [
+   0.05,
+   0.0421,
+   0.0251,
+   0.0014,
+   0.0608,
+   0.0226,
+   0.019,
+   0.127,
+   0.2371,
+   0.9998
+  ]
+ },
+ "D_olmo_sw": {
+  "weight_shape": [
+   2048,
+   8192
+  ],
+  "atom_norm_rank": 0,
+  "dominant_channel": 1764,
+  "channel_share": 0.9791,
+  "expected": {
+   "atom_norm_rank": 0,
+   "dominant_channel": 1764,
+   "channel_share": 0.979
+  }
+ },
+ "C_dose_response": {
+  "watched_neurons": [
+   "mlp3#614",
+   "mlp3#2496",
+   "mlp3#1372",
+   "mlp3#1893"
+  ],
+  "rel_change": {
+   "alpha_0.5": [
+    0.275,
+    0.1702,
+    -0.0077,
+    0.0855
+   ],
+   "alpha_1.5": [
+    -0.2191,
+    -0.1348,
+    -0.0851,
+    -0.1123
+   ]
+  },
+  "note": "index 0 is #614; rest are fresh random b3 controls",
+  "expected_614": {
+   "alpha_0.5": 0.275,
+   "alpha_1.5": -0.221
+  }
+ }
+}

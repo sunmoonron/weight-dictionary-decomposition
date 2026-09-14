@@ -1,0 +1,175 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   1%|▏         | 2/148 [00:00<00:07, 18.73it/s]Loading weights:   7%|▋         | 11/148 [00:00<00:02, 51.86it/s]Loading weights:  11%|█         | 16/148 [00:00<00:05, 22.02it/s]Loading weights:  14%|█▎        | 20/148 [00:00<00:05, 24.01it/s]Loading weights:  22%|██▏       | 32/148 [00:00<00:02, 42.88it/s]Loading weights:  37%|███▋      | 55/148 [00:01<00:01, 77.08it/s]Loading weights:  44%|████▍     | 65/148 [00:01<00:01, 75.40it/s]Loading weights:  55%|█████▍    | 81/148 [00:01<00:00, 80.78it/s]Loading weights: 100%|██████████| 148/148 [00:01<00:00, 107.19it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+gpt2: NL=12 D=768 H=12 DFF=3072 dev=cuda:0
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+eval tokens 32768
+sanity {'z_hook_vs_recompute_L0': 0.0, 'pattern_vs_hf_L0': 0.0, 'z_hook_vs_recompute_L5': 0.0, 'pattern_vs_hf_L5': 0.0, 'z_hook_vs_recompute_L11': 0.0, 'pattern_vs_hf_L11': 0.0, 'final_logits_recon': 0.0}
+batch 1/16 12s
+batch 2/16 14s
+batch 3/16 17s
+batch 4/16 19s
+batch 5/16 22s
+batch 6/16 25s
+batch 7/16 27s
+batch 8/16 30s
+batch 9/16 32s
+batch 10/16 35s
+batch 11/16 37s
+batch 12/16 40s
+batch 13/16 43s
+batch 14/16 45s
+batch 15/16 48s
+batch 16/16 51s
+
+=== unembedding reader (logit lens) top-1 agreement with final, by level ===
+0.008 0.059 0.071 0.071 0.088 0.100 0.131 0.161 0.241 0.327 0.432 0.571 1.000
+
+=== MLP readers: median r of would-be vs actual pre-activation, rows=reader layer m, cols=source level l ===
+m= 0 0.90   | null_iso 0.78
+m= 1 0.22 0.96   | null_iso 0.22 0.97
+m= 2 0.16 0.87 0.96   | null_iso 0.16 0.89 0.97
+m= 3 0.12 0.77 0.86 0.97   | null_iso 0.11 0.80 0.88 0.97
+m= 4 0.10 0.67 0.76 0.89 0.97   | null_iso 0.10 0.73 0.81 0.90 0.98
+m= 5 0.09 0.61 0.70 0.81 0.90 0.97   | null_iso 0.08 0.67 0.74 0.83 0.91 0.97
+m= 6 0.09 0.58 0.66 0.76 0.84 0.90 0.97   | null_iso 0.08 0.62 0.69 0.77 0.84 0.91 0.98
+m= 7 0.09 0.57 0.64 0.72 0.79 0.85 0.91 0.98   | null_iso 0.06 0.57 0.63 0.71 0.78 0.84 0.90 0.97
+m= 8 0.08 0.55 0.61 0.68 0.74 0.79 0.85 0.91 0.98   | null_iso 0.06 0.52 0.58 0.65 0.72 0.77 0.83 0.90 0.98
+m= 9 0.07 0.50 0.56 0.63 0.68 0.72 0.78 0.84 0.91 0.98   | null_iso 0.06 0.47 0.52 0.58 0.64 0.68 0.74 0.81 0.89 0.97
+m=10 0.08 0.42 0.48 0.55 0.59 0.64 0.69 0.75 0.83 0.91 0.98   | null_iso 0.06 0.41 0.45 0.51 0.56 0.60 0.65 0.71 0.80 0.88 0.97
+m=11 0.09 0.37 0.42 0.48 0.52 0.55 0.60 0.66 0.74 0.82 0.90 0.97   | null_iso 0.05 0.34 0.39 0.43 0.47 0.51 0.55 0.61 0.69 0.77 0.87 0.97
+
+=== readiness depth (tau=0.9): frac lexical (l=0) / frac slack>=2 / frac needs-attn-m / median slack ===
+m= 0 lexical 0.47  slack>=2 0.00  needs_attn 0.53  med_slack -1.0
+m= 1 lexical 0.01  slack>=2 0.00  needs_attn 0.09  med_slack 0.0
+m= 2 lexical 0.00  slack>=2 0.00  needs_attn 0.04  med_slack 0.0
+m= 3 lexical 0.00  slack>=2 0.05  needs_attn 0.01  med_slack 0.0
+m= 4 lexical 0.00  slack>=2 0.04  needs_attn 0.00  med_slack 0.0
+m= 5 lexical 0.00  slack>=2 0.04  needs_attn 0.02  med_slack 0.0
+m= 6 lexical 0.00  slack>=2 0.08  needs_attn 0.00  med_slack 1.0
+m= 7 lexical 0.00  slack>=2 0.07  needs_attn 0.00  med_slack 1.0
+m= 8 lexical 0.00  slack>=2 0.07  needs_attn 0.00  med_slack 1.0
+m= 9 lexical 0.00  slack>=2 0.04  needs_attn 0.00  med_slack 1.0
+m=10 lexical 0.00  slack>=2 0.03  needs_attn 0.00  med_slack 1.0
+m=11 lexical 0.00  slack>=2 0.02  needs_attn 0.01  med_slack 0.0
+
+=== attention readers: mean TV(would-be pattern, actual) full/q-only/k-only, rows m, cols l (head-averaged) ===
+m= 1 full 0.60 | q 0.48 | k 0.50
+m= 2 full 0.81 0.21 | q 0.61 0.13 | k 0.85 0.14
+m= 3 full 0.90 0.32 0.19 | q 0.83 0.26 0.15 | k 0.89 0.24 0.14
+m= 4 full 0.86 0.40 0.27 0.17 | q 0.82 0.30 0.23 0.14 | k 0.87 0.32 0.21 0.12
+m= 5 full 0.90 0.39 0.34 0.27 0.18 | q 0.84 0.31 0.27 0.21 0.13 | k 0.88 0.36 0.31 0.21 0.13
+m= 6 full 0.85 0.43 0.36 0.29 0.23 0.16 | q 0.78 0.33 0.29 0.23 0.17 0.12 | k 0.84 0.41 0.37 0.24 0.18 0.11
+m= 7 full 0.88 0.38 0.35 0.31 0.28 0.24 0.17 | q 0.81 0.32 0.29 0.26 0.22 0.18 0.13 | k 0.88 0.38 0.37 0.29 0.24 0.19 0.12
+m= 8 full 0.84 0.46 0.44 0.38 0.35 0.33 0.27 0.18 | q 0.80 0.37 0.34 0.31 0.27 0.23 0.19 0.13 | k 0.85 0.46 0.45 0.37 0.33 0.28 0.21 0.12
+m= 9 full 0.86 0.44 0.43 0.40 0.39 0.37 0.34 0.28 0.18 | q 0.76 0.38 0.35 0.33 0.30 0.28 0.24 0.19 0.13 | k 0.84 0.44 0.44 0.39 0.37 0.33 0.28 0.21 0.12
+m=10 full 0.87 0.52 0.51 0.51 0.49 0.48 0.45 0.40 0.32 0.20 | q 0.78 0.45 0.42 0.40 0.37 0.35 0.31 0.27 0.21 0.14 | k 0.83 0.51 0.51 0.47 0.45 0.42 0.38 0.31 0.23 0.14
+m=11 full 0.87 0.59 0.59 0.58 0.58 0.57 0.56 0.54 0.50 0.44 0.31 | q 0.83 0.51 0.49 0.46 0.44 0.42 0.39 0.36 0.32 0.28 0.20 | k 0.78 0.58 0.57 0.56 0.55 0.54 0.51 0.48 0.42 0.35 0.24
+
+=== heads with a late key-side readiness (ready_k >= 2) ===
+L2H2: ready_full 2 ready_q 1 ready_k 2  tv_k 0.98 0.20
+L2H4: ready_full 2 ready_q 2 ready_k 2  tv_k 0.91 0.20
+L3H1: ready_full 3 ready_q 2 ready_k 2  tv_k 0.92 0.26 0.14
+L3H2: ready_full 3 ready_q 2 ready_k 2  tv_k 0.92 0.30 0.17
+L3H3: ready_full 2 ready_q 2 ready_k 2  tv_k 0.96 0.28 0.18
+L3H6: ready_full 2 ready_q 2 ready_k 2  tv_k 0.93 0.27 0.16
+L3H7: ready_full 3 ready_q 2 ready_k 2  tv_k 0.95 0.32 0.17
+L3H8: ready_full 2 ready_q 2 ready_k 2  tv_k 0.96 0.27 0.15
+L3H9: ready_full 2 ready_q 2 ready_k 2  tv_k 0.92 0.25 0.15
+L3H11: ready_full 2 ready_q 2 ready_k 2  tv_k 0.94 0.27 0.15
+L4H0: ready_full 4 ready_q 3 ready_k 3  tv_k 0.95 0.38 0.26 0.13
+L4H1: ready_full 4 ready_q 3 ready_k 3  tv_k 0.94 0.36 0.23 0.13
+L4H2: ready_full 3 ready_q 2 ready_k 2  tv_k 0.81 0.31 0.19 0.12
+L4H3: ready_full 4 ready_q 3 ready_k 3  tv_k 0.94 0.36 0.24 0.13
+L4H4: ready_full 3 ready_q 3 ready_k 3  tv_k 0.71 0.36 0.22 0.13
+L4H5: ready_full 3 ready_q 3 ready_k 3  tv_k 0.94 0.34 0.26 0.14
+L4H6: ready_full 2 ready_q 2 ready_k 2  tv_k 0.91 0.23 0.14 0.08
+L4H7: ready_full 4 ready_q 3 ready_k 3  tv_k 0.91 0.45 0.34 0.18
+L4H8: ready_full 4 ready_q 3 ready_k 3  tv_k 0.66 0.41 0.25 0.14
+L4H9: ready_full 3 ready_q 3 ready_k 2  tv_k 0.92 0.30 0.19 0.11
+L4H10: ready_full 3 ready_q 2 ready_k 2  tv_k 0.70 0.31 0.20 0.13
+L4H11: ready_full 2 ready_q 2 ready_k 1  tv_k 0.98 0.06 0.02 0.01
+L5H0: ready_full 5 ready_q 4 ready_k 5  tv_k 0.90 0.43 0.42 0.36 0.24
+L5H1: ready_full 1 ready_q 1 ready_k 1  tv_k 0.99 0.15 0.15 0.15 0.13
+L5H2: ready_full 4 ready_q 4 ready_k 3  tv_k 0.94 0.36 0.27 0.16 0.10
+L5H3: ready_full 4 ready_q 4 ready_k 3  tv_k 0.91 0.35 0.27 0.18 0.11
+L5H4: ready_full 4 ready_q 4 ready_k 3  tv_k 0.95 0.37 0.31 0.16 0.09
+L5H5: ready_full 5 ready_q 3 ready_k 5  tv_k 0.91 0.45 0.43 0.36 0.24
+L5H6: ready_full 4 ready_q 3 ready_k 3  tv_k 0.97 0.28 0.27 0.20 0.11
+L5H7: ready_full 2 ready_q 2 ready_k 3  tv_k 0.96 0.25 0.22 0.13 0.07
+L5H8: ready_full 3 ready_q 2 ready_k 4  tv_k 0.96 0.27 0.25 0.21 0.13
+L5H9: ready_full 4 ready_q 3 ready_k 4  tv_k 0.71 0.42 0.33 0.20 0.12
+L5H10: ready_full 5 ready_q 4 ready_k 4  tv_k 0.69 0.51 0.37 0.25 0.16
+L5H11: ready_full 4 ready_q 3 ready_k 4  tv_k 0.74 0.46 0.37 0.23 0.12
+L6H0: ready_full 5 ready_q 5 ready_k 4  tv_k 0.93 0.45 0.38 0.24 0.17 0.11
+L6H2: ready_full 5 ready_q 3 ready_k 4  tv_k 0.61 0.50 0.45 0.27 0.19 0.12
+L6H3: ready_full 4 ready_q 4 ready_k 3  tv_k 0.89 0.32 0.28 0.18 0.14 0.09
+L6H4: ready_full 6 ready_q 5 ready_k 5  tv_k 0.69 0.58 0.51 0.31 0.24 0.15
+L6H5: ready_full 3 ready_q 3 ready_k 3  tv_k 0.91 0.35 0.31 0.19 0.14 0.09
+L6H6: ready_full 6 ready_q 4 ready_k 5  tv_k 0.70 0.51 0.47 0.32 0.24 0.16
+L6H7: ready_full 5 ready_q 4 ready_k 4  tv_k 0.90 0.45 0.38 0.24 0.18 0.12
+L6H8: ready_full 4 ready_q 4 ready_k 3  tv_k 0.95 0.41 0.37 0.18 0.12 0.08
+L6H9: ready_full 5 ready_q 2 ready_k 5  tv_k 0.95 0.26 0.26 0.25 0.22 0.12
+L6H10: ready_full 5 ready_q 4 ready_k 5  tv_k 0.67 0.49 0.46 0.29 0.23 0.14
+L6H11: ready_full 5 ready_q 5 ready_k 4  tv_k 0.94 0.42 0.38 0.24 0.17 0.11
+L7H0: ready_full 6 ready_q 6 ready_k 5  tv_k 0.96 0.44 0.43 0.30 0.22 0.16 0.08
+L7H1: ready_full 7 ready_q 6 ready_k 6  tv_k 0.78 0.51 0.49 0.37 0.33 0.27 0.18
+L7H2: ready_full 1 ready_q 1 ready_k 1  tv_k 0.94 0.16 0.15 0.15 0.13 0.10 0.07
+L7H3: ready_full 4 ready_q 3 ready_k 5  tv_k 0.93 0.35 0.34 0.26 0.21 0.16 0.09
+L7H4: ready_full 4 ready_q 4 ready_k 3  tv_k 0.95 0.24 0.23 0.16 0.13 0.10 0.06
+L7H5: ready_full 7 ready_q 6 ready_k 6  tv_k 0.84 0.56 0.54 0.41 0.34 0.26 0.16
+L7H6: ready_full 7 ready_q 5 ready_k 6  tv_k 0.65 0.52 0.50 0.35 0.30 0.24 0.15
+L7H7: ready_full 7 ready_q 6 ready_k 6  tv_k 0.84 0.36 0.35 0.31 0.28 0.23 0.16
+L7H8: ready_full 6 ready_q 6 ready_k 5  tv_k 0.95 0.39 0.37 0.28 0.22 0.17 0.10
+L7H9: ready_full 5 ready_q 5 ready_k 4  tv_k 0.95 0.33 0.32 0.24 0.19 0.15 0.09
+L7H10: ready_full 6 ready_q 4 ready_k 5  tv_k 0.90 0.29 0.29 0.26 0.23 0.18 0.10
+L7H11: ready_full 7 ready_q 5 ready_k 6  tv_k 0.83 0.41 0.40 0.36 0.33 0.25 0.16
+L8H0: ready_full 8 ready_q 6 ready_k 7  tv_k 0.67 0.52 0.52 0.44 0.40 0.34 0.27 0.16
+L8H1: ready_full 7 ready_q 5 ready_k 6  tv_k 0.88 0.29 0.29 0.27 0.25 0.22 0.16 0.09
+L8H2: ready_full 7 ready_q 6 ready_k 7  tv_k 0.64 0.70 0.65 0.44 0.38 0.31 0.24 0.14
+L8H3: ready_full 8 ready_q 7 ready_k 7  tv_k 0.84 0.46 0.45 0.38 0.35 0.32 0.25 0.14
+L8H4: ready_full 5 ready_q 5 ready_k 5  tv_k 0.96 0.31 0.31 0.25 0.22 0.18 0.13 0.08
+L8H5: ready_full 7 ready_q 6 ready_k 6  tv_k 0.93 0.49 0.50 0.37 0.31 0.25 0.17 0.10
+L8H6: ready_full 8 ready_q 7 ready_k 7  tv_k 0.81 0.45 0.44 0.39 0.36 0.31 0.24 0.14
+L8H7: ready_full 7 ready_q 7 ready_k 6  tv_k 0.96 0.49 0.49 0.38 0.31 0.25 0.16 0.09
+L8H8: ready_full 7 ready_q 7 ready_k 7  tv_k 0.91 0.52 0.51 0.40 0.35 0.30 0.22 0.13
+L8H9: ready_full 7 ready_q 5 ready_k 7  tv_k 0.83 0.43 0.42 0.36 0.33 0.29 0.23 0.13
+L8H10: ready_full 8 ready_q 5 ready_k 7  tv_k 0.85 0.46 0.46 0.40 0.37 0.33 0.26 0.15
+L8H11: ready_full 7 ready_q 6 ready_k 7  tv_k 0.92 0.36 0.35 0.31 0.29 0.26 0.21 0.13
+L9H0: ready_full 9 ready_q 8 ready_k 8  tv_k 0.85 0.51 0.51 0.45 0.42 0.39 0.34 0.25 0.14
+L9H1: ready_full 8 ready_q 6 ready_k 7  tv_k 0.81 0.35 0.35 0.32 0.31 0.28 0.24 0.18 0.10
+L9H2: ready_full 9 ready_q 8 ready_k 8  tv_k 0.86 0.47 0.47 0.40 0.38 0.35 0.31 0.23 0.13
+L9H3: ready_full 8 ready_q 8 ready_k 7  tv_k 0.95 0.51 0.52 0.42 0.37 0.32 0.25 0.17 0.10
+L9H4: ready_full 8 ready_q 7 ready_k 8  tv_k 0.79 0.39 0.39 0.36 0.35 0.33 0.29 0.23 0.13
+L9H5: ready_full 9 ready_q 7 ready_k 8  tv_k 0.77 0.38 0.38 0.36 0.34 0.33 0.30 0.24 0.14
+L9H6: ready_full 8 ready_q 7 ready_k 7  tv_k 0.85 0.38 0.38 0.33 0.32 0.29 0.25 0.18 0.10
+L9H7: ready_full 8 ready_q 7 ready_k 8  tv_k 0.90 0.42 0.42 0.39 0.37 0.34 0.30 0.23 0.13
+L9H8: ready_full 8 ready_q 7 ready_k 8  tv_k 0.80 0.51 0.51 0.43 0.40 0.36 0.31 0.23 0.13
+L9H9: ready_full 8 ready_q 7 ready_k 7  tv_k 0.86 0.39 0.39 0.34 0.32 0.29 0.24 0.17 0.10
+L9H10: ready_full 7 ready_q 7 ready_k 7  tv_k 0.95 0.37 0.37 0.33 0.30 0.27 0.22 0.16 0.08
+L9H11: ready_full 8 ready_q 7 ready_k 8  tv_k 0.73 0.59 0.59 0.55 0.52 0.46 0.38 0.26 0.15
+L10H0: ready_full 10 ready_q 9 ready_k 9  tv_k 0.86 0.54 0.54 0.45 0.42 0.39 0.35 0.29 0.22 0.13
+L10H1: ready_full 9 ready_q 8 ready_k 8  tv_k 0.85 0.44 0.44 0.40 0.38 0.35 0.31 0.26 0.19 0.12
+L10H2: ready_full 10 ready_q 8 ready_k 9  tv_k 0.78 0.57 0.57 0.53 0.51 0.49 0.43 0.34 0.25 0.14
+L10H3: ready_full 10 ready_q 9 ready_k 9  tv_k 0.73 0.67 0.67 0.62 0.60 0.57 0.52 0.43 0.32 0.18
+L10H4: ready_full 10 ready_q 9 ready_k 9  tv_k 0.76 0.66 0.66 0.63 0.61 0.58 0.53 0.43 0.31 0.18
+L10H5: ready_full 7 ready_q 7 ready_k 7  tv_k 0.96 0.27 0.27 0.25 0.24 0.23 0.20 0.17 0.12 0.07
+L10H6: ready_full 9 ready_q 8 ready_k 9  tv_k 0.86 0.45 0.45 0.40 0.38 0.36 0.32 0.27 0.20 0.13
+L10H7: ready_full 10 ready_q 9 ready_k 9  tv_k 0.73 0.63 0.62 0.56 0.52 0.49 0.43 0.36 0.26 0.17
+L10H8: ready_full 9 ready_q 7 ready_k 9  tv_k 0.77 0.50 0.50 0.49 0.48 0.46 0.41 0.35 0.27 0.16
+L10H9: ready_full 9 ready_q 9 ready_k 8  tv_k 0.95 0.42 0.42 0.38 0.36 0.33 0.29 0.23 0.17 0.10
+L10H10: ready_full 9 ready_q 8 ready_k 8  tv_k 0.83 0.43 0.43 0.38 0.36 0.33 0.29 0.24 0.18 0.11
+L10H11: ready_full 10 ready_q 9 ready_k 9  tv_k 0.84 0.53 0.53 0.51 0.49 0.47 0.43 0.36 0.27 0.16
+L11H0: ready_full 11 ready_q 11 ready_k 11  tv_k 0.53 0.86 0.80 0.74 0.70 0.65 0.60 0.51 0.41 0.33 0.21
+L11H1: ready_full 11 ready_q 10 ready_k 11  tv_k 0.78 0.54 0.54 0.53 0.53 0.52 0.51 0.48 0.44 0.37 0.25
+L11H2: ready_full 11 ready_q 10 ready_k 11  tv_k 0.81 0.52 0.52 0.51 0.50 0.49 0.48 0.45 0.41 0.35 0.25
+L11H3: ready_full 11 ready_q 11 ready_k 11  tv_k 0.92 0.46 0.46 0.45 0.45 0.44 0.43 0.41 0.36 0.30 0.21
+L11H4: ready_full 11 ready_q 10 ready_k 11  tv_k 0.72 0.72 0.72 0.72 0.71 0.70 0.67 0.63 0.55 0.44 0.27
+L11H5: ready_full 11 ready_q 10 ready_k 11  tv_k 0.81 0.51 0.51 0.51 0.51 0.50 0.49 0.46 0.42 0.35 0.25
+L11H6: ready_full 11 ready_q 10 ready_k 11  tv_k 0.84 0.45 0.45 0.43 0.42 0.42 0.40 0.37 0.32 0.27 0.20
+L11H7: ready_full 11 ready_q 10 ready_k 11  tv_k 0.77 0.53 0.53 0.53 0.52 0.52 0.50 0.48 0.43 0.36 0.25
+L11H8: ready_full 11 ready_q 11 ready_k 11  tv_k 0.71 0.61 0.59 0.61 0.57 0.54 0.51 0.46 0.41 0.34 0.23
+L11H9: ready_full 11 ready_q 10 ready_k 11  tv_k 0.83 0.45 0.45 0.44 0.43 0.42 0.40 0.37 0.33 0.28 0.21
+L11H10: ready_full 11 ready_q 10 ready_k 11  tv_k 0.78 0.64 0.64 0.63 0.62 0.61 0.59 0.55 0.49 0.41 0.27
+L11H11: ready_full 11 ready_q 11 ready_k 11  tv_k 0.87 0.65 0.65 0.63 0.62 0.61 0.59 0.55 0.48 0.39 0.25
+
+done in 51s -> /data/mechinterp/trainfree/results/exp_r1_readiness_gpt2.json

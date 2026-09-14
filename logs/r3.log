@@ -1,0 +1,76 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2831.86it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+tuned-lens config: {"base_model_name_or_path": "gpt2", "d_model": 768, "num_hidden_layers": 12, "bias": true, "base_model_revision": "e7da7f221d5bf496a48136c0cd264e630fe9fcc8", "lens_type": "linear_tuned_lens"}
+tuned-lens keys sample: ['0.weight', '0.bias', '1.weight', '1.bias', '2.weight', '2.bias']
+tuned lens loaded: 12 translators, W torch.Size([768, 768])
+computing mu_l ...
+computing Jacobians of the MLP-only continuation at mu_l ...
+  jacobians done 21s; ||J_0 - I||_F/||I|| = 101.329
+batch 1/16 35s
+batch 2/16 48s
+batch 3/16 62s
+batch 4/16 76s
+batch 5/16 86s
+batch 6/16 96s
+batch 7/16 107s
+batch 8/16 117s
+batch 9/16 127s
+batch 10/16 138s
+batch 11/16 148s
+batch 12/16 158s
+batch 13/16 169s
+batch 14/16 179s
+batch 15/16 189s
+batch 16/16 200s
+
+final model CE 3.639   bigram CE 6.620   unigram CE 7.564
+
+=== KL(final || lens) by level ===
+lvl     logit  lastmlp      mlp     self     sink   affine   actual    tuned
+  0    50.080    6.035    3.797   12.114    4.767    7.881    0.000    5.253
+  1     7.710    3.815    3.273   12.418    4.587    8.536    0.000    3.186
+  2     6.593    3.588    2.889   10.764    3.965   10.168    0.000    2.995
+  3     6.285    3.364    2.402    9.805    2.594    8.785    0.000    2.803
+  4     6.139    3.158    2.193    8.973    2.115    7.362    0.000    2.636
+  5     5.960    2.988    2.029    8.549    1.834    7.809    0.000    2.489
+  6     5.297    2.645    1.684    7.958    1.442    7.210    0.000    2.008
+  7     4.885    2.342    1.359    6.227    1.084    6.358    0.000    1.681
+  8     4.089    1.865    0.967    4.731    0.699    5.294    0.000    1.213
+  9     3.655    1.425    0.676    3.637    0.422    4.549    0.000    0.860
+ 10     3.154    0.831    0.388    1.515    0.182    3.447    0.000    0.520
+ 11     1.761    0.245    0.245    0.252    0.083    1.640    0.000    0.226
+
+=== CE to true next token by level ===
+lvl     logit  lastmlp      mlp     self     sink   affine   actual    tuned
+  0    53.877    9.912    7.748   15.891    8.588   11.731    3.639    9.033
+  1    11.568    7.677    7.207   16.171    8.418   12.352    3.639    7.070
+  2    10.499    7.469    6.833   14.550    7.813   14.005    3.639    6.894
+  3    10.230    7.263    6.390   13.607    6.480   12.580    3.639    6.716
+  4    10.123    7.071    6.182   12.744    6.050   11.158    3.639    6.560
+  5     9.978    6.916    6.026   12.349    5.811   11.628    3.639    6.418
+  6     9.300    6.573    5.676   11.784    5.405   11.064    3.639    5.919
+  7     8.885    6.267    5.342   10.055    5.032   10.193    3.639    5.574
+  8     7.974    5.762    4.913    8.586    4.593    8.934    3.639    5.039
+  9     7.339    5.254    4.536    7.406    4.217    8.226    3.639    4.592
+ 10     6.588    4.615    4.167    5.169    3.887    7.038    3.639    4.159
+ 11     5.203    3.974    3.974    3.878    3.747    5.292    3.639    3.845
+
+=== top-1 agreement with final by level ===
+lvl     logit  lastmlp      mlp     self     sink   affine   actual    tuned
+  0     0.008    0.021    0.172    0.005    0.052    0.015    1.000    0.062
+  1     0.059    0.145    0.167    0.005    0.064    0.018    1.000    0.169
+  2     0.071    0.157    0.202    0.004    0.094    0.003    1.000    0.185
+  3     0.071    0.173    0.252    0.011    0.237    0.012    1.000    0.206
+  4     0.088    0.191    0.279    0.009    0.309    0.020    1.000    0.227
+  5     0.100    0.208    0.301    0.009    0.360    0.034    1.000    0.249
+  6     0.131    0.238    0.342    0.018    0.409    0.027    1.000    0.307
+  7     0.161    0.266    0.390    0.048    0.477    0.057    1.000    0.353
+  8     0.241    0.316    0.459    0.140    0.565    0.174    1.000    0.439
+  9     0.327    0.382    0.531    0.226    0.648    0.218    1.000    0.532
+ 10     0.432    0.496    0.622    0.472    0.755    0.341    1.000    0.643
+ 11     0.571    0.683    0.683    0.737    0.820    0.491    1.000    0.758
+
+E3: mlp beats logit on KL at 12/12 levels
+E3b: affine - tuned KL at levels 4..8: +4.725 +5.321 +5.201 +4.677 +4.081
+done 200s

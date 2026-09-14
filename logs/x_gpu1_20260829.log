@@ -1,0 +1,81 @@
+=== gpu1 queue start Sat 29 Aug 2026 10:25:22 AM EDT ===
+SYNTAX_OK_GPU1
+--- exp_x2_families_attrib ---
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== smollm2-135m ==
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  48%|████▊     | 131/272 [00:00<00:00, 1299.79it/s]Loading weights:  96%|█████████▌| 261/272 [00:00<00:00, 1268.87it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 1276.55it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (304838 > 8192). Running this sequence through the model will result in indexing errors
+  8192 eval states, d=576 dff=1536 L=15
+  dictionary 82944 atoms
+  smollm2-135m: {'L': 15, 'n_atoms': 82944, 'recall_top1_omp': 0.673, 'recall_top1_oneshot': 0.6788, 'r_identified': 0.9997, 'r_unconditional': 0.9275, 'r_identified_per_decile': [0.938, 0.924, 0.939, 0.943, 0.944, 0.931, 0.94, 0.94, 0.937, 1.0], 'fvu32': {'weight_full': 0.00568, 'weight_excl_top5ch': 0.29849, 'rotated_full': 0.44838, 'rotated_excl_top5ch': 13.48715, 'top5_var_coords': [507, 247, 308, 14, 230], 'top5_var_share': 0.9817}}
+== qwen2.5-0.5b ==
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<04:19,  1.11it/s]Loading weights:  47%|████▋     | 136/290 [00:01<00:00, 184.99it/s]Loading weights:  73%|███████▎  | 212/290 [00:01<00:00, 253.82it/s]Loading weights:  95%|█████████▍| 275/290 [00:01<00:00, 302.74it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 219.42it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (298938 > 131072). Running this sequence through the model will result in indexing errors
+  8192 eval states, d=896 dff=4864 L=12
+  dictionary 226816 atoms
+  qwen2.5-0.5b: {'L': 12, 'n_atoms': 226816, 'recall_top1_omp': 0.4581, 'recall_top1_oneshot': 0.6046, 'r_identified': 0.9943, 'r_unconditional': 0.5561, 'r_identified_per_decile': [0.942, 0.929, 0.913, 0.916, 0.919, 0.91, 0.908, 0.885, 0.928, 0.997], 'fvu32': {'weight_full': 0.01726, 'weight_excl_top5ch': 0.34992, 'rotated_full': 0.51818, 'rotated_excl_top5ch': 5.3668, 'top5_var_coords': [62, 490, 570, 53, 262], 'top5_var_share': 0.9521}}
+== pythia-410m ==
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  25%|██▌       | 74/292 [00:00<00:00, 736.60it/s]Loading weights:  51%|█████     | 149/292 [00:00<00:00, 740.43it/s]Loading weights:  77%|███████▋  | 224/292 [00:00<00:00, 728.37it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 730.66it/s]
+  8192 eval states, d=1024 dff=4096 L=12
+  dictionary 116864 atoms
+  pythia-410m: {'L': 12, 'n_atoms': 116864, 'recall_top1_omp': 0.47, 'recall_top1_oneshot': 0.5798, 'r_identified': 0.9782, 'r_unconditional': 0.4501, 'r_identified_per_decile': [0.218, 0.026, 0.066, 0.019, 0.019, 0.069, 0.069, 0.029, 0.121, 0.996], 'fvu32': {'weight_full': 0.04987, 'weight_excl_top5ch': 0.53876, 'rotated_full': 0.59393, 'rotated_excl_top5ch': 3.03525, 'top5_var_coords': [357, 130, 966, 728, 647], 'top5_var_share': 0.9117}}
+== olmo-1b-0724 ==
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:   2%|▏         | 2/114 [00:00<00:06, 18.22it/s]Loading weights:  21%|██        | 24/114 [00:00<00:00, 123.26it/s]Loading weights:  39%|███▉      | 45/114 [00:00<00:00, 154.90it/s]Loading weights:  58%|█████▊    | 66/114 [00:00<00:00, 150.49it/s]Loading weights:  75%|███████▌  | 86/114 [00:00<00:00, 165.93it/s]Loading weights:  90%|█████████ | 103/114 [00:00<00:00, 126.53it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 137.43it/s]
+  8192 eval states, d=2048 dff=8192 L=8
+  dictionary 142464 atoms
+  olmo-1b-0724: {'L': 8, 'n_atoms': 142464, 'recall_top1_omp': 0.7031, 'recall_top1_oneshot': 0.7738, 'r_identified': 0.9964, 'r_unconditional': 0.9709, 'r_identified_per_decile': [0.945, 0.95, 0.943, 0.939, 0.934, 0.925, 0.921, 0.915, 0.907, 0.997], 'fvu32': {'weight_full': 0.01753, 'weight_excl_top5ch': 0.52813, 'rotated_full': 0.76812, 'rotated_excl_top5ch': 6.03363, 'top5_var_coords': [1764, 1110, 623, 1542, 1344], 'top5_var_share': 0.9678}}
+DONE_X2
+--- exp_x2_families_attrib exit 0 ---
+--- exp_x3_bakeoff2 ---
+excluding 28 studied neurons (incl. v1 nominees)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3158.70it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+captured
+  scored block 2
+  scored block 3
+  scored block 4
+  scored block 5
+  scored block 6
+  scored block 7
+  scored block 8
+WDD arm: [(2, 2769), (7, 2531), (8, 1542), (8, 15), (6, 522), (8, 13), (2, 589), (7, 1729), (7, 2489), (8, 1827)]
+outlier arm: [(8, 2532), (8, 2543), (8, 1182), (8, 2087), (8, 2162), (5, 2256), (8, 2346), (8, 2469), (8, 2793), (8, 1749)]
+corr arm: [(2, 352), (5, 1504), (5, 2256), (4, 2555), (8, 2687), (2, 2830), (4, 2806), (7, 549), (2, 1173), (6, 2703)]
+unique nominees: 29; overlaps: {'WDD&outlier': [], 'WDD&corr': [], 'corr&outlier': [(5, 2256)]}
+mlp2#352 <- mlp1#3020: pred -1.52 dproj -2.12 (ctrl -0.00) dresp -0.780 (ctrl -0.000) T1=True T2=True
+mlp2#589 <- mlp0#1430: pred +0.23 dproj -0.00 (ctrl -0.01) dresp -0.003 (ctrl -0.000) T1=False T2=False
+mlp2#1173 <- mlp0#944: pred +0.75 dproj +0.41 (ctrl -0.01) dresp -0.001 (ctrl -0.000) T1=True T2=False
+mlp2#2769 <- mlp0#1175: pred +5.99 dproj +8.33 (ctrl +0.00) dresp -0.977 (ctrl +0.001) T1=True T2=True
+mlp2#2830 <- mlp0#1175: pred -6.34 dproj -9.71 (ctrl +0.02) dresp -0.946 (ctrl -0.001) T1=True T2=True
+mlp4#2555 <- mlp2#666: pred +6.77 dproj +2.26 (ctrl -0.00) dresp +0.005 (ctrl -0.002) T1=True T2=False
+mlp4#2806 <- mlp0#2054: pred -4.25 dproj -7.03 (ctrl -0.00) dresp -0.457 (ctrl -0.000) T1=True T2=True
+mlp5#1504 <- mlp0#132: pred -7.66 dproj -7.42 (ctrl +0.00) dresp -0.251 (ctrl +0.001) T1=True T2=True
+mlp5#2256 <- mlp2#666: pred +10.51 dproj +2.75 (ctrl +0.00) dresp +0.034 (ctrl -0.000) T1=True T2=True
+mlp6#522 <- mlp4#1727: pred -0.71 dproj -0.31 (ctrl -0.00) dresp +0.070 (ctrl -0.002) T1=True T2=True
+mlp6#2703 <- mlp0#132: pred -7.57 dproj -7.46 (ctrl -0.00) dresp -0.249 (ctrl +0.000) T1=True T2=True
+mlp7#549 <- mlp0#132: pred -6.32 dproj -5.84 (ctrl -0.03) dresp -0.173 (ctrl -0.001) T1=True T2=True
+mlp7#1729 <- mlp6#3039: pred +0.60 dproj -0.04 (ctrl +0.02) dresp +0.033 (ctrl -0.001) T1=False T2=True
+mlp7#2489 <- mlp5#1790: pred -2.05 dproj +0.40 (ctrl +0.02) dresp -0.072 (ctrl +0.001) T1=False T2=True
+mlp7#2531 <- mlp2#2771: pred +1.57 dproj -0.05 (ctrl +0.00) dresp -0.030 (ctrl -0.002) T1=False T2=True
+mlp8#13 <- mlp7#2367: pred -1.43 dproj +1.34 (ctrl -0.00) dresp +0.013 (ctrl -0.002) T1=False T2=False
+mlp8#15 <- mlp0#132: pred +1.09 dproj +0.92 (ctrl -0.00) dresp -0.058 (ctrl +0.000) T1=True T2=True
+mlp8#1182 <- mlp7#2367: pred +0.30 dproj +0.61 (ctrl -0.01) dresp +0.010 (ctrl -0.000) T1=False T2=False
+mlp8#1542 <- mlp7#2589: pred +0.83 dproj -0.04 (ctrl -0.17) dresp -0.163 (ctrl +0.009) T1=False T2=True
+mlp8#1749 <- mlp7#2367: pred -0.28 dproj +0.53 (ctrl +0.01) dresp +0.078 (ctrl -0.001) T1=False T2=True
+mlp8#1827 <- mlp7#2402: pred -1.35 dproj -0.64 (ctrl +0.01) dresp +0.065 (ctrl +0.001) T1=True T2=True
+mlp8#2087 <- mlp7#2367: pred +0.78 dproj -1.10 (ctrl -0.01) dresp +0.010 (ctrl -0.000) T1=False T2=False
+mlp8#2162 <- mlp7#2367: pred +0.56 dproj -0.77 (ctrl +0.00) dresp +0.061 (ctrl -0.000) T1=False T2=True
+mlp8#2346 <- mlp7#2367: pred +1.36 dproj -1.62 (ctrl +0.01) dresp +0.015 (ctrl -0.001) T1=False T2=False
+mlp8#2469 <- mlp7#2367: pred +1.66 dproj -2.13 (ctrl +0.01) dresp +0.036 (ctrl +0.001) T1=False T2=True
+mlp8#2532 <- mlp4#1894: pred +0.18 dproj +0.08 (ctrl +0.01) dresp -0.007 (ctrl +0.000) T1=True T2=False
+mlp8#2543 <- mlp7#2367: pred +1.08 dproj -1.11 (ctrl -0.00) dresp +0.039 (ctrl -0.001) T1=False T2=True
+mlp8#2687 <- mlp6#2081: pred -1.35 dproj -3.27 (ctrl +0.01) dresp -0.482 (ctrl +0.002) T1=False T2=True
+mlp8#2793 <- mlp7#2367: pred +1.38 dproj -1.66 (ctrl +0.01) dresp +0.101 (ctrl -0.001) T1=False T2=True
+WDD: TIER1 4/10  TIER2 8/10
+outlier: TIER1 2/10  TIER2 6/10
+corr: TIER1 9/10  TIER2 8/10
+DONE_X3
+--- exp_x3_bakeoff2 exit 0 ---
+=== gpu1 queue done Sat 29 Aug 2026 10:35:43 AM EDT ===

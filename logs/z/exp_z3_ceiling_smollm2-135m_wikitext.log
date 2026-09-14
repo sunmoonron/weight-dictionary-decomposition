@@ -1,0 +1,9 @@
+== smollm2-135m/wikitext ==
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  65%|██████▍   | 176/272 [00:00<00:00, 1377.67it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 1757.86it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (304838 > 8192). Running this sequence through the model will result in indexing errors
+  smollm2-135m/wikitext: 32768 states, d=576 dff=1536 L=15 atoms=82944 (8s)
+  supports done (55s); support composition {'embedding': 0.08492612838745117, 'mlp': 0.7142138481140137, 'attention': 0.20086002349853516, 'bias': 0.0}
+  recall_top1 here 0.6701 vs exp_z2 0.6701 (ok)
+  smollm2-135m/wikitext: id_omp 0.494  intact 0.761 id|intact 0.614  erased 0.089 id|erased 0.015  misses: erased 0.17 weak 0.25 twin 0.00 other 0.58  AUC surv 0.812
+DONE_Z3

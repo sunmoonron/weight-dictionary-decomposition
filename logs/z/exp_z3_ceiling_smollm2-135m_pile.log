@@ -1,0 +1,9 @@
+== smollm2-135m/pile ==
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  25%|██▌       | 69/272 [00:00<00:00, 674.27it/s]Loading weights:  50%|█████     | 137/272 [00:00<00:00, 663.61it/s]Loading weights:  75%|███████▌  | 204/272 [00:00<00:00, 651.34it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 668.32it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (16606053 > 8192). Running this sequence through the model will result in indexing errors
+  smollm2-135m/pile: 32768 states, d=576 dff=1536 L=15 atoms=82944 (69s)
+  supports done (151s); support composition {'embedding': 0.08473777770996094, 'mlp': 0.7088499069213867, 'attention': 0.20641231536865234, 'bias': 0.0}
+  recall_top1 here 0.6631 vs exp_z2 0.6631 (ok)
+  smollm2-135m/pile: id_omp 0.489  intact 0.794 id|intact 0.594  erased 0.082 id|erased 0.010  misses: erased 0.16 weak 0.21 twin 0.00 other 0.63  AUC surv 0.815
+DONE_Z3

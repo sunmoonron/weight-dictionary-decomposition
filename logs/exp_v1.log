@@ -1,0 +1,15 @@
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3132.11it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+captured
+WDD arm: [(6, 437), (8, 583), (2, 1195)]
+outlier arm: [(8, 1807), (6, 861), (8, 2535)]
+[WDD] mlp6#437 <- mlp5#1790: pred -2.91 dproj +0.81 (ctrl -0.01) dresp +0.238 (ctrl -0.000) T1=False T2=True
+[WDD] mlp8#583 <- mlp2#676: pred +3.74 dproj +9.86 (ctrl -0.01) dresp -0.924 (ctrl +0.001) T1=False T2=True
+[WDD] mlp2#1195 <- mlp0#1121: pred +1.08 dproj +0.20 (ctrl +0.01) dresp -0.200 (ctrl -0.001) T1=False T2=True
+[outlier] mlp8#1807 <- mlp2#666: pred +2.87 dproj +0.43 (ctrl -0.00) dresp +0.002 (ctrl -0.000) T1=False T2=False
+[outlier] mlp6#861 <- mlp3#614: pred +0.17 dproj -0.01 (ctrl -0.01) dresp -0.005 (ctrl -0.001) T1=False T2=False
+[outlier] mlp8#2535 <- mlp7#2367: pred -0.32 dproj -0.23 (ctrl +0.00) dresp +0.017 (ctrl +0.001) T1=True T2=False
+WDD: TIER1 0/3  TIER2 3/3
+outlier: TIER1 1/3  TIER2 0/3
+DONE_V1

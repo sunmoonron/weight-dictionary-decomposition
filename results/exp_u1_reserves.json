@@ -1,0 +1,115 @@
+{
+ "mlp5#1888": {
+  "role": "RESERVE",
+  "intact_a0.5": -0.032,
+  "intact_a1.5": 0.049,
+  "intact_write447": 2.004,
+  "abl_a0.5": -0.035,
+  "abl_a1.5": 0.075,
+  "abl_write447": 2.53
+ },
+ "mlp6#834": {
+  "role": "RESERVE",
+  "intact_a0.5": -0.03,
+  "intact_a1.5": 0.031,
+  "intact_write447": 1.844,
+  "abl_a0.5": -0.042,
+  "abl_a1.5": 0.041,
+  "abl_write447": 2.331
+ },
+ "mlp7#2402": {
+  "role": "RESERVE",
+  "intact_a0.5": -0.031,
+  "intact_a1.5": 0.063,
+  "intact_write447": 2.134,
+  "abl_a0.5": -0.035,
+  "abl_a1.5": 0.065,
+  "abl_write447": 3.23
+ },
+ "mlp9#840": {
+  "role": "RESERVE",
+  "intact_a0.5": -0.008,
+  "intact_a1.5": 0.007,
+  "intact_write447": 7.199,
+  "abl_a0.5": -0.011,
+  "abl_a1.5": 0.017,
+  "abl_write447": 7.928
+ },
+ "mlp10#900": {
+  "role": "RESERVE",
+  "intact_a0.5": -0.011,
+  "intact_a1.5": 0.023,
+  "intact_write447": 6.196,
+  "abl_a0.5": -0.015,
+  "abl_a1.5": 0.026,
+  "abl_write447": 6.839
+ },
+ "mlp3#614": {
+  "role": "PRIMARY",
+  "intact_a0.5": 0.275,
+  "intact_a1.5": -0.221,
+  "intact_write447": 4.313,
+  "abl_a0.5": 0.275,
+  "abl_a1.5": -0.221,
+  "abl_write447": 4.313
+ },
+ "mlp5#1159": {
+  "role": "control",
+  "intact_a0.5": 0.004,
+  "intact_a1.5": -0.005,
+  "intact_write447": 0.01,
+  "abl_a0.5": -0.001,
+  "abl_a1.5": -0.001,
+  "abl_write447": 0.009
+ },
+ "mlp6#902": {
+  "role": "control",
+  "intact_a0.5": -0.005,
+  "intact_a1.5": 0.009,
+  "intact_write447": 0.043,
+  "abl_a0.5": -0.01,
+  "abl_a1.5": 0.014,
+  "abl_write447": 0.042
+ },
+ "mlp7#327": {
+  "role": "control",
+  "intact_a0.5": 0.002,
+  "intact_a1.5": -0.01,
+  "intact_write447": -0.085,
+  "abl_a0.5": 0.004,
+  "abl_a1.5": -0.008,
+  "abl_write447": -0.083
+ },
+ "mlp9#2312": {
+  "role": "control",
+  "intact_a0.5": 0.001,
+  "intact_a1.5": -0.004,
+  "intact_write447": 0.003,
+  "abl_a0.5": -0.003,
+  "abl_a1.5": -0.003,
+  "abl_write447": 0.003
+ },
+ "mlp10#2632": {
+  "role": "control",
+  "intact_a0.5": 0.012,
+  "intact_a1.5": -0.014,
+  "intact_write447": -0.028,
+  "abl_a0.5": 0.009,
+  "abl_a1.5": -0.005,
+  "abl_write447": -0.028
+ },
+ "_summary": {
+  "RESERVE": {
+   "gain_intact": -0.028,
+   "gain_ablated": -0.036
+  },
+  "PRIMARY": {
+   "gain_intact": 0.248,
+   "gain_ablated": 0.248
+  },
+  "control": {
+   "gain_intact": 0.004,
+   "gain_ablated": 0.0
+  }
+ }
+}

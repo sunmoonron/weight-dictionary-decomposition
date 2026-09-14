@@ -1,0 +1,130 @@
+=== overnight start Sat 29 Aug 2026 12:39:19 AM EDT ===
+SYNTAX_OK
+--- exp_j_rerun ---
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3119.37it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+32768 states captured (train-half centering)
+per-neuron survival stats built
+transient: 32 block-3 neurons, mean surv 0.86; control: 32 neurons (blocks 4-6), mean surv 2.71
+block3_transient: R2 full 0.404 (median)  R2 dir-only -0.025  transformed 0.44  info-lost 0.22
+control_intact: R2 full 0.589 (median)  R2 dir-only 0.005  transformed 0.53  info-lost 0.16
+block3_transient survival by depth: {'post_block_3': 0.803, 'post_block_4': 0.833, 'post_block_5': 0.83, 'post_block_6': 0.861}
+control_intact survival by depth: {'post_block_4': 2.362, 'post_block_5': 2.517, 'post_block_6': 2.705}
+mlp3#2908 (n=24, surv -1.22) -> [' cycle', ' Hour', ' lows', ' onset', ' drought', ' Mehran', 'fest', ' EDT']
+   ...' Beach , strong winds leveled the old Olympia Inn , a gas station'
+   ...' torpedo bulge added when the ships were modernized , the deck'
+   ...' that was quickly corrected before she was ordered to tow the crippled carrier'
+mlp3#176 (n=65, surv -1.01) -> ['advertisement', '\u200b\u200b', ' Brist', ',...', 'wagen', ' sugg', ' Bai', ' Volunte']
+   ...'ifenburg = ||| Richard Gale " Dick " Rif'
+   ...' over 1 @,@ 000 yards of total offense . Rif'
+   ...' he was awarded the Medal of Honor . Badly wounded , Story'
+mlp3#2290 (n=64, surv -0.94) -> [' refres', 'ombies', 'esis', '=\\"', 'iors', ' Alto', 'omnia', ' Thieves']
+   ...' Chinese society : the census of 754 recorded 52 @.@'
+   ...' but ten years later , the census counted just 16 @.@'
+   ...' ||| The ships had a length of 208 @.@'
+mlp3#1848 (n=145, surv -0.87) -> ['itiz', 'ogle', '76561', 'limits', '\\":', 'tains', 'igne', 'udes']
+   ...'-@ dramatic poet who has survived in any language " , and'
+   ...'age " in the episode " Political Expediency " , and'
+   ...' is the only Chinese poet whose influence grew with time " , and'
+mlp3#1545 (n=1651, surv -0.82) -> [',', ' the', ' and', ' a', ' in', ' "', '\n', ' to']
+   ...' the 38th Regiment command post . The regimental commander organized a'
+   ...' light cruisers , Ise sank the destroyer Yayoi in'
+   ...' and about 40 carbines or pistols . Schmitt assumed command of'
+DONE_J_RERUN
+--- exp_j_rerun exit 0 ---
+--- exp_w_audit ---
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3075.99it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== forward sweeps ==
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2415650 > 1024). Running this sequence through the model will result in indexing errors
+train mean over 204800 tokens
+32768 eval states captured
+dictionary: 78175 atoms (expect 78175)
+== part A ==
+  omp k=32: 256/32768
+  omp k=32: 4352/32768
+  omp k=32: 8448/32768
+  omp k=32: 12544/32768
+  omp k=32: 16640/32768
+  omp k=32: 20736/32768
+  omp k=32: 24832/32768
+  omp k=32: 28928/32768
+  omp k=32: 256/32768
+  omp k=32: 4352/32768
+  omp k=32: 8448/32768
+  omp k=32: 12544/32768
+  omp k=32: 16640/32768
+  omp k=32: 20736/32768
+  omp k=32: 24832/32768
+  omp k=32: 28928/32768
+A: FVU@32 weight 0.0688 (expect ~0.069)  rotated 0.5171 (expect ~0.55)
+== part B ==
+  omp k=64: 256/32768
+  omp k=64: 4352/32768
+  omp k=64: 8448/32768
+  omp k=64: 12544/32768
+  omp k=64: 16640/32768
+  omp k=64: 20736/32768
+  omp k=64: 24832/32768
+  omp k=64: 28928/32768
+B: recall 0.6471  r_id 0.9979  r_uncond 0.6477
+B deciles: [0.05, 0.0421, 0.0251, 0.0014, 0.0608, 0.0226, 0.019, 0.127, 0.2371, 0.9998]
+== part C ==
+Traceback (most recent call last):
+  File "/data/mechinterp/trainfree/exp_w_audit.py", line 252, in <module>
+    lo = mean_acts(0.5)
+         ^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_w_audit.py", line 243, in mean_acts
+    model(eval_ids[i:i + 8].to(DEV))
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 683, in forward
+    transformer_outputs: BaseModelOutputWithPastAndCrossAttentions = self.transformer(
+                                                                     ^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 262, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 609, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 114, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1857, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/data/mechinterp/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1818, in inner
+    hook_result = hook(self, args, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/mechinterp/trainfree/exp_w_audit.py", line 239, in scale_hook
+    hh[:, :, 447] = hh[:, :, 447] * alpha
+                    ~~^^^^^^^^^^^
+IndexError: too many indices for tensor of dimension 2
+
+== part D ==
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  11%|█         | 12/114 [00:00<00:01, 67.48it/s]Loading weights:  77%|███████▋  | 88/114 [00:00<00:00, 313.75it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 196.36it/s]
+D: {'weight_shape': [2048, 8192], 'atom_norm_rank': 0, 'dominant_channel': 1764, 'channel_share': 0.9791, 'expected': {'atom_norm_rank': 0, 'dominant_channel': 1764, 'channel_share': 0.979}}
+DONE_W_AUDIT
+--- exp_w_audit exit 0 ---
+=== overnight done Sat 29 Aug 2026 12:43:35 AM EDT ===

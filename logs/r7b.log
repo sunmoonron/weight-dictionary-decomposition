@@ -1,0 +1,32 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3273.60it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+phase1 batch 1/16 4s
+phase1 batch 2/16 5s
+phase1 batch 3/16 5s
+phase1 batch 4/16 5s
+phase1 batch 5/16 5s
+phase1 batch 6/16 5s
+phase1 batch 7/16 6s
+phase1 batch 8/16 6s
+phase1 batch 9/16 6s
+phase1 batch 10/16 6s
+phase1 batch 11/16 6s
+phase1 batch 12/16 7s
+phase1 batch 13/16 7s
+phase1 batch 14/16 7s
+phase1 batch 15/16 7s
+phase1 batch 16/16 7s
+population: {'erased_transient': 331, 'erased_counter': 2800, 'mid': 630, 'intact_novel': 1823, 'intact_reinforcing': 56001} of 65280
+selected erased_transient: 256 cases, median |c| 5.15, median s7 -0.10, median birth 0.71
+selected erased_counter: 256 cases, median |c| 5.14, median s7 -1.46, median birth -0.98
+selected mid: 256 cases, median |c| 5.17, median s7 0.55, median birth 0.85
+selected intact_novel: 256 cases, median |c| 5.15, median s7 1.16, median birth 1.10
+selected intact_reinforcing: 256 cases, median |c| 5.15, median s7 5.17, median birth 3.93
+erased_transient  n=256  E_src_full med 0.0020  E_src_mlp 0.0045  E_src_sink 0.0062  E_dir_full 0.0000  E_dirall 0.0000  E_rand 0.0000  E_dirown 0.0000  dir/src 0.04  dirown/src 0.00  shift 0.060  85s
+erased_counter    n=256  E_src_full med 0.0015  E_src_mlp 0.0042  E_src_sink 0.0054  E_dir_full 0.0034  E_dirall 0.0034  E_rand 0.0026  E_dirown 0.0000  dir/src 1.84  dirown/src 0.00  shift 0.055  165s
+mid               n=256  E_src_full med 0.0020  E_src_mlp 0.0052  E_src_sink 0.0072  E_dir_full 0.0004  E_dirall 0.0004  E_rand 0.0003  E_dirown 0.0000  dir/src 0.25  dirown/src 0.00  shift 0.060  244s
+intact_novel      n=256  E_src_full med 0.0020  E_src_mlp 0.0061  E_src_sink 0.0076  E_dir_full 0.0021  E_dirall 0.0021  E_rand 0.0015  E_dirown 0.0000  dir/src 1.05  dirown/src 0.00  shift 0.061  326s
+intact_reinforcing n=256  E_src_full med 0.0006  E_src_mlp 0.0015  E_src_sink 0.0022  E_dir_full 0.0205  E_dirall 0.0205  E_rand 0.0417  E_dirown 0.0000  dir/src 29.14  dirown/src 0.00  shift 0.039  407s
+pre-registered: {'U1_erased_src_ge_half_intact_novel': True, 'U1_ratio_vs_novel': 0.9663555955717813, 'U1_ratio_vs_reinforcing': 3.1664778888886587, 'U2_erased_dir_lt_0.1_src': True, 'U3_intact_novel_dirown_over_src_ge_0.5': False}
+done 407s

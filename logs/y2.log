@@ -1,0 +1,93 @@
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 38/114 [00:00<00:00, 369.47it/s]Loading weights:  70%|███████   | 80/114 [00:00<00:00, 398.11it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 412.84it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+layers=16 tokens=16384 stopword ids=18
+clean                      ppl      12.697 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+wz_builder                 ppl   25058.928 ce 10.1290 stop 0.016 ent 4.628 | pos0 ch@L1     -7.1 ch@L2   -239.1 ch@L15 -258.16 | bulk|ch|@L8 1.832  [17s]
+wz_opposer                 ppl      12.820 ce 2.5510 stop 0.186 ent 2.595 | pos0 ch@L1   -251.1 ch@L2   -252.3 ch@L15  +28.27 | bulk|ch|@L8 0.202  [17s]
+wz_both                    ppl   22645.461 ce 10.0277 stop 0.014 ent 4.854 | pos0 ch@L1     -7.1 ch@L2    -29.6 ch@L15  -38.16 | bulk|ch|@L8 1.815  [17s]
+nz_builder                 ppl      25.486 ce 3.2381 stop 0.191 ent 3.371 | pos0 ch@L1     -7.1 ch@L2    -11.6 ch@L15   +6.93 | bulk|ch|@L8 0.542  [17s]
+nz_opposer                 ppl      12.783 ce 2.5481 stop 0.186 ent 2.609 | pos0 ch@L1   -251.1 ch@L2   -252.3 ch@L15  +58.62 | bulk|ch|@L8 0.250  [17s]
+nz_both                    ppl      28.364 ce 3.3451 stop 0.192 ent 3.531 | pos0 ch@L1     -7.1 ch@L2     -7.0 ch@L15   +4.50 | bulk|ch|@L8 0.585  [17s]
+flip_opposer_to_plus       ppl      13.104 ce 2.5729 stop 0.186 ent 2.615 | pos0 ch@L1   -251.1 ch@L2   -211.4 ch@L15  +45.59 | bulk|ch|@L8 0.180  [17s]
+null_L1_norm2_n4820        ppl      12.836 ce 2.5523 stop 0.187 ent 2.596 | pos0 ch@L1   -251.1 ch@L2   -293.5 ch@L15   +2.20 | bulk|ch|@L8 0.226  [17s]
+null_L2_norm2_n7201        ppl      12.707 ce 2.5422 stop 0.186 ent 2.591 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.47 | bulk|ch|@L8 0.223  [17s]
+null_L1_rand_n7211         ppl      12.696 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.48 | bulk|ch|@L8 0.223  [17s]
+nullw_L1_rand_n7211        ppl      12.697 ce 2.5414 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+null_L1_rand_n1017         ppl      12.697 ce 2.5414 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+nullw_L1_rand_n1017        ppl      12.696 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+null_L1_rand_n6617         ppl      12.697 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.4 ch@L15   +1.49 | bulk|ch|@L8 0.223  [17s]
+nullw_L1_rand_n6617        ppl      12.696 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+null_L1_rand_n6129         ppl      12.697 ce 2.5414 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+nullw_L1_rand_n6129        ppl      12.697 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+null_L1_rand_n6984         ppl      12.697 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.48 | bulk|ch|@L8 0.223  [17s]
+nullw_L1_rand_n6984        ppl      12.697 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+null_L2_rand_n2420         ppl      12.696 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+nullw_L2_rand_n2420        ppl      12.697 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+null_L2_rand_n133          ppl      12.697 ce 2.5414 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+nullw_L2_rand_n133         ppl      12.696 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+null_L2_rand_n5397         ppl      12.697 ce 2.5414 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+nullw_L2_rand_n5397        ppl      12.697 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+null_L2_rand_n1580         ppl      12.697 ce 2.5414 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+nullw_L2_rand_n1580        ppl      12.696 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+null_L2_rand_n6782         ppl      12.696 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+nullw_L2_rand_n6782        ppl      12.697 ce 2.5413 stop 0.186 ent 2.589 | pos0 ch@L1   -251.1 ch@L2   -293.3 ch@L15   +1.51 | bulk|ch|@L8 0.223  [17s]
+{
+ "dCE": {
+  "wz_builder": 7.58766,
+  "wz_opposer": 0.00966,
+  "wz_both": 7.48639,
+  "nz_builder": 0.69679,
+  "nz_opposer": 0.00681,
+  "nz_both": 0.80379,
+  "flip_opposer_to_plus": 0.0316
+ },
+ "ppl_x_clean": {
+  "wz_builder": 1973.688,
+  "wz_opposer": 1.01,
+  "wz_both": 1783.599,
+  "nz_builder": 2.007,
+  "nz_opposer": 1.007,
+  "nz_both": 2.234,
+  "flip_opposer_to_plus": 1.032
+ },
+ "nulls_dCE": {
+  "null_L1_norm2_n4820": 0.01093,
+  "null_L2_norm2_n7201": 0.00085,
+  "null_L1_rand_n7211": -4e-05,
+  "nullw_L1_rand_n7211": 4e-05,
+  "null_L1_rand_n1017": 8e-05,
+  "nullw_L1_rand_n1017": -1e-05,
+  "null_L1_rand_n6617": 1e-05,
+  "nullw_L1_rand_n6617": -3e-05,
+  "null_L1_rand_n6129": 3e-05,
+  "nullw_L1_rand_n6129": 0.0,
+  "null_L1_rand_n6984": 0.0,
+  "nullw_L1_rand_n6984": -1e-05,
+  "null_L2_rand_n2420": -3e-05,
+  "nullw_L2_rand_n2420": 1e-05,
+  "null_L2_rand_n133": 6e-05,
+  "nullw_L2_rand_n133": -2e-05,
+  "null_L2_rand_n5397": 3e-05,
+  "nullw_L2_rand_n5397": 0.0,
+  "null_L2_rand_n1580": 4e-05,
+  "nullw_L2_rand_n1580": -2e-05,
+  "null_L2_rand_n6782": -5e-05,
+  "nullw_L2_rand_n6782": 2e-05
+ },
+ "max_null_abs_dCE": 0.01093,
+ "P1_ratio_opposer_over_builder": 0.0013,
+ "P1_verdict": "asymmetric",
+ "P2_eraser": "NOT_ERASER",
+ "P2_dBoth_over_dBuilder": 0.9867,
+ "P2_additivity_dBoth_over_sum": 0.9854,
+ "P3_rel_change_ch_pos0_after_block2": -0.1398,
+ "P3_verdict": "AMPLIFIER",
+ "P4_nulls_all_small": true,
+ "P4_builder_over_maxnull": 694.2,
+ "P4_verdict": true,
+ "P5_style_agreement": {
+  "builder": 9.8895,
+  "opposer": 0.4185
+ }
+}
+DONE_Y2

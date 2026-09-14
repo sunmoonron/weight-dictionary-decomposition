@@ -1,0 +1,126 @@
+{
+ "rolemap_owt": {
+  "0": {
+   "n": 38591,
+   "counter": 0.018,
+   "novel": 0.68,
+   "reinf": 0.293,
+   "median": 1.29
+  },
+  "1": {
+   "n": 12086,
+   "counter": 0.038,
+   "novel": 0.361,
+   "reinf": 0.577,
+   "median": 1.6
+  },
+  "2": {
+   "n": 9010,
+   "counter": 0.201,
+   "novel": 0.389,
+   "reinf": 0.324,
+   "median": 1.03
+  },
+  "3": {
+   "n": 10259,
+   "counter": 0.49,
+   "novel": 0.261,
+   "reinf": 0.171,
+   "median": 0.06
+  },
+  "4": {
+   "n": 2630,
+   "counter": 0.038,
+   "novel": 0.448,
+   "reinf": 0.49,
+   "median": 1.49
+  },
+  "5": {
+   "n": 9694,
+   "counter": 0.247,
+   "novel": 0.223,
+   "reinf": 0.491,
+   "median": 1.48
+  },
+  "6": {
+   "n": 16034,
+   "counter": 0.063,
+   "novel": 0.161,
+   "reinf": 0.758,
+   "median": 1.94
+  }
+ },
+ "rolemap_wikitext": {
+  "0": {
+   "n": 39193,
+   "counter": 0.019,
+   "novel": 0.679,
+   "reinf": 0.291,
+   "median": 1.29
+  },
+  "1": {
+   "n": 11033,
+   "counter": 0.03,
+   "novel": 0.334,
+   "reinf": 0.611,
+   "median": 1.64
+  },
+  "2": {
+   "n": 9989,
+   "counter": 0.197,
+   "novel": 0.403,
+   "reinf": 0.335,
+   "median": 1.02
+  },
+  "3": {
+   "n": 10250,
+   "counter": 0.525,
+   "novel": 0.244,
+   "reinf": 0.149,
+   "median": -0.09
+  },
+  "4": {
+   "n": 2661,
+   "counter": 0.037,
+   "novel": 0.482,
+   "reinf": 0.458,
+   "median": 1.47
+  },
+  "5": {
+   "n": 9556,
+   "counter": 0.237,
+   "novel": 0.201,
+   "reinf": 0.524,
+   "median": 1.54
+  },
+  "6": {
+   "n": 15622,
+   "counter": 0.054,
+   "novel": 0.172,
+   "reinf": 0.754,
+   "median": 1.94
+  }
+ },
+ "b3_counter_by_position": {
+  "0-63": 0.582,
+  "64-127": 0.556,
+  "128-191": 0.538,
+  "192-255": 0.51,
+  "256-319": 0.551,
+  "320-383": 0.509,
+  "384-447": 0.481,
+  "448-511": 0.482
+ },
+ "unembed_func_words": {
+  "mlp3_614": 8,
+  "random_b3_mean": 0.48,
+  "random_b3_frac_ge6": 0.031
+ },
+ "ablate_614": {
+  "n_top3_tokens": 4006,
+  "dce_overall": 0.0031,
+  "dce_on_614_tokens": 0.0002,
+  "proj_clean_mean": -5.8,
+  "proj_ablated_mean": -6.84
+ }
+}

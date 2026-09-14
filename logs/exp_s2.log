@@ -1,0 +1,17 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights:  59%|█████▉    | 172/292 [00:00<00:00, 1711.21it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 2031.73it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+16384 states captured
+top writes found
+b 0: n=   228 counter=0.035 novel=0.842 reinf=0.013 median=0.85
+b 9: n=  2796 counter=0.983 novel=0.000 reinf=0.000 median=-0.5
+b16: n=   176 counter=0.045 novel=0.489 reinf=0.375 median=1.07
+b17: n=   160 counter=0.000 novel=0.006 reinf=0.994 median=2.44
+b18: n=  1291 counter=0.059 novel=0.126 reinf=0.800 median=1.77
+b19: n=   968 counter=0.061 novel=0.090 reinf=0.843 median=2.0
+b20: n=  6927 counter=0.243 novel=0.272 reinf=0.376 median=1.0
+b21: n=  9151 counter=0.531 novel=0.122 reinf=0.265 median=-0.17
+b22: n= 14548 counter=0.279 novel=0.156 reinf=0.499 median=1.5
+b23: n= 12587 counter=0.109 novel=0.250 reinf=0.528 median=1.56
+most counter-heavy: block 9 (0.983); null counter 0.504
+DONE_S2

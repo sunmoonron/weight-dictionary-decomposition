@@ -1,0 +1,140 @@
+{
+ "n_cases": 10250,
+ "frac_erased": 0.5469268560409546,
+ "frac_intact": 0.371317058801651,
+ "erased_final<0.25": {
+  "post_block_3": -0.629,
+  "post_block_4": -0.741,
+  "post_block_5": -0.818,
+  "post_block_6": -0.874,
+  "n": 5606
+ },
+ "intact_final>=0.75": {
+  "post_block_3": 1.353,
+  "post_block_4": 1.482,
+  "post_block_5": 1.609,
+  "post_block_6": 1.712,
+  "n": 3806
+ },
+ "mean_drop_by_eraser": {
+  "block_4": 0.112,
+  "block_5": 0.077,
+  "block_6": 0.055
+ },
+ "qual_erased": [
+  {
+   "neuron": "mlp3#614",
+   "coeff": 15.5,
+   "surv_curve": [
+    -0.94,
+    -0.56,
+    -0.34,
+    -0.13
+   ],
+   "unembed_top": [
+    " the",
+    ",",
+    ".",
+    " a",
+    "-",
+    " and"
+   ],
+   "context": " has made a profound impact on Japanese literature , especially on the literature from the"
+  },
+  {
+   "neuron": "mlp3#614",
+   "coeff": 15.3,
+   "surv_curve": [
+    -0.83,
+    -0.28,
+    -0.09,
+    0.18
+   ],
+   "unembed_top": [
+    " the",
+    ",",
+    ".",
+    " a",
+    "-",
+    " and"
+   ],
+   "context": " @.@ 90 inHg ( 945 mb ) during the"
+  },
+  {
+   "neuron": "mlp3#1848",
+   "coeff": 14.6,
+   "surv_curve": [
+    -0.48,
+    -0.59,
+    -0.63,
+    -0.71
+   ],
+   "unembed_top": [
+    "itiz",
+    "ogle",
+    "76561",
+    "limits",
+    "\\\":",
+    "tains"
+   ],
+   "context": " non @-@ dramatic poet who has survived in any language \" , and"
+  },
+  {
+   "neuron": "mlp3#614",
+   "coeff": 14.5,
+   "surv_curve": [
+    -0.95,
+    -0.66,
+    -0.54,
+    -0.31
+   ],
+   "unembed_top": [
+    " the",
+    ",",
+    ".",
+    " a",
+    "-",
+    " and"
+   ],
+   "context": " later critics . Hung concludes that he probably failed because his prose style at the"
+  },
+  {
+   "neuron": "mlp3#614",
+   "coeff": 14.3,
+   "surv_curve": [
+    -0.75,
+    -0.5,
+    -0.21,
+    -0.0
+   ],
+   "unembed_top": [
+    " the",
+    ",",
+    ".",
+    " a",
+    "-",
+    " and"
+   ],
+   "context": " became operational at 10 : 20 , September 1 . Southward , in the"
+  },
+  {
+   "neuron": "mlp3#614",
+   "coeff": 14.2,
+   "surv_curve": [
+    -1.04,
+    -0.6,
+    -0.33,
+    -0.34
+   ],
+   "unembed_top": [
+    " the",
+    ",",
+    ".",
+    " a",
+    "-",
+    " and"
+   ],
+   "context": " rifles , and about 40 carbines or pistols . Schmitt assumed command of"
+  }
+ ]
+}

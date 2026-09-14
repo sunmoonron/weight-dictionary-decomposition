@@ -1,0 +1,68 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/114 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 43/114 [00:00<00:00, 422.77it/s]Loading weights:  75%|███████▌  | 86/114 [00:00<00:00, 421.67it/s]Loading weights: 100%|██████████| 114/114 [00:00<00:00, 388.55it/s]
+layers=16 norms=33 |w_col|=0.6391 |w_junk|=0.0925 w[CH]=0.6323
+A_clean                  ppl      12.697 ce 2.5413 ch@b2    -293.3 ch@b15      +1.5  [33s]
+B_nz_builder             ppl      25.486 ce 3.2381 ch@b2     -11.6 ch@b15      +6.9  [33s]
+C_wz_builder             ppl   25058.928 ce 10.1290 ch@b2    -239.1 ch@b15    -258.2  [33s]
+D_junk_removed_only      ppl      15.982 ce 2.7715 ch@b2    -264.2 ch@b15    -143.1  [33s]
+F_nz_plus_inject         ppl      15.982 ce 2.7715 ch@b2    -264.2 ch@b15    -143.1  [33s]
+G_wz_plus_inject         ppl      12.697 ce 2.5413 ch@b2    -293.3 ch@b15      +1.5  [33s]
+H_clean_frozen_pos0      ppl      12.697 ce 2.5413 ch@b2    -293.3 ch@b15      +1.5  [34s]
+I_nz_frozen_pos0         ppl     139.741 ce 4.9398 ch@b2      -7.1 ch@b15      -7.1  [34s]
+J_wz_frozen_pos0         ppl     432.942 ce 6.0706 ch@b2     -12.4 ch@b15     +30.0  [34s]
+K_nz_inject_constant     ppl      15.980 ce 2.7714 ch@b2    -264.2 ch@b15    -142.7  [34s]
+alpha 0.0   ppl  23985.828 ch@b2    -204.7
+alpha 0.25  ppl   2462.887 ch@b2    -204.0
+alpha 0.5   ppl     90.746 ch@b2    -201.6
+alpha 0.75  ppl     13.138 ch@b2    -241.5
+alpha 1.0   ppl     12.697 ch@b2    -293.3
+alpha 1.5   ppl     13.047 ch@b2    -408.6
+alpha 2.0   ppl     13.673 ch@b2    -529.2
+{
+ "dCE": {
+  "A_clean": 0.0,
+  "B_nz_builder": 0.69679,
+  "C_wz_builder": 7.58766,
+  "D_junk_removed_only": 0.23013,
+  "F_nz_plus_inject": 0.23015,
+  "G_wz_plus_inject": 0.0,
+  "H_clean_frozen_pos0": 0.0,
+  "I_nz_frozen_pos0": 2.39846,
+  "J_wz_frozen_pos0": 3.52927,
+  "K_nz_inject_constant": 0.23004
+ },
+ "ppl_x_clean": {
+  "A_clean": 1.0,
+  "B_nz_builder": 2.0072,
+  "C_wz_builder": 1973.6101,
+  "D_junk_removed_only": 1.2587,
+  "F_nz_plus_inject": 1.2587,
+  "G_wz_plus_inject": 1.0,
+  "H_clean_frozen_pos0": 1.0,
+  "I_nz_frozen_pos0": 11.0058,
+  "J_wz_frozen_pos0": 34.098,
+  "K_nz_inject_constant": 1.2586
+ },
+ "M1_junk_alone_harmless": false,
+ "M1_value": 0.23013,
+ "M2_inject_recovers_nz": false,
+ "M2_frac_gap_left": 0.3303,
+ "M3_inject_recovers_wz": true,
+ "M3_frac_gap_left": 0.0,
+ "M4_freeze_recovers_nz": false,
+ "M4_frac_gap_left_nz": 3.4422,
+ "M4_freeze_recovers_wz": true,
+ "M4_frac_gap_left_wz": 0.4651,
+ "M5_freeze_sanity": true,
+ "M5_value": 0.0,
+ "M6_alpha_within_5pct_ppl": [
+  "0.75",
+  "1.0",
+  "1.5"
+ ],
+ "constant_vs_pertoken_inject": {
+  "constant": 0.23004,
+  "pertoken": 0.23015
+ }
+}
+DONE_Y4
