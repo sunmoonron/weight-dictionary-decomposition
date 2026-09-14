@@ -8,6 +8,14 @@ authors:
 version: "September 2026"
 date-released: "2026-09-14"
 license: MIT
+doi: "10.5281/zenodo.22749881"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22749881"
+    description: "This release"
+  - type: doi
+    value: "10.5281/zenodo.22749880"
+    description: "All versions"
 repository-code: "https://github.com/sunmoonron/weight-dictionary-decomposition"
 preferred-citation:
   type: unpublished
