@@ -1,4 +1,7 @@
-# Weight-Dictionary Decomposition: code, results and per-token records
+# Weight-Dictionary Decomposition 
+
+Code and results for **Weight-Dictionary Decomposition (WDD)**, evaluated on eight transformer models up to 7B parameters.
+
 
 Ronish Bhatt ([ORCID 0009-0000-8835-5380](https://orcid.org/0009-0000-8835-5380)), 2026. The scripts, result files, run logs and per-token records behind the paper *Weight-Dictionary Decomposition: Reading a Transformer's Residual Stream with Its Own Writes* (preprint, September 2026, under review).
 
