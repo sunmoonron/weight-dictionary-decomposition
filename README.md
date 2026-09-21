@@ -120,3 +120,10 @@ The 7B-class rows of the family sweep (`qwen2.5-7b`, `pythia-6.9b`, `llama-7b`) 
 - `exp_r5_window.py`: R5: continuation lens with SMALL LOCAL WINDOWS -- is the trained lens's remaining edge (levels 1-3 on the Pile) local context? Variants added: sinkprev = attend
 - `exp_r6_selftuned.py`: R6: give the trained lens its best shot -- train a Tuned Lens ON the evaluation distribution and re-run the continuation bake-off.
 - `exp_r6b_evalwindow.py`: R6b: the self-trained tuned lens (exp_r6, trained on the evaluation corpus) vs the window continuations. Adds variant `self` = h + A h + b with params from resu
+
+
+## Citation
+
+If you use Weight-Dictionary Decomposition, please cite:
+[doi (Zenodo)](https://doi.org/10.5281/zenodo.22749478)
+
