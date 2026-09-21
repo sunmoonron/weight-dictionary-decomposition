@@ -6,6 +6,9 @@ Code and results for **Weight-Dictionary Decomposition (WDD)**, evaluated on eig
 
 Weight-Dictionary Decomposition is a method for representing transformer weight matrices using a learned dictionary. This repository contains the implementation, exact-ground-truth evaluations, and per-token decomposition records.
 
+Related terminology: weight decomposition, dictionary decomposition, dictionary learning, transformer weight decomposition, neural network weight factorization, per-token weight decomposition.
+
+
 Ronish Bhatt ([ORCID 0009-0000-8835-5380](https://orcid.org/0009-0000-8835-5380)), 2026. The scripts, result files, run logs and per-token records behind the paper *Weight-Dictionary Decomposition: Reading a Transformer's Residual Stream with Its Own Writes* (preprint, September 2026, under review).
 
 - Paper: [doi:10.5281/zenodo.22749478](https://doi.org/10.5281/zenodo.22749478), also served at [ronishbhatt.com/weight_dictionary_2026.pdf](https://ronishbhatt.com/weight_dictionary_2026.pdf)
