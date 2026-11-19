@@ -1,0 +1,81 @@
+{
+ "fixed_at": "2026-11-19T09:14:23",
+ "status": "registered before any run, smoke tests included",
+ "purpose": "Answer the three ICLR 2027 reviewers' explicit questions (submission 13712) under the paper's own protocol, for a short note posted with the withdrawal.",
+ "pr1": {
+  "what": "GPT-2 small, layer-6 states of exp_d/exp_d2 (64 WikiText-2 test sequences, train-split centering), typical-state FVU (norm <= 10x median) at k = 4 to 64 for the paper's provenance controls plus size-matched random directions (three seeds), each control's own Gram-preserving rotation, and the embedding rows alone. Recorded values at k=32: no-embedding correct subsampled 0.375, future blocks 0.490, rotated correct 0.561; with embeddings correct matched 0.358, future blocks 0.449; the paper's random baseline (78,175 atoms) 0.500.",
+  "predictions": {
+   "P1": {
+    "text": "the reruns reproduce the recorded typical FVU of the four recorded dictionaries within 0.002 at every k",
+    "guess": 0.9
+   },
+   "P2": {
+    "text": "random directions matched in size to the embedding-free control (19,210 atoms) reach 0.52 to 0.56 at k=32, three seeds within 0.005 of each other",
+    "guess": 0.7
+   },
+   "P3": {
+    "text": "the non-writer dictionary (blocks 7 to 11, no embeddings) beats size-matched random at every k, by 0.02 to 0.08 at k=32",
+    "guess": 0.6
+   },
+   "P4": {
+    "text": "the writers (blocks 0 to 6, subsampled, no embeddings) beat size-matched random by at least 0.12 at k=32 and at every k",
+    "guess": 0.9
+   },
+   "P5": {
+    "text": "the non-writer dictionary beats its own Gram-preserving rotation by at least 0.05 at k=32",
+    "guess": 0.6
+   },
+   "P6": {
+    "text": "the writers' margin over the non-writers at k=32 is at least twice the non-writers' margin over size-matched random",
+    "guess": 0.6
+   },
+   "P7": {
+    "text": "the embedding rows alone (51,281 atoms) come within 0.03 of the with-embedding non-writer dictionary at k=32",
+    "guess": 0.5
+   },
+   "P8": {
+    "text": "random directions matched to the with-embedding control (70,491 atoms) reach 0.49 to 0.52 at k=32 and leave the sink states above FVU 0.3 at k=64, where the with-embedding non-writer dictionary is below 0.01",
+    "guess": 0.7
+   }
+  }
+ },
+ "pr2_layers": {
+  "what": "exp_z2_ci unchanged except the layer switch, GPT-2 small, WikiText-2, 16 evaluation sequences (8,192 states), layers 2, 6 (check) and 10: typical FVU for the weight dictionary, its rotation and random directions; OMP and one-shot top-1 recall; sign and median relative error of identified dominant writes on typical states.",
+  "predictions": {
+   "G1": {
+    "text": "at layer 6 typical FVU at k=32 is within 0.01 of the paper's 0.338 and OMP top-1 recall within 0.03 of 0.647",
+    "guess": 0.85
+   },
+   "G2": {
+    "text": "at layer 2 the weight dictionary beats its rotation by at least 0.15 at k=32 and OMP top-1 recall is at least 0.75",
+    "guess": 0.55
+   },
+   "G3": {
+    "text": "at layer 10 OMP top-1 recall is at most 0.40 and the weight dictionary still beats its rotation by at least 0.05 at k=32",
+    "guess": 0.6
+   },
+   "G4": {
+    "text": "the sign of identified dominant writes is right in at least 99% of cases at layers 2 and 10",
+    "guess": 0.8
+   }
+  }
+ },
+ "pr2_random_init": {
+  "what": "the same at layer 6 with GPT-2 built from its config with random weights (seed 0)",
+  "predictions": {
+   "I1": {
+    "text": "at random initialisation the weight dictionary's typical FVU at k=32 is within 0.02 of its rotation's and of random directions'",
+    "guess": 0.8
+   },
+   "I2": {
+    "text": "OMP top-1 recall is below 0.10 at random initialisation",
+    "guess": 0.75
+   },
+   "I3": {
+    "text": "the trained model's FVU advantage over its rotation at layer 6 is at least five times the random-initialised model's",
+    "guess": 0.8
+   }
+  }
+ },
+ "honest_overall": "pr1 most likely confirms 7MWE's reading: writers far ahead, non-writers a little ahead of size-matched random, so the paper's 'low FVU cannot validate provenance' should be narrowed to the sink states and to a small effect on typical states. pr2 should rebut MgDZ's 'follows from the architecture' (no advantage at random initialisation) and answer NMa5's layer question with numbers."
+}

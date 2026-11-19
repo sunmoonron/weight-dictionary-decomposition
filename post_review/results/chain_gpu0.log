@@ -1,0 +1,35 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3035.90it/s]
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (2415650 > 1024). Running this sequence through the model will result in indexing errors
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+states 32768, n_fut 19210, embedding rows 51281 (37s)
+noemb_correct_subsampled (19210 atoms): typical k4=0.724  k8=0.624  k16=0.510  k32=0.375  k64=0.217 | sinks k64=0.0002 (71s)
+noemb_future_blocks (19210 atoms): typical k4=0.816  k8=0.738  k16=0.635  k32=0.490  k64=0.297 | sinks k64=0.0002 (106s)
+noemb_random_s0 (19210 atoms): typical k4=0.921  k8=0.856  k16=0.745  k32=0.570  k64=0.332 | sinks k64=0.3301 (140s)
+noemb_random_s1 (19210 atoms): typical k4=0.921  k8=0.856  k16=0.745  k32=0.570  k64=0.332 | sinks k64=0.3278 (175s)
+noemb_random_s2 (19210 atoms): typical k4=0.921  k8=0.856  k16=0.745  k32=0.570  k64=0.332 | sinks k64=0.3253 (212s)
+noemb_future_blocks_rotated (19210 atoms): typical k4=0.922  k8=0.858  k16=0.749  k32=0.578  k64=0.347 | sinks k64=0.3560 (248s)
+noemb_correct_subsampled_rotated (19210 atoms): typical k4=0.922  k8=0.858  k16=0.750  k32=0.578  k64=0.345 | sinks k64=0.3409 (284s)
+emb_correct_matched (70491 atoms): typical k4=0.723  k8=0.621  k16=0.502  k32=0.358  k64=0.194 | sinks k64=0.0003 (374s)
+emb_future_blocks (70491 atoms): typical k4=0.810  k8=0.723  k16=0.608  k32=0.449  k64=0.252 | sinks k64=0.0001 (465s)
+emb_random (70491 atoms): typical k4=0.909  k8=0.833  k16=0.704  k32=0.505  k64=0.256 | sinks k64=0.2670 (557s)
+emb_only (51281 atoms): typical k4=0.884  k8=0.815  k16=0.713  k32=0.567  k64=0.379 | sinks k64=0.7245 (628s)
+emb_future_blocks_rotated (70491 atoms): typical k4=0.914  k8=0.843  k16=0.723  k32=0.539  k64=0.300 | sinks k64=0.3085 (719s)
+DONE_PR1 719s
+== gpt2/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  49%|████▊     | 72/148 [00:00<00:00, 711.14it/s]Loading weights:  97%|█████████▋| 144/148 [00:00<00:00, 683.32it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 561.82it/s]
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+  gpt2/wikitext: 32768 states, d=768 dff=3072 L=10 atoms=93543 (39s)
+  reconstruction done (497s): FVU32 weight 0.1765
+  attribution done (615s): recall 0.2354
+  gpt2/wikitext: FVU32 0.176 [0.176,0.177]  rot 0.515  recall 0.235 [0.223,0.248]  r_id 0.982  r_unc 0.633
+DONE_Z2
+CHAIN0_DONE

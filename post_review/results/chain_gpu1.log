@@ -1,0 +1,39 @@
+== gpt2/wikitext ==
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  49%|████▊     | 72/148 [00:00<00:00, 712.77it/s]Loading weights:  97%|█████████▋| 144/148 [00:00<00:00, 633.20it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 522.63it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+  gpt2/wikitext: 32768 states, d=768 dff=3072 L=6 atoms=78175 (37s)
+  reconstruction done (414s): FVU32 weight 0.0688
+  attribution done (513s): recall 0.6471
+  gpt2/wikitext: FVU32 0.069 [0.068,0.069]  rot 0.522  recall 0.647 [0.637,0.657]  r_id 0.998  r_unc 0.648
+DONE_Z2
+== gpt2/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  48%|████▊     | 71/148 [00:00<00:00, 703.77it/s]Loading weights:  96%|█████████▌| 142/148 [00:00<00:00, 705.26it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 568.97it/s]
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+  gpt2/wikitext: 32768 states, d=768 dff=3072 L=2 atoms=62807 (37s)
+  reconstruction done (353s): FVU32 weight 0.0313
+  attribution done (435s): recall 0.7387
+  gpt2/wikitext: FVU32 0.031 [0.031,0.032]  rot 0.537  recall 0.739 [0.730,0.748]  r_id 0.997  r_unc 0.648
+DONE_Z2
+== gpt2/wikitext ==
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+  gpt2/wikitext: 32768 states, d=768 dff=3072 L=6 atoms=78175 (41s)
+  reconstruction done (420s): FVU32 weight 0.4953
+  attribution done (518s): recall 0.0076
+  gpt2/wikitext: FVU32 0.495 [0.495,0.495]  rot 0.500  recall 0.008 [0.007,0.009]  r_id 0.038  r_unc 0.014
+DONE_Z2
+CHAIN1_DONE
