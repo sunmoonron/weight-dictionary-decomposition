@@ -1,0 +1,285 @@
+% Weight-Dictionary Decomposition, ICLR 2027 submission (derived from wdd_tmlr.tex by tools/derive.py)
+\documentclass{article}
+\usepackage{iclr2027_conference,times}
+% \iclrfinalcopy  % camera-ready only
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts,amsmath}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\raggedbottom
+\setlength{\abovecaptionskip}{5pt}
+\setlength{\belowcaptionskip}{2pt}
+
+\title{Weight-Dictionary Decomposition: Reading a Transformer's Residual Stream with Its Own Writes}
+
+\author{Anonymous authors}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Sparse autoencoders interpret the residual states of a transformer through an overcomplete dictionary trained on activations. We build the dictionary from the weights instead. Each component's write into the residual stream is confined to a direction or subspace that its weights fix in advance, so collecting those directions from the checkpoint yields an overcomplete, training-free dictionary in which each atom is labeled with the component that wrote it. Weight-dictionary decomposition (WDD) sparse-codes an observed state over this dictionary to infer its largest native writes and their strengths. We score it against exact ground truth from hooked forward passes in eight models from six families, up to 7B parameters, on two corpora. An identified write has the right sign in more than 99.7\% of cases in all eight models. Its magnitude is recovered with a median relative error between 0.25 and 0.54 in seven of them, biased upward for small writes because a 64-atom support absorbs the writes it leaves out, and it is not recovered in Pythia-6.9B. The identification rate rises with scale to 0.98 for Llama-7B. The rest of the support is not a list of writers, since only a quarter to seven tenths of the MLP atoms it selects are real writes at that token. Identification is bounded by an observability ceiling that we measure in all eight models. Once the other writes cancel a write along its own direction, OMP no longer finds it at the tested budget, although a probe on the full state shows that the information usually survives the cancellation. Used as measurement axes, the write directions single out a GPT-2 neuron that appears to erase the model's massive activation channel, and interventions under a frozen-normalization control reinterpret it as a participant in maintaining that channel, one that a distributed suppression field keeps below its clean level. In pre-specified comparisons at thirty nominees per arm, WDD beats a marginal outlier screen at nominating live circuits but does not outperform a correlation screen, and we argue that its distinctive contribution is the mechanistic content that each nomination carries.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Interpreting the residual stream of a transformer currently runs through trained sparse dictionaries. Sparse autoencoders (SAEs) learn an overcomplete basis, whose elements are conventionally called \emph{atoms}, from millions of activation samples \citep{bricken2023,cunningham2023}. The training is the expense, and the learned atoms are the interpretive risk, because a direction that reconstructs activations well need not correspond to anything the model actually does.
+
+A structural fact suggests an alternative. As the circuits literature established \citep{elhage2021}, the residual stream is a sum of writes through fixed weight matrices, so each component's write is confined in advance to a direction or subspace that its weights determine. An MLP neuron writes along one fixed direction with an input-dependent coefficient, an attention head writes inside the row space of its output projection, and the embedding writes along fixed vectors. Prior work interprets these weight vectors directly \citep{geva2021,dar2022,peng2025} or tracks a known write forward through the stream \citep{janiak2023}. To our knowledge, no prior method inverts the relationship by asking, given one observed state and the checkpoint, which native writes are most consistent with that state and at what strength.
+
+We evaluate this inversion both as an instrument, scored on exact ground truth from hooked forward passes, and as a discovery tool whose hypotheses we then test by intervention. We make three contributions.
+\begin{enumerate}[leftmargin=*,nosep]
+\item \textbf{A training-free, provenance-bearing dictionary, validated as an instrument.} With no training at all, the dictionary reconstructs the massive-activation states almost exactly and the typical states better than the sampled rotations of itself at all tested budgets, and the rotation control shows that overcompleteness alone does not explain the advantage. Attribution splits into identification, which is capped by a measurable observability ceiling, and estimation, which recovers the sign of a write throughout and its magnitude with a bias that we measure decile by decile, while the support beyond the largest writes is mostly spurious, which we quantify. Both findings replicate across eight models from six families, up to 7B parameters, and on a second corpus, with bootstrap intervals on each headline number.
+\item \textbf{A discovery pipeline with intervention discipline.} A null-tested taxonomy of write roles nominates a GPT-2 neuron whose apparent erasure of the massive activation channel resolves, under intervention, into participation in maintaining that channel, with a suppression field that holds back a reserve bank of later neurons.
+\item \textbf{Pre-specified nomination comparisons, reported in full.} WDD beats a marginal outlier screen on causal response but does not outperform a one-line correlation baseline on either tier. We argue that its advantage is representational, since each nomination carries a native write direction, a predicted partner, and a falsifiable role hypothesis.
+\end{enumerate}
+
+\section{Method}
+\label{sec:method}
+
+\paragraph{Dictionary.} Consider an MLP neuron $j$ with down-projection row $\mathbf{w}_j$ and post-nonlinearity activation $a_j$, which adds $a_j\mathbf{w}_j$ to the residual stream. We factor this write into a fixed unit direction and an input-dependent coefficient,
+\begin{equation}
+a_j\mathbf{w}_j = c_j\,\mathbf{d}_j, \qquad
+\mathbf{d}_j=\frac{\mathbf{w}_j}{\lVert\mathbf{w}_j\rVert}, \qquad
+c_j=a_j\lVert\mathbf{w}_j\rVert ,
+\label{eq:write}
+\end{equation}
+so that the direction is a property of the checkpoint and only the coefficient depends on the input. We collect unit-normed atoms for each model-native direction whose write can reach the target state. These are the token and position embedding rows, which enter before block 0, an SVD basis of the row space of each attention head's output projection, which is the subspace that head's write can occupy, the MLP down-projection rows, and the two output biases of each block. Each atom carries a deterministic label giving its block, its component and its write subspace. MLP atoms correspond one to one with neuron write directions, whereas attention atoms span a head's attainable subspace and are not individual causal writes. For GPT-2 small at layer 6, which collects blocks 0 to 6, the dictionary has $m=78{,}175$ atoms in $d=768$ dimensions, about 102 times overcomplete. GPT-2 stores its projections in Conv1D form, whose rows are the write directions. Where the down-projection is a standard linear layer, its columns play that role instead, and gating changes only the coefficients.
+
+\paragraph{Inverse problem.} Given an observed state $\mathbf{x}$ and the dictionary $D=[\mathbf{d}_1\cdots\mathbf{d}_m]$, WDD estimates a sparse coefficient vector by orthogonal matching pursuit with $k$ active atoms,
+\begin{equation}
+\hat{\mathbf{c}}=\mathrm{OMP}_k(D,\mathbf{x}), \qquad \mathbf{x}\approx D\hat{\mathbf{c}},
+\label{eq:omp}
+\end{equation}
+and we read each $\hat c_i$ as the inferred write of the component that atom $i$ belongs to. All control dictionaries in this paper run through the identical OMP code at the identical size. A second mode, \emph{one-shot ranking}, keeps the $k$ atoms most correlated with $\mathbf{x}$ without orthogonalization and then refits on that support. It is the projection reading that OMP's explaining-away refines, and Section~\ref{sec:attrib} uses both for identification.
+
+\paragraph{Survival and write roles.} For a write with unit direction $\mathbf{d}$ and signed coefficient $c$, we define its survival in a later state $\mathbf{x}$ as the fraction of the write that is still present along its own direction,
+\begin{equation}
+s=\frac{\mathbf{x}\cdot\mathbf{d}}{c},
+\label{eq:surv}
+\end{equation}
+which is the projection ratio of \citet{janiak2023}. Evaluating survival at the moment of writing, where $\mathbf{x}_{\text{pre}}$ is the state the write was added to, gives the birth survival
+\begin{equation}
+s_{\text{birth}}=1+\frac{\mathbf{x}_{\text{pre}}\cdot\mathbf{d}}{c},
+\label{eq:birth}
+\end{equation}
+which classifies a write's role by what it did to the content already present along its direction. We call a write \emph{reinforcing} when $s_{\text{birth}}>1$, \emph{novel} when $s_{\text{birth}}$ lies within 0.5 of 1, and \emph{counter-aligned} when $s_{\text{birth}}<0$, in which case it opposed existing content. These labels record what a component wrote relative to the state, and we stress that assigning a mechanism requires intervention.
+
+\section{Experimental Setup}
+\label{sec:setup}
+
+Our primary model is GPT-2 small, and we decompose the state after block 6, the middle of its twelve blocks, over 32{,}768 held-out WikiText-2 tokens, on which the model's clean cross-entropy is 3.647. We chose the middle of the stack because our questions need both sides of it. Seven blocks of writers precede the state, so attribution has a large population to identify, and five blocks of computation follow it, so cancellation can be measured. To check that the choice is not special we repeated the reconstruction after block 8 and found the same picture, a typical-state FVU of 0.349 against 0.338 at $k=32$ (Appendix~\ref{app:recon}). We run OMP to $k=64$ atoms and read the support at $k=32$ and $k=64$, which brackets the sparsity of a trained SAE at this layer (Appendix~\ref{app:z4}), and Appendices~\ref{app:recon} and~\ref{app:z5} sweep $k$ from 4 to 256.
+
+We use train-split tokens for the centering means and for the data-based controls, so that no evaluation token enters a dictionary or a control. The one exception, stated in Appendix~\ref{app:ci}, is that the GPT-2 attribution runs center on the evaluation mean. Centering also settles what the decomposition estimates. It subtracts one fixed vector from all states, so its target is the raw ledger coefficient shifted by that vector's component along the atom, the same offset at each token. We leave the ledger coefficients raw and count the offset as part of the estimation error we report. For the families other than GPT-2 the dictionary carries no bias atoms, so each block's output bias, a fixed vector, is absorbed into the centering in the same way.
+
+To learn whether anything we find is particular to GPT-2, we rebuild the dictionary at the middle layer of SmolLM2-135M, Qwen2.5-0.5B, Pythia-410m and OLMo-1B, and again at 7B scale for Qwen2.5-7B, Llama-7B and Pythia-6.9B. The eight models span gated and non-gated MLPs, learned and rotary positions, and 124M to 7B parameters, and we repeat the whole sweep on a Pile-derived corpus. The oracle baselines of Section~\ref{sec:attrib} use samples of 16{,}384 tokens. The sweep of Section~\ref{sec:families} evaluates 32{,}768 states per model and corpus under one protocol, and its intervals come from a bootstrap over the 64 evaluation sequences. Runs of the individual experiment scripts on 8{,}192 states agree with it to within 0.001 in FVU, 0.021 in recall and 0.017 in $r$ (Appendix~\ref{app:ci}).
+
+One convention matters for all reconstruction numbers, and we arrived at it by asking where the variance of a residual state is concentrated. In each model, one to four states per sequence, its first and sometimes one or two of the next few, have a norm above ten times the median, and nothing lies between five and ten times the median in any of the sixteen model and corpus pairs. These are the attention-sink states of the massive-activation literature \citep{sun2024}. They carry between 59\% and 99\% of the summed variance, and any dictionary that contains the massive-channel directions reconstructs them from a few atoms, so an FVU over all states mostly measures them. We report FVU over the \emph{typical} states, the other 99.4\% or more, and give the sink states separately. Our ground truth is the \emph{ledger}, which records each MLP neuron's true coefficient $c_j$ of Equation~\ref{eq:write} from hooked forward passes. Since attention writes carry no per-component scalar, we score attribution on MLP writes, and we call a token's \emph{dominant writes} its top-3 ledger entries by magnitude.
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Reconstruction Is Not Attribution}
+\label{sec:recon}
+
+\begin{figure}[t]
+\centering
+\begin{minipage}[t]{0.49\linewidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.95\linewidth, height=0.52\linewidth,
+  xmode=log, ymode=log, log ticks with fixed point, xmin=3.5, xmax=72, ymin=0.045, ymax=1.15, clip=false,
+  xlabel={active atoms per token $k$}, ylabel={FVU},
+  xtick={4,8,16,32,64}, xticklabels={4,8,16,32,64},
+  ytick={0.05,0.1,0.3,1}, yticklabels={0.05,0.1,0.3,1},
+  tick label style={font=\scriptsize}, label style={font=\small},
+  grid=major, grid style={black!10}]
+% FIG1-BEGIN (regenerated by tools/fig1.py from exp_a_tokens.npz and exp_d_tokens.npz; do not edit by hand)
+\addplot[thick, color=black!40, dashed] coordinates
+  {(4,0.908)(8,0.832)(16,0.701)(32,0.500)(64,0.251)};
+\addplot[thick, color=red!70!black, dashed] coordinates
+  {(4,0.912)(8,0.840)(16,0.718)(32,0.529)(64,0.288)};
+\addplot[thick, color=teal] coordinates
+  {(4,0.774)(8,0.684)(16,0.582)(32,0.469)(64,0.341)};
+\addplot[very thick, color=blue!70!black, mark=*, mark size=1.6pt] coordinates
+  {(4,0.707)(8,0.601)(16,0.481)(32,0.338)(64,0.179)};
+\addplot[thick, color=orange!80!black] coordinates
+  {(4,0.286)(8,0.222)(16,0.166)(32,0.113)(64,0.063)};
+% FIG1-END
+\end{axis}
+\end{tikzpicture}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\linewidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.95\linewidth, height=0.52\linewidth,
+  ybar, bar width=5pt, enlarge x limits=0.1,
+  xtick={1,2,3,4,5,6},
+  xticklabels={{$s<0$},{$[0,.25)$},{$[.25,.5)$},{$[.5,.75)$},{$[.75,1.25)$},{$s\ge1.25$}},
+  x tick label style={font=\tiny, rotate=22, anchor=north east, xshift=3pt, yshift=1pt},
+  xlabel={survival $s$ of the dominant write}, ylabel style={font=\scriptsize},
+  ylabel={identification rate}, ymin=0, ymax=0.9, ytick={0,0.4,0.8},
+  legend style={font=\tiny, at={(0.04,0.96)}, anchor=north west, draw=none, fill=none, row sep=-2pt},
+  tick label style={font=\scriptsize}, label style={font=\small}]
+\addplot[fill=blue!70!black] coordinates
+  {(1,0.007) (2,0.012) (3,0.036) (4,0.114) (5,0.364) (6,0.618)};
+\addlegendentry{OMP mode}
+\addplot[fill=orange!70] coordinates
+  {(1,0.104) (2,0.000) (3,0.000) (4,0.003) (5,0.257) (6,0.829)};
+\addlegendentry{one-shot mode}
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\par\vspace{2pt}\centering{\tiny
+\tikz[baseline=-0.5ex]\draw[thick, color=black!40, dashed] (0,0)--(1.4em,0); random\hspace{1.4em}
+\tikz[baseline=-0.5ex]\draw[thick, color=red!70!black, dashed] (0,0)--(1.4em,0); rotated weight dictionary\hspace{1.4em}
+\tikz[baseline=-0.5ex]\draw[thick, color=teal] (0,0)--(1.4em,0); PCA, best $k$ per state\hspace{1.4em}
+\tikz[baseline=-0.5ex]\draw[very thick, color=blue!70!black] (0,0)--(1.4em,0); \textbf{weight dictionary}\hspace{1.4em}
+\tikz[baseline=-0.5ex]\draw[thick, color=orange!80!black] (0,0)--(1.4em,0); sampled activations\par}
+\caption{\textbf{Left:} reconstruction of the typical GPT-2 layer-6 states as a function of sparsity. The 64 sink states, 80\% of the variance, are reconstructed by the weight dictionary at an FVU below 0.001 and by its rotation near 0.5. One Gram-preserving rotation of the atoms moves the weight dictionary to the random floor. The matched comparison with a trained SAE is in Appendix~\ref{app:z4}. \textbf{Right:} identification rate of each token's dominant writes, binned by their survival $s$ in the layer-6 state. Under OMP, writes whose direction has been cancelled, those with $s<0.25$, are identified in about 1\% of cases, against 62\% for reinforced writes with $s\ge1.25$, while one-shot ranking identifies 83\% of reinforced writes and 10\% of counter-aligned ones.}
+\label{fig:fvu}
+\end{figure}
+
+We began with the plainest question, whether a dictionary that nobody trained can reconstruct a residual state at all. The left panel of Figure~\ref{fig:fvu} sweeps sparsity on the typical states. With no training, the dictionary falls between PCA and a dictionary of sampled activations at each $k$. At $k=32$ it reaches an FVU of 0.338, against 0.469 for PCA and 0.113 for the sampled dictionary, and at $k=64$ it reaches 0.179. The 64 sink states, which carry 80\% of the variance, it reconstructs at an FVU of 0.0003, and splicing its $k=64$ reconstruction back into the forward pass raises cross-entropy by 0.178. The next question was where that reconstruction comes from, the overcompleteness of the dictionary or its alignment with the model's coordinates. Applying one Gram-preserving rotation to all atoms keeps all pairwise angles and destroys the alignment. It moves reconstruction to the random floor, 0.529 against 0.500 at $k=32$ on the typical states and 0.55 on the sink states. Overcompleteness alone does not explain the advantage, and alignment with the model's residual coordinate system does. The figure does not depend on the seed. Three rotations drawn from three seeds, in this control, in the re-implementation of Appendix~\ref{app:audit} and in the sweep of Appendix~\ref{app:ci}, give all-state FVU 0.549, 0.517 and 0.531 at $k=32$, against 0.501 to 0.507 for random directions.
+
+A trained SAE is the natural comparison, and we wanted it on identical states rather than on borrowed numbers (Appendix~\ref{app:z4}). The residual-stream SAE of \citet{bloom2024} for this layer was trained on OpenWebText with 128-token contexts, and when we ran it on our 512-token states it failed past the positions it saw in training, so we compared in its own regime instead. On 32{,}768 OpenWebText states it activates 59 features per state on average and reaches an FVU of 0.121 with a cross-entropy cost of 0.155. At the same sparsity the training-free dictionary reaches 0.187 and 0.172, and at $k=64$ it reaches 0.169 and 0.146. The trained dictionary leaves 0.121 of the variance unexplained where ours leaves 0.187 at matched sparsity, the two are close in what the forward pass loses, and each atom of ours is labeled with its writer, which no SAE feature is.
+
+That label is the reason to build the dictionary this way, and it led us to the control we consider the most important negative result of the section. If reconstruction quality reflected provenance, a dictionary that could not have written the state should reconstruct it badly. We drew the block atoms of a dictionary only from blocks 7 to 11, so that none of them could have contributed to the state, and kept the embedding rows, which make up 73\% of both dictionaries and can contribute. It still reaches FVU 0.449 at $k=32$, against 0.358 for a correct dictionary subsampled to the same size and 0.529 for the rotation, and it reconstructs the sink states as exactly as the correct dictionary does. We then removed the embedding rows from both dictionaries to rule them out, and nothing changed. Block atoms of blocks 7 to 11 alone reach 0.490 at $k=32$ on the typical states, against 0.375 for the correct block atoms subsampled to the same size and 0.561 for their rotation (Appendix~\ref{app:d2}). Low FVU cannot validate provenance. The provenance of a dictionary vector is known by construction, but whether a recovered coefficient belongs to that writer is a separate question, so from here on we score it directly against the ledger.
+
+\subsection{Attribution and the Observability Ceiling}
+\label{sec:attrib}
+
+The ledger lets us ask what reconstruction could not answer, whether the atoms OMP selects are the writes that produced the state. A token's largest true write appears in the $k=64$ OMP support 64.7\% of the time, rising from 40\% in the lowest magnitude decile of that write to 96\% in the highest (Appendix~\ref{app:recall-decile}). One-shot ranking, the second mode of Section~\ref{sec:method}, does better at 76.6\%, because the orthogonalization in OMP explains away correlated true writers once the state is nearly reconstructed. When a dominant write is identified, the next question is how well its coefficient is estimated. Its sign is recovered in 99.8\% of cases and its magnitude with a median relative error of 0.44, over-estimated by a median factor of 1.66 in the smallest magnitude decile and 1.45 in the largest, because the 64-atom support absorbs the writes it leaves out. A correlation is the obvious summary of this, and here it misleads. Between recovered and true coefficients it is 0.998 over all states but 0.58 over the typical states, because the 0.13\% of identified writes at the sink states span a range of magnitudes that dominates the statistic. Even on the typical states the within-decile correlation is below 0.28 in all magnitude deciles but the top one. We report the calibration instead and keep the correlations in Appendix~\ref{app:ci}.
+
+Why does identification stop at 65\%? We ruled out two causes first. It is not atom duplication, because clustering near-duplicate atoms moves recall only from 0.647 to 0.664, and it is not write age, which predicts identification at a chance-level AUC of 0.51. It is observability, as the right panel of Figure~\ref{fig:fvu} shows, and given the ledger coefficient WDD can certify that a direction has been cancelled. To locate the failure we built two oracle baselines. On synthetic states built purely from each token's MLP writes, recall is essentially unchanged at 0.62 for OMP and 0.67 for one-shot ranking, so the ceiling belongs to the geometry of the writes themselves. The other native writes cancel a component along its own direction, whether they came before it or after it, and OMP does not recover it. Refitting on the true top-3 atoms alone yields an aggregate $r$ of 0.55 over all dominant writes and 0.13 on erased ones, against 0.998 for the full support on the identified ones. On the same identified typical-state cases the refit reaches a median relative error of 0.68 where the full support reaches 0.44 (Appendix~\ref{app:z6}). The joint estimation over the full support recovers the coefficients somewhat better than the true atoms alone in five of the eight models, and no better in OLMo-1B and Qwen2.5-7B.
+
+The full support then raised its own question. If OMP finds the largest writes, what are the other sixty atoms? On the typical states, MLP atoms make up 62\% of GPT-2's 64-atom support, and only 35\% of those are real writes at that token, meaning writes whose ledger coefficient is at least 5\% of the token's largest. The other 65\% are spurious, they carry 57\% of the recovered MLP coefficient mass, and the real atoms beyond the three dominant writes are over-estimated by a median factor of 2.1 (Appendix~\ref{app:z6}). OMP finds the largest writes and signs them, and it fills the rest of the support with atoms that explain the residual without corresponding to writes, so the support is not a list of writers. Across the eight models the real share of the selected MLP atoms runs from 24\% for SmolLM2 to 71\% for Llama-7B, and the spurious share of the coefficient mass from 25\% to 68\%.
+
+Cancellation is directional, however, and we wanted to know whether the information is gone or only moved. A leakage-controlled ridge probe on the full state recovers the activations of the lowest-survival writers of block 3 at a median out-of-sample $R^2$ of 0.40, against 0.59 for intact writers, while their own direction carries none, and injected atoms are recovered again at a slope of 0.90. The information survives, and the ceiling is a property of OMP and the dictionary at the tested budget, not of the state. Full tables are in Appendix~\ref{app:attrib}.
+
+\subsection{Generality}
+\label{sec:families}
+
+\begin{table}[t]
+\centering\footnotesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.92}
+% TABLE1-BEGIN (regenerated by tools/splice_table1.py from exp_z2_ci.json; do not edit by hand)
+\caption{Eight models at their middle layers on WikiText-2, one protocol throughout: 32{,}768 evaluation states per model, brackets are 95\% bootstrap intervals over the 64 evaluation sequences. FVU is over the typical states. The one to four sink states per sequence, whose norm exceeds ten times the median, carry the stated share of the variance and the weight dictionary reconstructs them almost exactly, so their FVU at $k=32$ is listed separately as weight / rotated. Recall is OMP-mode top-1 identification of each token's largest write. The last three columns describe the identified dominant writes on typical states: the share whose sign is recovered, the median relative error of the recovered coefficient, and the median ratio of recovered to true coefficient in the smallest and the largest magnitude decile. The 7B-class rows were run in bfloat16 (float32 control in Appendix~\ref{app:fp32}).}
+\label{tab:families}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lcccccccccc}
+\toprule
+Model & FVU at $k=32$ & at $k=64$ & rotated, $k=32$ & sink share & sink FVU & top-1 recall & sign & median rel. error & ratio, deciles 1 / 10 \\
+\midrule
+GPT-2 small, 124M & 0.338 [0.337, 0.340] & 0.179 & 0.529 & 80\% & 0.0003 / 0.53 & 0.647 [0.637, 0.657] & 99.8\% & 0.44 [0.44, 0.45] & 1.66 / 1.45 \\
+SmolLM2-135M & 0.269 [0.268, 0.270] & 0.113 & 0.421 & 98\% & 0.0005 / 0.42 & 0.670 [0.661, 0.680] & 100.0\% & 0.54 [0.53, 0.54] & 1.97 / 0.73 \\
+Qwen2.5-0.5B & 0.408 [0.407, 0.408] & 0.219 & 0.527 & 96\% & 0.0013 / 0.52 & 0.459 [0.451, 0.467] & 100.0\% & 0.46 [0.45, 0.46] & 1.58 / 0.43 \\
+Pythia-410m & 0.503 [0.502, 0.504] & 0.303 & 0.592 & 91\% & 0.0037 / 0.59 & 0.481 [0.472, 0.490] & 99.9\% & 0.41 [0.40, 0.42] & 1.75 / 1.04 \\
+OLMo-1B & 0.563 [0.561, 0.564] & 0.435 & 0.773 & 97\% & 0.0006 / 0.78 & 0.693 [0.687, 0.699] & 99.7\% & 0.34 [0.34, 0.34] & 1.06 / 0.51 \\
+\midrule
+Qwen2.5-7B & 0.555 [0.551, 0.558] & 0.459 & 0.847 & 99\% & 0.0039 / 0.84 & 0.673 [0.663, 0.685] & 100.0\% & 0.50 [0.50, 0.51] & 0.97 / 0.29 \\
+Llama-7B & 0.631 [0.628, 0.633] & 0.533 & 0.872 & 86\% & 0.0002 / 0.87 & 0.981 [0.979, 0.983] & 100.0\% & 0.25 [0.25, 0.25] & 1.39 / 1.17 \\
+Pythia-6.9B & 0.711 [0.709, 0.713] & 0.610 & 0.868 & 59\% & 0.0270 / 0.87 & 0.787 [0.779, 0.795] & 100.0\% & 1.03 [1.02, 1.04] & 2.19 / 1.86 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+% TABLE1-END
+\end{table}
+
+Estimation follows one pattern in all eight models rather than an architectural divide. The sign of an identified write is recovered in at least 99.7\% of cases, which is informative for the gated-MLP families, where half of the dominant writes are negative, and trivial for GPT-2 and Pythia, whose GELU coefficients are almost all positive. The magnitudes are biased in the same direction everywhere. Small writes are over-estimated in all eight models, by a median factor between 1.1 and 2.0 in the lowest magnitude decile, because a 64-atom support absorbs the writes it leaves out. The largest writes are under-estimated in the gated families except Llama-7B, by a factor of 0.4 to 0.7 in the top decile. The median relative error of an identified coefficient is 0.44 for GPT-2, 0.41 for Pythia-410m, 0.46 for Qwen2.5-0.5B, 0.54 for SmolLM2 and 0.34 for OLMo-1B. A correlation would hide all of this. In the gated families the signed correlation within a magnitude decile is 0.88 or more because it records the sign, and across deciles it is 0.99 because it records the range of magnitudes, so we report the calibration and keep the correlations in Appendix~\ref{app:ci}.
+
+We also asked whether the reconstruction advantage is confined to the massive channels. They dominate the all-state variance, with the five highest-variance coordinates carrying between 91\% and 98\% of it across the four sub-1B families, yet off those five coordinates the dictionary still reaches an FVU between 0.34 and 0.60 on the typical states, where its rotation reaches between 0.49 and 0.79. The whole sweep replicates on a Pile sample (Appendix~\ref{app:ci}). For GPT-2 the typical-state FVU at $k=32$ is 0.358 [0.354, 0.362] against 0.530 rotated, with a top-1 recall of 0.568 [0.546, 0.588]. Across the eight models the largest changes between the corpora are 0.08 in recall, for GPT-2, 0.06 in FVU, for OLMo-1B, and 0.07 in the median relative error, for GPT-2.
+
+Three 7B-class models, which occupy the lower rows of Table~\ref{tab:families}, extend the sweep by an order of magnitude in parameters, and the first thing we looked for was whether the rotation gap changes with scale. At 7B the rotation is again indistinguishable from random, with both between FVU 0.85 and 0.87 at $k=32$ on typical states, while the dictionary reaches 0.555 for Qwen2.5-7B, 0.631 for Llama-7B and 0.711 for Pythia-6.9B. The sink states carry 99\%, 86\% and 59\% of the variance in that order, and the dictionary reconstructs them at an FVU below 0.03 where the rotation stays above 0.84. The advantage at a fixed budget of 32 atoms is a factor of 1.2 to 1.6 in all eight models and does not widen with scale. The typical-state FVU itself rises with width, and we suspected a budget effect, since 32 atoms cover a smaller fraction of a wider space. Matching the budget to the width confirms it. At $k=d/16$ the dictionary reaches between 0.21 and 0.30 in all eight models and its rotation between 0.33 and 0.39, and at $k=d/12$ it reaches between 0.15 and 0.22 against 0.23 and 0.29. Models from 124M to 7B parameters reconstruct alike at the same fraction of their dimension, and alignment gives a factor of 1.2 to 1.7 at each scale (Appendix~\ref{app:z5}). Off the five highest-variance coordinates the dictionary reaches 0.68, 0.66 and 0.74 where the rotation reaches 0.88, 0.88 and 0.87, so the non-gated Pythia-6.9B is where the advantage is smallest.
+
+Estimation at 7B separates the three models. Llama-7B recovers its identified coefficients with a median relative error of 0.25, half of them within 25\% of the truth, and a bias that shrinks from a factor of 1.39 in the smallest decile to 1.17 in the largest. It also has the support with the highest real share, 71\% of its selected MLP atoms against 24\% to 53\% elsewhere. Qwen2.5-7B recovers the sign throughout but under-estimates its large writes, by a factor of 0.29 in the top decile, for a median relative error of 0.50. Pythia-6.9B doubles each coefficient, with a median ratio near 2.0 in all ten deciles and a median relative error above 1, so its magnitudes are not recovered at all, although 79\% of its largest writes are identified. Because these rows were run in bfloat16, we reran Qwen2.5-7B in float32 on the same states (Appendix~\ref{app:fp32}). The rerun reproduces the recall, the reconstruction and the median relative error to within 0.01. It moves only the aggregate correlation, from 0.55 to 0.44, because the two precisions identify different members of a handful of extreme writes, which is one more reason to read the calibration rather than the aggregate.
+
+Identification improves at scale, and we checked that the improvement is not the work of a single atom. The most frequent top-1 neuron takes 4.0\% of tokens for Llama-7B, 3.4\% for Qwen2.5-7B and 8.4\% for Pythia-6.9B, against 4.7\% for GPT-2 small. Between 1{,}677 and 3{,}282 distinct neurons are some token's largest write in the 7B models, so their recalls of 0.98, 0.67 and 0.79 measure identification across thousands of atoms. One-shot ranking, on the other hand, collapses for Qwen2.5-7B to a recall of 0.4\%, because the massive coordinates dominate the raw correlation with the state, and it is the orthogonalization in OMP that keeps identification possible there. For Llama-7B and Pythia-6.9B one-shot recall is 0.90 and 0.65.
+
+With eight models in hand we could ask whether the observability ceiling of Section~\ref{sec:attrib} is a GPT-2 fact or a general one, and it holds in all eight. The survival analysis, run for the eight models on both corpora (Appendix~\ref{app:z3}), identifies a dominant write whose net projection on its own direction has been cancelled or reversed in at most 8\% of cases, or 15\% for Llama-7B. Writes that survive intact are identified in between 45\% and 96\% of cases. Survival predicts identification at an AUC between 0.73 and 0.84 throughout. The ceiling has two parts, and their mix is what separates the models. Cancellation, full or partial, accounts for between a quarter and four fifths of the misses. For Qwen2.5 at both sizes and for OLMo-1B the largest class of missed writes has been weakened to between a quarter and three quarters of its strength, and in Qwen2.5-7B only 36\% of dominant writes are intact at the readout at all. The remaining misses are intact writes that a 64-atom support does not include, which prominence predicts at an AUC between 0.80 and 0.92, and near-duplicate atoms play no part, since a twin of the true atom is in the support in under 1\% of cases throughout. Llama-7B identifies 95\% of its dominant writes because 98\% of them are intact at the readout and 96\% of those are identified.
+
+\subsection{Write Roles and Null Controls}
+\label{sec:roles}
+
+The ledger played the role of a held-out oracle above, while WDD's inference used only the checkpoint and the state. The discovery work below keeps the hooks in place and reads recorded writes along the dictionary's directions, and inversion mode is the same instrument without the hooks. We began by asking which block writes against the stream. On WikiText the taxonomy singles out block 3 of GPT-2 small, which has the only negative median birth survival, at $-0.09$, and the largest counter-aligned fraction, at 53\% pooled and the highest of any block within each of the five magnitude quintiles. A concentration analysis then relocates the unit of counter-writing to specific neurons.
+
+Two nulls calibrate these statistics, tabulated per block in Appendix~\ref{app:roles}, and we needed both before trusting a raw fraction. Random replacement directions collapse all role statistics. Shuffled pairings of writes and states, which preserve both marginals, show that chance alone yields counter fractions between 51\% and 72\% across blocks, because centered states anti-align with frequent writers, and each block's real fraction is below its own null, so we discard the raw counter fraction. Anchoring separates real writes from both nulls. Of the block-3 writes, 24\% are born anchored, within 0.5 of a survival of 1, against 1.6\% under random directions and 5.7\% under shuffling, and reinforcing mass reaches 61\% in block 1 and 75\% in block 6, against at most 6\% under either null. Within block 3, the subset of writes that is later erased is born at a survival of $-0.63$, so it opposes the stream from the first moment rather than being consumed later, and the block median of $-0.09$ pools these writes with intact ones. The profile is corpus-dependent, since on Pile the median birth survival of block 3 is $+0.77$, so we treat roles as describing a model on a distribution.
+
+\subsection{The Channel-447 Circuit}
+\label{sec:circuit}
+
+The dominant counter-writer of block 3 is neuron 614, which puts 88\% of its write energy into channel 447, the massive activation channel of GPT-2 \citep{sun2024}. Its atom unembeds to function words for all eight of its top tokens, yet correlation calls it open-loop, since its activation correlates with the channel along its own axis at only $r=0.011$. A neuron that writes against the model's largest channel and does not respond to it looked like an eraser, and we tested that reading with interventions, reported in full in Appendix~\ref{app:circuit}.
+
+\textbf{Dose-response.} Scaling channel 447 at the boundary between blocks 2 and 3 produces a block-wide inverse response, in which the median active block-3 neuron rises by 9\% when the channel is halved and falls by 12\% when the channel is multiplied by 1.5. That is what LayerNorm renormalization predicts when an outlier coordinate is scaled, so the response could be bookkeeping rather than content, and we needed a control that separates the two pathways. Holding the pre-MLP LayerNorm statistics of block 3 at their clean-run values collapses the block-wide response, with the two medians falling to $-0.5\%$ and $-2\%$ and the count of inverse responders from 1{,}236 to 233. Neuron 614 retains $+15.5\%$ and $-12.3\%$, which places it at the 94th percentile of the frozen distribution. Its raw response of $+27.5\%$ and $-22.1\%$, which an independent re-implementation reproduces to within 0.2 percentage points (Appendix~\ref{app:audit}), is about half renormalization and half content-driven. The upstream channel builder's response is zero to numerical precision, which checks the placement of the intervention.
+
+\textbf{Group ablation and restoration.} If neuron 614 and its peers erase the channel, removing them should leave the channel higher downstream. Ablating the four strongest counter-writers of channel 447, one in each of blocks 3 to 6, shifts the channel by the predicted $-12.4$ at the point of ablation. Only $-1.49$ of that shift remains in the state entering block 11, after seven blocks of later computation, and $-2.22$ after block 11 itself. On average 88\% is restored by the input of block 11 and 82\% after it, which is a means-level result, and it is restored by specific later neurons rather than by passive renormalization. We then asked what the ablation costs the model. The behavioral cost is nonlinear within the set. The largest counter-writer alone has 65\% of the energy of the nine-neuron set and costs $\Delta$CE 0.004, the top three cost 0.024, and the cost saturates there through all nine. That looked like a collective function until we matched the controls in energy. Random nine-neuron sets carry 50 to 80 times less write energy and cost 0.0006 on average. Random sets of 400 to 466 block-3 neurons matched to the nine in write energy cost between 0.024 and 0.034, whether drawn from all block-3 neurons or from the other counter-writers (Appendix~\ref{app:x5b}). The cost of the ablation tracks the energy removed. What distinguishes the counter-writers is the channel-447 write they carry, which the restoration and the reserve bank concern, not a behavioral cost of their own.
+
+\textbf{Disinhibition.} The restoring neurons are channel-insensitive, with gains near zero and of the wrong sign, yet under group ablation the channel-447 writes of all five of them rise, by between 10\% and 51\%. Write editing locates the suppression. Removing only the non-channel components of the group's writes reproduces 75\% of the reserve response, removing the channel component alone reproduces 19\%, and removing the component of neuron 614 alone reproduces none of it, so the suppression is distributed across the group.
+
+\subsection{Nomination Comparisons}
+\label{sec:bakeoff}
+
+The last question we put to the instrument is whether its nominations resolve into live circuits more often than nominations from standard screens. All arms share one battery, which we fixed in code before execution, including the step that assigns each nominee's predicted partner, and neurons already studied and channel-loaded neurons are excluded from all arms. For each nominee the ledger identifies the upstream neuron that contributes most along its direction, and that partner is ablated. Tier 1 asks whether the state then shifts along the nominee's direction as the ledger predicts, and Tier 2 asks whether the nominee's own activation responds.
+
+In a pilot with three nominees per arm, WDD's counter-energy screen passed Tier 1 for none of its three and Tier 2 for all three, and one of its Tier 1 failures is a sign flip that traces to the restoration effect above. A kurtosis-times-magnitude screen passed Tier 1 for one of three and Tier 2 for none. A one-sided Fisher exact test gives $p=0.05$ on Tier 2 alone and $p=0.20$ on passing either tier. Because that screen is marginal while the endpoint is relational, we reran the comparison with ten and then thirty nominees per arm and added a third, relational arm based on maximum upstream activation correlation. The thirty-nominee arms extend the ten-nominee arms and reproduce their tallies exactly. At thirty per arm, WDD passed Tier 2 for 23 of 30 and Tier 1 for 16 of 30, while the outlier screen passed 12 of 30 and 11 of 30. The pilot's Tier 2 separation from the marginal screen holds at scale with $p=0.004$, whereas Tier 1 does not separate, with $p=0.15$. The correlation arm matched WDD on Tier 2 with 25 of 30, at $p=0.37$, and beat it on Tier 1 with 27 of 30, at $p=0.002$. Coupled pairs are commonplace, and a one-line correlation screen finds them at least as reliably as WDD does. What the write-direction screen adds is mechanism-level content, namely a named opposed write, a predicted partner, and a role hypothesis that interventions can test. The battery was fixed in code before execution, the arms were run at ten and then at thirty nominees, and nominees that share a partner are counted as separate trials in the Fisher tests, which overstates their independence. The battery and each nominee's result are in Appendix~\ref{app:bakeoff}.
+
+\section{Discussion and Limitations}
+\label{sec:limits}
+
+Below 1B parameters the ceiling is identification, with top-1 recall between 0.46 and 0.69. In all eight models it is a ceiling of observability, since a cancelled write is identified in at most 8\% of cases, or 15\% for Llama-7B. Cancellation explains between a quarter and four fifths of the misses depending on the model, and the rest are intact writes of low prominence that OMP does not reach. At 7B recall rises to between 0.67 and 0.98. Recovered magnitudes are biased in all eight models, by up to a factor of two for small writes, and Pythia-6.9B's are not recovered. A coefficient from OMP is a ranking and a sign before it is a number, and the support beyond the largest writes is mostly atoms that explain the residual rather than writes. The information-survival probe fails for rare firers out of distribution, and role statistics depend on both frame and corpus. The circuit study covers one model and largely one channel, the frozen-normalization control spans only the MLP path of block 3, and restoration is a means-level result. The nomination comparisons cover one model, their endpoint favors relational screens, and Tier 1 penalizes the very circuits that Tier 2 rewards. All results come from one implementation, which we bound by matched controls, a line-by-line audit, and independent re-implementations of the reconstruction, attribution and dose-response numbers, and we release the code and results.
+
+\section{Related Work}
+\label{sec:related}
+
+\textbf{Write persistence.} \citet{janiak2023} define the projection ratio, find anti-aligned cleanup heads, and intervene on pairs of writer and cleaner. We extend erasure to the characterization of roles. \textbf{The model's own vectors.} \citet{geva2021} read MLP value vectors by vocabulary projection, \citet{dar2022} interpret weights in embedding space, and \citet{peng2025} find that such vectors rival SAE features. Direct logit attribution \citep{elhage2021} requires the full forward pass. \textbf{Learned dictionaries.} SAEs \citep{bricken2023,cunningham2023} learn their atoms from activations, and ITDA \citep{itda2025} harvests its dictionary from them, which makes it a complementary activation-space analogue of our approach. \textbf{Weight-space interpretability.} \citet{rotate2026}, the closest neighbor, decompose the weight vectors themselves, whereas WDD decomposes observed states. \citet{sith2026} decompose CLIP attention in concept space, parameter decomposition splits the parameters \citep{braun2025,bushnaq2025}, and interference-weight analysis \citep{anthropic2026} warns that weight-implied links need not be functional. Massive activations and outlier dimensions \citep{sun2024,kovaleva2021} are the phenomena that our circuit study touches.
+
+\section{Conclusion}
+
+We introduced weight-dictionary decomposition, which reads residual states over a provenance-bearing dictionary built from the model's own weights. We validated it across eight models of up to 7B parameters and resolved the apparent channel eraser of GPT-2 into a maintenance participant. Geometry nominates, and intervention assigns meaning.
+
+\subsection*{AI use statement}
+We used a generative AI assistant (Claude, Anthropic) throughout this work, and we disclose its role in full. Tasks with required disclosure: the assistant refined the hypotheses and designed the experimental methodology together with the author, wrote the mathematical formulation of Section~\ref{sec:method} with the author, implemented every experiment and analysis script, ran the experiments on the author's hardware and on a rented GPU, and interpreted the results jointly with the author. The only synthetic data are the synthetic residual states of Section~\ref{sec:attrib}, which the scripts construct from the model's own writes. Tasks with recommended disclosure: the assistant carried out the literature search, generated the figures from the result files, and drafted and edited the text, with the author directing the framing and reviewing each draft. Verification: the author set the research direction, reviewed each stage and requested the audits; every number in the paper was traced to the JSON file a script wrote, the headline numbers were recomputed by a separate script (Appendix~\ref{app:audit}), the nomination tallies were reproduced on a second machine, and the trained SAE of Section~\ref{sec:recon} was evaluated from its published weights rather than from reported numbers. We take responsibility for the final content of this work, including text, claims or artifacts produced with the aid of generative AI.
+
+\subsection*{Ethics statement}
+This work is an interpretability method together with a set of measurements on small and mid-sized open models. Its intended effect is to make claims about model internals cheaper to test and easier to falsify. We see no direct path from it to harm beyond what interpretability tooling in general enables, and we release nothing that changes model behaviour.
+
+\subsection*{Reproducibility statement}
+Each number in the paper is produced by a named script in the supplementary package, which contains the experiment scripts, the JSON results they wrote, and the run logs. Section~\ref{sec:recon} uses \texttt{exp\_a\_wdd} for the reconstruction curves and the spliced-in cross-entropy and \texttt{exp\_d\_provenance} for the rotation and provenance-null controls. Section~\ref{sec:attrib} uses \texttt{exp\_c\_validate}, \texttt{exp\_f\_recovery}, \texttt{exp\_g\_causal}, \texttt{exp\_h\_clusters}, \texttt{exp\_i\_observability}, \texttt{exp\_j\_rerun} and \texttt{exp\_x7\_oracle}. Section~\ref{sec:families} uses \texttt{exp\_z2\_ci} for Table~\ref{tab:families}, its intervals and the Pile replication, run on one 80\,GB GPU in bfloat16 for the 7B-class rows, with \texttt{exp\_z2\_recompute} for the split into sink and typical states. Appendix~\ref{app:z} uses \texttt{exp\_z3\_ceiling}, \texttt{exp\_z4\_sae} and \texttt{exp\_z5\_kcurve}. The per-model tables of Appendix~\ref{app:general}, the concentration counts and the cross-domain check use \texttt{exp\_s9\_families}, \texttt{exp\_x2\_families\_attrib}, \texttt{exp\_x9\_top1conc} and \texttt{exp\_x4\_crossdomain}. Section~\ref{sec:roles} uses \texttt{exp\_k\_nulls}, \texttt{exp\_j2\_depth}, \texttt{exp\_s1\_killsuite}, \texttt{exp\_s5\_concentration}, \texttt{exp\_s6\_uncond} and \texttt{exp\_s7\_dechannel}. Section~\ref{sec:circuit} uses \texttt{exp\_s1\_killsuite}, \texttt{exp\_s4\_small\_614}, \texttt{exp\_s6\_uncond}, \texttt{exp\_s8\_loop}, \texttt{exp\_t2\_compensation}, \texttt{exp\_u1\_reserves}, \texttt{exp\_u2\_leash}, \texttt{exp\_x1\_doseresp\_all}, \texttt{exp\_x5\_lin} and \texttt{exp\_x6\_lnfrozen}. Section~\ref{sec:bakeoff} uses \texttt{exp\_v1\_bakeoff} and \texttt{exp\_x3\_bakeoff2}, run at ten and at thirty nominees per arm, whose battery and partner assignments were fixed in code before any run, and \texttt{exp\_w\_audit} recomputes the reconstruction, attribution and dose-response numbers independently. The models are the public checkpoints named in the text, the corpora are WikiText-2 and a Pile-derived sample, and all runs except the 7B rows fit on a single 8\,GB GPU or on a CPU. OMP uses a ridge of $10^{-5}$ on the Gram matrix of the support and batches of 1{,}024 or 2{,}048 states. On an 80\,GB A100, building the GPT-2 dictionary takes 14 seconds and one OMP pass over 32{,}768 states at $k=64$ about 20 seconds. For the 7B models the dictionary takes about a minute and one pass between 7 and 11 minutes at a peak of 29\,GB of card memory, so one model and corpus of the sweep costs 40 to 75 minutes. Training-free does not mean cheap at inference, since one pass over a 7B state costs about $k\,m\,d$ multiply-adds, on the order of $2\times10^{11}$ per state.
+
+\begin{thebibliography}{20}
+\small
+\bibitem[Anthropic Interpretability Team(2026)]{anthropic2026} Anthropic Interpretability Team. Characterizing interference weights in a tiny language model. \emph{Transformer Circuits}, 2026.
+\bibitem[Avrahamy et~al.(2026)]{rotate2026} A.~Avrahamy, Y.~Gur-Arieh, and M.~Geva. Disentangling MLP neuron weights in vocabulary space. \emph{COLM}; arXiv:2604.06005, 2026.
+\bibitem[Bloom(2024)]{bloom2024} J.~Bloom. Open source sparse autoencoders for all residual stream layers of GPT-2 small. \emph{AI Alignment Forum}, 2024.
+\bibitem[Braun et~al.(2025)]{braun2025} D.~Braun et~al. Interpretability in parameter space: Minimizing mechanistic description length with attribution-based parameter decomposition. \emph{arXiv:2501.14926}, 2025.
+\bibitem[Bricken et~al.(2023)]{bricken2023} T.~Bricken et~al. Towards monosemanticity: Decomposing language models with dictionary learning. \emph{Transformer Circuits}, 2023.
+\bibitem[Bushnaq et~al.(2025)]{bushnaq2025} L.~Bushnaq et~al. Stochastic parameter decomposition. \emph{arXiv:2506.20790}, 2025.
+\bibitem[Cunningham et~al.(2023)]{cunningham2023} H.~Cunningham et~al. Sparse autoencoders find highly interpretable features in language models. \emph{arXiv:2309.08600}, 2023.
+\bibitem[Dar et~al.(2022)]{dar2022} G.~Dar et~al. Analyzing transformers in embedding space. \emph{arXiv:2209.02535}, 2022.
+\bibitem[Elhage et~al.(2021)]{elhage2021} N.~Elhage et~al. A mathematical framework for transformer circuits. \emph{Transformer Circuits}, 2021.
+\bibitem[Gentile et~al.(2026)]{sith2026} F.~Gentile, N.~Dall'Asen, F.~Tonini, M.~Mancini, L.~Vaquero, and E.~Ricci. From weights to concepts: Data-free interpretability of CLIP via singular vector decomposition. \emph{CVPR}; \emph{arXiv:2603.24653}, 2026.
+\bibitem[Geva et~al.(2021)]{geva2021} M.~Geva, R.~Schuster, J.~Berant, and O.~Levy. Transformer feed-forward layers are key-value memories. \emph{EMNLP}, 2021.
+\bibitem[Janiak et~al.(2024)]{janiak2023} J.~Janiak, C.~Rager, J.~Dao, and Y.~Lau. An adversarial example for direct logit attribution: Memory management in GELU-4L. \emph{arXiv:2310.07325}; BlackboxNLP, 2024.
+\bibitem[Kovaleva et~al.(2021)]{kovaleva2021} O.~Kovaleva, S.~Kulshreshtha, A.~Rogers, and A.~Rumshisky. BERT busters: Outlier dimensions that disrupt transformers. \emph{Findings of ACL}; arXiv:2105.06990, 2021.
+\bibitem[Leask et~al.(2025)]{itda2025} P.~Leask, N.~Nanda, and N.~Al~Moubayed. Inference-time decomposition of activations (ITDA): A scalable approach to interpreting large language models. \emph{arXiv:2505.17769}, 2025.
+\bibitem[Sun et~al.(2024)]{sun2024} M.~Sun, X.~Chen, J.~Z. Kolter, and Z.~Liu. Massive activations in large language models. \emph{arXiv:2402.17762}, 2024.
+\bibitem[Ye et~al.(2025)]{peng2025} M.~Ye, J.~Suzuki, T.~Inaba, and T.~Kuribayashi. Transformer key-value memories are nearly as interpretable as sparse autoencoders. \emph{arXiv:2510.22332}, 2025.
+\end{thebibliography}
+
+\appendix
+\input{appendix}
+
+\end{document}

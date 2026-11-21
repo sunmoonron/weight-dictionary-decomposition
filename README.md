@@ -17,6 +17,7 @@ https://github.com/user-attachments/assets/b7124a90-78d9-427e-9457-95c78b847c81
 Ronish Bhatt ([ORCID 0009-0000-8835-5380](https://orcid.org/0009-0000-8835-5380)), 2026. The scripts, result files, run logs and per-token records behind the paper *Weight-Dictionary Decomposition: Reading a Transformer's Residual Stream with Its Own Writes* (preprint, September 2026, under review).
 
 - Paper: [doi:10.5281/zenodo.22749478](https://doi.org/10.5281/zenodo.22749478), also served at [ronishbhatt.com/weight_dictionary_2026.pdf](https://ronishbhatt.com/weight_dictionary_2026.pdf)
+- Paper source: the LaTeX and the scripts that generate its tables are in [`paper/`](paper/)
 - Code archive: [doi:10.5281/zenodo.22749881](https://doi.org/10.5281/zenodo.22749881) for this release, [doi:10.5281/zenodo.22749880](https://doi.org/10.5281/zenodo.22749880) for the latest version
 - License: MIT for the code (`scripts/`), CC BY 4.0 for the result files, logs and per-token records (`results/`, `logs/`)
 - Citation: see `CITATION.cff`
