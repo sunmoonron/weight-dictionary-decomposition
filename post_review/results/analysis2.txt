@@ -1,0 +1,42 @@
+solvers, GPT-2 small layer 6, 64 atoms each: top-1 recall of the largest MLP write [95% interval], refit FVU on typical states
+  omp                        0.647 [0.637, 0.657]   FVU 0.180
+  oneshot                    0.766 [0.754, 0.776]   FVU 0.533
+  dual_frame_eps0.01         0.801 [0.794, 0.807]   FVU 0.531
+  dual_frame_eps0.1          0.802 [0.793, 0.810]   FVU 0.518
+  lasso (tuned)              0.849 [0.842, 0.855]   FVU 0.433   penalty 9.874, median nonzeros 44
+  lasso (penalty 9.9105)     0.848 [0.841, 0.854]   FVU 0.435   penalty 9.911, median nonzeros 44
+support composition on typical states: token 0.169, position 0.001, mlp 0.622, attention 0.207, bias 0.001
+heads: dominant head has an atom in the support: raw 0.199, centred 0.280; a random head 0.141 (11.9 of 84 heads have an atom)
+       energy of the dominant head's write captured by its selected atoms, median when selected: raw 0.008, centred 0.054; mean over all typical tokens: raw 0.0130, centred 0.0249
+       dominant head's share of all head write energy, median: raw 0.060, centred 0.069; span check 3.2e-06
+       selected attention atoms (n 434031): sign agrees with the true centred coefficient 0.703, real by the 5% rule 0.581, r 0.521, median ratio of real ones 4.75, median relative error 6.00; largest true attention atom in the support 0.032
+       base rate over all 5,376 attention atoms of a token: real by the 5% rule 0.345; median |true| / largest: all atoms 0.032, selected atoms 0.068
+embeddings: a selected token row is the current token 0.0029, an earlier context token 0.0165 (unigram-matched random tokens 0.3311; n 354746); own token row in the support 0.0311; own position row 0.0002; selected position rows that are the own position 0.0021, within 8 positions 0.0264
+SAE features (24576 decoder rows of blocks.7.hook_resid_pre): median unexplained fraction by number of atoms (1, 2, 4, 8, 16), and the type of the first atom
+  sae_features           weight   0.877  0.804  0.711  0.602  0.477   first atom: MLP 0.926, token 0.009, attention 0.065, position 0.000, bias 0.000
+  sae_features           rotated  0.976  0.954  0.913  0.840  0.718   first atom: MLP 0.537, token 0.318, attention 0.144, position 0.001, bias 0.000
+  random_directions      weight   0.976  0.954  0.913  0.840  0.718   first atom: MLP 0.538, token 0.320, attention 0.141, position 0.001, bias 0.000
+  random_directions      rotated  0.976  0.954  0.913  0.840  0.718   first atom: MLP 0.518, token 0.343, attention 0.138, position 0.001, bias 0.000
+  covariance_directions  weight   0.923  0.885  0.833  0.754  0.632   first atom: MLP 0.615, token 0.010, attention 0.375, position 0.000, bias 0.000
+  typical_states         weight   0.883  0.800  0.701  0.592  0.471   first atom: MLP 0.808, token 0.001, attention 0.190, position 0.000, bias 0.000
+  block of the first atom when it is an MLP row, SAE features: [3601, 4211, 3037, 2156, 1782, 3576, 4389]
+pre-registered verdicts (19 of 19 confirmed):
+  S1 confirmed: one-shot ranking through the dual frame identifies the largest write at least 0.02 more often than plain one-shot ranking and at least 0.10 more often than OMP (follow-up: 0.80 against 0.77 and 0.64) (guess 0.7)
+  S2 confirmed: LASSO identifies the largest write for at least 0.80 of tokens and at least 0.15 more often than OMP (follow-up: 0.85) (guess 0.65)
+  S3 confirmed: OMP has the lowest refit FVU on typical states of the four solvers (guess 0.9)
+  H1 confirmed: the dominant head by raw write norm has an atom in the OMP support for 0.10 to 0.30 of typical tokens (follow-up: 0.20) (guess 0.7)
+  H2 confirmed: when the dominant head is selected, its selected atoms capture a median of under 0.2 of its write energy, raw and centred (follow-up: 0.01 to 0.19) (guess 0.8)
+  H3 confirmed: the dominant head (raw) is selected at most three times as often as a random head (guess 0.6)
+  H4 confirmed: among selected attention atoms the recovered coefficient has the sign of the true centred coefficient in 0.60 to 0.90 of cases, well short of the 0.998 of identified MLP writes (guess 0.55)
+  H5 confirmed: at least half of the selected attention atoms are real by the paper's 5% rule applied to attention coefficients (guess 0.5)
+  H6 confirmed: the atom with the largest true attention coefficient is in the support for under 0.30 of typical tokens (guess 0.6)
+  E1 confirmed: token-embedding rows are 0.05 to 0.40 of the support on typical tokens (follow-up: 0.09 to 0.36 across models) (guess 0.8)
+  E2 confirmed: a selected token row is the current token in under 0.05 of cases (follow-up: 0.00 to 0.027) (guess 0.85)
+  E3 confirmed: a selected token row matches an earlier context token less often than a unigram-matched random token does (follow-up: 0.002 to 0.015 against 0.33 to 0.37) (guess 0.85)
+  E4 confirmed: the token's own embedding row is in the support for under 0.10 of typical tokens (follow-up: 0.03 from layer 5 on) (guess 0.8)
+  E5 confirmed: the token's own position row is in the support for under 0.10 of typical tokens (guess 0.6)
+  F1 confirmed: an MLP row is the first atom for at least 0.85 of SAE features (follow-up: 0.93) (guess 0.75)
+  F2 confirmed: for random unit directions the first atom is an MLP row in under 0.70 of cases (follow-up: 0.54) (guess 0.7)
+  F3 confirmed: sixteen atoms leave a median of 0.40 to 0.56 of an SAE feature unexplained (follow-up: 0.48) and at least 0.15 less than the rotated dictionary leaves (follow-up: 0.72) (guess 0.7)
+  F4 confirmed: sixteen atoms leave a median of at least 0.65 of a random direction unexplained (follow-up: 0.72) (guess 0.8)
+  F5 confirmed: SAE features are within 0.05 of centred typical states at sixteen atoms (follow-up: 0.48 against 0.47) (guess 0.6)

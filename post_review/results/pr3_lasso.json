@@ -1,0 +1,24 @@
+{
+ "n_states": 32768,
+ "n_typical": 32704,
+ "atoms": 78175,
+ "smoke": false,
+ "parts": [
+  "lasso"
+ ],
+ "solvers": {
+  "lasso": {
+   "recall_top1": {
+    "point": 0.848876953125,
+    "lo": 0.8417961120605468,
+    "hi": 0.8552864074707032
+   },
+   "recall_top1_typical": 0.8505381345748901,
+   "fvu_refit_typical": 0.43340224027633667,
+   "seconds": 850,
+   "lam": 9.873824252828843,
+   "nnz_median": 44.0,
+   "fvu_raw_typical": 0.7080774307250977
+  }
+ }
+}

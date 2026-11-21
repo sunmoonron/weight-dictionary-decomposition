@@ -1,0 +1,23 @@
+{
+ "verdicts": {
+  "S1": true,
+  "S2": true,
+  "S3": true,
+  "H1": true,
+  "H2": true,
+  "H3": true,
+  "H4": true,
+  "H5": true,
+  "H6": true,
+  "E1": true,
+  "E2": true,
+  "E3": true,
+  "E4": true,
+  "E5": true,
+  "F1": true,
+  "F2": true,
+  "F3": true,
+  "F4": true,
+  "F5": true
+ }
+}

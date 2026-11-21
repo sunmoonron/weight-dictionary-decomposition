@@ -1,0 +1,13 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 2689.38it/s]
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+32768 states, 32704 typical, 78175 atoms, parts ['lasso'] (40s)
+  lasso lambda 9.8738 (tuned: pilot median support about 64) (87s)
+  lasso first batch done (26s)
+  lasso: top-1 recall 0.849 [0.842, 0.855] (typical 0.851), refit FVU typical 0.433 (850s)
+DONE_PR3 937s
+CHAIN2_1_DONE

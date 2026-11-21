@@ -1,0 +1,90 @@
+{
+ "fixed_at": "2026-11-21T07:04:54",
+ "status": "registered before any run, smoke tests included",
+ "purpose": "Close the reviewer questions the first post-review round left open (ICLR 2027 submission 13712): NMa5's oracle for heads and ground truth for embedding atoms, MgDZ's question of what greedy pursuit adds, and MgDZ's comparison with SAE features, which is also 7MWE's setting of a vector no forward pass produced. Follow-up experiments on a different pipeline (five small models, 16,384 states) already measured each of these; their GPT-2 numbers are the priors below. These reruns use the paper's protocol (GPT-2 small, layer 6, 32,768 WikiText-2 states, exp_z2_ci's states, centering, dictionary and ledger).",
+ "pr3": {
+  "predictions": {
+   "S1": {
+    "text": "one-shot ranking through the dual frame identifies the largest write at least 0.02 more often than plain one-shot ranking and at least 0.10 more often than OMP (follow-up: 0.80 against 0.77 and 0.64)",
+    "guess": 0.7
+   },
+   "S2": {
+    "text": "LASSO identifies the largest write for at least 0.80 of tokens and at least 0.15 more often than OMP (follow-up: 0.85)",
+    "guess": 0.65
+   },
+   "S3": {
+    "text": "OMP has the lowest refit FVU on typical states of the four solvers",
+    "guess": 0.9
+   },
+   "H1": {
+    "text": "the dominant head by raw write norm has an atom in the OMP support for 0.10 to 0.30 of typical tokens (follow-up: 0.20)",
+    "guess": 0.7
+   },
+   "H2": {
+    "text": "when the dominant head is selected, its selected atoms capture a median of under 0.2 of its write energy, raw and centred (follow-up: 0.01 to 0.19)",
+    "guess": 0.8
+   },
+   "H3": {
+    "text": "the dominant head (raw) is selected at most three times as often as a random head",
+    "guess": 0.6
+   },
+   "H4": {
+    "text": "among selected attention atoms the recovered coefficient has the sign of the true centred coefficient in 0.60 to 0.90 of cases, well short of the 0.998 of identified MLP writes",
+    "guess": 0.55
+   },
+   "H5": {
+    "text": "at least half of the selected attention atoms are real by the paper's 5% rule applied to attention coefficients",
+    "guess": 0.5
+   },
+   "H6": {
+    "text": "the atom with the largest true attention coefficient is in the support for under 0.30 of typical tokens",
+    "guess": 0.6
+   },
+   "E1": {
+    "text": "token-embedding rows are 0.05 to 0.40 of the support on typical tokens (follow-up: 0.09 to 0.36 across models)",
+    "guess": 0.8
+   },
+   "E2": {
+    "text": "a selected token row is the current token in under 0.05 of cases (follow-up: 0.00 to 0.027)",
+    "guess": 0.85
+   },
+   "E3": {
+    "text": "a selected token row matches an earlier context token less often than a unigram-matched random token does (follow-up: 0.002 to 0.015 against 0.33 to 0.37)",
+    "guess": 0.85
+   },
+   "E4": {
+    "text": "the token's own embedding row is in the support for under 0.10 of typical tokens (follow-up: 0.03 from layer 5 on)",
+    "guess": 0.8
+   },
+   "E5": {
+    "text": "the token's own position row is in the support for under 0.10 of typical tokens",
+    "guess": 0.6
+   }
+  }
+ },
+ "pr4": {
+  "predictions": {
+   "F1": {
+    "text": "an MLP row is the first atom for at least 0.85 of SAE features (follow-up: 0.93)",
+    "guess": 0.75
+   },
+   "F2": {
+    "text": "for random unit directions the first atom is an MLP row in under 0.70 of cases (follow-up: 0.54)",
+    "guess": 0.7
+   },
+   "F3": {
+    "text": "sixteen atoms leave a median of 0.40 to 0.56 of an SAE feature unexplained (follow-up: 0.48) and at least 0.15 less than the rotated dictionary leaves (follow-up: 0.72)",
+    "guess": 0.7
+   },
+   "F4": {
+    "text": "sixteen atoms leave a median of at least 0.65 of a random direction unexplained (follow-up: 0.72)",
+    "guess": 0.8
+   },
+   "F5": {
+    "text": "SAE features are within 0.05 of centred typical states at sixteen atoms (follow-up: 0.48 against 0.47)",
+    "guess": 0.6
+   }
+  }
+ },
+ "honest_overall": "I expect the follow-up's picture to reproduce: other solvers identify more than OMP while reconstructing worse; the attention atoms do not track the dominant head and the selected embedding rows are almost never the token's own, so the non-MLP part of the support is not attribution; an SAE feature's first atom is usually an MLP row but a feature is far from a single write. The new measurements with no prior are H3 to H6 and E5, and I am least sure of H4 and H5."
+}

@@ -1,0 +1,42 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3356.04it/s]
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+32768 states, 32704 typical, 78175 atoms, parts ['omp', 'oracles', 'dual'] (40s)
+  omp: top-1 recall 0.647 [0.637, 0.657] (typical 0.648), refit FVU typical 0.180 (92s)
+  support: token 0.169, position 0.001, mlp 0.622, attention 0.207, bias 0.001
+  heads: dominant head selected raw 0.199 / centred 0.280, random head 0.141; energy captured when selected raw 0.008352929726243019 / centred 0.05442848801612854; selected attention atoms: sign 0.703, real 0.581, r 0.521; largest true attention atom in support 0.032
+  embeddings: selected token rows current 0.0029, earlier context 0.0165 (random tokens 0.3311); own token row in support 0.0311, own position row 0.0002, selected position rows that are own 0.0021 (within 8: 0.0264) (133s)
+  one-shot: top-1 recall 0.766 [0.754, 0.776] (typical 0.766), refit FVU typical 0.533 (0s)
+  dual frame, eps 0.01: top-1 recall 0.801 [0.794, 0.807] (typical 0.800), refit FVU typical 0.531 (0s)
+  dual frame, eps 0.1: top-1 recall 0.802 [0.793, 0.810] (typical 0.802), refit FVU typical 0.518 (0s)
+DONE_PR3 139s
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3089.85it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+24576 features, 78175 atoms, 8176 typical states for the covariance (5s)
+  sae_features / weight: unexplained by k 1: 0.877, 2: 0.804, 4: 0.711, 8: 0.602, 16: 0.477 | first atom: MLP 0.926, token 0.009, attention 0.065, position 0.000 (20s)
+  sae_features / rotated: unexplained by k 1: 0.976, 2: 0.954, 4: 0.913, 8: 0.840, 16: 0.718 | first atom: MLP 0.537, token 0.318, attention 0.144, position 0.001 (36s)
+  random_directions / weight: unexplained by k 1: 0.976, 2: 0.954, 4: 0.913, 8: 0.840, 16: 0.718 | first atom: MLP 0.538, token 0.320, attention 0.141, position 0.001 (38s)
+  random_directions / rotated: unexplained by k 1: 0.976, 2: 0.954, 4: 0.913, 8: 0.840, 16: 0.718 | first atom: MLP 0.518, token 0.343, attention 0.138, position 0.001 (41s)
+  covariance_directions / weight: unexplained by k 1: 0.923, 2: 0.885, 4: 0.833, 8: 0.754, 16: 0.632 | first atom: MLP 0.615, token 0.010, attention 0.375, position 0.000 (43s)
+  typical_states / weight: unexplained by k 1: 0.883, 2: 0.800, 4: 0.701, 8: 0.592, 16: 0.471 | first atom: MLP 0.808, token 0.001, attention 0.190, position 0.000 (46s)
+DONE_PR4 46s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3131.45it/s]
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+Using the latest cached version of the dataset since Salesforce/wikitext couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'wikitext-2-raw-v1' at /data/mechinterp/hf/datasets/Salesforce___wikitext/wikitext-2-raw-v1/0.0.0/b08601e04326c79dfdd32d625aee71d232d685c3 (last modified on Mon Aug 24 19:17:59 2026).
+32768 states, 32704 typical, 78175 atoms, parts ['lasso'] (41s)
+  lasso lambda 9.9105 (fixed) (41s)
+  lasso first batch done (26s)
+  lasso: top-1 recall 0.848 [0.841, 0.854] (typical 0.850), refit FVU typical 0.435 (852s)
+DONE_PR3 893s
+CHAIN2_0_DONE
